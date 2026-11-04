@@ -23,6 +23,19 @@ como apresentar e em que idioma.
 - Uma GitHub Action gera em cada release um **zip por skill**, para carregamento manual no
   Claude.ai / ChatGPT.
 
+### Licença (Q11, decidida a 2026-11-04)
+
+- **Conteúdo** (skills, `knowledge/`, `glossario.md`): **CC-BY-4.0**. Uso livre, incluindo
+  comercial, com crédito obrigatório: dá visibilidade ao projeto. Cobre também o direito sui generis
+  das bases de dados da UE. Não é CC-BY-SA, porque o site é obra derivada e ficaria preso ao SA.
+- **Código** (scripts, testes, Actions): **MIT**.
+- **Contributos: DCO, sem CLA** (`git commit -s`). Os contributos entram sob a mesma licença com que
+  o conteúdo sai, e as duas licenças são irrevogáveis: o projeto nunca depende dos direitos de quem
+  contribui. A única coisa que se perde é poder tirar a exigência de crédito (passar a CC0), e isso
+  não se quer.
+- Atribuição sugerida: "Conteúdo do Voltaria (https://github.com/CarregaErvilhas/voltaria),
+  CC-BY-4.0". O ohmigo e o site têm de a mostrar junto do conteúdo servido.
+
 ### Conteúdo
 
 - **Uma skill por tema**, `skills/<nome>/SKILL.md` (formato Agent Skills; `name` igual ao nome da
@@ -73,9 +86,9 @@ como apresentar e em que idioma.
 
 ## Trabalho
 
-### A. ohmigo: orçamento (avança já, não depende do Voltaria)
+### A. ohmigo: orçamento (feito: CarregaErvilhas/ohmigo-mcp#60, por fazer merge)
 
-Hoje as `INSTRUCTIONS` têm 3794 caracteres no `main`. O Claude Code corta as instruções e cada
+As `INSTRUCTIONS` tinham 3794 caracteres no `main`; no #60 ficam com 2033, com a nota de QA incluída. O Claude Code corta as instruções e cada
 descrição de ferramenta aos 2048 (`CLAUDE_CODE_MAX_MCP_DESCRIPTION_LENGTH` altera isso), e o ChatGPT
 dá mais peso aos primeiros 512.
 
@@ -88,7 +101,9 @@ dá mais peso aos primeiros 512.
 
 ### B. Voltaria: arranque (em paralelo com A)
 
-1. Criar o repo, depois de decidida a licença.
+1. Criar o repo. Feito localmente em `voltaria/` (LICENSE, LICENSE-CODE, DCO, CONTRIBUTING.md,
+   README, CODEOWNERS, `scripts/check-dco.sh` e a Action `dco.yml`). Falta criar
+   `CarregaErvilhas/voltaria` no GitHub e fazer push.
 2. `glossario.md` e o teste dos sinónimos.
 3. `skills/carregar-em-casa/` e `skills/incentivos/`, com rascunho do Claude e revisão por PR.
 4. `knowledge/incentives.json` + teste: todas as entradas têm `source.url`, `checkedAt` e texto
@@ -97,6 +112,8 @@ dá mais peso aos primeiros 512.
 6. Action de release: tag semver + zip por skill.
 
 ### C. ohmigo: integração (depois da Q7)
+
+0. Atribuição CC-BY: cada guia servido por `get_guide` leva a linha de crédito do Voltaria.
 
 1. `src/skills.js`: carregar as skills do Voltaria, calcular o manifesto sha256+tamanho a partir dos
    bytes servidos, e registar recursos `skill://<nome>/SKILL.md`.
@@ -117,7 +134,5 @@ a data.
 
 - **Q7. Como o ohmigo recebe o Voltaria**: git submodule, busca de uma tag fixa no build, ou uma
   Action que abre um PR no ohmigo com a cópia. Ronda 2 do planeamento.
-- **Q11. Licença do Voltaria**: tem de ficar decidida **antes de aceitar contributos** (CLA ou não,
-  CC0 vs CC-BY-4.0 vs outra). Bloqueia a criação pública do repo.
 - **Q18. Mecânica do cron mensal**: só scripts que comparam hashes das páginas, Claude a redigir a
   proposta, ou os dois em sequência.
