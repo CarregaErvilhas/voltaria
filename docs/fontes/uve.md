@@ -76,5 +76,9 @@ Verificado a 2026-11-04.
 
 - **ISV**: a UVE diz que os 100 % elétricos não pagam ISV. Falta confirmar no Código do ISV, no
   Portal das Finanças, para entrar em `incentives.json` como `fiscal`.
-- **Construções novas desde julho de 2010** com ligação entre o lugar de garagem e a fração: vem da
-  UVE, sem artigo. Confirmar no DL 39/2010 (skill `regime-2010`) e, se for o caso, citar o artigo.
+
+Resolvido a 2026-11-04: a frase da UVE sobre **construções novas desde julho de 2010** não entrou
+como está. O DL 39/2010 (arts. 28.º e 52.º) pedia uma infraestrutura elétrica preparada para um posto
+ou uma tomada em cada lugar, não uma ligação entre o lugar e a fração. Hoje vale o DL 93/2025, art.
+22.º, que já não tem a regra de cada lugar. `carregar-em-casa` cita o art. 22.º e remete para
+`regime-2010`.

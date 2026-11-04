@@ -81,8 +81,14 @@ Pergunta só o que não souberes, uma coisa de cada vez:
 
 **Quando não é preciso falar com o condomínio.** Numa moradia, ou numa garagem ligada diretamente
 à instalação elétrica da fração, sem passar por partes comuns, não há nada a comunicar ao
-condomínio. As construções novas de habitação têm de ter essa ligação entre o lugar de garagem e a
-fração desde julho de 2010 [UVE, casa ou condomínio].
+condomínio [UVE, casa ou condomínio].
+
+**Prédios novos.** As construções novas em propriedade horizontal, ou com estacionamento, têm de
+incluir uma infraestrutura elétrica adequada para carregar veículos, com uma potência mínima fixada
+em portaria. Isto não inclui os postos nem as tomadas (DL 93/2025, art. 22.º). A regra antiga, para
+licenciamentos desde 1-7-2010, pedia também que cada lugar ficasse preparado para um posto ou uma
+tomada: vê a skill `regime-2010`. Não digas que um prédio novo já tem ligação em cada lugar sem o
+utilizador o confirmar com o administrador ou o projeto.
 
 Qualquer condómino pode instalar, à sua custa, um posto de carregamento no seu lugar de
 estacionamento, desde que o lugar cumpra os requisitos técnicos definidos em portaria (DL 93/2025,

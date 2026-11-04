@@ -84,12 +84,12 @@ precisa para pagar hoje.
 
 ### Ad hoc, sem contrato
 
-- Nos postos novos ou renovados, o OPC tem de deixar carregar sem contrato, pagando só aquele
-  carregamento (DL 93/2025, art. 6.º): com cartão bancário nos postos de 50 kW ou mais, ou por
-  QR code nos de menor potência [UVE, novo regime].
-- Nos postos públicos de 50 kW ou mais que já estavam a funcionar, essas obrigações de pagamento
-  aplicam-se a partir de 01-01-2027 (DL 93/2025, art. 44.º, n.º 6, na redação do DL 155/2026). Até
-  lá, um posto antigo pode não aceitar cartão bancário.
+- Os postos instalados ou renovados têm de permitir o carregamento ad hoc, nos termos do AFIR
+  (DL 93/2025, art. 6.º, n.º 1). Na prática paga-se com cartão bancário nos postos de 50 kW ou
+  mais, ou por QR code nos de menor potência [UVE, novo regime].
+- Nos postos públicos de 50 kW ou mais que já estavam instalados e a funcionar a 19-08-2025, as
+  obrigações sobre os meios de pagamento, incluindo o ad hoc, só se aplicam a partir de 01-01-2027
+  (DL 93/2025, art. 44.º, n.º 6). Até lá, um desses postos pode ainda não aceitar pagamento ad hoc.
 - **Cativação**: ao pagar com cartão bancário, o posto pode cativar um valor bem maior do que o
   carregamento, às vezes mais do dobro, e esse dinheiro pode ficar indisponível vários dias
   [UVE, análise do novo regime]. Avisa quem tem pouco saldo disponível.
