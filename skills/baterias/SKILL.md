@@ -35,6 +35,9 @@ do Voltaria.
 - **Não deixar chegar a vazio**: os 0 % do painel não são 0 % nas células, porque o fabricante deixa
   uma margem de segurança. Mas descer a níveis muito baixos encurta a vida da bateria
   [VOLT, carro parado].
+- Não há um número exato para o mínimo. O manual da UVE fala em voltar a carregar por volta dos 20
+  a 25 % [UVE, manual]; o artigo sobre a vida das baterias, em não descer abaixo de 10 %
+  [UVE, vida das baterias]. São referências, não limites.
 - Muitos carros deixam limitar a carga máxima. Sugere usar essa opção a quem tem bateria NMC.
 
 ## Carregamentos rápidos
@@ -51,6 +54,8 @@ do Voltaria.
   NMC [UVE, química das baterias].
 - O pré-condicionamento da bateria antes de um carregamento rápido ajuda a manter a potência. Vê se
   o carro o tem e como se ativa.
+- Sempre que possível, evitar deixar o carro ao sol ou ao frio extremo: guardar e carregar numa
+  garagem, ou carregar à noite no verão [UVE, manual].
 
 ## Carro parado muito tempo
 
@@ -81,7 +86,8 @@ Não há uma química melhor, há compromissos [UVE, química das baterias]:
 
 ## Garantia
 
-Ajuda a ler a garantia da bateria, não só os anos [UVE, química das baterias]:
+Ajuda a ler a garantia da bateria, não só os anos [UVE, química das baterias]. É comum uma garantia
+de 8 anos e 160 000 km [UVE, manual], mas confirma sempre a da versão e do ano exatos. Olha para:
 
 - a capacidade mínima garantida no fim do período (o SoH mínimo);
 - o limite de quilómetros;
@@ -110,6 +116,8 @@ Da UVE – Associação de Utilizadores de Veículos Elétricos, verificado a 20
   https://www.uve.pt/page/vida-das-baterias-veiculo-eletrico/
 - [UVE, formas de carregamento] "Como carregar um veículo elétrico":
   https://www.uve.pt/page/como-carregar-um-veiculo-eletrico/
+- [UVE, manual] "Parabéns! Comprou um veículo elétrico e agora?" (manual, jul. 2024), licença
+  CC BY 4.0: https://www.uve.pt/page/wp-content/uploads/2025/01/2024_manual_me-UVE.pdf
 
 Republicado pela UVE, de outro autor:
 
@@ -119,5 +127,6 @@ Republicado pela UVE, de outro autor:
   (republicado em https://www.uve.pt/page/veiculos-eletricos-parados-como-tratar-bem-da-bateria/)
 
 O que vem da UVE está assinalado com [UVE, …] e foi reescrito, com autorização da UVE (ver
-`docs/fontes/uve.md` no Voltaria). O artigo da VOLT não é da UVE: a autorização não o cobre, e por
+`docs/fontes/uve.md` no Voltaria). Os pontos do manual da UVE, que está sob CC BY 4.0, foram
+adaptados. O artigo da VOLT não é da UVE: a autorização não o cobre, e por
 isso só se usam dele factos gerais, por palavras nossas. Cita a fonte quando usares esses pontos.

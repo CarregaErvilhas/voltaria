@@ -26,6 +26,50 @@ uso do conteúdo do seu site no Voltaria, com indicação da fonte.
 **Crédito a mostrar** quando um consumidor do Voltaria usar estes pontos: "Fonte: UVE – Associação de
 Utilizadores de Veículos Elétricos (uve.pt)", junto da linha de crédito do Voltaria.
 
+## O manual da UVE (CC BY 4.0)
+
+O manual "Parabéns! Comprou um veículo elétrico e agora?" (36 páginas, jul. 2024,
+https://www.uve.pt/page/wp-content/uploads/2025/01/2024_manual_me-UVE.pdf) tem uma licença própria,
+diferente do resto do site: **Creative Commons Attribution 4.0 International** (pág. 4: "autorizam-se
+cópias e a redistribuição deste documento, bem como adaptações desde que o devido crédito seja
+atribuído e quaisquer alterações sejam indicadas").
+
+- É a mesma licença do conteúdo do Voltaria, por isso podemos adaptar o texto do manual sem depender
+  da autorização acima. Mesmo assim reescrevemos, porque as skills são para agentes e organizadas por
+  tema.
+- Crédito e alterações: cada ponto leva `[UVE, manual]`, e a secção Fontes da skill diz a licença e
+  que o texto foi adaptado.
+- Ligamos ao PDF no site da UVE e não o copiamos para o repo: tem 4,9 MB e logótipos (UVE, EDP)
+  que a licença não cobre.
+- O manual tem o logótipo da EDP e dá destaque à EDP Charge e ao cartão de associado UVE/EDP Charge.
+  As skills não herdam essa preferência: as apps aparecem como exemplos, ao lado de outras.
+- A skill `autonomia` pode recomendá-lo a quem acabou de comprar um carro, avisando que a parte dos
+  pagamentos está ultrapassada.
+
+| Secção do manual | Para onde foi |
+|---|---|
+| As unidades; capacidade vs tempo; autonomia | `autonomia`: as contas; `carregamento-publico`: as contas; `glossario.md`: autonomia, consumo |
+| Tipos de postos; fichas | `carregamento-publico`: PCUR, usar a ficha DC num posto rápido; `glossario.md`: posto ultrarrápido |
+| Quanto custa | `carregamento-publico`: taxa de ativação do OPC |
+| Quanto tempo demora; curva de carga | `carregamento-publico`: bateria muito baixa, 20 % a 80 %, temperatura, não ir a 100 % em viagem |
+| Que postos devo utilizar | `carregamento-publico`: que posto usar |
+| Autonomia (WLTP); condução eficiente | `autonomia`: quase tudo; `glossario.md`: WLTP, travagem regenerativa |
+| As aplicações móveis | `carregamento-publico`: apps que comparam preço e planeiam; `autonomia`: viagens |
+| A bateria | `baterias`: mínimo de 20 a 25 %, garantia comum, temperaturas extremas |
+
+Lido e não usado:
+
+- **Desatualizado:** a parte dos pagamentos é anterior ao DL 93/2025 (diz que é preciso um contrato
+  com um CEME e descreve só o modelo antigo); o número de postos é do início de 2022; o exemplo do
+  Renault Zoe a 43 kW em AC e "CHAdeMO para marcas japonesas" já não ajudam quem compra hoje.
+- **Números sem fonte nem método:** 20 % da energia vem da travagem regenerativa, 95 % de
+  reciclagem do lítio, 2000 vs 20 peças móveis, 15 a 20 minutos de rápido para 100 km, baterias de
+  15 anos. As skills não os usam.
+- **Carregar em casa:** já coberto em `carregar-em-casa` com fontes mais recentes. A frase de que uma
+  wallbox DPC dispensa aumentar a potência contratada depende da instalação e do regime dos CEME,
+  que acaba a 31-12-2027: não entrou.
+- **Manutenção e associação:** promoção do carro elétrico e da UVE, não informação para o condutor.
+
 ## O que veio da UVE
 
 Verificado a 2026-11-04.

@@ -84,6 +84,9 @@ como apresentar e em que idioma.
   em CC-BY-4.0. Do site da UVE saíram as skills `carregamento-publico` e `baterias`, pontos novos
   em `carregar-em-casa` e `incentivos`, termos do glossário e os factos `municipal`. Cada ponto leva
   a marca `[UVE, …]`.
+- **Manual da UVE (jul. 2024):** está sob CC BY 4.0, a mesma licença do Voltaria, e pode ser
+  adaptado com crédito. Deu origem à skill `autonomia` e a pontos em `carregamento-publico`,
+  `baterias` e no glossário. A parte dos pagamentos é anterior ao DL 93/2025 e não é usada.
 - O conteúdo é redigido pelo Agente a partir das fontes, com ligação em cada facto, e
   revisto pelos CODEOWNERS num PR.
 - **Cron mensal**: propõe as alterações por **PR**, e o merge é sempre manual. O `checkedAt` só

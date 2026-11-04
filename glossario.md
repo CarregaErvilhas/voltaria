@@ -38,3 +38,8 @@ que confundem papéis diferentes.
 | elétrico com extensor de autonomia | híbrido em série | Carro movido só a motor elétrico, com um pequeno motor a combustão que só serve de gerador para a bateria (EREV, REx). |
 | TAR | tarifa de rede | Tarifas de acesso às redes: o custo de usar a rede elétrica até ao ponto de consumo. Fixadas todos os anos pela ERSE. Na MOBI.E há uma TAR própria da mobilidade elétrica. |
 | SoH | state of health | Estado de saúde da bateria: a capacidade que mantém face à original, em percentagem. É o indicador principal ao comprar um carro usado. |
+| posto ultrarrápido | posto super-rápido; hiper-rápido | Posto rápido acima de 150 kW. A UVE chama-lhe PCUR. |
+| autonomia | alcance | Os quilómetros que o carro faz com a bateria carregada. Depende do consumo, que muda com a velocidade, o percurso, a temperatura e o peso. |
+| consumo | gasto | A energia que o carro gasta para andar, em kWh/100 km. |
+| WLTP | ciclo de homologação | O ensaio de laboratório em que se mede a autonomia anunciada pelo fabricante. A autonomia real costuma ser menor. |
+| travagem regenerativa | travagem por recuperação; frenagem regenerativa | O motor elétrico trava o carro e devolve energia à bateria quando se tira o pé do acelerador ou se trava. |

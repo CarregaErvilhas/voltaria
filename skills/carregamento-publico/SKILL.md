@@ -36,8 +36,11 @@ Pergunta só o que não souberes, uma coisa de cada vez:
 - **Posto rápido**: acima de 22 kW, em corrente contínua (DC), com o cabo preso ao posto. A ficha
   habitual é a CCS; alguns carros mais antigos usam CHAdeMO. Há postos que têm as duas e também uma
   tomada AC [UVE, formas de carregamento].
-- A UVE chama-lhes PCN (posto de carregamento normal) e PCR (posto de carregamento rápido). O
-  utilizador pode usar essas siglas.
+- **Posto ultrarrápido**: um posto rápido acima de 150 kW [UVE, manual].
+- A UVE chama-lhes PCN (posto de carregamento normal), PCR (posto de carregamento rápido) e PCUR
+  (posto de carregamento ultrarrápido). O utilizador pode usar essas siglas.
+- Num posto rápido que também tem tomada Tipo 2, diz para usar a ficha DC (CCS ou CHAdeMO). Pela
+  Tipo 2 o carro carrega em AC, limitado pelo carregador de bordo [UVE, manual].
 - **Rede Tesla**: muitos Superchargers abriram a carros de outras marcas. Os carros Tesla não têm
   prioridade nesses postos [UVE, carregar com respeito]. Confirma na app da Tesla se um posto
   concreto aceita outras marcas.
@@ -47,14 +50,39 @@ Pergunta só o que não souberes, uma coisa de cada vez:
 Não há uma resposta igual para todos. Explica do que depende [UVE, formas de carregamento]:
 
 - **O carro**: o carregador de bordo limita a potência em AC; em DC, conta a curva de carregamento.
-- **O nível da bateria**: com a bateria baixa carrega mais depressa; perto do cheio abranda muito.
-  Em DC, a potência costuma cair bastante a partir de cerca de 80 % [UVE, carregar com respeito].
+- **O nível da bateria**: em DC, a potência mais alta costuma estar entre cerca de 20 % e 80 %,
+  conforme o modelo. Com a bateria muito baixa, o carro pode demorar a chegar à potência máxima
+  [UVE, manual]. Perto do cheio abranda muito: a potência costuma cair bastante a partir de cerca de
+  80 % [UVE, carregar com respeito].
 - **A potência do posto**: a útil é a menor entre a do posto e a que o carro aceita.
-- **A temperatura**: o frio e o calor extremos tornam o carregamento mais lento.
+- **A temperatura**: o frio e o calor extremos tornam o carregamento mais lento. A bateria carrega
+  melhor entre cerca de 20 e 30 °C; abaixo de 10 °C a potência pode cair [UVE, manual].
 
 Um carro que mantém uma potência alta durante muito tempo pode carregar mais depressa do que outro
 que anuncia um pico maior mas o perde em poucos minutos [UVE, química das baterias]. Para viagens,
 olha para os minutos de 10 a 80 % publicados para a versão, não para o pico.
+
+### As contas
+
+Se o utilizador quer perceber de onde vem um tempo, explica a conta com os números da versão
+exata, nunca de memória [UVE, manual]:
+
+- Potência (kW) vezes horas dá energia (kWh): 7 kW durante 2 horas são cerca de 14 kWh.
+- Tempo aproximado = energia a carregar ÷ a menor potência entre a do posto e a que o carro aceita
+  (o carregador de bordo em AC, a potência máxima em DC).
+- Diz que é uma aproximação. Em DC, a curva de carregamento muda o resultado; em AC, as perdas
+  também contam.
+- "Quilómetros por hora de carregamento" depende do consumo do carro: o mesmo posto dá mais
+  quilómetros a um carro que gasta menos. Prefere falar em kW e kWh. Para autonomia, ver a skill
+  `autonomia`.
+
+### Que posto usar
+
+- No dia a dia, carregar num posto normal enquanto o carro está parado de qualquer forma: em casa,
+  no trabalho, nas compras [UVE, manual].
+- Em viagens longas e quando há pressa, um posto rápido ou ultrarrápido.
+- Numa viagem, carregar até 100 % num posto rápido não poupa tempo. Em regra é melhor ir até cerca
+  de 80 % e seguir para o posto seguinte [UVE, manual].
 
 ## Como pagar
 
@@ -66,8 +94,9 @@ precisa para pagar hoje.
 - O condutor tem contrato com um CEME, que lhe dá um cartão ou uma app que funciona em todos os
   postos da rede MOBI.E. O preço da energia do CEME é o mesmo em todos os postos
   [UVE, novo regime].
-- O OPC cobra a utilização do posto, por kWh, por minuto ou os dois. Esses valores têm de estar
-  afixados no posto.
+- O OPC cobra a utilização do posto, por kWh, por minuto, um valor fixo por carregamento (taxa de
+  ativação) ou uma combinação destes [UVE, manual]. Esses valores têm de estar afixados no posto.
+  Quando há cobrança ao minuto, a potência real do carro conta para o preço.
 - A fatura do CEME discrimina tudo: energia do CEME, tarifa de acesso às redes da mobilidade
   elétrica (TAR), tarifa do OPC, tarifa da EGME e impostos (IEC e IVA).
 
@@ -100,6 +129,9 @@ precisa para pagar hoje.
 - Senão, há mapas e apps: o mapa da MOBI.E, Electromaps, PlugShare, miio, a app da Tesla e as apps de
   cada OPC [UVE, pesquisa de pontos de carga]. Algumas mostram o estado do posto e comentários de
   outros condutores.
+- Há também apps que juntam o carro e os cartões do condutor: comparam o preço, estimam o tempo,
+  indicam a ficha a usar e planeiam a viagem com as paragens. A UVE refere, por exemplo, EVIO e miio
+  em Portugal e Chargemap e Electromaps na Europa [UVE, manual].
 - Antes de ir, confirma a ficha, a potência, o horário (há parques que fecham) e o número de apoio do
   OPC.
 
@@ -173,8 +205,12 @@ Da UVE – Associação de Utilizadores de Veículos Elétricos, verificado a 20
 - [UVE, furto e vandalismo] "Análise UVE | Furto e vandalismo em Postos de Carregamento" (out. 2025):
   https://www.uve.pt/page/analise-uve-furto-e-vandalismo-em-pvce_outubro-2025/
 - [UVE, carregamento na Europa] https://www.uve.pt/page/carregamento-na-europa/
+- [UVE, manual] "Parabéns! Comprou um veículo elétrico e agora?" (manual, jul. 2024), licença
+  CC BY 4.0: https://www.uve.pt/page/wp-content/uploads/2025/01/2024_manual_me-UVE.pdf
+  A parte sobre pagamentos é anterior ao DL 93/2025: não a uses para o regime atual.
 - Comparativo 100 km, elétrico vs. combustão (mensal): https://www.uve.pt/page/quanto-custa-100-km/
 - Observatório da Mobilidade Elétrica: https://observatorio.uve.pt/
 
 O que vem da UVE está assinalado com [UVE, …] e foi reescrito, com autorização da UVE (ver
-`docs/fontes/uve.md` no Voltaria). Cita a UVE quando usares esses pontos.
+`docs/fontes/uve.md` no Voltaria). O manual da UVE está sob CC BY 4.0 e os pontos que vêm dele foram
+adaptados. Cita a UVE quando usares esses pontos.
