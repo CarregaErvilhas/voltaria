@@ -52,9 +52,17 @@ como apresentar e em que idioma.
 ### Factos
 
 - `knowledge/incentives.json` vive no Voltaria. Cada entrada tem id, texto pt + en curto,
-  `source{url,name}`, `checkedAt` e `validFrom`/`validTo`. As entradas expiradas são descartadas e as
-  antigas marcadas `stale`.
+  `source{url,name}`, `checkedAt` e `validFrom`/`validTo`; as do Fundo Ambiental têm também
+  `series` e `edition`.
+- **Histórico (decidido a 2026-11-04):** as entradas com `validTo` no passado não são descartadas.
+  Ficam como apoios fechados, para comparar edições e responder a quem já se candidatou, e nunca se
+  apresentam como abertas. `stale` marca só as entradas em vigor cujo `checkedAt` é antigo.
+  O histórico do Fundo Ambiental cobre 2019 a 2025/2026, sempre a partir do aviso ou despacho
+  oficial.
 - Fontes dos incentivos: só oficiais (Fundo Ambiental, AT, Diário da República).
+- Índices de terceiros (por exemplo a lista de legislação da UVE) servem para encontrar diplomas,
+  nunca como fonte: cada facto aponta para o texto oficial. A lista da UVE vai até 2020 e boa parte
+  foi revogada pelo DL 93/2025.
 - **Factos de carros (`car`) ficam fora da v1**: não há fonte com licença aberta e o modelo já
   pesquisa bem na web.
 
@@ -134,5 +142,7 @@ a data.
 
 - **Q7. Como o ohmigo recebe o Voltaria**: git submodule, busca de uma tag fixa no build, ou uma
   Action que abre um PR no ohmigo com a cópia. Ronda 2 do planeamento.
+- **Histórico 2017 e 2018**: os despachos n.º 1612-B/2017 e n.º 1607/2018 só foram encontrados em
+  cópias da UVE. Falta a ligação oficial no Diário da República para os acrescentar.
 - **Q18. Mecânica do cron mensal**: só scripts que comparam hashes das páginas, Claude a redigir a
   proposta, ou os dois em sequência.

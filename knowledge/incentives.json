@@ -1,6 +1,142 @@
 {
-  "schema": 1,
+  "schema": 2,
   "entries": [
+    {
+      "id": "fa-ven-2019",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2019",
+      "text": {
+        "pt": "Fundo Ambiental 2019 (Despacho n.º 2210/2019, veículos de baixas emissões): 3 000 € para pessoas singulares e 2 250 € para pessoas coletivas por um carro ligeiro (M1 ou N1) 100 % elétrico novo, com custo final até 62 500 €; sem abate. Motociclos e ciclomotores elétricos: 20 % do preço, até 400 €. Bicicletas elétricas: 250 €. Até 1 000 apoios para carros, 1 000 para bicicletas e 250 para motos; dotação de 3 000 000 €. Um carro por pessoa singular, até quatro por pessoa coletiva. Pedidos até 30-11-2019.",
+        "en": "Fundo Ambiental 2019 (Despacho 2210/2019, low-emission vehicles): €3,000 for individuals and €2,250 for legal entities for a new fully electric light vehicle (M1 or N1) costing up to €62,500; no scrapping. Electric motorcycles and mopeds: 20% of the price, up to €400. E-bikes: €250. Up to 1,000 grants for cars, 1,000 for bikes and 250 for motorcycles; budget €3,000,000. One car per individual, up to four per legal entity. Applications until 30 Nov 2019."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/despacho-n-2210-2019-regulamento-de-atribuicao-do-incentivo-pela-introducao-no-consumo-de-veiculos-de-baixas-emissoes-2019-pdf.aspx",
+        "name": "Despacho n.º 2210/2019, Diário da República, 2.ª série, n.º 45, 5-3-2019"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2019-03-05",
+      "validTo": "2019-11-30"
+    },
+    {
+      "id": "fa-ven-2020",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2020",
+      "text": {
+        "pt": "Fundo Ambiental 2020 (Despacho n.º 3169/2020, veículos de baixas emissões): 3 000 € para pessoas singulares e 2 000 € para pessoas coletivas por um carro ligeiro de passageiros (M1) 100 % elétrico novo, com custo final até 62 500 €; 3 000 € por um ligeiro de mercadorias (N1) elétrico; sem abate. Bicicletas elétricas, motociclos, ciclomotores e bicicletas de carga: 50 % do preço, até 350 €. Bicicletas convencionais: 10 %, até 100 €. Até 700 apoios M1 para pessoas singulares e 300 para coletivas; dotação de 4 000 000 €. Pedidos até 30-11-2020.",
+        "en": "Fundo Ambiental 2020 (Despacho 3169/2020, low-emission vehicles): €3,000 for individuals and €2,000 for legal entities for a new fully electric passenger car (M1) costing up to €62,500; €3,000 for an electric light goods vehicle (N1); no scrapping. E-bikes, motorcycles, mopeds and cargo bikes: 50% of the price, up to €350. Conventional bikes: 10%, up to €100. Up to 700 M1 grants for individuals and 300 for legal entities; budget €4,000,000. Applications until 30 Nov 2020."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/despacho/3169-2020-130070443",
+        "name": "Despacho n.º 3169/2020, de 10 de março, Diário da República"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2020-03-10",
+      "validTo": "2020-11-30"
+    },
+    {
+      "id": "fa-ven-2021",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2021",
+      "text": {
+        "pt": "Fundo Ambiental 2021 (Despacho n.º 2535/2021, alterado pelo Despacho n.º 8363/2021, veículos de baixas emissões): 3 000 € por um carro ligeiro de passageiros (M1) 100 % elétrico novo, só para pessoas singulares, com custo final até 62 500 € com IVA; sem abate. Ligeiros de mercadorias (N1) elétricos: 6 000 €. Bicicletas de carga: 50 %, até 1 000 € (elétricas) ou 500 €. Bicicletas elétricas, motociclos e ciclomotores: 50 %, até 350 €. Bicicletas convencionais: 20 %, até 100 €. Até 700 apoios M1; dotação de 4 000 000 €. Pedidos até 30-11-2021.",
+        "en": "Fundo Ambiental 2021 (Despacho 2535/2021, amended by Despacho 8363/2021, low-emission vehicles): €3,000 for a new fully electric passenger car (M1), individuals only, costing up to €62,500 incl. VAT; no scrapping. Electric light goods vehicles (N1): €6,000. Cargo bikes: 50%, up to €1,000 (electric) or €500. E-bikes, motorcycles and mopeds: 50%, up to €350. Conventional bikes: 20%, up to €100. Up to 700 M1 grants; budget €4,000,000. Applications until 30 Nov 2021."
+      },
+      "source": {
+        "url": "https://files.diariodarepublica.pt/2s/2021/03/045000000/0019300197.pdf",
+        "name": "Despacho n.º 2535/2021, Diário da República, 2.ª série, n.º 45, 5-3-2021"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2021-03-05",
+      "validTo": "2021-11-30"
+    },
+    {
+      "id": "fa-ven-2022",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2022",
+      "text": {
+        "pt": "Fundo Ambiental 2022 (Despacho n.º 3419-B/2022, primeira edição de 'emissões nulas'): 4 000 € por um carro ligeiro de passageiros (M1) 100 % elétrico novo, só para pessoas singulares, com custo final até 62 500 € com IVA; sem abate. Ligeiros de mercadorias (N1): 6 000 €. Bicicletas de carga: 50 %, até 1 500 € (elétricas) ou 1 000 €. Bicicletas elétricas: 50 %, até 500 €. Motociclos, ciclomotores, triciclos, quadriciclos e trotinetes elétricos: 50 %, até 500 €. Bicicletas convencionais: 20 %, até 100 €. Novidade: postos em condomínio ligados à MOBI.E, 80 % do posto até 800 € mais 80 % da instalação até 1 000 €, e a tarifa da EGME paga por 24 meses. Até 1 300 apoios M1; dotação de 10 000 000 €. Pedidos até 30-11-2022.",
+        "en": "Fundo Ambiental 2022 (Despacho 3419-B/2022, first 'zero-emission' edition): €4,000 for a new fully electric passenger car (M1), individuals only, costing up to €62,500 incl. VAT; no scrapping. Light goods vehicles (N1): €6,000. Cargo bikes: 50%, up to €1,500 (electric) or €1,000. E-bikes: 50%, up to €500. Electric motorcycles, mopeds, tricycles, quadricycles and scooters: 50%, up to €500. Conventional bikes: 20%, up to €100. New: chargers in condominiums connected to MOBI.E, 80% of the charger up to €800 plus 80% of the installation up to €1,000, and the EGME tariff paid for 24 months. Up to 1,300 M1 grants; budget €10,000,000. Applications until 30 Nov 2022."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/despacho/3419-b-2022-180923391",
+        "name": "Despacho n.º 3419-B/2022, de 22 de março, Diário da República"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2022-03-22",
+      "validTo": "2022-11-30"
+    },
+    {
+      "id": "fa-ven-2023",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2023",
+      "text": {
+        "pt": "Fundo Ambiental 2023 (Despacho n.º 5126/2023): as mesmas regras e valores de 2022. 4 000 € por um carro ligeiro de passageiros (M1) 100 % elétrico novo, só para pessoas singulares, com custo final até 62 500 € com IVA; sem abate. Ligeiros de mercadorias (N1): 6 000 €. Bicicletas de carga: até 1 500 € (elétricas) ou 1 000 €. Bicicletas elétricas e motos, ciclomotores e trotinetes elétricos: 50 %, até 500 €. Postos em condomínio ligados à MOBI.E: 80 % até 800 € mais 80 % da instalação até 1 000 €. Até 1 300 apoios M1; dotação de 10 000 000 €. Pedidos até 30-11-2023.",
+        "en": "Fundo Ambiental 2023 (Despacho 5126/2023): same rules and amounts as 2022. €4,000 for a new fully electric passenger car (M1), individuals only, costing up to €62,500 incl. VAT; no scrapping. Light goods vehicles (N1): €6,000. Cargo bikes: up to €1,500 (electric) or €1,000. E-bikes and electric motorcycles, mopeds and scooters: 50%, up to €500. Chargers in condominiums connected to MOBI.E: 80% up to €800 plus 80% of the installation up to €1,000. Up to 1,300 M1 grants; budget €10,000,000. Applications until 30 Nov 2023."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/2023/desp-5126_2023-3mai-regulamento-atribuicao-incentivo-ven-2023-pdf",
+        "name": "Despacho n.º 5126/2023, Diário da República, 2.ª série, n.º 85, 3-5-2023"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2023-05-04",
+      "validTo": "2023-11-30"
+    },
+    {
+      "id": "fa-ven-2024",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2024",
+      "text": {
+        "pt": "Fundo Ambiental 2024 (Aviso n.º 22989/2024/2, Mobilidade Verde Passageiros): passa a exigir abate. 4 000 € para pessoas singulares e 5 000 € para IPSS e outras instituições de cariz social, por um carro ligeiro de passageiros (M1) 100 % elétrico novo e o abate de um carro a combustíveis fósseis com mais de 10 anos (abate após 1-1-2022). O custo final máximo desce para 38 500 € com IVA. Bicicletas de carga: até 1 500 € (elétricas) ou 1 000 €. Bicicletas elétricas e motos, ciclomotores e trotinetes elétricos: 50 %, até 500 €. Bicicletas convencionais: 50 %, até 150 €. Postos em condomínio: 80 % até 800 € mais a instalação. Até 1 050 apoios M1 para pessoas singulares e 400 para instituições. Pedidos até 31-12-2024.",
+        "en": "Fundo Ambiental 2024 (Aviso 22989/2024/2, Mobilidade Verde Passageiros): scrapping becomes mandatory. €4,000 for individuals and €5,000 for IPSS and other social institutions, for a new fully electric passenger car (M1) plus scrapping a fossil-fuel car over 10 years old (scrapped after 1 Jan 2022). The maximum final cost drops to €38,500 incl. VAT. Cargo bikes: up to €1,500 (electric) or €1,000. E-bikes and electric motorcycles, mopeds and scooters: 50%, up to €500. Conventional bikes: 50%, up to €150. Chargers in condominiums: 80% up to €800 plus the installation. Up to 1,050 M1 grants for individuals and 400 for institutions. Applications until 31 Dec 2024."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/aviso/22989-2024-891174432",
+        "name": "Aviso n.º 22989/2024/2, de 17 de outubro, Diário da República"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2024-10-17",
+      "validTo": "2024-12-31"
+    },
+    {
+      "id": "fa-ven-2025",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025",
+      "text": {
+        "pt": "Fundo Ambiental 2025 (ACC n.º 02/2025, Mobilidade Verde Passageiros): 4 000 € para pessoas singulares e 5 000 € para IPSS, autoridades de transportes e autarquias, por um carro ligeiro de passageiros (M1) 100 % elétrico novo e o abate de um carro a combustíveis fósseis com mais de 10 anos (abate após 1-1-2023). Custo final até 38 500 € (55 000 € acima de 5 lugares). Bicicletas de carga: até 1 500 € (elétricas) ou 1 000 €. Bicicletas elétricas: 50 %, até 750 €. Motociclos, ciclomotores, triciclos e quadriciclos: 50 %, até 1 500 €. Trotinetes e outros dispositivos: 50 %, até 500 €. Bicicletas convencionais: 50 %, até 500 €. Postos em condomínio: 80 % até 800 € mais 80 % da instalação até 1 000 €. Até 1 425 apoios M1 para pessoas singulares e 600 para instituições; dotação de 13,5 milhões €. Candidaturas a partir de 31-3-2025, durante 45 dias corridos ou até esgotar.",
+        "en": "Fundo Ambiental 2025 (ACC 02/2025, Mobilidade Verde Passageiros): €4,000 for individuals and €5,000 for IPSS charities, transport authorities and municipalities, for a new fully electric passenger car (M1) plus scrapping a fossil-fuel car over 10 years old (scrapped after 1 Jan 2023). Final cost up to €38,500 (€55,000 above 5 seats). Cargo bikes: up to €1,500 (electric) or €1,000. E-bikes: 50%, up to €750. Motorcycles, mopeds, tricycles and quadricycles: 50%, up to €1,500. Scooters and other devices: 50%, up to €500. Conventional bikes: 50%, up to €500. Chargers in condominiums: 80% up to €800 plus 80% of the installation up to €1,000. Up to 1,425 M1 grants for individuals and 600 for institutions; budget €13.5 million. Applications from 31 Mar 2025, for 45 calendar days or until funds ran out."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/avisos-anteriores/apoios-20242/apoios/2025/mitigacao-as-alteracoes-climaticas/introducao-no-consumo-de-veiculos-de-emissoes-nulas-em-2025--mobilidade-verde-passageiros.aspx",
+        "name": "Fundo Ambiental, ACC n.º 02/2025, Mobilidade Verde Passageiros"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2025-03-31",
+      "validTo": "2025-05-15"
+    },
+    {
+      "id": "fa-ven-2025-2026-f1",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f1",
+      "text": {
+        "pt": "Fundo Ambiental, 1.ª fase do AAC n.º 06/2025 (Mobilidade Verde Passageiros 2025/2026): os mesmos valores e regras da 2.ª fase (4 000 € para pessoas singulares e 5 000 € para IPSS, autoridades de transportes e autarquias, com abate, custo final até 38 500 € ou 55 000 € acima de 5 lugares). Até 2 200 apoios M1 para pessoas singulares e 500 para instituições; dotação de 17 625 000 €. Candidaturas de 22-12-2025 a 11-2-2026 às 17h59; pedido de pagamento até 90 dias após a aprovação, no máximo até 13-5-2026.",
+        "en": "Fundo Ambiental, phase 1 of AAC 06/2025 (Mobilidade Verde Passageiros 2025/2026): same amounts and rules as phase 2 (€4,000 for individuals and €5,000 for IPSS, transport authorities and municipalities, with scrapping, final cost up to €38,500 or €55,000 above 5 seats). Up to 2,200 M1 grants for individuals and 500 for institutions; budget €17,625,000. Applications 22 Dec 2025 to 11 Feb 2026 at 17:59; payment request within 90 days of approval, by 13 May 2026 at the latest."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/2025/aviso_veiculos_emissoes_nulas_passageiros_signed1.aspx",
+        "name": "Fundo Ambiental, AAC n.º 06/2025, 1.ª fase, pontos 1.5, 4.1, 4.3 e 6.1"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2025-12-22",
+      "validTo": "2026-02-11"
+    },
     {
       "id": "fa-ven-2025-2026-f2-ligeiros",
       "kind": "apoio",
@@ -14,7 +150,9 @@
       },
       "checkedAt": "2026-11-04",
       "validFrom": "2026-06-11",
-      "validTo": "2026-07-27"
+      "validTo": "2026-07-27",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f2"
     },
     {
       "id": "fa-ven-2025-2026-f2-motos",
@@ -29,7 +167,9 @@
       },
       "checkedAt": "2026-11-04",
       "validFrom": "2026-06-11",
-      "validTo": "2026-07-27"
+      "validTo": "2026-07-27",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f2"
     },
     {
       "id": "fa-ven-2025-2026-f2-bicicletas",
@@ -44,7 +184,9 @@
       },
       "checkedAt": "2026-11-04",
       "validFrom": "2026-06-11",
-      "validTo": "2026-07-27"
+      "validTo": "2026-07-27",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f2"
     },
     {
       "id": "fa-ven-2025-2026-f2-postos-condominio",
@@ -59,7 +201,9 @@
       },
       "checkedAt": "2026-11-04",
       "validFrom": "2026-06-11",
-      "validTo": "2026-07-27"
+      "validTo": "2026-07-27",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f2"
     },
     {
       "id": "fa-ven-2025-2026-f2-regras-gerais",
@@ -74,7 +218,9 @@
       },
       "checkedAt": "2026-11-04",
       "validFrom": "2026-06-11",
-      "validTo": "2026-07-27"
+      "validTo": "2026-07-27",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f2"
     },
     {
       "id": "iuc-isencao-eletricos",

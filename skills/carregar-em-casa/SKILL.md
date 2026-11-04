@@ -92,8 +92,13 @@ a data da instalação (art. 23.º, n.º 2).
   do condomínio, precisa de maioria simples do valor total do prédio.
 - Fica em ata, é comunicada por escrito aos condóminos ausentes **no prazo de 15 dias** e, se for
   negativa, tem de ser fundamentada.
-- A lei não diz expressamente o que acontece se não houver decisão nos 30 dias. Não afirmes que o
-  condómino pode avançar. Diz o que a lei prevê e sugere apoio jurídico se houver conflito.
+- **Sem oposição fundamentada no prazo, o condómino pode instalar.** O direito de instalar vem do
+  n.º 1; a oposição é a exceção e só vale num dos casos do n.º 3, decidida nos 30 dias do n.º 4. Se
+  a administração não comunicar no prazo uma razão desses casos, a instalação pode avançar na data
+  comunicada.
+- Recomenda guardar prova da comunicação e da data em que foi recebida (carta registada com aviso
+  de receção ou email com confirmação): é ela que conta os 30 dias. Se o condomínio contestar
+  depois, sugere apoio jurídico.
 
 **Quem paga.** A instalação é paga pelo condómino (art. 23.º, n.º 1). A energia pode vir da
 instalação da fração ou de um ponto de entrega próprio (CPE autónomo), nos termos que a ERSE
