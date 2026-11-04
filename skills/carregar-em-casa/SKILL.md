@@ -128,8 +128,8 @@ Se o utilizador falar em 60 dias, dois terços ou "linha arquitetónica", são r
 (DL 39/2010, art. 29.º). Corrige com as de hoje; a skill `regime-2010` explica as antigas.
 
 **Quem paga.** A instalação é paga pelo condómino (art. 23.º, n.º 1). A energia pode vir da
-instalação da fração ou de um ponto de entrega próprio (CPE autónomo), nos termos que a ERSE
-regulamenta (art. 24.º, n.º 3).
+instalação da fração ou de um ponto de entrega próprio, o sub-CPE, nos termos que a ERSE regulamenta
+(art. 24.º, n.º 3). A skill `sub-cpe` explica quando faz sentido e como se pede.
 
 **O que levar à administração.** Ajuda o utilizador a escrever a comunicação: identificação do
 condómino e do lugar, o equipamento e a potência, o percurso da cablagem pelas partes comuns, quem

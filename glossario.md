@@ -24,6 +24,12 @@ que confundem papéis diferentes.
 | condómino | condômino | Dono de uma fração num prédio em propriedade horizontal. |
 | administração do condomínio | síndico | Quem gere as partes comuns do prédio e recebe a comunicação de instalação. |
 | CPE | código do contador | Código de ponto de entrega: identifica a instalação elétrica junto da rede. |
+| sub-CPE | subcontador; contador secundário; CPE secundário; CPE interno | Ponto de entrega interno com código próprio, dentro de uma instalação já ligada à rede, para separar o consumo de um ponto de carregamento. Na lei, "ponto de entrega interno" (DL 93/2025, art. 24.º, n.º 3). |
+| ponto de entrega interno | ponto de entrega secundário; sub-PE | Ponto de medição e de fornecimento autónomo no interior de uma instalação de consumo não exclusiva para a mobilidade elétrica (Regulamento n.º 7/2026, art. 4.º). |
+| ponto de medição interno | submedidor; medidor interno | Contador instalado no ponto de entrega interno, para apurar os consumos desse ponto. |
+| CPE virtual | CPE de mobilidade; CPE agregador | Código que o ORD usa para agregar os consumos de mobilidade elétrica no modelo da EGME. Não tem contador nem contrato próprio. |
+| ponto de medição virtual | contador virtual | Ponto de medição apurado por diferença entre o contador do ponto de ligação à rede e os contadores internos da instalação. |
+| modelo acordado | modelo de repasse; repasse privado | Forma de separar consumos sem contrato de eletricidade próprio: o consumo fica na instalação principal e as partes acertam entre si o custo (ERSE). |
 | potência contratada | potência instalada | A potência máxima do contrato de eletricidade da casa. Limita a potência a que o carro pode carregar. |
 | autoconsumo | autoprodução | Usar a eletricidade produzida em casa (painéis solares, UPAC) para consumo próprio, incluindo carregar o carro. |
 | abate | sucata; destruição do carro | Cancelamento da matrícula de um veículo, com certificado de destruição. É requisito de alguns apoios. |
