@@ -44,6 +44,10 @@ Pergunta só o que não souberes, uma coisa de cada vez:
   poucos.
 - Recomenda que um eletricista verifique o circuito antes do primeiro uso: um carregamento longo
   puxa muita corrente durante horas. Nada de extensões nem fichas múltiplas.
+- O cabo que vem com o carro para a tomada doméstica é um carregador ocasional: serve para um
+  recurso, não para ser a forma habitual de carregar durante muito tempo. Se a tomada for a solução
+  de todos os dias, recomenda uma tomada reforçada e a instalação revista por um eletricista
+  certificado [UVE, tomada ou wallbox].
 
 ### Wallbox
 
@@ -53,10 +57,18 @@ Pergunta só o que não souberes, uma coisa de cada vez:
 - A potência útil é a menor de três: a da wallbox, a do carregador de bordo do carro em AC, e a que
   a instalação e a potência contratada deixam livre. Não recomendes uma wallbox trifásica a quem tem
   contrato monofásico sem dizer que é preciso mudar o contrato.
+- O carregador de bordo depende do modelo e da versão: vai de 3,7 kW, comum nos híbridos plug-in,
+  até 22 kW [UVE, tomada ou wallbox]. Procura o da versão exata do carro antes de recomendar uma
+  wallbox: uma wallbox mais potente do que o carregador de bordo não carrega mais depressa.
 - Aumentar a potência contratada aumenta o custo fixo da eletricidade. Diz isso, sem inventar
-  valores.
+  valores. Se o ramal da casa ou do prédio tiver potência disponível, basta pedir ao comercializador
+  de eletricidade. Se não tiver, o reforço do ramal é feito pela E-REDES, com obra e um custo que pode
+  ser alto; num prédio, quem o paga é o condómino que o pede, salvo acordo com o condomínio
+  [UVE, tomada ou wallbox] [UVE, casa ou condomínio].
 - A instalação elétrica fica sujeita ao regime das instalações elétricas (DL 96/2017), através do
-  DL 93/2025, art. 25.º, n.º 2: deve ser feita por um técnico certificado.
+  DL 93/2025, art. 25.º, n.º 2: deve ser feita por um técnico certificado. O técnico deve seguir o
+  Guia Técnico das Instalações Elétricas para a Alimentação de Veículos Elétricos da DGEG, 3.ª
+  edição, de 2023 (ligação nas fontes).
 
 ### Carregar com painéis solares
 
@@ -66,6 +78,11 @@ Pergunta só o que não souberes, uma coisa de cada vez:
   conta mais do que os painéis.
 
 ## Num prédio (condomínio)
+
+**Quando não é preciso falar com o condomínio.** Numa moradia, ou numa garagem ligada diretamente
+à instalação elétrica da fração, sem passar por partes comuns, não há nada a comunicar ao
+condomínio. As construções novas de habitação têm de ter essa ligação entre o lugar de garagem e a
+fração desde julho de 2010 [UVE, casa ou condomínio].
 
 Qualquer condómino pode instalar, à sua custa, um posto de carregamento no seu lugar de
 estacionamento, desde que o lugar cumpra os requisitos técnicos definidos em portaria (DL 93/2025,
@@ -89,7 +106,8 @@ a data da instalação (art. 23.º, n.º 2).
 **Prazos e forma da decisão** (art. 23.º, n.ºs 4 e 5):
 
 - A decisão é tomada **no prazo máximo de 30 dias** após a comunicação e, se for da administração
-  do condomínio, precisa de maioria simples do valor total do prédio.
+  do condomínio, precisa de maioria simples do valor total do prédio. Isto é a maioria da
+  permilagem, não a maioria dos votos dos presentes na assembleia [UVE, casa ou condomínio].
 - Fica em ata, é comunicada por escrito aos condóminos ausentes **no prazo de 15 dias** e, se for
   negativa, tem de ser fundamentada.
 - **Sem oposição fundamentada no prazo, o condómino pode instalar.** O direito de instalar vem do
@@ -109,7 +127,19 @@ regulamenta (art. 24.º, n.º 3).
 
 **O que levar à administração.** Ajuda o utilizador a escrever a comunicação: identificação do
 condómino e do lugar, o equipamento e a potência, o percurso da cablagem pelas partes comuns, quem
-instala (técnico certificado) e a data prevista, a pelo menos 30 dias.
+instala (técnico certificado) e a data prevista, a pelo menos 30 dias. A UVE publica uma minuta para
+esta comunicação (ligação nas fontes): sugere-a a quem prefira partir de um modelo.
+
+**Antes de enviar** [UVE, casa ou condomínio]:
+
+- Sugere uma visita técnica de um eletricista certificado ou de um instalador de postos antes de
+  escolher o equipamento. Uma proposta viável à partida evita uma recusa e ter de recomeçar o
+  processo.
+- Quanto mais detalhe tiver a comunicação, melhor. Muitos condóminos não conhecem os carros
+  elétricos e têm receios que uma instalação bem feita não justifica; uma descrição clara da
+  instalação responde a esses receios antes de chegarem à assembleia.
+- Se o condomínio recusar e o utilizador quiser contestar, sugere apoio jurídico. A UVE dá apoio
+  jurídico aos seus associados nestes casos.
 
 ## Ligado à MOBI.E ou não
 
@@ -120,6 +150,19 @@ instala (técnico certificado) e a data prevista, a pelo menos 30 dias.
 - **Integrado na MOBI.E**: o carregamento passa pela plataforma, sujeito à tarifa da EGME fixada
   pela ERSE, que deve vir discriminada na fatura se for repercutida (art. 44.º, n.º 4).
 - Alguns apoios para postos em condomínio exigem a ligação à MOBI.E. Vê a skill `incentivos`.
+
+Como funciona uma wallbox integrada na MOBI.E, no período transitório [UVE, tomada ou wallbox]:
+
+- Inicia-se o carregamento com um cartão ou app de um CEME, como num posto público. O dono não paga
+  tarifa de OPC, porque o posto é dele: paga a energia ao preço do cartão que usar. Com um cartão de
+  frota, a fatura vai para a empresa.
+- O consumo da wallbox fica separado do resto da casa ou do prédio: cada um recebe a sua conta. É o
+  que torna esta opção útil num lugar ligado ao quadro dos serviços comuns.
+- Só carrega com cartão, e pode limitar-se a cartões escolhidos pelo dono. Uma tomada não faz essa
+  distinção.
+- O período transitório dos CEME acaba a 31-12-2027 (skill `regime-2010`). Não prometas como
+  funcionará uma wallbox integrada depois dessa data: a regulamentação do novo regime ainda não o
+  diz.
 
 ## Quanto custa
 
@@ -138,3 +181,16 @@ Para apoios à compra de um posto (por exemplo em condomínio) ou do carro, usa 
   https://diariodarepublica.pt/dr/detalhe/decreto-lei/93-2025-928937303
 - Decreto-Lei n.º 155/2026, de 31 de julho (prorroga o período transitório até 31-12-2027):
   https://files.diariodarepublica.pt/1s/2026/07/14700/0003200033.pdf
+- DGEG, Guia Técnico das Instalações Elétricas para a Alimentação de Veículos Elétricos, 3.ª edição
+  (2023-09-14): https://www.dgeg.gov.pt/media/5adbxzxo/guia-ve-ed-3-2023.pdf
+- [UVE, casa ou condomínio] UVE, "Como instalar um Ponto de Carregamento para Veículo Elétrico em
+  casa ou no Condomínio" (7-11-2025), verificado a 2026-11-04:
+  https://www.uve.pt/page/como-instalar-pcve-casa-ou-condominio/
+- UVE, minuta da comunicação ao condomínio:
+  https://www.uve.pt/page/wp-content/uploads/2025/11/2025_Minuta_ponto_de_carga.docx
+- [UVE, tomada ou wallbox] UVE, "Tomada vs Wallbox" (10-11-2023), verificado a 2026-11-04:
+  https://www.uve.pt/page/tomada-vs-wallbox/
+
+O que vem da UVE – Associação de Utilizadores de Veículos Elétricos está assinalado com [UVE, …] e
+foi reescrito, com autorização da UVE (ver `docs/fontes/uve.md` no Voltaria). Cita a UVE quando usares
+esses pontos.

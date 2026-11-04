@@ -266,6 +266,258 @@
       "checkedAt": "2026-11-04",
       "validFrom": null,
       "validTo": null
+    },
+    {
+      "id": "mun-agueda-estacionamento",
+      "kind": "municipal",
+      "municipality": "Águeda",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Águeda: estacionamento gratuito para carros elétricos. Não é preciso dístico municipal.",
+        "en": "Águeda: free parking for electric cars. No municipal permit needed."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.cm-agueda.pt/cmagueda/uploads/writer_file/document/1937/codigo_regulamentar_vf.pdf",
+        "name": "Câmara Municipal de Águeda, Código Regulamentar"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-almada-estacionamento",
+      "kind": "municipal",
+      "municipality": "Almada",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Almada: estacionamento gratuito para carros elétricos, com o Dístico Verde municipal, que é gratuito e se pede à WeMob.",
+        "en": "Almada: free parking for electric cars with the municipal Green Permit (Dístico Verde), which is free and issued by WeMob."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://wemob.pt/distico_verde/",
+        "name": "WeMob Almada, Dístico Verde"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-beja-estacionamento",
+      "kind": "municipal",
+      "municipality": "Beja",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Beja: isenção para carros 100 % elétricos só nos parques subterrâneos da Av. Miguel Fernandes e da Casa da Cultura, com pedido de assinatura (avença) e se houver lugares. Não é preciso dístico municipal.",
+        "en": "Beja: fully electric cars are exempt only in the underground car parks of Av. Miguel Fernandes and Casa da Cultura, by applying for a subscription, subject to availability. No municipal permit needed."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://cm-beja.pt/pt/menu/633/mobilidade-eletrica.aspx",
+        "name": "Câmara Municipal de Beja, Mobilidade elétrica"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-guimaraes-estacionamento",
+      "kind": "municipal",
+      "municipality": "Guimarães",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Guimarães: carros 100 % elétricos não pagam nas zonas de estacionamento de duração limitada (ZEDL), com dístico municipal emitido pela Câmara, a 20 € por ano.",
+        "en": "Guimarães: fully electric cars park free in the limited-duration parking zones (ZEDL) with a municipal permit issued by the council, €20 a year."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.guimaraesvisivel.pt/noticia-16/guimaraes-mantem-isencao-de-pagamento-nos-parquimetros-para-veiculos-100-eletricos",
+        "name": "Guimarães Visível, Guimarães mantém isenção de pagamento nos parquímetros para veículos 100 % elétricos"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-lisboa-estacionamento",
+      "kind": "municipal",
+      "municipality": "Lisboa",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Lisboa: estacionamento gratuito na via pública para carros elétricos com o Dístico Verde da EMEL, a 12 € por ano. Qualquer pessoa o pode pedir, mesmo sem morar em Lisboa.",
+        "en": "Lisbon: free on-street parking for electric cars with EMEL's Green Permit (Dístico Verde), €12 a year. Anyone can apply, even non-residents."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.emel.pt/pt/disticos/estacionamento-na-via-publica/distico-verde/",
+        "name": "EMEL, Dístico Verde"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-loures-estacionamento",
+      "kind": "municipal",
+      "municipality": "Loures",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Loures: estacionamento gratuito para carros elétricos com o Dístico Verde da Loures Parque, a 6 € por ano. Qualquer pessoa o pode pedir, mesmo sem morar em Loures.",
+        "en": "Loures: free parking for electric cars with Loures Parque's Green Permit (Dístico Verde), €6 a year. Anyone can apply, even non-residents."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.louresparque.pt/pt/comunicacao/2022/06/23/distico-verde-27-de-junho-de-2022",
+        "name": "Loures Parque, Dístico Verde"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-mirandela-estacionamento",
+      "kind": "municipal",
+      "municipality": "Mirandela",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Mirandela: estacionamento gratuito para carros elétricos com o dístico identificativo de veículo elétrico emitido pelo IMT. A Lei n.º 19/2024 tirou ao IMT a emissão do dístico, mas os já emitidos continuam válidos.",
+        "en": "Mirandela: free parking for electric cars with the electric-vehicle sticker issued by IMT. Law 19/2024 removed IMT's power to issue the sticker, but stickers already issued remain valid."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.cm-mirandela.pt/cmmirandela/uploads/document/file/4583/regulamento_de_estacionamento_de_duracao_limitada_do_municipio_de_mirandela.pdf",
+        "name": "Município de Mirandela, Regulamento de Estacionamento de Duração Limitada"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-povoa-de-varzim-estacionamento",
+      "kind": "municipal",
+      "municipality": "Póvoa de Varzim",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Póvoa de Varzim: estacionamento gratuito para carros elétricos desde julho de 2019, por 10 anos, para residentes e não residentes.",
+        "en": "Póvoa de Varzim: free parking for electric cars since July 2019, for 10 years, for residents and non-residents."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.cm-pvarzim.pt/municipe/regulamentos-e-requerimentos-municipais/regulamentos-municipais/regulamento-municipal-de-transito-e-estacionamento-2/regulamento-municipal-de-transito-e-estacionamento/",
+        "name": "Município da Póvoa de Varzim, Regulamento Municipal de Trânsito e Estacionamento"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-ribeira-brava-estacionamento",
+      "kind": "municipal",
+      "municipality": "Ribeira Brava",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Ribeira Brava: isenção só para ligeiros de passageiros 100 % elétricos. Não é preciso dístico municipal.",
+        "en": "Ribeira Brava: exemption only for fully electric passenger cars. No municipal permit needed."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.uve.pt/page/wp-content/uploads/2018/09/regulamento_municipal_de_zonas_de_estacionamento_de_dura_o_limitada-1.pdf",
+        "name": "Câmara Municipal da Ribeira Brava, Regulamento Municipal de Zonas de Estacionamento de Duração Limitada (cópia no site da UVE)"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-setubal-estacionamento",
+      "kind": "municipal",
+      "municipality": "Setúbal",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Setúbal: isenção só para ligeiros de passageiros 100 % elétricos. Não é preciso dístico municipal.",
+        "en": "Setúbal: exemption only for fully electric passenger cars. No municipal permit needed."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.mun-setubal.pt/wp-content/uploads/2024/05/JornalDeliberacoes_8-2024.pdf",
+        "name": "Município de Setúbal, Jornal de Deliberações n.º 8/2024"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-funchal-estacionamento",
+      "kind": "municipal",
+      "municipality": "Funchal",
+      "benefit": "desconto",
+      "text": {
+        "pt": "Funchal: os carros 100 % elétricos deixaram de estar isentos. Paga-se o estacionamento todo e a Câmara devolve 50 % em crédito para estacionamento. Só para pessoas singulares, com o carro registado na Câmara e um título identificativo visível no para-brisas.",
+        "en": "Funchal: fully electric cars are no longer exempt. Drivers pay in full and the council refunds 50% as parking credit. Individuals only, with the car registered with the council and an identification permit shown on the windscreen."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30006155/veiculos-eletricos-deixam-de-ter-isencao-de-pagamento-no-estacionamento.html",
+        "name": "Jornal da Madeira, Veículos elétricos deixam de ter isenção de pagamento no estacionamento (30-9-2026; não é fonte oficial)"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-porto-estacionamento",
+      "kind": "municipal",
+      "municipality": "Porto",
+      "benefit": "desconto",
+      "text": {
+        "pt": "Porto: 15 % de desconto na avença mensal dos parques de estacionamento municipais, para carros 100 % elétricos.",
+        "en": "Porto: 15% off the monthly subscription in municipal car parks, for fully electric cars."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/edital-extrato/826-2021-167846618",
+        "name": "Edital n.º 826/2021, Diário da República"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
     }
   ]
 }

@@ -63,6 +63,10 @@ como apresentar e em que idioma.
   O histórico do Fundo Ambiental cobre 2019 a 2025/2026, sempre a partir do aviso ou despacho
   oficial.
 - Fontes dos incentivos: só oficiais (Fundo Ambiental, AT, Diário da República).
+- **Benefícios municipais (decidido a 2026-11-04):** entradas `kind: "municipal"` em
+  `incentives.json`, com `municipality`, `benefit` (`isenção` ou `desconto`) e `official{url,name}`,
+  a ligação da câmara. A fonte (`source`) é a lista de estacionamento da UVE, a única exceção à regra
+  das fontes oficiais: nenhuma fonte oficial junta os municípios.
 - Índices de terceiros (por exemplo a lista de legislação da UVE) servem para encontrar diplomas,
   nunca como fonte: cada facto aponta para o texto oficial. A lista da UVE vai até 2020 e boa parte
   foi revogada pelo DL 93/2025.
@@ -75,6 +79,11 @@ como apresentar e em que idioma.
   `source{url,name}` + `checkedAt`.
 - Alimentam as **skills por tema**, não há uma skill por FAQ. A origem fica em `source`.
 - Para usar texto tal e qual, é preciso autorização escrita do autor, registada no repo.
+- **UVE (2026-11-04):** autorizou por escrito o uso com crédito; registo e inventário em
+  `docs/fontes/uve.md`. Continuamos a reescrever, porque a autorização não cobre relicenciar o texto
+  em CC-BY-4.0. Do site da UVE saíram as skills `carregamento-publico` e `baterias`, pontos novos
+  em `carregar-em-casa` e `incentivos`, termos do glossário e os factos `municipal`. Cada ponto leva
+  a marca `[UVE, …]`.
 - O conteúdo é redigido pelo Agente a partir das fontes, com ligação em cada facto, e
   revisto pelos CODEOWNERS num PR.
 - **Cron mensal**: propõe as alterações por **PR**, e o merge é sempre manual. O `checkedAt` só

@@ -15,7 +15,7 @@ que confundem papéis diferentes.
 | wallbox | carregador de parede | Posto de carregamento de parede, para casa ou garagem. |
 | OPC | CPO; operador da rede | Operador de pontos de carregamento: gere e opera postos e vende o serviço de carregamento ao condutor. |
 | CEME | comercializador de mobilidade | Comercializador de eletricidade para a mobilidade elétrica: vende a energia na rede MOBI.E através de um cartão ou app. É uma figura do regime antigo, que se mantém até 31-12-2027 (DL 155/2026). |
-| eMSP | MSP; fornecedor de cartão | Prestador de serviços de mobilidade: vende carregamentos ao condutor, por cartão, app ou subscrição, em postos de vários OPC. Na lei, "prestador de serviços de mobilidade" (DL 93/2025, art. 2.º, n). |
+| eMSP | MSP; PSME; fornecedor de cartão | Prestador de serviços de mobilidade: vende carregamentos ao condutor, por cartão, app ou subscrição, em postos de vários OPC. Na lei, "prestador de serviços de mobilidade" (DL 93/2025, art. 2.º, n). |
 | DPC | dono do posto; proprietário do carregador | Detentor de ponto de carregamento: quem tem um posto que não é acessível ao público (casa, condomínio, empresa). Não é um OPC (DL 93/2025, art. 21.º, n.º 1). |
 | carregamento ad hoc | carregamento avulso; pagamento avulso | Carregar sem registo nem contrato, pagando só aquele carregamento (DL 93/2025, art. 2.º, c). |
 | MOBI.E | Mobie; MobiE; Mobi-E | A rede pública de mobilidade elétrica e a sua entidade gestora (EGME). |
@@ -30,3 +30,11 @@ que confundem papéis diferentes.
 | kilowatt (kW) | quilowatt | Unidade de potência. |
 | kilowatt-hora (kWh) | quilowatt-hora | Unidade de energia: o que a bateria guarda e o que se paga. |
 | Fundo Ambiental | Fundo do Ambiente | O fundo público que paga os apoios à compra de veículos e postos de carregamento. |
+| posto normal | posto lento | Posto de carregamento até 22 kW, em corrente alterna (AC). A UVE chama-lhe PCN. |
+| posto rápido | estação de carga rápida | Posto de carregamento acima de 22 kW, em corrente contínua (DC), com o cabo preso ao posto. A UVE chama-lhe PCR. |
+| carregador de bordo | OBC; carregador interno | Peça do carro que converte a corrente alterna para a bateria. Limita a potência de carregamento em AC: de 3,7 kW a 22 kW, conforme o modelo (UVE). |
+| 100 % elétrico | elétrico puro | Carro movido só a motores elétricos e bateria carregada na rede (BEV). É o único tipo abrangido pela maioria dos apoios. |
+| híbrido plug-in | híbrido recarregável | Carro com motor a combustão e motor elétrico, com bateria que se carrega na rede (PHEV). Não é 100 % elétrico. |
+| elétrico com extensor de autonomia | híbrido em série | Carro movido só a motor elétrico, com um pequeno motor a combustão que só serve de gerador para a bateria (EREV, REx). |
+| TAR | tarifa de rede | Tarifas de acesso às redes: o custo de usar a rede elétrica até ao ponto de consumo. Fixadas todos os anos pela ERSE. Na MOBI.E há uma TAR própria da mobilidade elétrica. |
+| SoH | state of health | Estado de saúde da bateria: a capacidade que mantém face à original, em percentagem. É o indicador principal ao comprar um carro usado. |

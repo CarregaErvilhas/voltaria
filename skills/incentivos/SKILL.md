@@ -1,6 +1,6 @@
 ---
 name: incentivos
-description: Responde a perguntas sobre apoios e benefícios fiscais para veículos elétricos e postos de carregamento em Portugal (Fundo Ambiental, IUC, IVA, tributação autónoma), para particulares e empresas. Usa quando o utilizador pergunta se há apoio para comprar um carro, mota, bicicleta ou wallbox elétrica, ou que impostos poupa.
+description: Responde a perguntas sobre apoios e benefícios fiscais para veículos elétricos e postos de carregamento em Portugal (Fundo Ambiental, IUC, IVA, tributação autónoma, estacionamento municipal), para particulares e empresas. Usa quando o utilizador pergunta se há apoio para comprar um carro, mota, bicicleta ou wallbox elétrica, que impostos poupa, ou se estaciona de graça na sua cidade.
 ---
 
 # Incentivos
@@ -35,7 +35,8 @@ para:
 Compara sempre edições pela mesma tipologia (carro para pessoa singular com carro para pessoa
 singular) e diz que as regras de cada edição são as do respetivo aviso ou despacho.
 - Fontes válidas: só oficiais (Fundo Ambiental, Autoridade Tributária, Diário da República). Não
-  uses blogues, marcas ou stands como fonte de um valor.
+  uses blogues, marcas ou stands como fonte de um valor. A única exceção são os benefícios
+  municipais (`kind: "municipal"`), que vêm da lista da UVE, com a ligação da câmara em `official`.
 - Não dês aconselhamento fiscal. Para empresas e trabalhadores independentes, explica a regra e
   sugere confirmar com o contabilista.
 
@@ -75,10 +76,28 @@ Pergunta só o que for preciso para o apoio em causa:
   tributação autónoma se o custo de aquisição passar o limite da portaria.
 - Os valores e o limite da portaria vêm dos factos. Não os dês de memória.
 
-### Câmaras municipais
+### Câmaras municipais: estacionamento
 
-- Algumas câmaras têm benefícios próprios (por exemplo estacionamento). O Voltaria ainda não os
-  cobre: manda o utilizador ver o site da câmara.
+- Algumas câmaras isentam os carros elétricos do pagamento de estacionamento, ou dão desconto. Os
+  factos com `kind: "municipal"` dizem quais, com as condições: se é preciso dístico municipal e
+  quanto custa, se vale só para 100 % elétricos ou só para ligeiros de passageiros, se vale só em
+  certos parques.
+- Estes factos vêm da lista compilada pela UVE, não da câmara. Diz "segundo a lista da UVE,
+  verificada a <checkedAt>", dá a ligação da câmara (`official`) e recomenda confirmar lá antes de
+  estacionar sem pagar.
+- A lista não é exaustiva. Se o município do utilizador não estiver nos factos, não digas que não
+  há benefício: manda ver o site da câmara ou da empresa municipal de estacionamento.
+- Algumas cidades têm zonas de acesso condicionado de onde os 100 % elétricos estão isentos
+  [UVE, vantagens]. O Voltaria não as cobre: manda ver o site da câmara.
+
+### Dístico de veículo elétrico do IMT
+
+- Já não é obrigatório. A Lei n.º 19/2024, de 5 de fevereiro, acabou com essa obrigação e tirou ao
+  IMT a competência para emitir o dístico. Não digas ao utilizador para o pedir ao IMT. A história
+  do dístico está na skill `regime-2010`.
+- Os dísticos já emitidos continuam válidos. Há municípios que ainda o pedem para a isenção de
+  estacionamento, e outros que exigem um dístico municipal próprio: os factos dizem qual
+  [UVE, dístico IMT].
 
 ## Como responder
 
@@ -92,3 +111,17 @@ Pergunta só o que for preciso para o apoio em causa:
 - Fundo Ambiental: https://www.fundoambiental.pt/
 - Portal das Finanças, códigos tributários:
   https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/
+- Lei n.º 19/2024, de 5 de fevereiro (fim da obrigatoriedade do dístico identificativo):
+  https://data.dre.pt/eli/lei/19/2024/02/05/p/dre/pt/html
+
+Da UVE – Associação de Utilizadores de Veículos Elétricos, verificado a 2026-11-04:
+
+- Lista dos benefícios municipais (fonte dos factos `municipal`): "Municípios com isenção/desconto
+  no estacionamento para Veículos Elétricos":
+  https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/
+- [UVE, dístico IMT] "Dístico Identificativo de Veículo Elétrico do IMT":
+  https://www.uve.pt/page/distico-identificativo-ve-imt/
+- [UVE, vantagens] "Vantagens de um Veículo Elétrico": https://www.uve.pt/page/vantagens-ve/
+
+O que vem da UVE está assinalado com [UVE, …] ou tem a UVE em `source`, e foi reescrito, com
+autorização da UVE (ver `docs/fontes/uve.md` no Voltaria). Cita a UVE quando usares esses pontos.

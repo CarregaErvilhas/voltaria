@@ -29,7 +29,13 @@ As FAQ e os guias de outros (UVE, MOBI.E, ...) são **fontes, não texto**. Escr
 indica a origem em `source{url,name}` com `checkedAt`. Para copiar texto tal e qual, é preciso
 autorização escrita do autor, registada no repo.
 
-Fontes dos incentivos: só oficiais (Fundo Ambiental, AT, Diário da República).
+As autorizações ficam em `docs/fontes/<autor>.md`, com o que veio de cada página e para onde foi. A
+UVE autorizou o uso do seu conteúdo com crédito ([docs/fontes/uve.md](docs/fontes/uve.md)). Mesmo
+assim reescrevemos: a autorização não cobre pôr o texto da UVE sob a licença do Voltaria. Os pontos
+que vêm da UVE levam a marca `[UVE, …]` na skill.
+
+Fontes dos incentivos: só oficiais (Fundo Ambiental, AT, Diário da República). Exceção: os benefícios
+municipais de estacionamento vêm da lista da UVE, com a ligação da câmara em `official`.
 
 ## Revisão
 
