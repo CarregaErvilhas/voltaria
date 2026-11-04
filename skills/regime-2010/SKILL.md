@@ -18,6 +18,9 @@ do Voltaria.
 - Se o utilizador citar uma regra antiga como se estivesse em vigor (por exemplo, os 60 dias do
   condomínio), corrige com a regra atual e explica de onde vinha a antiga.
 - Não dês parecer jurídico sobre casos concretos. Explica o que cada regime dizia.
+- Esta skill é só o regime anterior e a transição. Para carregar num posto público hoje (como pagar,
+  ad hoc, cartões, preços), usa a skill `carregamento-publico`; para casa e condomínio,
+  `carregar-em-casa`.
 
 ## Como funcionava
 
@@ -73,6 +76,22 @@ No DL 39/2010 (art. 29.º):
 O que mudou no DL 93/2025 (art. 23.º): a decisão passou a **30 dias**, por **maioria simples** do
 valor total do prédio; caiu a "linha arquitetónica" e entraram a circulação nas vias comuns e as
 acessibilidades. Para os passos de hoje, usa a skill `carregar-em-casa`.
+
+## Edifícios novos: preparação para carregar
+
+No DL 39/2010 (art. 28.º, na redação do DL 90/2014, e art. 52.º):
+
+- A construção de edifícios em propriedade horizontal, ou de outros imóveis com estacionamento,
+  tinha de incluir uma **infraestrutura elétrica adequada para o carregamento**, que não inclui os
+  postos nem as tomadas, e uma potência mínima a fixar por portaria (n.ºs 1 e 2).
+- Nos edifícios de habitação, essa infraestrutura podia não estar toda executada à entrada em
+  exploração, mas tinha de estar **preparada para instalar um posto de carregamento normal ou uma
+  tomada em cada lugar** do estacionamento (n.º 3).
+- Aplicava-se aos licenciamentos de construção ou reconstrução iniciados **a partir de 01-07-2010**
+  (art. 52.º).
+
+Hoje vale o DL 93/2025, art. 22.º: mantém a infraestrutura elétrica adequada e a potência mínima por
+portaria, mas já não tem a regra de preparar cada lugar dos edifícios de habitação.
 
 ## O que ainda se aplica: período transitório até 31-12-2027
 
