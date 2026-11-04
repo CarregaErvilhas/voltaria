@@ -43,6 +43,9 @@ como apresentar e em que idioma.
 - v1: **`carregar-em-casa`** (wallbox, DPC, condomínio, solar, o que perguntar ao utilizador) e
   **`incentivos`** (cita sempre fonte + data e encaminha para a página oficial). Mais temas a seguir,
   por exemplo `carregamento-publico`.
+- **`regime-2010`**: o regime revogado (DL 39/2010, na redação do DL 90/2014), como funcionava o
+  modelo CEME/OPC/EGME, o período transitório até 31-12-2027 e o que mudou com o DL 93/2025. Serve
+  para referências ao modelo anterior e a factos anteriores a 19-08-2025.
 - **Tudo em pt-PT**, incluindo o SKILL.md, com os termos que o público usa, mesmo quando são em
   inglês (eMSP, kilowatt em vez de quilowatt). Os agentes traduzem para o idioma do utilizador.
 - **`glossario.md`** na raiz: o termo a usar, os sinónimos a evitar e uma definição curta. Um teste

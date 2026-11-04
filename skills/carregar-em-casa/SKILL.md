@@ -100,6 +100,9 @@ a data da instalação (art. 23.º, n.º 2).
   de receção ou email com confirmação): é ela que conta os 30 dias. Se o condomínio contestar
   depois, sugere apoio jurídico.
 
+Se o utilizador falar em 60 dias, dois terços ou "linha arquitetónica", são regras do regime anterior
+(DL 39/2010, art. 29.º). Corrige com as de hoje; a skill `regime-2010` explica as antigas.
+
 **Quem paga.** A instalação é paga pelo condómino (art. 23.º, n.º 1). A energia pode vir da
 instalação da fração ou de um ponto de entrega próprio (CPE autónomo), nos termos que a ERSE
 regulamenta (art. 24.º, n.º 3).

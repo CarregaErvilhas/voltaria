@@ -19,7 +19,8 @@ que confundem papéis diferentes.
 | DPC | dono do posto; proprietário do carregador | Detentor de ponto de carregamento: quem tem um posto que não é acessível ao público (casa, condomínio, empresa). Não é um OPC (DL 93/2025, art. 21.º, n.º 1). |
 | carregamento ad hoc | carregamento avulso; pagamento avulso | Carregar sem registo nem contrato, pagando só aquele carregamento (DL 93/2025, art. 2.º, c). |
 | MOBI.E | Mobie; MobiE; Mobi-E | A rede pública de mobilidade elétrica e a sua entidade gestora (EGME). |
-| EGME | entidade gestora da rede | Entidade gestora da mobilidade elétrica. Até 31-12-2027 gere a plataforma da MOBI.E e cobra uma tarifa fixada pela ERSE (DL 93/2025, art. 44.º). |
+| EGME | gestor da rede | Entidade gestora da mobilidade elétrica. Até 31-12-2027 gere a plataforma da MOBI.E e cobra uma tarifa fixada pela ERSE (DL 93/2025, art. 44.º). |
+| dístico | selo verde; autocolante elétrico | Identificação que os veículos elétricos tinham de afixar ao abrigo do DL 39/2010. Deixou de ser obrigatória a 06-02-2024 (Lei n.º 19/2024). |
 | condómino | condômino | Dono de uma fração num prédio em propriedade horizontal. |
 | administração do condomínio | síndico | Quem gere as partes comuns do prédio e recebe a comunicação de instalação. |
 | CPE | código do contador | Código de ponto de entrega: identifica a instalação elétrica junto da rede. |
