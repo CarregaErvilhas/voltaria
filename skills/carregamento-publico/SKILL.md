@@ -45,6 +45,57 @@ Pergunta só o que não souberes, uma coisa de cada vez:
   prioridade nesses postos [UVE, carregar com respeito]. Confirma na app da Tesla se um posto
   concreto aceita outras marcas.
 
+## Fichas e tomadas
+
+### Europa (padrão em Portugal)
+
+- **Tipo 2 (Mennekes)**: ficha AC mais comum em carros e postos europeus, até 43 kW (trifásico). A
+  maioria dos carros europeus usa Tipo 2; em casa e em postos normais costuma ser a única ficha.
+- **CCS (Combined Charging System) Combo 2**: a ficha DC padrão na Europa. Combina as fases AC do
+  Tipo 2 com dois pinos DC adicionais. É a ficha dominante nos postos rápidos europeus.
+- **CHAdeMO**: ficha DC japonesa, ainda presente em carros antigos (Nissan Leaf, Mitsubishi) e em
+  alguns postos. Em desuso na Europa: os novos postos e carros já não a incluem. Diz ao
+  utilizador para confirmar se o posto a tem quando o carro for CHAdeMO.
+- **Tomadas CEE industriais (IEC 60309)**: tomadas de corrente alternada usadas em postos
+  públicos lentos, campings e instalações particulares. Cores e amperagens:
+  - **Azul**: monofásica, 230 V, 16 A (3,7 kW) ou 32 A (7,4 kW). Comum em campings e marinas.
+  - **Vermelha**: trifásica, 400 V, 16 A (11 kW) ou 32 A (22 kW). Usada em postos e instalações
+    industriais; dá a potência máxima em AC para carros com carregador trifásico.
+  - **Amarela**: 110 V (rara em Portugal).
+  - É preciso cabo próprio com a ficha CEE de um lado e Tipo 2 do outro; muitos postos não têm
+    cabo preso.
+
+### América do Norte
+
+- O sistema elétrico é diferente: 120 V / 240 V, 60 Hz, e a ficha doméstica (NEMA 5-15) não dá
+  para carregar depressa. Usa-se o **NEMA 14-50** (240 V, 50 A) em casa e em campings.
+- **J1772 (Tipo 1)**: a ficha AC padrão nos EUA/Canadá, monofásica, até 7,7 kW. Incompatível
+  com o Tipo 2 europeu sem adaptador.
+- **CCS1 (Combo 1)**: a ficha DC norte-americana, equivalente ao CCS2 mas com J1772 em vez de
+  Tipo 2. Foi o padrão DC nos EUA até recentemente.
+- **NACS (ficha Tesla)**: a ficha proprietária da Tesla (North American Charging Standard). A
+  Tesla abriu-a e os fabricantes norte-americanos adotaram-na; hoje é o padrão de facto nos EUA
+  em vez da CCS1. Os Superchargers norte-americanos usam NACS. Carros com CCS1 precisam de
+  adaptador.
+- **CHAdeMO** também existiu nos EUA (Nissan Leaf) mas está em desuso.
+
+### China
+
+- **GB/T**: o padrão chinês, com ficha AC e DC próprias (não compatíveis com CCS nem Tipo 2).
+  É a ficha predominante na China e em parte da Ásia.
+
+### Japão
+
+- **CHAdeMO** é o padrão histórico japonês para DC. Ainda comum nos carros e postos japoneses.
+  No resto do mundo está em desuso.
+
+### Notas práticas
+
+- Ao viajar, confirma sempre a ficha do posto e do carro; as fichas não são todas compatíveis.
+  Adaptadores existem mas limitam a potência e nem sempre são seguros.
+- Num posto rápido com várias fichas (CCS, CHAdeMO, Tipo 2), usa a DC (CCS ou CHAdeMO) para
+  carregamento rápido; a Tipo 2 carrega em AC, limitado pelo carregador de bordo.
+
 ## Quanto tempo demora
 
 Não há uma resposta igual para todos. Explica do que depende [UVE, formas de carregamento]:

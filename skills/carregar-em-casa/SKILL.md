@@ -77,6 +77,45 @@ Pergunta só o que não souberes, uma coisa de cada vez:
 - Só compensa se o carro estiver em casa nas horas de sol. Se só estiver à noite, a tarifa de vazio
   conta mais do que os painéis.
 
+## Tomadas e fichas
+
+### Tomada doméstica
+
+- A tomada doméstica habitual em Portugal é a **Schuko (Tipo F)**, 230 V, 16 A. Com o cabo
+  ocasional do carro, dá cerca de 2,3 kW (10 A) a 3,7 kW (16 A), conforme o cabo e o circuito.
+- Não usar extensões nem fichas múltiplas. Um carregamento longo exige um circuito dedicado
+  verificado por eletricista.
+
+### Tomadas CEE industriais (IEC 60309)
+
+Usadas em postos públicos lentos, campings, marinas e instalações particulares. São tomadas
+industriais de encaixe rápido, com pinos em arco e anel de borracha. Cores e amperagens:
+
+- **Azul**: monofásica, 230 V, 16 A (3,7 kW) ou 32 A (7,4 kW). Comum em campings e marinas.
+- **Vermelha**: trifásica, 400 V, 16 A (11 kW) ou 32 A (22 kW). Usada em postos e instalações
+  industriais; dá a potência máxima em AC a carros com carregador trifásico.
+- **Amarela**: 110 V (rara em Portugal).
+
+Para carregar num posto com tomada CEE é preciso um cabo próprio, com a ficha CEE de um lado e
+Tipo 2 (ou Tipo 1, nos EUA) do outro. Muitos postos não têm cabo preso. O cabo define a potência
+máxima: um cabo de 16 A limita a 3,7 kW mesmo numa tomada de 32 A.
+
+### Ficha do carro (AC)
+
+- **Tipo 2 (Mennekes)**: padrão europeu, monofásico ou trifásico, até 43 kW. É a ficha da
+  maioria dos carros vendidos na Europa.
+- **Tipo 1 (J1772)**: padrão norte-americano, monofásico, até 7,7 kW. Só em carros importados
+  dos EUA/Canadá; precisa de adaptador para postos europeus.
+
+### Fichas DC (carregamento rápido)
+
+- **CCS Combo 2** (Europa) e **CCS Combo 1** (EUA): fichas DC dominantes. O carro e o posto têm
+  de ter a mesma variante.
+- **CHAdeMO**: padrão japonês, em desuso na Europa. Ainda em carros antigos (Nissan Leaf,
+  Mitsubishi).
+- **NACS (ficha Tesla)**: padrão de facto nos EUA, adotado pelos fabricantes norte-americanos.
+- **GB/T**: padrão chinês, incompatível com CCS e Tipo 2.
+
 ## Num prédio (condomínio)
 
 **Quando não é preciso falar com o condomínio.** Numa moradia, ou numa garagem ligada diretamente
