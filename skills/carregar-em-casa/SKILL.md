@@ -70,6 +70,24 @@ Pergunta só o que não souberes, uma coisa de cada vez:
   Guia Técnico das Instalações Elétricas para a Alimentação de Veículos Elétricos da DGEG, 3.ª
   edição, de 2023 (ligação nas fontes).
 
+### EVSE móvel vs. wallbox
+
+- **EVSE móvel (carregador portátil)**: um cabo com eletrónica de segurança que liga uma tomada
+  (doméstica Schuko ou industrial CEE) ao carro. Não é uma tomada "burra": tem proteção contra
+  sobrecorrente, deteção de fuga de corrente e controlo do arranque. É o que vem com muitos carros
+  (cabo ocasional). Limita-se à potência da tomada (até 3,7 kW numa Schuko, até 22 kW numa CEE
+  vermelha de 32 A). É prático para viagens, casas de férias ou quando não há wallbox, mas não é
+  pensado para uso diário prolongado.
+- **Wallbox (EVSE fixo)**: unidade fixa à parede, ligada a um circuito dedicado. Dá mais potência
+  (até ao limite do carregador de bordo do carro e da instalação), tem balanceamento dinâmico,
+  programação de horários, medição e, em muitos modelos, modo solar. É a solução recomendada para
+  carregamento habitual em casa.
+- Diferença prática: o EVSE móvel depende da tomada existente e da sua proteção; a wallbox tem
+  circuito próprio e proteções dimensionadas. Para uso diário, prefere-se wallbox; para ocasional ou
+  em viagem, o EVSE móvel serve.
+- Ambos são EVSE (Electric Vehicle Supply Equipment): o que carrega a bateria é o carregador de
+  bordo do carro, não a wallbox nem o cabo.
+
 ### Carregar com painéis solares
 
 - Com autoconsumo, o carro pode carregar com o excedente solar durante o dia. Há wallboxes com modo
