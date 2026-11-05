@@ -15,8 +15,10 @@ do Voltaria.
 - Não dês preços de memória. O preço do contador é regulado pela ERSE, é aprovado todos os anos e
   depende do nível de tensão: manda confirmar no operador de rede (ORD). O resto do custo (adaptação
   da instalação, certificação, técnico) é orçamento de cada caso.
-- Diz sempre em que modelo está o posto: sub-CPE, modelo acordado ou posto integrado na MOBI.E. O
-  mesmo local pode ter os três, em postos diferentes.
+- Diz sempre em que modelo está o posto: sub-CPE, modelo acordado ou posto integrado na MOBI.E. Na
+  mesma instalação, o sub-CPE não convive com postos integrados na MOBI.E: criar um ponto de medição
+  interno obriga a desintegrar da plataforma da EGME todos os postos dessa instalação (Regulamento n.º
+  7/2026, art. 101.º, n.º 2).
 - Não prometas prazos além dos da lei. O contador interno tem dois meses (GMLDD, art. 11.º-A, n.º 7);
   a certificação e o contrato com o comercializador correm por fora e dependem do requerente.
 - O sub-CPE é opcional. Nunca o apresentes como obrigatório, nem como passo indispensável para
@@ -26,7 +28,7 @@ do Voltaria.
 
 Um **ponto de entrega interno**: um ponto de medição e de fornecimento dentro de uma instalação que já
 está ligada à rede, com contador próprio, código próprio e contrato de eletricidade próprio (DL
-93/2025, art. 24.º, n.º 3; Regulamento n.º 7/2026, art. 4.º, alínea ff)).
+93/2025, art. 24.º, n.º 3; Regulamento n.º 7/2026, art. 4.º, n.º 2, alínea n)).
 
 - **Não é uma segunda ligação.** O sub-CPE fica dentro da instalação existente, a jusante do contador
   dela. A ligação física à rede continua a ser uma só, a do CPE principal.
@@ -47,8 +49,8 @@ meses depois da publicação, em 6 de janeiro de 2026).
 - **Não é um segundo ramal.** Quem quer uma ligação independente da rede pede um CPE novo ao ORD, com
   obra e potência pedida à rede. Isso é outra coisa, mais caro e mais lento.
 - **Não é o CPE virtual.** O CPE virtual é o código que o ORD usa para agregar os consumos de
-  mobilidade elétrica no modelo da EGME (Regulamento n.º 7/2026, art. 4.º, alínea y). Não tem contador
-  nem contrato próprio, e não serve para separar contas.
+  mobilidade elétrica no modelo da EGME (Regulamento n.º 7/2026, art. 4.º, n.º 2, alínea g)). Não
+  tem contador nem contrato próprio, e não serve para separar contas.
 - **Não é um contador da MOBI.E nem de um CEME.** O contador do sub-CPE é o mesmo tipo de equipamento
   que o do ponto de ligação à rede, e os dados dele entram na faturação do setor elétrico.
 - **Não dá mais potência.** O sub-CPE não pode ter um escalão de potência acima do da instalação onde
@@ -151,10 +153,13 @@ consumo que fica lá passar a um escalão inferior.
   cumpra as condições técnicas. O que não pode é um contador interno ficar em série com outro.
 - Se o condomínio não quiser mexer no contrato dos serviços comuns, o modelo acordado continua válido,
   e muitas vezes é a solução mais simples. A ERSE diz expressamente que a adesão ao sub-CPE é opcional.
-- Se o posto já está integrado na MOBI.E, o sub-CPE não é o caminho enquanto durar o período
-  transitório: nesse modelo o consumo é faturado pelo CEME do utilizador. Ver a skill `regime-2010`.
+- Se há postos integrados na MOBI.E no prédio, o sub-CPE obriga a desintegrar da plataforma da EGME
+  **todos** os postos da instalação, não só o do requerente (Regulamento n.º 7/2026, art. 101.º, n.º
+  2). Num prédio com vários condóminos na MOBI.E, isto mexe com os outros: avisa o utilizador. No fim
+  do período transitório (31-12-2027), todos os postos passam a desintegrados de qualquer forma (art.
+  101.º, n.º 4, e DL 93/2025, art. 44.º, na redação do DL 155/2026). Ver a skill `regime-2010`.
 
-## Facturação, dados e autoconsumo
+## Faturação, dados e autoconsumo
 
 - **Tarifas de acesso às redes**: aplicam-se ao sub-CPE os mesmos preços que a qualquer ponto de
   entrega, exceto o preço da energia reativa, que não é apurada no ponto interno (Regulamento n.º
@@ -175,6 +180,16 @@ consumo que fica lá passar a um escalão inferior.
   continuam excluídos do autoconsumo (GMLDD, art. 128.º-A).
 - **Cortes**: o sub-CPE depende do CPE principal. Uma interrupção no principal corta também o posto, e
   o sub-CPE não tem potência própria acima da que a ligação principal consegue dar.
+- **Falta de pagamento no sub-CPE**: aplicam-se as regras de interrupção do Regulamento de Relações
+  Comerciais, como em qualquer ponto de entrega. O ORD tem de conseguir cortar o ponto interno, de
+  preferência à distância. As instalações que já existiam quando o regulamento entrou em vigor têm
+  até **12 meses** para se adaptar a isso; a responsabilidade é do titular do sub-CPE. Não dês uma
+  data-limite: o artigo só produz efeitos desde 6-7-2026 e a contagem não é clara; manda confirmar
+  no ORD. Nesse prazo, se o ORD não
+  conseguir cortar o ponto interno por facto imputável ao cliente, pode cortar a **instalação
+  principal**, com o pré-aviso regulamentar. Sem adaptação no prazo, a instalação deixa de poder ter
+  ponto de entrega interno (Regulamento n.º 7/2026, art. 103.º). Num condomínio, diz isto claramente:
+  uma dívida do sub-CPE pode, nesse período, afetar os serviços comuns.
 
 ## Confusões a corrigir
 
@@ -205,13 +220,14 @@ consumo que fica lá passar a um escalão inferior.
   https://data.dre.pt/eli/regulamento/8/2026/01/06/p/dre/pt/html
   https://www.erse.pt/media/wgrn0h3x/reg_8_2026.pdf
 - Regulamento n.º 7/2026, de 6 de janeiro (Regulamento da Mobilidade Elétrica), arts. 4.º, 97.º a
-  100.º, retificado pela Declaração de Retificação n.º 164/2026/2, de 27 de fevereiro:
+  101.º e 103.º, retificado pela Declaração de Retificação n.º 164/2026/2, de 27 de fevereiro:
   https://data.dre.pt/eli/regulamento/7/2026/01/06/p/dre/pt/html
 - Decreto-Lei n.º 96/2017, de 10 de agosto (instalações elétricas de serviço particular alimentadas
   pela RESP — enquadra o contador interno e o ramal):
   https://data.dre.pt/eli/decreto-lei/96/2017/08/10/p/dre/pt/html
-- Portaria n.º 231/2013, de 22 de julho (regras do setor elétrico aplicáveis à mobilidade elétrica,
-  incluindo contagem e leitura):
+- Portaria n.º 231/2013, de 22 de julho (requisitos técnicos dos contadores inteligentes; o contador
+  interno tem de ter requisitos equivalentes aos do contador de ligação à rede, GMLDD, art. 11.º-A,
+  n.º 5):
   https://data.dre.pt/eli/portaria/231/2013/07/22/p/dre/pt/html
 - Portaria n.º 949-A/2006, de 11 de setembro (RTIEBT — regras técnicas das instalações elétricas de
   baixa tensão): https://data.dre.pt/eli/portaria/949-a/2006/09/11/p/dre/pt/html
