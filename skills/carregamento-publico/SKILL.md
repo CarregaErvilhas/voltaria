@@ -206,6 +206,49 @@ numa só integração técnica e contratual.
 - A viabilidade económica depende do custo da energia, das tarifas de potência e dos serviços de
   rede disponíveis localmente. ROI típico de 5-7 anos em hubs co-localizados.
 
+## OCPP e OCPI (protocolos)
+
+### OCPP (Open Charge Point Protocol)
+
+- **O que é**: protocolo aberto de comunicação entre o posto de carregamento (hardware) e o
+  sistema de gestão central (CSMS/backoffice). É a "língua" entre o carregador e o servidor do
+  operador.
+- **Quem mantém**: Open Charge Alliance (OCA).
+- **Versões**: 1.6 (2015, amplamente usado), 2.0.1 (2020, aprovado como IEC 63584 em 2024),
+  2.1 (2025, com suporte a ISO 15118-20 e bidirecional/V2X).
+- **O que faz**: estado do posto, autorização de sessão, valores de medição, firmware, diagnóstico,
+  smart charging (perfis de carga), transações. Sem OCPP, cada fabricante usaria protocolo
+  proprietário e o operador ficaria preso a um fornecedor.
+- **Importância**: é o standard global de facto para ligar carregadores ao backoffice; permite
+  interoperabilidade de hardware, atualizações remotas e gestão de carga.
+
+### OCPI (Open Charge Point Interface)
+
+- **O que é**: protocolo aberto de comunicação entre backends de diferentes redes (CPO ↔ eMSP,
+  ou via hub). É a "língua" entre operadores, não entre posto e servidor.
+- **Quem mantém**: EVRoaming Foundation.
+- **Versões**: 2.1.1, 2.2.1, 2.3.0 (a versão 2.3.0 é compatível com o NAP/AFIR; a 3.0 está
+  em draft).
+- **O que faz**: troca de localizações e disponibilidade em tempo real, tokens de autorização,
+  sessões, CDR (Charge Detail Records) para faturação, tarifas, comandos remotos, smart charging.
+  Permite roaming: um condutor de uma rede usar postos de outra sem novo registo.
+- **Importância**: é a base do roaming peer-to-peer e via hubs; a versão 2.3.0 está alinhada com
+  o AFIR e o NAP europeu.
+
+### Como se relacionam
+
+- **OCPP** é "south-bound" (backoffice ↔ carregador). **OCPI** é "east-west"
+  (backoffice ↔ backoffice). São complementares, não alternativos.
+- Um CPO usa OCPP para gerir os seus postos e OCPI para ligar-se a eMSPs e hubs de roaming.
+- Fluxo típico: um eMSP envia um limite de carga via OCPI ao backoffice do CPO, que o traduz
+  e reencaminha ao carregador via OCPP.
+
+### Fontes
+
+- Open Charge Alliance (openchargealliance.org) — especificações OCPP.
+- EVRoaming Foundation (evroaming.org) — especificações OCPI.
+- OCPI é publicado sob Creative Commons Attribution-NoDerivatives 4.0.
+
 ## Quanto tempo demora
 
 Não há uma resposta igual para todos. Explica do que depende [UVE, formas de carregamento]:
