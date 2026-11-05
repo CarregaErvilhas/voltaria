@@ -134,6 +134,59 @@ máxima: um cabo de 16 A limita a 3,7 kW mesmo numa tomada de 32 A.
 - **NACS (ficha Tesla)**: padrão de facto nos EUA, adotado pelos fabricantes norte-americanos.
 - **GB/T**: padrão chinês, incompatível com CCS e Tipo 2.
 
+## V2L, V2H e V2G (carregamento bidirecional)
+
+### Conceitos
+
+- **V2L (Vehicle-to-Load)**: o carro alimenta aparelhos elétricos através de uma tomada no
+  próprio carro (ou um adaptador). Não precisa de wallbox nem de instalação especial.
+- **V2H (Vehicle-to-Home)**: o carro alimenta a casa. Precisa de wallbox bidirecional e
+  instalação elétrica certificada.
+- **V2G (Vehicle-to-Grid)**: o carro envia energia para a rede pública, com contrato e
+  remuneração. Precisa de carro compatível, wallbox bidirecional, software, contrato de energia,
+  aprovação do operador de rede e contador bidirecional.
+- **V2B (Vehicle-to-Building)**: variante do V2G para edifícios (sem injeção na rede pública).
+
+### Legislação em Portugal
+
+- **DL 93/2025, art. 2.º**: define "carregamento bidirecional" como uma operação de carregamento
+  inteligente em que a direção do fluxo de eletricidade pode ser invertida, permitindo que a
+  eletricidade flua da bateria para o ponto de carregamento (veículo-rede).
+- **Art. 6.º**: os pontos de carregamento instalados ou renovados devem permitir carregamento ad
+  hoc e inteligente nos termos do AFIR; as normas de comunicação que apoiam o carregamento
+  bidirecional são as do Regulamento AFIR.
+- **Regulamento da Mobilidade Elétrica da ERSE (RME)**: regula a atividade dos OPC e eMSP,
+  incluindo medição, leitura e disponibilização de dados de eletricidade. O regime transitório
+  vigora até 31-12-2026.
+- A utilização de carregamento inteligente ou bidirecional para prestação de serviços à rede não
+  carece de regulamentação específica para além da já existente.
+- O carregamento bidirecional está previsto no DL 93/2025, mas a sua implementação depende de
+  veículos compatíveis e de uma norma europeia ainda não consolidada para AC ou DC.
+
+### Protocolos e standards
+
+- **ISO 15118-20**: standard de comunicação entre veículo e EVSE, base para carregamento
+  inteligente e bidirecional. Suporta AC_BPT (bidirecional em AC) e DC_BPT (bidirecional em DC),
+  Plug & Charge (autenticação por certificado) e controlo dinâmico.
+- **ISO 15118-2**: primeira geração, carregamento unidirecional.
+- **OCPP (Open Charge Point Protocol)**: protocolo entre posto e backoffice; versões recentes
+  suportam funcionalidades de smart charging.
+- **IEC 61851**: standard para sistemas de carregamento condutivo.
+- **IEC 62196**: standard para fichas e tomadas (Tipo 1, Tipo 2, CCS).
+- **AFIR (Regulamento (UE) 2023/1804)**: impõe carregamento ad hoc e inteligente em postos
+  públicos; as normas de comunicação para bidirecional são as previstas no AFIR.
+- **Redes de distribuição**: na UE, a interligação e certificação seguem a norma EN 50549 e os
+  códigos de rede (RfG, DCC), ainda em consolidação para V2G.
+
+### Estado atual
+
+- Menos de 10 % dos modelos de VE em produção suportavam bidirecional em 2026. A maioria dos
+  carros novos ainda é unidirecional.
+- A interoperabilidade é o principal obstáculo: não existe ainda uma norma europeia consolidada
+  para bidirecional em AC ou DC.
+- Em Portugal, o DL 93/2025 abre a porta ao V2H (via autoconsumo), mas o V2G comercial ainda é
+  residual.
+
 ## Num prédio (condomínio)
 
 **Quando não é preciso falar com o condomínio.** Numa moradia, ou numa garagem ligada diretamente
