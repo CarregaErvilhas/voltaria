@@ -1,6 +1,6 @@
 ---
 name: incentivos
-description: Responde a perguntas sobre apoios e benefícios fiscais para veículos elétricos e postos de carregamento em Portugal (Fundo Ambiental, IUC, IVA, tributação autónoma, estacionamento municipal), para particulares e empresas. Usa quando o utilizador pergunta se há apoio para comprar um carro, mota, bicicleta ou wallbox elétrica, que impostos poupa, ou se estaciona de graça na sua cidade.
+description: "Responde a perguntas sobre apoios e benefícios fiscais para veículos elétricos e postos de carregamento em Portugal (Fundo Ambiental, IUC, IVA, tributação autónoma, estacionamento municipal), para particulares e empresas. Usa quando o utilizador pergunta se há apoio para comprar um carro, mota, bicicleta ou wallbox elétrica, que impostos poupa, ou se estaciona de graça na sua cidade."
 ---
 
 # Incentivos

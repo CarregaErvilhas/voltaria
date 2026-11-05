@@ -1,6 +1,6 @@
 ---
 name: carregamento-publico
-description: Ajuda um condutor a carregar o carro elétrico na rede pública em Portugal e em viagem pela Europa, com cartão, app ou pagamento ad hoc, na MOBI.E ou fora dela. Usa quando o utilizador pergunta como carregar fora de casa, como pagar, quanto tempo demora, o que fazer quando um posto não funciona, como se comportar numa fila ou como carregar no estrangeiro.
+description: "Ajuda um condutor a carregar o carro elétrico na rede pública em Portugal e em viagem pela Europa, com cartão, app ou pagamento ad hoc, na MOBI.E ou fora dela. Usa quando o utilizador pergunta como carregar fora de casa, como pagar, quanto tempo demora, o que fazer quando um posto não funciona, como se comportar numa fila ou como carregar no estrangeiro."
 ---
 
 # Carregamento público

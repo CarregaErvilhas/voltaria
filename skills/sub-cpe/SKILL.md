@@ -1,6 +1,6 @@
 ---
 name: sub-cpe
-description: Explica o sub-CPE (sub-Código de Ponto de Entrega) em Portugal, o ponto de entrega interno que separa o consumo do carro elétrico do resto da casa, do prédio ou da empresa. Usa quando o utilizador quer um contrato de eletricidade só para o posto, separar as contas do carro num condomínio ou numa empresa, ou pergunta o que é um sub-CPE, se é obrigatório, quanto custa e como se pede ao operador de rede.
+description: "Explica o sub-CPE (sub-Código de Ponto de Entrega) em Portugal, o ponto de entrega interno que separa o consumo do carro elétrico do resto da casa, do prédio ou da empresa. Usa quando o utilizador quer um contrato de eletricidade só para o posto, separar as contas do carro num condomínio ou numa empresa, ou pergunta o que é um sub-CPE, se é obrigatório, quanto custa e como se pede ao operador de rede."
 ---
 
 # sub-CPE

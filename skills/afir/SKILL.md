@@ -1,6 +1,6 @@
 ---
 name: afir
-description: Informação sobre o AFIR (Regulamento UE 2023/1804) e a legislação portuguesa de infraestrutura para combustíveis alternativos: requisitos de cobertura, potência mínima por nó TEN-T, ad hoc e pagamento, transparência de preços, relatórios e transposição. Usa quando o utilizador perguntar sobre obrigações legais, prazos, cobertura mínima, AFIR, DL 93/2025, DL 155/2026, portarias ou decretos sobre postos de carregamento.
+description: "Informação sobre o AFIR (Regulamento UE 2023/1804) e a legislação portuguesa de infraestrutura para combustíveis alternativos: requisitos de cobertura, potência mínima por nó TEN-T, ad hoc e pagamento, transparência de preços, relatórios e transposição. Usa quando o utilizador perguntar sobre obrigações legais, prazos, cobertura mínima, AFIR, DL 93/2025, DL 155/2026, portarias ou decretos sobre postos de carregamento."
 ---
 
 # AFIR e legislação de infraestrutura para combustíveis alternativos

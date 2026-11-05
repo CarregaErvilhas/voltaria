@@ -1,6 +1,6 @@
 ---
 name: baterias
-description: Ajuda um condutor a cuidar da bateria do carro elétrico e a avaliá-la ao comprar um carro novo ou usado: até que percentagem carregar, carregamentos rápidos, carro parado, frio, química LFP ou NMC, estado de saúde (SoH) e garantia. Usa quando o utilizador pergunta como fazer a bateria durar, se pode carregar a 100 %, que bateria escolher ou como avaliar a bateria de um usado.
+description: "Ajuda um condutor a cuidar da bateria do carro elétrico e a avaliá-la ao comprar um carro novo ou usado: até que percentagem carregar, carregamentos rápidos, carro parado, frio, química LFP ou NMC, estado de saúde (SoH) e garantia. Usa quando o utilizador pergunta como fazer a bateria durar, se pode carregar a 100 %, que bateria escolher ou como avaliar a bateria de um usado."
 ---
 
 # Baterias

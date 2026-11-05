@@ -1,6 +1,6 @@
 ---
 name: autonomia
-description: Ajuda um condutor a perceber e a aumentar a autonomia do carro elétrico: kW e kWh, consumo, autonomia anunciada (WLTP) e real, o que a reduz, climatização e travagem regenerativa. Usa quando o utilizador pergunta quantos quilómetros faz o carro, porque faz menos do que o anunciado, como poupar energia a conduzir ou como fazer as contas de autonomia.
+description: "Ajuda um condutor a perceber e a aumentar a autonomia do carro elétrico: kW e kWh, consumo, autonomia anunciada (WLTP) e real, o que a reduz, climatização e travagem regenerativa. Usa quando o utilizador pergunta quantos quilómetros faz o carro, porque faz menos do que o anunciado, como poupar energia a conduzir ou como fazer as contas de autonomia."
 ---
 
 # Autonomia e condução
