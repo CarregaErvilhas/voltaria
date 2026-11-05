@@ -1,6 +1,6 @@
 ---
 name: afir-nap
-description: Explica o conceito de Ponto de Acesso Nacional (NAP) no âmbito do AFIR (Regulamento (UE) 2023/1804): o que é, quem o gere, que dados publica (estáticos e dinâmicos), em que formato (DATEX II), como os OPC se ligam, o que é o CEAP europeu, e como isso se aplica em Portugal (MOBI.E/EADME, DL 93/2025). Usa quando o utilizador pergunta o que é um NAP, como consultar ou publicar dados de postos, o que é o CEAP, ou como funcionam os identificadores IDRO/IDACS.
+description: "Explica o conceito de Ponto de Acesso Nacional (NAP) no âmbito do AFIR (Regulamento (UE) 2023/1804): o que é, quem o gere, que dados publica (estáticos e dinâmicos), em que formato (DATEX II), como os OPC se ligam, o que é o CEAP europeu, e como isso se aplica em Portugal (MOBI.E/EADME, DL 93/2025). Usa quando o utilizador pergunta o que é um NAP, como consultar ou publicar dados de postos, o que é o CEAP, ou como funcionam os identificadores IDRO/IDACS."
 ---
 
 # AFIR NAP — Ponto de Acesso Nacional

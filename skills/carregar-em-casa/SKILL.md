@@ -1,6 +1,6 @@
 ---
 name: carregar-em-casa
-description: Ajuda um condutor em Portugal a carregar o carro elétrico em casa ou na garagem do prédio, com tomada doméstica ou wallbox, em moradia ou condomínio, ligado ou não à MOBI.E, com ou sem painéis solares. Usa quando o utilizador pergunta como instalar, o que precisa, o que o condomínio pode recusar ou quanto custa carregar em casa.
+description: "Ajuda um condutor em Portugal a carregar o carro elétrico em casa ou na garagem do prédio, com tomada doméstica ou wallbox, em moradia ou condomínio, ligado ou não à MOBI.E, com ou sem painéis solares. Usa quando o utilizador pergunta como instalar, o que precisa, o que o condomínio pode recusar ou quanto custa carregar em casa."
 ---
 
 # Carregar em casa

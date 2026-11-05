@@ -1,6 +1,6 @@
 ---
 name: regime-2010
-description: Explica o regime anterior da mobilidade elétrica em Portugal (Decreto-Lei n.º 39/2010, revogado pelo DL 93/2025), como funcionava o modelo MOBI.E com CEME, OPC e EGME, o que ainda se aplica no período transitório até 31-12-2027 e o que mudou. Usa quando o utilizador pergunta porque precisava de um cartão de CEME, cita regras antigas (60 dias para o condomínio, dois terços, dístico), ou fala de documentos, contratos ou situações anteriores a 19-08-2025.
+description: "Explica o regime anterior da mobilidade elétrica em Portugal (Decreto-Lei n.º 39/2010, revogado pelo DL 93/2025), como funcionava o modelo MOBI.E com CEME, OPC e EGME, o que ainda se aplica no período transitório até 31-12-2027 e o que mudou. Usa quando o utilizador pergunta porque precisava de um cartão de CEME, cita regras antigas (60 dias para o condomínio, dois terços, dístico), ou fala de documentos, contratos ou situações anteriores a 19-08-2025."
 ---
 
 # O regime de 2010 (DL 39/2010)
