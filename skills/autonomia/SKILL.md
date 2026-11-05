@@ -49,6 +49,59 @@ simples [UVE, manual]:
 - Por isso a autonomia real costuma ser menor, sobretudo em autoestrada e com frio. Explica isto sem
   dizer que o fabricante engana: o ensaio serve para comparar carros, não para prever uma viagem.
 
+## Ciclos de homologação: WLTP, EPA e CLTC
+
+### WLTP (Europa e outros mercados)
+
+- **O que é**: Worldwide Harmonised Light Vehicles Test Procedure, o standard europeu (e de muitos
+  outros mercados) desde 2019, que substituiu o NEDC.
+- **Como funciona**: ensaio em laboratório, num dinamómetro, a 23 °C, sem passageiros nem
+  acessórios, sem AC nem aquecimento. O ciclo dura 30 minutos e tem quatro fases de intensidade:
+  baixa (até 60 km/h), média (até 80), alta (até 100) e extra-alta (acima de 130). O carro é
+  conduzido por computador até a bateria esgotar.
+- **Variantes**: o WLTP combina as fases numa única figura combinada; não publica cidade/autoestrada
+  separadas como o EPA. A autonomia anunciada é o resultado desse ensaio.
+- **Realidade**: costuma ser 10-30 % acima do uso real; com frio e autoestrada pode cair até 40 %.
+  Serve para comparar carros, não para prever uma viagem.
+
+### EPA (Estados Unidos)
+
+- **O que é**: o ciclo da Environmental Protection Agency, o mais próximo do uso real.
+- **Como funciona**: cinco ensaios — cidade (sem AC), autoestrada (sem AC), mais agressivo/alta
+  velocidade (sem AC), quente (95 °F, AC a arrefecer), frio (20 °F, aquecimento/desembaciamento).
+  O carro é conduzido até a bateria esgotar em ensaios de ciclo único (cidade e autoestrada) ou
+  multi-ciclo (quatro cidade, dois autoestrada, dois velocidade constante).
+- **Ajuste**: aplica um fator de 0,7 a todos os parâmetros (incluindo autonomia) para aproximar o
+  uso real (condução agressiva, AC, frio).
+- **Variantes**: cidade, autoestrada e combinada. A combinada é ponderada 55 % cidade e 45 %
+  autoestrada. Apenas a combinada aparece na etiqueta.
+- **Realidade**: é a mais realista das três; costuma diferir do uso real apenas alguns pontos
+  percentuais.
+
+### CLTC (China)
+
+- **O que é**: China Light-duty Vehicle Test Cycle, o standard chinês.
+- **Como funciona**: três fases — baixa velocidade (CLTC-P1), média (CLTC-P2) e alta (CLTC-P3) —,
+  com 11 percursos curtos e 12 paragens, velocidade média de 29 km/h, máxima de 114 km/h e 22 %
+  do tempo em ralenti.
+- **Realidade**: é o mais otimista dos três; foca em trânsito urbano congestionado a baixa
+  velocidade. Para uso em autoestrada, subtrai cerca de 30 % à figura CLTC.
+
+### Conversão aproximada
+
+- EPA → WLTP: multiplica por 1,12-1,15 (WLTP ≈ EPA × 1,14).
+- CLTC costuma ser ~35 % acima do EPA e alguns pontos acima do NEDC (obsoleto).
+- Estas conversões são regras de bolso; a diferença real varia por fabricante e modelo.
+
+### Notas práticas
+
+- A autonomia real depende de velocidade, temperatura, topografia, carga e estilo de condução.
+  Alta velocidade aumenta a resistência do ar; o frio reduz a capacidade da bateria e o aquecimento
+  consome energia; o calor obriga a arrefecer a bateria.
+- A carga rápida abranda acima de ~80 %; para viagens, planeia paragens até 80 %.
+- O WLTP, o EPA e o CLTC são ensaios de laboratório: úteis para comparar carros, não para prever
+  uma viagem concreta.
+
 ## O que reduz a autonomia
 
 Explica os fatores que contam para o caso do utilizador [UVE, manual]:
