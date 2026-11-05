@@ -102,7 +102,12 @@ na nova redação). Até lá:
   fixada pela ERSE, que tem de vir discriminada na fatura quando é repercutida no condutor (n.º 4).
 - Os CEME registados ao abrigo do DL 39/2010 têm até 31-12-2027 para passar a OPC e/ou prestador de
   serviços de mobilidade (eMSP), comunicando à DGEG (n.º 5). Por isso continuam a existir cartões e
-  apps de CEME.
+  apps de CEME. O DL 93/2025 não prevê o registo de novos CEME; depois de 31-12-2027, um CEME só
+  continua se tiver licença ou comunicação prévia como OPC. A DGEG publica a lista dos CEME
+  registados [DGEG, regime transitório].
+- Segundo a DGEG, o novo regime acaba com o modelo centralizado gerido pela MOBI.E e passa a um
+  modelo concorrencial, em que cada OPC gere os seus postos, com acesso universal e os dados de
+  todos partilhados através da EADME [DGEG, FAQ 1.1.2].
 - Os OPC com postos já instalados podem pedir a desintegração da plataforma até 31-12-2027; se não
   pedirem, os postos continuam integrados (n.º 2).
 - Nos postos públicos de 50 kW ou mais já em operação, as obrigações de meios de pagamento (incluindo
@@ -161,3 +166,15 @@ Diplomas do regime de 2010 já revogados:
 
 - Histórico de alterações do DL 39/2010 (Diário da República):
   https://diariodarepublica.pt/dr/analise-juridica/modificacoes/decreto-lei/39-2010-614137
+
+### DGEG
+
+Da DGEG – Direção-Geral de Energia e Geologia, verificado a 2026-11-04 (ver `docs/fontes/dgeg.md`):
+
+- [DGEG, regime transitório] "Regime transitório de comercialização de eletricidade para a
+  mobilidade elétrica":
+  https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/operacao-e-comercializacao/regime-transitorio/
+- Lista de CEME registados:
+  https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/operacao-e-comercializacao/regime-transitorio/ceme-registados/
+- [DGEG, FAQ …] Perguntas frequentes:
+  https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/perguntas-frequentes-faq-s/

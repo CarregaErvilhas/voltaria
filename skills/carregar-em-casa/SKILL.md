@@ -1,6 +1,6 @@
 ---
 name: carregar-em-casa
-description: "Ajuda um condutor em Portugal a carregar o carro elétrico em casa ou na garagem do prédio, com tomada doméstica ou wallbox, em moradia ou condomínio, ligado ou não à MOBI.E, com ou sem painéis solares. Usa quando o utilizador pergunta como instalar, o que precisa, o que o condomínio pode recusar ou quanto custa carregar em casa."
+description: "Ajuda um condutor em Portugal a carregar o carro elétrico em casa ou na garagem do prédio, com tomada doméstica ou wallbox, em moradia ou condomínio, ligado ou não à MOBI.E, com ou sem painéis solares. Usa quando o utilizador pergunta como instalar, quem pode fazer a instalação, que papéis pedir, de que quadro ligar o posto, o que o condomínio pode recusar ou quanto custa carregar em casa."
 ---
 
 # Carregar em casa
@@ -48,6 +48,18 @@ Pergunta só o que não souberes, uma coisa de cada vez:
   recurso, não para ser a forma habitual de carregar durante muito tempo. Se a tomada for a solução
   de todos os dias, recomenda uma tomada reforçada e a instalação revista por um eletricista
   certificado [UVE, tomada ou wallbox].
+- Numa tomada doméstica comum (Schuko) a corrente de carregamento não deve passar de **10 A**. Só
+  uma tomada marcada de fábrica para carregar veículos aguenta mais. Muitos cabos de carregamento
+  ocasional deixam escolher a corrente: diz ao utilizador para a pôr em 10 A ou menos numa Schuko
+  que não seja própria para carregar. O guia da DGEG recomenda usar tomadas domésticas só em instalações existentes e, numa obra
+  na instalação, pôr uma tomada própria para carregar [DGEG, guia técnico, 5.1.2.5.1].
+- Regras do guia técnico que o eletricista deve cumprir, para o utilizador saber o que pedir
+  [DGEG, guia técnico, 3.1.5, 4.3, 5.1.2.1.1]: um **circuito dedicado** para cada carro, para pelo
+  menos 16 A e com cabos de 2,5 mm² ou mais; e um **diferencial próprio** (DR) de 30 mA ou menos,
+  no mínimo do tipo A, para cada ponto de ligação.
+- Nada de extensões nem de um segundo cabo. Adaptadores só os feitos para carregar veículos,
+  marcados para isso e aprovados pelos fabricantes do carro e do equipamento [DGEG, guia técnico,
+  2.2.1 e 2.2.2].
 
 ### Wallbox
 
@@ -65,17 +77,38 @@ Pergunta só o que não souberes, uma coisa de cada vez:
   de eletricidade. Se não tiver, o reforço do ramal é feito pela E-REDES, com obra e um custo que pode
   ser alto; num prédio, quem o paga é o condómino que o pede, salvo acordo com o condomínio
   [UVE, tomada ou wallbox] [UVE, casa ou condomínio].
+- Uma wallbox com tomada ou cabo Tipo 2 precisa também de proteção contra correntes de defeito
+  contínuas: um diferencial do tipo B, ou um do tipo A ou F com um detetor de corrente contínua,
+  salvo se a própria wallbox já a tiver. Diz ao utilizador para confirmar isto com o instalador
+  [DGEG, guia técnico, 5.1.2.1.1].
+
+### Quem instala e que papéis pedir
+
 - A instalação elétrica fica sujeita ao regime das instalações elétricas (DL 96/2017), através do
-  DL 93/2025, art. 25.º, n.º 2: deve ser feita por um técnico certificado. O técnico deve seguir o
-  Guia Técnico das Instalações Elétricas para a Alimentação de Veículos Elétricos da DGEG, 3.ª
-  edição, de 2023 (ligação nas fontes).
+  DL 93/2025, art. 25.º, n.º 2. O técnico deve seguir o Guia Técnico das Instalações Elétricas para
+  a Alimentação de Veículos Elétricos da DGEG, 3.ª edição, de 2023 (ligação nas fontes). A
+  Portaria n.º 128/2026/1 (art. 3.º, n.º 4) prevê um guia novo da DGEG; a 2026-11-04 a DGEG ainda
+  remete para a 3.ª edição. Se houver uma edição mais recente na página da DGEG, usa essa.
+- **Quem pode fazer a instalação**: uma entidade instaladora (EI) ou um técnico responsável pela
+  execução, registados na DGEG. Um técnico sozinho pode assumir instalações até 41,4 kVA; acima
+  disso é preciso uma EI (Lei n.º 14/2015, art. 4.º, n.º 3; Portaria n.º 128/2026/1, art. 4.º,
+  n.º 1) [DGEG, acesso privado]. Sugere ao utilizador pedir o número de registo na DGEG.
+- **Se é preciso projeto** depende do tipo de instalação elétrica (DL 96/2017, art. 5.º). Entre
+  outros casos, é obrigatório nas instalações do tipo B e nas do tipo C cuja potência total
+  alimentada pela rede passe de 10,35 kVA [DGEG, acesso privado]. Quem diz se o caso precisa é o
+  técnico; não o afirmes tu.
+- **Depois da instalação**, o técnico ou a EI entrega uma declaração de conformidade da execução ou
+  um termo de responsabilidade pela execução [DGEG, acesso privado]. Diz ao utilizador para o pedir
+  e guardar: serve para o seguro, para o condomínio e para uma venda da casa.
+- Quem tem o posto (o DPC) fica responsável por manter as condições técnicas e de segurança e por
+  usar materiais e equipamentos conformes às normas (Portaria n.º 128/2026/1, art. 4.º, n.º 2).
 
 ### EVSE móvel vs. wallbox
 
 - **EVSE móvel (carregador portátil)**: um cabo com eletrónica de segurança que liga uma tomada
   (doméstica Schuko ou industrial CEE) ao carro. Não é uma tomada "burra": tem proteção contra
   sobrecorrente, deteção de fuga de corrente e controlo do arranque. É o que vem com muitos carros
-  (cabo ocasional). Limita-se à potência da tomada (até 3,7 kW numa Schuko, até 22 kW numa CEE
+  (cabo ocasional). Limita-se à potência da tomada (numa Schuko comum até 10 A, cerca de 2,3 kW, ver acima; até 22 kW numa CEE
   vermelha de 32 A). É prático para viagens, casas de férias ou quando não há wallbox, mas não é
   pensado para uso diário prolongado.
 - **Wallbox (EVSE fixo)**: unidade fixa à parede, ligada a um circuito dedicado. Dá mais potência
@@ -99,8 +132,10 @@ Pergunta só o que não souberes, uma coisa de cada vez:
 
 ### Tomada doméstica
 
-- A tomada doméstica habitual em Portugal é a **Schuko (Tipo F)**, 230 V, 16 A. Com o cabo
-  ocasional do carro, dá cerca de 2,3 kW (10 A) a 3,7 kW (16 A), conforme o cabo e o circuito.
+- A tomada doméstica habitual em Portugal é a **Schuko (Tipo F)**, 230 V, 16 A. Para carregar um
+  carro, o guia da DGEG limita a corrente a 10 A (cerca de 2,3 kW) numa Schuko comum; os 16 A
+  (3,7 kW) só numa tomada marcada de fábrica para carregar veículos, num circuito dedicado
+  [DGEG, guia técnico, 5.1.2.5.1].
 - Não usar extensões nem fichas múltiplas. Um carregamento longo exige um circuito dedicado
   verificado por eletricista.
 
@@ -195,14 +230,47 @@ condomínio [UVE, casa ou condomínio].
 
 **Prédios novos.** As construções novas em propriedade horizontal, ou com estacionamento, têm de
 incluir uma infraestrutura elétrica adequada para carregar veículos, com uma potência mínima fixada
-em portaria. Isto não inclui os postos nem as tomadas (DL 93/2025, art. 22.º). A regra antiga, para
-licenciamentos desde 1-7-2010, pedia também que cada lugar ficasse preparado para um posto ou uma
-tomada: vê a skill `regime-2010`. Não digas que um prédio novo já tem ligação em cada lugar sem o
-utilizador o confirmar com o administrador ou o projeto.
+em portaria. Isto não inclui os postos nem as tomadas (DL 93/2025, art. 22.º). A Portaria n.º
+128/2026/1 (art. 2.º) fixa os mínimos [DGEG, edifícios]:
 
-Qualquer condómino pode instalar, à sua custa, um posto de carregamento no seu lugar de
-estacionamento, desde que o lugar cumpra os requisitos técnicos definidos em portaria (DL 93/2025,
-art. 23.º, n.º 1). O mesmo vale para uma tomada.
+- cada ponto de ligação tem de ter pelo menos 3680 VA;
+- num prédio de habitação, só uma parte dos lugares tem de ficar preparada: N = 0,8 + 0,2 × n,
+  arredondado para cima, em que n é o número de lugares do parque sem contar os que já são
+  alimentados diretamente pelas frações. Num parque de 30 lugares, isso dá 7;
+- num prédio de habitação é obrigatório um sistema de controlo de carga, que desliga os
+  carregamentos ou reduz a corrente quando a potência não chega;
+- o custo é do promotor da obra (art. 4.º, n.º 3).
+
+A regra antiga, para licenciamentos desde 1-7-2010, pedia também que cada lugar ficasse preparado
+para um posto ou uma tomada: vê a skill `regime-2010`. Não digas que um prédio novo já tem ligação
+em cada lugar sem o utilizador o confirmar com o administrador ou o projeto.
+
+**Quem pode instalar.** Qualquer condómino pode instalar, à sua custa, um posto de carregamento no
+seu lugar de estacionamento, desde que o lugar cumpra os requisitos técnicos definidos em portaria
+(DL 93/2025, art. 23.º, n.º 1). O mesmo vale para uma tomada. A DGEG diz que o mesmo direito tem o
+arrendatário e o ocupante legal [DGEG, acesso privado; DGEG, FAQ 2.1.1]: o n.º 3, a) refere-os, e o
+n.º 2 manda comunicar também ao proprietário.
+
+**De onde vem a eletricidade e quem opera o posto.** Pergunta ao utilizador se o lugar é de uso
+exclusivo ou partilhado e de que quadro elétrico o posto vai ser alimentado. Muda quem fica
+responsável pelo posto (DL 93/2025, art. 21.º, n.º 1, como a DGEG o explica) [DGEG, acesso
+privado; DGEG, FAQ 2.1.5, 2.1.6, 2.1.12 a 2.1.16]:
+
+| Lugar | Pode ser alimentado por | Quem opera o posto |
+|---|---|---|
+| De uso exclusivo (boxe ou marcado no chão), ligado à instalação da fração | O quadro de entrada da fração | O próprio, como DPC |
+| De uso exclusivo, ligado a um quadro comum | O quadro de colunas, o dos serviços comuns ou o da garagem | O condomínio, ou um OPC contratado por ele |
+| De uso partilhado | O quadro de colunas ou o dos serviços comuns | O condomínio, ou um OPC contratado por ele |
+
+- Ligado à fração, tem de sair do **quadro de entrada** da fração, não de um quadro parcial (por
+  exemplo, o do segundo piso de um duplex) [DGEG, FAQ 2.1.15]. Vale também para frações de comércio
+  ou serviços no mesmo prédio [DGEG, FAQ 2.1.16].
+- Os cabos só podem passar pelas zonas comuns e pelos espaços da própria fração, nunca por dentro
+  do lugar de outro condómino [DGEG, guia técnico, 3.1.5]. **Não podem passar pelo poço do
+  elevador** nem por condutas ou tubos de outras instalações (RTIEBT, secção 803.4.1) [DGEG, FAQ
+  2.1.17]. Se o percurso proposto passar por aí, diz que não é permitido.
+- Num lugar marcado no chão, o circuito sai de um quadro próprio do lugar, que só abre com
+  ferramenta, com um corte geral junto ao acesso [DGEG, guia técnico, 3.1.5].
 
 **Comunicação prévia.** Se a instalação estiver numa parte comum do prédio, ou passar por ela, mesmo
 que seja de uso exclusivo do condómino, é obrigatório comunicar por escrito à administração do
@@ -215,7 +283,10 @@ a data da instalação (art. 23.º, n.º 2).
   serviços, a mesma tecnologia e cubram as necessidades de todos os potenciais utilizadores;
 - b) o prédio já tem um posto ou tomada partilhada nessas condições;
 - c) a instalação põe comprovadamente em risco a segurança de pessoas ou bens, com parecer técnico
-  entregue à administração;
+  entregue à administração. Para saber se há risco, a DGEG manda pedir a avaliação a um engenheiro
+  eletrotécnico ou engenheiro técnico registado na DGEG e, se a instalação puder afetar a segurança
+  contra incêndio, também a um técnico de SCIE [DGEG, FAQ 2.1.7]. Um receio sem parecer técnico não
+  chega;
 - d) a instalação dificulta a circulação nas vias comuns de acesso;
 - e) deixa de se cumprir, nos espaços comuns, o regime das acessibilidades (DL 163/2006).
 
@@ -334,8 +405,25 @@ Para apoios à compra de um posto (por exemplo em condomínio) ou do carro, usa 
 
 ### Outras fontes
 
-- DGEG, Guia Técnico das Instalações Elétricas para a Alimentação de Veículos Elétricos, 3.ª edição
-  (2023-09-14): https://www.dgeg.gov.pt/media/5adbxzxo/guia-ve-ed-3-2023.pdf
+- Lei n.º 14/2015, de 16 de fevereiro (técnicos e entidades instaladoras):
+  https://data.dre.pt/eli/lei/14/2015/p/cons/20200922/pt/html
+
+Da DGEG – Direção-Geral de Energia e Geologia, verificado a 2026-11-04:
+
+- [DGEG, guia técnico] Guia Técnico das Instalações Elétricas para a Alimentação de Veículos
+  Elétricos, 3.ª edição (2023-09-14), da CTE 64, aprovado pela DGEG:
+  https://www.dgeg.gov.pt/media/dzejui0r/guia-ve-ed-3-2023.pdf
+- [DGEG, edifícios] https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/instalacao-de-pontos-de-carregamento/edificios/
+- [DGEG, acesso privado] https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/instalacao-de-pontos-de-carregamento/acesso-privado/
+- [DGEG, FAQ …] Perguntas frequentes, com o número da pergunta:
+  https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/perguntas-frequentes-faq-s/
+
+Os pontos da DGEG estão escritos por palavras nossas (ver `docs/fontes/dgeg.md` no Voltaria). As
+FAQ da DGEG são uma leitura da lei pela entidade licenciadora: não substituem o texto da lei nem um
+parecer jurídico.
+
+Da UVE:
+
 - [UVE, casa ou condomínio] UVE, "Como instalar um Ponto de Carregamento para Veículo Elétrico em
   casa ou no Condomínio" (7-11-2025), verificado a 2026-11-04:
   https://www.uve.pt/page/como-instalar-pcve-casa-ou-condominio/
