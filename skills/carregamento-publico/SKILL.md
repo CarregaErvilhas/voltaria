@@ -151,6 +151,61 @@ numa só integração técnica e contratual.
 - O pagamento ad hoc (cartão bancário no posto) existe independentemente do roaming e é obrigatório
   em muitos postos públicos na UE (AFIR).
 
+## BESS (armazenamento de energia em bateria)
+
+### O que é
+
+- **BESS** (Battery Energy Storage System) é um sistema de armazenamento de energia em bateria
+  instalado no local do posto, que pode ser carregado da rede ou de renováveis e descarregado para
+  alimentar os carregadores ou para serviços de rede.
+- Permite a um posto entregar mais potência do que a ligação à rede suportaria, sem reforço do
+  ramal.
+
+### Peak shaving
+
+- Os postos rápidos têm picos de potência muito altos e imprevisíveis (vários carros a carregar ao
+  mesmo tempo). A tarifa de potência (demand charge / capacity charge) cobra esses picos.
+- O BESS descarrega durante os picos, limitando a potência pedida à rede. Pode reduzir a potência
+  de ligação necessária em 50-80 % e as tarifas de demanda em 40-60 %.
+
+### Estabilidade da rede
+
+- Atua como buffer: absorve picos de carga e evita flutuações de tensão/frequência no ponto de
+  ligação, ajudando a DSO a gerir o nó.
+- Pode prestar serviços de flexibilidade (resposta em frequência FCR/FFR/aFRR, curtailment) e
+  participar em mercados de energia (arbitragem de preços, load shifting).
+- Em casos de indisponibilidade da rede, pode servir de backup (resiliência).
+
+### Como suplementa um hub
+
+- Num hub de carregamento, o BESS funciona como fonte secundária: quando a procura excede a
+  capacidade da ligação, descarrega; em períodos de baixa procura, recarrega (da rede a baixo
+  preço ou do solar).
+- Permite instalar mais carregadores e de maior potência sem esperar por reforço de rede, que pode
+  demorar meses ou anos.
+
+### Quem usa
+
+- Vários CPOs e operadores de hubs usam BESS em hubs de carregamento rápido, sobretudo em locais
+  com ligação fraca ou cara. Exemplos referidos na indústria: InstaVolt (Reino Unido), HEP
+  (Croácia), e operadores que usam plataformas como Flexecharge, Driivz, Voltic ou EMS próprios.
+- A lista de adoptantes muda rapidamente; confirma sempre com o operador concreto.
+
+### Principais OEMs / fornecedores de BESS
+
+- Fabricantes de baterias e sistemas: Tesla (Megapack), BYD, CATL, Sungrow, Fluence, Wärtsilä,
+  Powin, LG Energy Solution, Samsung SDI, Saft (TotalEnergies).
+- Integradores e EMS (energy management): Driivz, Flexecharge, Voltic, Novagrid, JEM Energy,
+  Wattstor, Orbit Energy, entre outros.
+- A escolha depende do tamanho do hub, da ligação disponível e do regime de serviços de rede local.
+
+### Notas práticas
+
+- O BESS tem de ser dimensionado ao perfil real do hub; um sistema subdimensionado esgota-se cedo e
+  perde poupança de demanda.
+- A viabilidade económica depende do custo da energia, das tarifas de potência e dos serviços de
+  rede disponíveis localmente. ROI típico de 5-7 anos em hubs co-localizados.
+
 ## Quanto tempo demora
 
 Não há uma resposta igual para todos. Explica do que depende [UVE, formas de carregamento]:
