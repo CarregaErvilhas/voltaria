@@ -249,6 +249,76 @@ numa só integração técnica e contratual.
 - EVRoaming Foundation (evroaming.org) — especificações OCPI.
 - OCPI é publicado sob Creative Commons Attribution-NoDerivatives 4.0.
 
+## Plug & Charge (ISO 15118) e PKI
+
+### O que é
+
+- **Plug & Charge** é a autenticação automática: o condutor liga o cabo e a sessão arranca sem
+  cartão, app nem RFID. A autorização e a faturação acontecem por trás, com certificados digitais.
+- Baseia-se na norma **ISO 15118** (comunicação veículo-EVSE), em particular na versão
+  **ISO 15118-2** (atualmente em uso) e na **ISO 15118-20** (futuro, com bidirecional/V2G).
+- Usa uma **PKI (Public Key Infrastructure)**: cadeia de certificados X.509 que prova a identidade
+  do carro e do fornecedor de mobilidade, assinados por autoridades de certificação (CA).
+
+### Como funciona
+
+- O carro traz um **certificado de contrato** (emitido pelo eMSP) e um certificado de
+  aprovisionamento (OEM). Ao ligar, o carro apresenta o certificado ao posto, que valida a cadeia
+  até à V2G Root CA.
+- Precisa de quatro PKIs interligadas: operador do posto (CPO), serviço de aprovisionamento de
+  certificados (CPS), eMSP e OEM, ancoradas numa V2G Root CA.
+- A troca de certificados pode ser feita no posto (primeira vez) ou pela telemática do OEM.
+
+### Impacto no cliente
+
+- Experiência sem fricção: basta ligar o cabo. Sem apps, cartões ou QR codes.
+- Depende de o carro, o posto e o fornecedor suportarem Plug & Charge; caso contrário, fallback
+  para cartão/app.
+- O condutor pode ter vários certificados de contrato (vários eMSP) no carro, se o OEM o permitir.
+
+### Complexidade para os OEMs
+
+- Os OEMs têm de instalar módulos de segurança (HSM) no carro, gerir certificados via telemática
+  e suportar atualizações over-the-air para novas versões da ISO 15118.
+- O ecossistema exige coordenação entre OEMs, CPOs, eMSPs e CAs, que não partilham incentivos;
+  por isso a adoção tem sido lenta.
+- A ISO 15118-20 acrescenta complexidade (V2G, TLS 1.3, gestão de múltiplos certificados) mas é
+  a base para o futuro.
+
+### AutoCharge (alternativa mais simples)
+
+- **AutoCharge** autentica pelo identificador do veículo (EVCCID/VID/MAC) lido pelo posto, sem
+  certificados nem PKI. Mais leve e fácil de implementar, mas menos seguro (baseado em
+  identificador, não em criptografia).
+- Usado por alguns CPOs na Europa (Países Baixos, Alemanha). A experiência é semelhante para o
+  condutor, mas sem a segurança do Plug & Charge.
+
+### Outros protocolos de autenticação
+
+- **RFID/NFC**: cartão físico, o mais comum hoje.
+- **App + QR code**: autenticação via aplicação do eMSP/OPC.
+- **Pagamento ad hoc**: cartão bancário no posto (obrigatório em muitos postos públicos na UE
+  pelo AFIR).
+- **OCPP 2.1**: suporta ISO 15118-20 e bidirecional, além de novas opções de autorização (cartões
+  pré-pagos, QR dinâmico).
+
+### Legislação e standards
+
+- **AFIR (Regulamento (UE) 2023/1804)**: impõe interoperabilidade e acesso não discriminatório;
+  a comunicação veículo-posto segue a ISO 15118.
+- **DL 93/2025, art. 6.º**: os postos instalados ou renovados devem permitir carregamento ad hoc
+  e inteligente; as normas de comunicação para bidirecional são as do AFIR.
+- **VDE-AR-E 2802-100** (Alemanha): guia de aplicação para gestão de certificados ISO 15118.
+- **CharIN**: organização que promove a interoperabilidade e publica guias de PKI.
+
+### Estado atual
+
+- A adoção do Plug & Charge é gradual: muitos OEMs e CPOs ainda não o suportam em todos os
+  modelos/postos. A interoperabilidade entre raízes de certificação (trust lists, cross-certification)
+  é o principal desafio.
+- A maioria dos carros e postos continua a usar RFID/app; o Plug & Charge é o objetivo a médio
+  prazo.
+
 ## Quanto tempo demora
 
 Não há uma resposta igual para todos. Explica do que depende [UVE, formas de carregamento]:
