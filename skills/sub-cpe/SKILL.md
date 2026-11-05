@@ -191,23 +191,47 @@ consumo que fica lá passar a um escalão inferior.
 
 ## Fontes
 
+### Legislação
+
 - Decreto-Lei n.º 93/2025, de 14 de agosto (regime jurídico da mobilidade elétrica), art. 24.º, n.º 3:
-  https://diariodarepublica.pt/dr/detalhe/decreto-lei/93-2025-928937303
+  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (prorroga o período transitório até 31-12-2027):
-  https://files.diariodarepublica.pt/1s/2026/07/14700/0003200033.pdf
+  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
 - Regulamento n.º 8/2026, de 6 de janeiro (ERSE; na numeração interna da ERSE, Regulamento n.º 4/2025,
   aprovado em 22-12-2025): altera o Regulamento do Autoconsumo, o Guia de Medição, Leitura e
   Disponibilização de Dados, o Regulamento de Qualidade de Serviço e o Regulamento de Relações
   Comerciais. Cria o art. 11.º-A do Guia (pontos de entrega internos) e o art. 7.º do Regulamento do
   Autoconsumo:
-  https://diariodarepublica.pt/dr/detalhe/regulamento/8-2026-994000577
+  https://data.dre.pt/eli/regulamento/8/2026/01/06/p/dre/pt/html
   https://www.erse.pt/media/wgrn0h3x/reg_8_2026.pdf
+- Regulamento n.º 7/2026, de 6 de janeiro (Regulamento da Mobilidade Elétrica), arts. 4.º, 97.º a
+  100.º, retificado pela Declaração de Retificação n.º 164/2026/2, de 27 de fevereiro:
+  https://data.dre.pt/eli/regulamento/7/2026/01/06/p/dre/pt/html
+- Decreto-Lei n.º 96/2017, de 10 de agosto (instalações elétricas de serviço particular alimentadas
+  pela RESP — enquadra o contador interno e o ramal):
+  https://data.dre.pt/eli/decreto-lei/96/2017/08/10/p/dre/pt/html
+- Portaria n.º 231/2013, de 22 de julho (regras do setor elétrico aplicáveis à mobilidade elétrica,
+  incluindo contagem e leitura):
+  https://data.dre.pt/eli/portaria/231/2013/07/22/p/dre/pt/html
+- Portaria n.º 949-A/2006, de 11 de setembro (RTIEBT — regras técnicas das instalações elétricas de
+  baixa tensão): https://data.dre.pt/eli/portaria/949-a/2006/09/11/p/dre/pt/html
+
+### Normas e standards
+
 - Guia de Medição, Leitura e Disponibilização de Dados do setor elétrico, versão consolidada
   (arts. 7.º, n.º 3, 11.º-A, 97.º-A e 128.º-A):
   https://www.erse.pt/media/o3anwdre/gmld-se-consolidado.pdf
-- Regulamento n.º 7/2026, de 6 de janeiro (Regulamento da Mobilidade Elétrica), arts. 4.º, 97.º a
-  100.º, retificado pela Declaração de Retificação n.º 164/2026/2, de 27 de fevereiro:
-  https://diariodarepublica.pt/dr/detalhe/regulamento/7-2026-994000576
+- IEC 60364-7-722 (instalações elétricas de baixa tensão — alimentação de veículos elétricos):
+  https://webstore.iec.ch/en/publication/29958
+- IEC 61851-1 (sistema de carregamento condutivo):
+  https://webstore.iec.ch/en/publication/33644
+- IEC 62196-2:2025 (fichas e tomadas AC):
+  https://webstore.iec.ch/en/publication/86317
+- OCPP (Open Charge Point Protocol — leitura e gestão remota do posto; IEC 63584):
+  https://openchargealliance.org/protocols/ocpp-protocols/
+
+### Outras fontes
+
 - ERSE, Relatório da Consulta Pública n.º 135 (modelo sub-CPE e modelo acordado, adesão opcional):
   https://www.erse.pt/media/kfinmy0t/relatorio_cp135.pdf
 - E-REDES, "Condições de ligação de submedição para a mobilidade elétrica", NTS.PT.GC.0009

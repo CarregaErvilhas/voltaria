@@ -93,6 +93,25 @@ a parte sobre como pagar é anterior ao DL 93/2025 e já não descreve o regime 
 
 ## Fontes
 
+### Legislação
+
+- Regulamento (UE) 2017/1151 (homologação WLTP — consumo, CO₂ e autonomia elétrica):
+  https://eur-lex.europa.eu/eli/reg/2017/1151/oj
+- Regulamento (UE) 2023/1804 (AFIR) — requisitos de informação ao utilizador nos postos:
+  https://eur-lex.europa.eu/eli/reg/2023/1804/oj
+
+### Normas e standards
+
+- UNECE, Regulamento n.º 101 (consumo de energia e autonomia dos veículos elétricos) — lista das
+  regulamentações UNECE: https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-101-120
+- UNECE, GTR n.º 15 (WLTP — Worldwide harmonized Light vehicles Test Procedure), índice das
+  Regulamentações Técnicas Globais:
+  https://unece.org/transport/vehicle-regulations-wp29/standards/united-nations-global-technical-regulations
+
+### Outras fontes
+
+- EV Database — autonomia e consumo reais por modelo e versão: https://www.ev-database.org/
+
 Da UVE – Associação de Utilizadores de Veículos Elétricos, verificado a 2026-11-04:
 
 - [UVE, manual] "Parabéns! Comprou um veículo elétrico e agora?" (manual, jul. 2024), licença

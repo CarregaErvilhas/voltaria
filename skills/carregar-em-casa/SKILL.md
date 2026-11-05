@@ -293,10 +293,47 @@ Para apoios à compra de um posto (por exemplo em condomínio) ou do carro, usa 
 
 ## Fontes
 
+### Legislação
+
 - Decreto-Lei n.º 93/2025, de 14 de agosto (regime jurídico da mobilidade elétrica):
-  https://diariodarepublica.pt/dr/detalhe/decreto-lei/93-2025-928937303
+  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (prorroga o período transitório até 31-12-2027):
-  https://files.diariodarepublica.pt/1s/2026/07/14700/0003200033.pdf
+  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+- Regulamento (UE) 2023/1804 (AFIR): https://eur-lex.europa.eu/eli/reg/2023/1804/oj
+- Decreto-Lei n.º 96/2017, de 10 de agosto (instalações elétricas de serviço particular
+  alimentadas pela RESP): https://data.dre.pt/eli/decreto-lei/96/2017/08/10/p/dre/pt/html
+- Decreto-Lei n.º 163/2006, de 8 de agosto (acessibilidade a edifícios — lugares de garagem e
+  tomadas para carregamento): https://data.dre.pt/eli/decreto-lei/163/2006/08/08/p/dre/pt/html
+- Portaria n.º 949-A/2006, de 11 de setembro (RTIEBT — regras técnicas das instalações elétricas
+  de baixa tensão): https://data.dre.pt/eli/portaria/949-a/2006/09/11/p/dre/pt/html
+- Portaria n.º 128/2026/1, de 26 de março (potências mínimas e regras técnicas dos postos):
+  https://files.diariodarepublica.pt/1s/2026/03/06000/0000300006.pdf
+- Regulamento (UE) 2016/631 (RfG — requisitos de ligação de geradores à rede) e Regulamento
+  (UE) 2016/1388 (DCC — requisitos de ligação de instalações de consumo):
+  https://eur-lex.europa.eu/eli/reg/2016/631/oj e https://eur-lex.europa.eu/eli/reg/2016/1388/oj
+
+### Normas e standards
+
+- IEC 60364-7-722 (instalações elétricas de baixa tensão — alimentação de veículos elétricos):
+  https://webstore.iec.ch/en/publication/29958
+- IEC 61851-1 (sistema de carregamento condutivo):
+  https://webstore.iec.ch/en/publication/33644
+- IEC 62196-1:2025 (fichas, tomadas e conectores — requisitos gerais):
+  https://webstore.iec.ch/en/publication/86313
+- IEC 62196-2:2025 (fichas e tomadas AC — Tipo 1 e Tipo 2):
+  https://webstore.iec.ch/en/publication/86317
+- ISO 15118-20 (comunicação veículo-rede — bidirecional, AC_BPT e DC_BPT):
+  https://www.iso.org/standard/77845.html
+- ISO 15118-2 (comunicação veículo-rede — Plug & Charge):
+  https://www.iso.org/standard/55366.html
+- OCPP (Open Charge Point Protocol, posto ↔ backoffice; IEC 63584):
+  https://openchargealliance.org/protocols/ocpp-protocols/
+- EN 50549-1 (requisitos de ligação de instalações geradoras de baixa tensão em paralelo com a
+  rede) — referida nos códigos de rede da UE; a norma é paga, ver catálogo:
+  https://genorma.com/en/standards/en-50549-1-2019
+
+### Outras fontes
+
 - DGEG, Guia Técnico das Instalações Elétricas para a Alimentação de Veículos Elétricos, 3.ª edição
   (2023-09-14): https://www.dgeg.gov.pt/media/5adbxzxo/guia-ve-ed-3-2023.pdf
 - [UVE, casa ou condomínio] UVE, "Como instalar um Ponto de Carregamento para Veículo Elétrico em

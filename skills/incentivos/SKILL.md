@@ -108,11 +108,31 @@ Pergunta só o que for preciso para o apoio em causa:
 
 ## Fontes
 
+### Legislação
+
+- Código do IUC — Lei n.º 22-A/2007, de 29 de junho:
+  https://data.dre.pt/eli/lei/22-a/2007/06/29/p/dre/pt/html
+- Código do IVA — Decreto-Lei n.º 394-B/84, de 26 de dezembro:
+  https://data.dre.pt/eli/decreto-lei/394-b/1984/12/26/p/dre/pt/html
+- Código do IRC — Decreto-Lei n.º 442-B/88, de 30 de novembro:
+  https://data.dre.pt/eli/decreto-lei/442-b/1988/11/30/p/dre/pt/html
+- Lei n.º 19/2024, de 5 de fevereiro (fim da obrigatoriedade do dístico identificativo):
+  https://data.dre.pt/eli/lei/19/2024/02/05/p/dre/pt/html
+
+### Normas e standards
+
+- Regulamento (UE) 2017/1151 (homologação WLTP — base das emissões e da autonomia usadas nos
+  escalões fiscais): https://eur-lex.europa.eu/eli/reg/2017/1151/oj
+- UNECE, Regulamento n.º 101 (consumo de energia e autonomia dos veículos elétricos):
+  https://unece.org/transport/vehicle-regulations-wp29/standards/addenda-1958-agreement-regulations-101-120
+- ISO 15118-2 (Plug & Charge — relevante para o apoio à instalação de postos):
+  https://www.iso.org/standard/55366.html
+
+### Outras fontes
+
 - Fundo Ambiental: https://www.fundoambiental.pt/
 - Portal das Finanças, códigos tributários:
   https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/
-- Lei n.º 19/2024, de 5 de fevereiro (fim da obrigatoriedade do dístico identificativo):
-  https://data.dre.pt/eli/lei/19/2024/02/05/p/dre/pt/html
 
 Da UVE – Associação de Utilizadores de Veículos Elétricos, verificado a 2026-11-04:
 

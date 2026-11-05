@@ -453,11 +453,40 @@ comparativo.
 
 ## Fontes
 
+### Legislação
+
 - Decreto-Lei n.º 93/2025, de 14 de agosto (regime jurídico da mobilidade elétrica):
-  https://diariodarepublica.pt/dr/detalhe/decreto-lei/93-2025-928937303
+  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (prorroga o período transitório até 31-12-2027):
-  https://files.diariodarepublica.pt/1s/2026/07/14700/0003200033.pdf
+  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
 - Regulamento (UE) 2023/1804 (AFIR): https://eur-lex.europa.eu/eli/reg/2023/1804/oj
+- Regulamento n.º 7/2026, de 6 de janeiro (ERSE — Regulamento da Mobilidade Elétrica):
+  https://data.dre.pt/eli/regulamento/7/2026/01/06/p/dre/pt/html
+
+### Normas e standards
+
+- IEC 62196-1:2025 (fichas, tomadas e conectores — requisitos gerais):
+  https://webstore.iec.ch/en/publication/86313
+- IEC 62196-2:2025 (fichas e tomadas AC — Tipo 1 e Tipo 2):
+  https://webstore.iec.ch/en/publication/86317
+- IEC 62196-3 (fichas e conectores DC — CCS e CHAdeMO):
+  https://webstore.iec.ch/en/publication/59923
+- IEC 61851-1 (sistema de carregamento condutivo):
+  https://webstore.iec.ch/en/publication/33644
+- ISO 15118-2 (comunicação veículo-rede — Plug & Charge):
+  https://www.iso.org/standard/55366.html
+- ISO 15118-20 (comunicação veículo-rede — bidirecional e V2G):
+  https://www.iso.org/standard/77845.html
+- OCPP (Open Charge Point Protocol, posto ↔ backoffice; IEC 63584):
+  https://openchargealliance.org/protocols/ocpp-protocols/
+- OCPI (Open Charge Point Interface, roaming entre operadores):
+  https://evroaming.org/ocpi-background/
+- OICP (Open InterCharge Protocol, Hubject): https://www.hubject.com/en/
+- eMIP (protocolo de roaming da Gireve): https://www.gireve.com/en/
+- DATEX II — domínio de carregamento de veículos elétricos:
+  https://datex2.eu/user-domains/ev-charging/
+
+### Outras fontes
 
 Da UVE – Associação de Utilizadores de Veículos Elétricos, verificado a 2026-11-04:
 

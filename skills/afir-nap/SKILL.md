@@ -149,13 +149,36 @@ do dashboard seguem o Anexo III §2 do AFIR.
 
 ## Fontes
 
+### Legislação
+
 - Regulamento (UE) 2023/1804 (AFIR): https://eur-lex.europa.eu/eli/reg/2023/1804/oj
   (versão PT: https://eur-lex.europa.eu/legal-content/PT/TXT/?uri=CELEX:32023R1804)
-- Diretiva 2010/40/UE (ITS) e regulamentações delegadas (MMTIS, RTTI, SRTI, SSTP).
-- DL n.º 93/2025: https://diariodarepublica.pt/dr/detalhe/decreto-lei/93-2025-928937303
-- DL n.º 155/2026: https://files.diariodarepublica.pt/1s/2026/07/14700/0003200033.pdf
+- Diretiva 2010/40/UE (ITS): https://eur-lex.europa.eu/eli/dir/2010/40/oj
+- Regulamento Delegado (UE) 2022/670 (informação de tráfego em tempo real, RTTI):
+  https://eur-lex.europa.eu/eli/reg_del/2022/670/oj
+- Decreto-Lei n.º 93/2025, de 14 de agosto (RJME):
+  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+- Decreto-Lei n.º 155/2026, de 31 de julho (período transitório até 31-12-2027):
+  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+- Portaria n.º 31/2026/1, de 23 de janeiro (dados dos OPC à EADME e transmissão ao NAP):
+  https://diariodarepublica.pt/dr/detalhe/portaria/31-1022092628
+
+### Normas e standards
+
+- DATEX II — domínio de carregamento de veículos elétricos:
+  https://datex2.eu/user-domains/ev-charging/
+- DATEX II — portal da norma (CEN/TS 16157): https://datex2.eu
+- ISO 15118-20 (comunicação veículo-rede, incluindo bidirecional):
+  https://www.iso.org/standard/77845.html
+- OCPP (Open Charge Point Protocol, IEC 63584):
+  https://openchargealliance.org/protocols/ocpp-protocols/
+- OCPI (Open Charge Point Interface): https://evroaming.org/ocpi-background/
+
+### Outras fontes
+
 - NAP português: https://nap-portugal.imt-ip.pt
-- MOBI.E endpoints: https://pgm.mobie.pt/integration/nap/evChargingInfra e evActualStatus
+- MOBI.E endpoints (XML DATEX II 3.3): https://pgm.mobie.pt/integration/nap/evChargingInfra e
+  `https://pgm.mobie.pt/integration/nap/evActualStatus`
 - CEAP / EAFO: https://alternative-fuels-observatory.ec.europa.eu
 - NAPCORE (coordenação de NAPs): https://napcore.eu
 - Lista de NAPs europeus (AFIR, carregamento): https://evnapdata.eu/naps
@@ -164,6 +187,7 @@ do dashboard seguem o Anexo III §2 do AFIR.
 - Spirii — AFIR art. 20.º para OPC: https://spiriipartnerhelp.zendesk.com/hc/en-gb/articles/41027320032913-AFIR-Article-20-What-CPOs-need-to-know-about-it
 - Monta — conformidade de reporte AFIR por país: https://monta.com/help/monta-hub-reporting-compliance-afir-compliance/charge-point-data-reporting-afir
 - nap-dashboard (Voltaria adjacente) — referências de fontes: `references/data-sources.md`
+
 ---
 
 Vê também a skill `afir` (infraestrutura AFIR em geral: cobertura TEN-T, ad hoc, transparência) e

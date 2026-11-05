@@ -120,11 +120,44 @@ na nova redação). Até lá:
 
 ## Fontes
 
-- Decreto-Lei n.º 39/2010, republicado pelo Decreto-Lei n.º 90/2014, de 11 de junho:
-  https://diariodarepublica.pt/dr/detalhe/decreto-lei/90-2014-25676885
+### Legislação
+
+- Decreto-Lei n.º 39/2010, de 26 de abril (regime jurídico da mobilidade elétrica, revogado):
+  https://data.dre.pt/eli/decreto-lei/39/2010/04/26/p/dre/pt/html
+- Decreto-Lei n.º 90/2014, de 11 de junho (terceira alteração ao DL 39/2010, que o republica):
+  https://data.dre.pt/eli/decreto-lei/90/2014/06/11/p/dre/pt/html
+- Decreto-Lei n.º 93/2025, de 14 de agosto (art. 45.º revoga o DL 39/2010):
+  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+- Decreto-Lei n.º 155/2026, de 31 de julho (período transitório até 31-12-2027):
+  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+- Decreto-Lei n.º 96/2017, de 10 de agosto (instalações elétricas de serviço particular):
+  https://data.dre.pt/eli/decreto-lei/96/2017/08/10/p/dre/pt/html
+- Decreto-Lei n.º 163/2006, de 8 de agosto (acessibilidades em edifícios — estacionamento e
+  tomadas de carregamento): https://data.dre.pt/eli/decreto-lei/163/2006/08/08/p/dre/pt/html
+- Portaria n.º 231/2013, de 22 de julho (regras do setor elétrico aplicáveis à mobilidade
+  elétrica): https://data.dre.pt/eli/portaria/231/2013/07/22/p/dre/pt/html
+- Portaria n.º 949-A/2006, de 11 de setembro (RTIEBT):
+  https://data.dre.pt/eli/portaria/949-a/2006/09/11/p/dre/pt/html
+
+Diplomas do regime de 2010 já revogados:
+
+- Portaria n.º 241/2015, de 12 de agosto (requisitos técnicos da licença de operação):
+  https://data.dre.pt/eli/portaria/241/2015/08/12/p/dre/pt/html
+- Portaria n.º 240/2015, de 12 de agosto (taxas):
+  https://data.dre.pt/eli/portaria/240/2015/08/12/p/dre/pt/html
+- Portaria n.º 231/2016, de 29 de agosto (seguro obrigatório de RC):
+  https://data.dre.pt/eli/portaria/231/2016/08/29/p/dre/pt/html
+
+### Normas e standards
+
+- IEC 60364-7-722 (instalações elétricas de baixa tensão — alimentação de veículos elétricos):
+  https://webstore.iec.ch/en/publication/29958
+- IEC 61851-1 (sistema de carregamento condutivo):
+  https://webstore.iec.ch/en/publication/33644
+- IEC 62196-2:2025 (fichas e tomadas AC — Tipo 1 e Tipo 2):
+  https://webstore.iec.ch/en/publication/86317
+
+### Outras fontes
+
 - Histórico de alterações do DL 39/2010 (Diário da República):
   https://diariodarepublica.pt/dr/analise-juridica/modificacoes/decreto-lei/39-2010-614137
-- Decreto-Lei n.º 93/2025, de 14 de agosto (art. 45.º revoga o DL 39/2010):
-  https://diariodarepublica.pt/dr/detalhe/decreto-lei/93-2025-928937303
-- Decreto-Lei n.º 155/2026, de 31 de julho (período transitório até 31-12-2027):
-  https://files.diariodarepublica.pt/1s/2026/07/14700/0003200033.pdf

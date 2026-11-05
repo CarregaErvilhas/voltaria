@@ -74,10 +74,74 @@ Estados-membros (é um regulamento, não uma diretiva).
 - Para a lista completa e atualizada, consulta a página da DGEG "Legislação Aplicável e
   Despachos DGEG" (mobilidade elétrica).
 
-## Fontes oficiais
+## Fontes
 
-- Regulamento (UE) 2023/1804 — EUR-Lex.
-- DL 93/2025 e DL 155/2026 — Diário da República.
-- Portarias 16/2026/1, 31/2026/1, 118/2026/1, 128/2026/1, 130/2026/1, 133/2026/1.
-- Despacho DGEG 22/2024 e Guia Técnico CTE 64 (ed. 3, 2023).
-- Página DGEG: mobilidade elétrica → legislação aplicável e despachos DGEG.
+### Legislação
+
+- Regulamento (UE) 2023/1804 (AFIR):
+  https://eur-lex.europa.eu/eli/reg/2023/1804/oj
+- Diretiva 2014/94/UE (revogada pelo AFIR, útil para o histórico):
+  https://eur-lex.europa.eu/eli/dir/2014/94/oj
+- Decreto-Lei n.º 93/2025, de 14 de agosto (RJME):
+  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+- Decreto-Lei n.º 155/2026, de 31 de julho (prorroga o período transitório até 31-12-2027):
+  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+- Portaria n.º 16/2026/1, de 12 de janeiro (licença de operação):
+  https://diariodarepublica.pt/dr/detalhe/portaria/16-2026-1003479553
+- Portaria n.º 31/2026/1, de 23 de janeiro (dados dos OPC e NAP):
+  https://diariodarepublica.pt/dr/detalhe/portaria/31-1022092628
+- Portaria n.º 118/2026/1, de 19 de março (seguro de RC):
+  https://diariodarepublica.pt/dr/detalhe/portaria/118-2026-1074104064
+- Portaria n.º 128/2026/1, de 26 de março (potências mínimas e regras técnicas):
+  https://files.diariodarepublica.pt/1s/2026/03/06000/0000300006.pdf
+- Portaria n.º 130/2026/1, de 27 de março (domínio público):
+  https://diariodarepublica.pt/dr/detalhe/portaria/130-2026-1078211087
+- Portaria n.º 133/2026/1, de 30 de março (taxas):
+  https://files.diariodarepublica.pt/1s/2026/03/06200/0001100012.pdf
+- Decreto-Lei n.º 96/2017, de 10 de agosto (instalações elétricas de serviço particular):
+  https://data.dre.pt/eli/decreto-lei/96/2017/08/10/p/dre/pt/html
+- Lei n.º 61/2018, de 9 de agosto (altera o DL 96/2017):
+  https://data.dre.pt/eli/lei/61/2018/08/09/p/dre/pt/html
+- Portaria n.º 949-A/2006, de 11 de setembro (RTIEBT — regras técnicas das instalações
+  elétricas de baixa tensão): https://data.dre.pt/eli/portaria/949-a/2006/09/11/p/dre/pt/html
+
+Legislação revogada (só para contexto histórico):
+
+- Decreto-Lei n.º 39/2010, de 26 de abril:
+  https://data.dre.pt/eli/decreto-lei/39/2010/04/26/p/dre/pt/html
+- Decreto-Lei n.º 90/2014, de 11 de junho (terceira alteração ao DL 39/2010):
+  https://data.dre.pt/eli/decreto-lei/90/2014/06/11/p/dre/pt/html
+- Portaria n.º 241/2015, de 12 de agosto (requisitos da licença de operação):
+  https://data.dre.pt/eli/portaria/241/2015/08/12/p/dre/pt/html
+- Portaria n.º 240/2015, de 12 de agosto (taxas):
+  https://data.dre.pt/eli/portaria/240/2015/08/12/p/dre/pt/html
+- Portaria n.º 231/2016, de 29 de agosto (seguro de RC):
+  https://data.dre.pt/eli/portaria/231/2016/08/29/p/dre/pt/html
+
+### Normas e standards
+
+- DATEX II — perfil de carregamento de veículos elétricos:
+  https://datex2.eu/user-domains/ev-charging/
+- ISO 15118-20 (comunicação veículo-rede, V2G e bidirecional):
+  https://www.iso.org/standard/77845.html
+- ISO 15118-2 (comunicação veículo-rede, Plug & Charge):
+  https://www.iso.org/standard/55366.html
+- IEC 61851-1 (sistema de carregamento condutivo):
+  https://webstore.iec.ch/en/publication/33644
+- IEC 62196-1:2025 (fichas, tomadas e conectores — requisitos gerais):
+  https://webstore.iec.ch/en/publication/86313
+- IEC 62196-2:2025 (fichas e tomadas AC):
+  https://webstore.iec.ch/en/publication/86317
+- IEC 62196-3 (fichas e conectores DC):
+  https://webstore.iec.ch/en/publication/59923
+- OCPP (Open Charge Point Protocol), adotado como IEC 63584:
+  https://openchargealliance.org/protocols/ocpp-protocols/
+
+### Outras fontes
+
+- Despacho DGEG n.º 22/2024, de 5 de agosto (procedimentos técnicos das ECVE):
+  https://www.mobie.pt/documents/42032/db85ec09-910b-98dc-6ede-054ee276e9af
+- DGEG, Guia Técnico das Instalações Elétricas para a Alimentação de Veículos Elétricos,
+  3.ª edição (2023): https://www.dgeg.gov.pt/media/5adbxzxo/guia-ve-ed-3-2023.pdf
+- DGEG, legislação aplicável e despachos DGEG (mobilidade elétrica):
+  https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/legislacao-aplicavel-e-despachos-dgeg/

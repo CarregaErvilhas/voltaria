@@ -108,6 +108,27 @@ de 8 anos e 160 000 km [UVE, manual], mas confirma sempre a da versão e do ano 
 
 ## Fontes
 
+### Legislação
+
+- Regulamento (UE) 2023/1542 (pilhas e baterias — requisitos de sustentabilidade, desempenho,
+  segurança, recolha e reciclagem): https://eur-lex.europa.eu/eli/reg/2023/1542/oj
+- Decreto-Lei n.º 84/2021, de 18 de outubro (direitos do consumidor na compra e na garantia de bens
+  móveis, incluindo a bateria como componente do veículo):
+  https://data.dre.pt/eli/decreto-lei/84/2021/10/18/p/dre/pt/html
+
+### Normas e standards
+
+- UNECE, Regulamento n.º 100 (segurança das baterias nos veículos elétricos):
+  https://unece.org/transport/documents/2022/03/standards/regulation-no-100-rev3
+- ISO 12405-4 (sistemas de bateria de tração — ensaios de desempenho):
+  https://www.iso.org/standard/71407.html
+- IEC 62660-1 (células de iões de lítio para tração — desempenho):
+  https://webstore.iec.ch/en/publication/28965
+- IEC 62196-3 (fichas e conectores DC — interface do carregamento rápido):
+  https://webstore.iec.ch/en/publication/59923
+
+### Outras fontes
+
 Da UVE – Associação de Utilizadores de Veículos Elétricos, verificado a 2026-11-04:
 
 - [UVE, química das baterias] "A química das baterias (LFP ou NMC): qual devemos escolher num
@@ -122,9 +143,8 @@ Da UVE – Associação de Utilizadores de Veículos Elétricos, verificado a 20
 Republicado pela UVE, de outro autor:
 
 - [VOLT, carro parado] VOLT (Exame Informática), "Veículos elétricos parados: como tratar bem da
-  bateria?" (16-3-2020):
-  https://visao.sapo.pt/volt/2020-03-16-veiculos-eletricos-parados-como-tratar-bem-da-bateria/
-  (republicado em https://www.uve.pt/page/veiculos-eletricos-parados-como-tratar-bem-da-bateria/)
+  bateria?" (16-3-2020), republicado pela UVE:
+  https://www.uve.pt/page/veiculos-eletricos-parados-como-tratar-bem-da-bateria/
 
 O que vem da UVE está assinalado com [UVE, …] e foi reescrito, com autorização da UVE (ver
 `docs/fontes/uve.md` no Voltaria). Os pontos do manual da UVE, que está sob CC BY 4.0, foram
