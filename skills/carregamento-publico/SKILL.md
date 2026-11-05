@@ -96,6 +96,61 @@ Pergunta só o que não souberes, uma coisa de cada vez:
 - Num posto rápido com várias fichas (CCS, CHAdeMO, Tipo 2), usa a DC (CCS ou CHAdeMO) para
   carregamento rápido; a Tipo 2 carrega em AC, limitado pelo carregador de bordo.
 
+## Roaming, hubs e plataformas
+
+### O que é o roaming
+
+- **Roaming** é o que permite a um condutor com um cartão ou app de um fornecedor carregar num
+  posto de outro operador, sem contrato direto com esse operador. O posto (CPO) e o fornecedor do
+  cartão (eMSP) trocam autorização, dados de sessão e faturação entre si.
+- **CPO (Charging Point Operator)**: opera os postos físicos e a sua backoffice.
+- **eMSP (e-Mobility Service Provider)**: vende o cartão/app ao condutor e fatura-o.
+- Um mesmo ator pode ser CPO e eMSP ao mesmo tempo.
+
+### Hubs de roaming
+
+Em vez de cada CPO negociar com cada eMSP (peer-to-peer), muitos usam um **hub** que liga todos
+numa só integração técnica e contratual.
+
+- **Hubject (intercharge)**: um dos maiores hubs europeus, com mais de 1 milhão de pontos de
+  carregamento e milhares de parceiros em 75+ países. Suporta OICP e OCPI, e é a base do
+  Plug & Charge (ISO 15118). Forte presença na Europa e além.
+- **Gireve**: hub francês, forte na Europa (especialmente França e sul da Europa). Usa eMIP e
+  OCPI. Conhecido pelos serviços de dados (localização, disponibilidade) para parceiros de
+  navegação. Líder de intermediação na Europa.
+- **e-clearing.net**: hub com raízes na Holanda e Alemanha, usa OCHP e OCPI.
+- **OCPI (Open Charge Point Interface)**: protocolo aberto mantido pela EVRoaming Foundation, usado
+  tanto peer-to-peer como através de hubs. É o protocolo mais usado em novas integrações de
+  roaming e dados.
+
+### Plug & Charge
+
+- O **Plug & Charge** (ISO 15118) permite carregar sem cartão nem app: basta ligar o cabo, e o
+  carro e o posto autenticam-se e faturam automaticamente. Depende de certificados e de uma
+  infraestrutura de chave pública. O Hubject é uma das entidades que gere a raiz de confiança.
+- Ainda em expansão; nem todos os carros e postos o suportam.
+
+### Pan-European eRoaming Initiative
+
+- Em 2014-2015, as plataformas MOBI.E, Hubject, Gireve, e-clearing.net e Enel (entre outras)
+  lançaram uma iniciativa para interligar as redes europeias (interroaming), com o objetivo de
+  reduzir barreiras e criar uma infraestrutura interoperável na Europa.
+
+### Outras plataformas
+
+- **Virta**: plataforma de roaming gerido que assenta sobre hubs (Hubject, Gireve) e trata de
+  contratos, integração, liquidação e disputas por conta do CPO/eMSP.
+- **MOBI.E**: a plataforma portuguesa (CEME/OPC) que funciona como hub nacional e liga-se às
+  redes europeias.
+
+### Notas práticas
+
+- Para o condutor, o roaming significa que um único cartão/app serve em vários países. Confirma
+  sempre com o fornecedor quais as redes e países cobertos e as tarifas de roaming, que podem ser
+  mais altas do que as tarifas locais.
+- O pagamento ad hoc (cartão bancário no posto) existe independentemente do roaming e é obrigatório
+  em muitos postos públicos na UE (AFIR).
+
 ## Quanto tempo demora
 
 Não há uma resposta igual para todos. Explica do que depende [UVE, formas de carregamento]:
