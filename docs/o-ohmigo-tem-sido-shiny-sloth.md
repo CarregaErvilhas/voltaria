@@ -40,9 +40,12 @@ como apresentar e em que idioma.
 
 - **Uma skill por tema**, `skills/<nome>/SKILL.md` (formato Agent Skills; `name` igual ao nome da
   pasta; minúsculas, números e hífens).
-- v1: **`carregar-em-casa`** (wallbox, DPC, condomínio, solar, o que perguntar ao utilizador) e
-  **`incentivos`** (cita sempre fonte + data e encaminha para a página oficial). Mais temas a seguir,
-  por exemplo `carregamento-publico`.
+- v1: **`carregar-em-casa`** (wallbox, DPC, condomínio, solar, tomadas e fichas, V2X, o que
+  perguntar ao utilizador) e **`incentivos`** (cita sempre fonte + data e encaminha para a página
+  oficial). Mais temas a seguir, por exemplo `carregamento-publico`.
+- Skills já criadas: `afir` (AFIR e legislação portuguesa), `afir-nap` (Ponto de Acesso Nacional),
+  `autonomia`, `baterias`, `carregamento-publico` (postos, roaming, hubs, BESS, Plug & Charge,
+  OCPP/OCPI), `carregar-em-casa`, `incentivos`, `regime-2010`, `sub-cpe`.
 - **`regime-2010`**: o regime revogado (DL 39/2010, na redação do DL 90/2014), como funcionava o
   modelo CEME/OPC/EGME, o período transitório até 31-12-2027 e o que mudou com o DL 93/2025. Serve
   para referências ao modelo anterior e a factos anteriores a 19-08-2025.
@@ -128,10 +131,14 @@ dá mais peso aos primeiros 512.
    README, CODEOWNERS, `scripts/check-dco.sh` e a Action `dco.yml`). Falta criar
    `CarregaErvilhas/voltaria` no GitHub e fazer push.
 2. `glossario.md` e o teste dos sinónimos.
-3. `skills/carregar-em-casa/` e `skills/incentivos/`, com rascunho do Claude e revisão por PR.
+3. `skills/carregar-em-casa/`, `skills/incentivos/` e as restantes skills (`afir`, `afir-nap`,
+   `autonomia`, `baterias`, `carregamento-publico`, `regime-2010`, `sub-cpe`), com rascunho do
+   Claude e revisão por PR. A maioria já foi redigida e fundida em `main`.
 4. `knowledge/incentives.json` + teste: todas as entradas têm `source.url`, `checkedAt` e texto
    pt+en; lógica de stale e de expiração.
-5. Teste das skills: frontmatter válido, nome igual ao da pasta, nenhum valor em €/kWh.
+5. Teste das skills: frontmatter válido (descriptions entre aspas), nome igual ao da pasta, nenhum
+   valor em €/kWh. O frontmatter de 9 skills foi corrigido (2026-11-05) para evitar erro de parse
+   YAML.
 6. Action de release: tag semver + zip por skill.
 
 ### C. ohmigo: integração (depois da Q7)
