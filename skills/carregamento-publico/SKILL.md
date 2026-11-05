@@ -44,6 +44,22 @@ Pergunta só o que não souberes, uma coisa de cada vez:
 - **Rede Tesla**: muitos Superchargers abriram a carros de outras marcas. Os carros Tesla não têm
   prioridade nesses postos [UVE, carregar com respeito]. Confirma na app da Tesla se um posto
   concreto aceita outras marcas.
+- **Nomes oficiais por potência** (AFIR, art. 2.º e anexo, como a DGEG os resume) [DGEG, FAQ
+  1.2.9]. Usa-os quando o utilizador ou um documento oficial falar destas categorias. Os limites
+  não coincidem com as siglas da UVE: o "ultrarrápido" do AFIR começa nos 150 kW em DC, o "rápido"
+  em DC nos 50 kW.
+
+  | Corrente | Nome | Potência máxima |
+  |---|---|---|
+  | AC | lento, monofásico | menos de 7,4 kW |
+  | AC | velocidade média, trifásico | de 7,4 a 22 kW |
+  | AC | rápido, trifásico | mais de 22 kW |
+  | DC | lento | menos de 50 kW |
+  | DC | rápido | de 50 kW a menos de 150 kW |
+  | DC | ultrarrápido, nível 1 | de 150 kW a menos de 350 kW |
+  | DC | ultrarrápido, nível 2 | 350 kW ou mais |
+
+  No AFIR, até 22 kW é "potência normal" e acima disso "alta potência".
 
 ## Fichas e tomadas
 
@@ -384,6 +400,10 @@ precisa para pagar hoje.
 - As subscrições podem mudar muito o preço: a UVE encontrou casos em que sem subscrição se paga duas
   a três vezes mais [UVE, análise do novo regime]. Se o utilizador carrega muitas vezes na mesma
   rede, sugere comparar com e sem subscrição.
+- O OPC não pode cobrar preços diferentes a quem paga ad hoc e a quem vem por um eMSP, nem entre
+  eMSP. Pode dar descontos com critérios objetivos, por exemplo a quem tem subscrição (DL 93/2025,
+  art. 14.º, n.º 4). A fatura do OPC tem de mostrar o preço total e as parcelas por tipo de serviço
+  (art. 14.º, n.º 5).
 
 ### Ad hoc, sem contrato
 
@@ -425,15 +445,53 @@ A rede pública é partilhada. A UVE resume-o na campanha "Carregar com Respeito
 - Ninguém tem prioridade, exceto veículos de emergência em missão.
 
 Estacionar num lugar de carregamento sem carregar pode dar multa e reboque
-[UVE, avisos de cortesia]. Alguns OPC cobram uma tarifa de ocupação depois de o carregamento
-acabar: está nas condições do posto ou da app.
+[UVE, avisos de cortesia]. Um carro que não é elétrico num lugar reservado a veículos elétricos em
+carga é punido pelo Código da Estrada (DL 93/2025, art. 20.º, n.º 8).
+
+**Taxa de ocupação.** O OPC tem de afixar em todos os seus postos a taxa de ocupação, em preço por
+minuto, que cobra a quem deixa o carro ligado depois de a bateria estar carregada (DL 93/2025,
+art. 14.º, n.º 2). Lembra o utilizador de a ver antes de deixar o carro a carregar e ir embora.
+
+## O que o posto tem de mostrar
+
+Num posto público, antes de começar, o condutor tem direito a ver (DL 93/2025, art. 14.º, n.ºs 1 a
+3):
+
+- o tipo de posto, o tipo de corrente e a potência máxima;
+- o preço ad hoc com todas as parcelas, por kWh, por minuto ou por sessão, incluindo tarifas e
+  impostos;
+- a taxa de ocupação;
+- as regras de segurança a seguir.
+
+Cada equipamento tem também duas etiquetas: uma com as entidades responsáveis (o OPC, a DGEG, a
+ERSE e a ENSE) e outra com as instruções de carregamento [DGEG, acesso público]. Se o utilizador
+não souber de quem é um posto, a etiqueta diz-lhe.
+
+Mais regras que protegem o condutor:
+
+- O OPC tem de deixar carregar qualquer condutor, com ou sem contrato. Só pode recusar por
+  incompatibilidade técnica com o carro (DL 93/2025, art. 13.º, n.º 1, a), e n.º 2).
+- Os postos públicos são inspecionados antes de abrir e de 5 em 5 anos por uma entidade
+  inspetora (EIIEL). Sem o certificado, a ENSE pode mandar fechar o posto (art. 16.º).
+- Para saber se uma empresa é OPC licenciado, a DGEG publica a lista dos OPC e a dos CEME do regime
+  antigo (ligações nas fontes). Não copies as listas: mudam.
 
 ## Quando o posto não funciona
 
 - O apoio é dado pelo OPC do posto, não pela MOBI.E [UVE, rede de carregamento]. O número costuma
-  estar no posto e na app.
+  estar no posto e na app. O OPC é obrigado a ter apoio ao condutor disponível durante todo o tempo
+  em que o posto está a funcionar (DL 93/2025, art. 13.º, n.º 1, k).
 - Se o cabo estiver cortado ou o posto vandalizado, sugere avisar o OPC. Os furtos de cabos têm
   afetado sobretudo postos rápidos [UVE, furto e vandalismo].
+- **Perigo** (fumo, cheiro a queimado, cabo descarnado): não tocar no posto nem no cabo, afastar
+  as pessoas e ligar o 112 se houver risco. Muitos postos têm um botão de corte de emergência: é
+  obrigatório nas instalações acima de 22 kVA, mas os postos instalados antes de 2019 podem não o
+  ter [DGEG, acesso público; DGEG, inspeções periódicas]. Depois, avisar o OPC: o OPC tem de
+  comunicar qualquer acidente elétrico à DGEG e à ENSE (art. 14.º, n.º 8).
+- **Reclamar**: o OPC tem de ter livro de reclamações. Se não houver atendimento no local, tem de
+  ter o livro eletrónico no site e um aviso no posto a dizer como reclamar. As reclamações são
+  tratadas pela ERSE (DL 93/2025, art. 14.º, n.ºs 6 e 7). Sugere juntar a data, a hora, o
+  identificador do posto e fotografias.
 
 ## No estrangeiro
 
@@ -487,6 +545,17 @@ comparativo.
   https://datex2.eu/user-domains/ev-charging/
 
 ### Outras fontes
+
+Da DGEG – Direção-Geral de Energia e Geologia, verificado a 2026-11-04:
+
+- [DGEG, FAQ …] Perguntas frequentes, com o número da pergunta:
+  https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/perguntas-frequentes-faq-s/
+- [DGEG, acesso público] https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/instalacao-de-pontos-de-carregamento/acesso-publico/
+- [DGEG, inspeções periódicas] https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/instalacao-de-pontos-de-carregamento/inspecoes-periodicas/
+- Lista de OPC licenciados: https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/operacao-e-comercializacao/lista-de-opc/
+- Lista de CEME (regime transitório): https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/operacao-e-comercializacao/regime-transitorio/ceme-registados/
+
+Os pontos da DGEG estão escritos por palavras nossas (ver `docs/fontes/dgeg.md` no Voltaria).
 
 Da UVE – Associação de Utilizadores de Veículos Elétricos, verificado a 2026-11-04:
 

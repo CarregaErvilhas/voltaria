@@ -49,3 +49,8 @@ que confundem papéis diferentes.
 | consumo | gasto | A energia que o carro gasta para andar, em kWh/100 km. |
 | WLTP | ciclo de homologação | O ensaio de laboratório em que se mede a autonomia anunciada pelo fabricante. A autonomia real costuma ser menor. |
 | travagem regenerativa | travagem por recuperação; frenagem regenerativa | O motor elétrico trava o carro e devolve energia à bateria quando se tira o pé do acelerador ou se trava. |
+| ECVE | estação de serviço elétrica | Estação de carregamento de veículos elétricos: um ou mais pontos de carregamento num local (AFIR, art. 2.º, 52). A DGEG usa o termo nas regras técnicas dos postos públicos. |
+| EIIEL | inspetor da DGEG | Entidade inspetora de instalações elétricas, reconhecida pela DGEG. Inspeciona os postos públicos antes de abrirem e de 5 em 5 anos (DL 93/2025, art. 16.º). |
+| ENSE | ENMC | Entidade Nacional para o Setor Energético: fiscaliza os postos públicos e recebe os certificados de inspeção; pode mandar fechar um posto sem certificado (DL 93/2025, art. 16.º). |
+| EADME | agregador da MOBI.E | Entidade agregadora de dados para a mobilidade elétrica: recebe os dados dos postos de todos os OPC e envia-os ao Ponto de Acesso Nacional do IMT (DL 93/2025, art. 2.º, f, e art. 19.º). |
+| entidade instaladora (EI) | instalador credenciado | Empresa registada na DGEG para executar instalações elétricas. Acima de 41,4 kVA a instalação tem de ser feita por uma EI; abaixo, basta um técnico responsável registado (Lei n.º 14/2015, art. 4.º). |
