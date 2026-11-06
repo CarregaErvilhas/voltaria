@@ -113,9 +113,9 @@ Pergunta só o que for preciso para o apoio em causa:
 - Código do IUC — Lei n.º 22-A/2007, de 29 de junho:
   https://data.dre.pt/eli/lei/22-a/2007/06/29/p/dre/pt/html
 - Código do IVA — Decreto-Lei n.º 394-B/84, de 26 de dezembro:
-  https://data.dre.pt/eli/decreto-lei/394-b/1984/12/26/p/dre/pt/html
+  https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/codigo-do-iva-indice.aspx
 - Código do IRC — Decreto-Lei n.º 442-B/88, de 30 de novembro:
-  https://data.dre.pt/eli/decreto-lei/442-b/1988/11/30/p/dre/pt/html
+  https://diariodarepublica.pt/dr/detalhe/decreto-lei/442-b-1988-519003
 - Lei n.º 19/2024, de 5 de fevereiro (fim da obrigatoriedade do dístico identificativo):
   https://data.dre.pt/eli/lei/19/2024/02/05/p/dre/pt/html
 

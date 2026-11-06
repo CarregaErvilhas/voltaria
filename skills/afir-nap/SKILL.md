@@ -142,9 +142,9 @@ normal", acima disso "alta potência".
 - Regulamento Delegado (UE) 2022/670 (informação de tráfego em tempo real, RTTI):
   https://eur-lex.europa.eu/eli/reg_del/2022/670/oj
 - Decreto-Lei n.º 93/2025, de 14 de agosto (RJME):
-  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (período transitório até 31-12-2027):
-  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/155/2026/07/31/p/dre/pt/html
 - Portaria n.º 31/2026/1, de 23 de janeiro (dados dos OPC à EADME e transmissão ao NAP):
   https://diariodarepublica.pt/dr/detalhe/portaria/31-1022092628
 

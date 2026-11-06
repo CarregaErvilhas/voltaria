@@ -41,14 +41,26 @@ for f in skills/*/SKILL.md; do
     echo "$f: '## Fontes' has no link to a standard (ISO, IEC, UNECE, OCA, EVRoaming, DATEX II)"
     bad=1
   fi
+  # ELI type codes on data.dre.pt are short (dec-lei, port, lei); the long names
+  # redirect to diariodarepublica.pt/dr/error with a 200, so a link check misses them.
+  if grep -Eq 'data\.dre\.pt/eli/(decreto-lei|portaria|regulamento|despacho)/' "$f"; then
+    grep -En 'data\.dre\.pt/eli/(decreto-lei|portaria|regulamento|despacho)/' "$f" |
+      sed "s|^|$f: wrong ELI type (use dec-lei, port, or a /dr/detalhe/ link): line |"
+    bad=1
+  fi
 done
 
 if [ "$check_links" = 1 ]; then
   for f in skills/*/SKILL.md; do
     sed -n '/^## Fontes/,$p' "$f" | grep -Eo 'https://[^ )>,"]+' | sed 's/[.;,`]$//' | sort -u > "$tmp"
     while read -r url; do
-      code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 30 "$url" || true)
+      res=$(curl -s -o /dev/null -w '%{http_code} %{url_effective}' -L --max-time 30 -A 'Mozilla/5.0' "$url" || true)
+      code=${res%% *}
       [ -n "$code" ] || code=000
+      case "$res" in
+        # The Diário da República answers 200 on its error page.
+        *diariodarepublica.pt/dr/error*) echo "$f: DR error page $url"; bad=1; continue ;;
+      esac
       if [ "$code" = 000 ]; then
         # Slow or heavy endpoints (the MOBI.E NAP dumps) get one longer retry.
         code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 90 "$url" || true)

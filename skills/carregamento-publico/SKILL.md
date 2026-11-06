@@ -307,12 +307,12 @@ comparativo.
 ### Legislação
 
 - Decreto-Lei n.º 93/2025, de 14 de agosto (regime jurídico da mobilidade elétrica):
-  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (prorroga o período transitório até 31-12-2027):
-  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/155/2026/07/31/p/dre/pt/html
 - Regulamento (UE) 2023/1804 (AFIR): https://eur-lex.europa.eu/eli/reg/2023/1804/oj
 - Regulamento n.º 7/2026, de 6 de janeiro (ERSE — Regulamento da Mobilidade Elétrica):
-  https://data.dre.pt/eli/regulamento/7/2026/01/06/p/dre/pt/html
+  https://diariodarepublica.pt/dr/detalhe/regulamento/7-2026-994000576
 
 ### Normas e standards
 
