@@ -679,6 +679,54 @@
       "checkedAt": "2026-11-06",
       "validFrom": "2021-07-05",
       "validTo": null
+    },
+    {
+      "id": "tar-2026-bte-mt",
+      "kind": "mercado",
+      "series": "tar",
+      "text": {
+        "pt": "TAR 2026 (sem IVA). BTE: potência contratada 0,0563 €/kW/dia; potência em horas de ponta 0,5521 €/kW/dia; energia ativa 0,0397 (ponta), 0,0353 (cheias), 0,0285 (vazio normal), 0,0237 (super vazio) €/kWh. MT: potência contratada 0,0458 €/kW/dia; potência em horas de ponta 0,2435 €/kW/dia; energia ativa 0,0203, 0,0182, 0,0146, 0,0129 €/kWh.",
+        "en": "2026 network access tariffs (excl. VAT). BTE (special low voltage): contracted power €0.0563/kW/day; peak-hour power €0.5521/kW/day; active energy €0.0397 (peak), 0.0353 (full), 0.0285 (off-peak), 0.0237 (super off-peak)/kWh. MV: contracted power €0.0458/kW/day; peak-hour power €0.2435/kW/day; energy €0.0203, 0.0182, 0.0146, 0.0129/kWh."
+      },
+      "source": {
+        "url": "https://www.erse.pt/media/lamnmp31/diretiva-erse-10-2025-tep-se-2026.pdf",
+        "name": "ERSE, Diretiva n.º 10/2025 (tarifas e preços da energia elétrica para 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-01-01",
+      "validTo": "2026-12-31"
+    },
+    {
+      "id": "tar-me-2026",
+      "kind": "mercado",
+      "series": "tar",
+      "text": {
+        "pt": "TAR da mobilidade elétrica 2026 (só energia, sem IVA). Ligação em BT: tri-horária 0,2807 (ponta), 0,0769 (cheias), 0,0266 (vazio) €/kWh; bi-horária 0,1192 (fora de vazio), 0,0266 (vazio). Ligação em MT: tri-horária 0,2410, 0,0379, 0,0157; bi-horária 0,0812, 0,0157 €/kWh. Só para postos integrados na MOBI.E.",
+        "en": "2026 e-mobility network access tariff (energy only, excl. VAT). BT connection: three-period €0.2807 (peak), 0.0769 (full), 0.0266 (off-peak)/kWh; two-period €0.1192 (outside off-peak), 0.0266 (off-peak). MV connection: three-period 0.2410, 0.0379, 0.0157; two-period 0.0812, 0.0157 €/kWh. Only for charge points integrated in MOBI.E."
+      },
+      "source": {
+        "url": "https://www.erse.pt/media/lamnmp31/diretiva-erse-10-2025-tep-se-2026.pdf",
+        "name": "ERSE, Diretiva n.º 10/2025 (tarifas e preços da energia elétrica para 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-01-01",
+      "validTo": "2026-12-31"
+    },
+    {
+      "id": "tar-exemplo-posto-150kw-bte",
+      "kind": "mercado",
+      "series": "tar",
+      "text": {
+        "pt": "Exemplo do Voltaria (preços TAR 2026, mês de 30 dias): posto de 150 kW em BTE, 20 % dos kWh em horas de ponta, 110 h de ponta no mês. TAR normal ≈ 253 € fixos + 0,064 €/kWh; TAR ME BT tri-horária ≈ 0,103 €/kWh. Equilíbrio perto de 6 500 kWh/mês (cerca de 6 % de utilização). Com 1 000 kWh/mês: ≈0,32 €/kWh de rede contra ≈0,10; com 15 000 kWh/mês: ≈0,08 contra ≈0,10. Estimativa, não fatura.",
+        "en": "Voltaria example (2026 TAR prices, 30-day month): 150 kW charger on BTE, 20% of kWh in peak hours, 110 peak hours a month. Standard TAR ≈ €253 fixed + €0.064/kWh; e-mobility TAR (BT, three-period) ≈ €0.103/kWh. Break-even near 6,500 kWh/month (about 6% utilisation). At 1,000 kWh/month: ≈€0.32/kWh of network cost vs ≈0.10; at 15,000 kWh/month: ≈0.08 vs ≈0.10. Estimate, not a bill."
+      },
+      "source": {
+        "url": "https://www.erse.pt/media/lamnmp31/diretiva-erse-10-2025-tep-se-2026.pdf",
+        "name": "ERSE, Diretiva n.º 10/2025 (tarifas e preços da energia elétrica para 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-01-01",
+      "validTo": "2026-12-31"
     }
   ]
 }
