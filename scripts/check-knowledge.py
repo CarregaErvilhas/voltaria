@@ -5,6 +5,9 @@ Fails when an entry has no id, a repeated id, no pt+en text, no https source.url
 no checkedAt, a bad date, validTo before validFrom, a checkedAt in the future, a Fundo Ambiental
 entry without series/edition, or a municipal entry without municipality, benefit and official.url.
 
+An entry with "status": "anunciado" is an announced support that is not open yet: it does not
+count as in force, and its validFrom, if set, must be in the future.
+
 Warns (does not fail) about entries still in force whose checkedAt is older than --max-age days:
 those are the ones a consumer marks as stale.
 
@@ -17,6 +20,7 @@ import sys
 
 KINDS = {"apoio", "fiscal", "municipal"}
 BENEFITS = {"isenção", "desconto"}
+STATUSES = {"anunciado"}
 
 
 def date(value):
@@ -80,6 +84,13 @@ def main():
                 err(f"benefit must be one of {sorted(BENEFITS)}")
             if not str((e.get("official") or {}).get("url", "")).startswith("https://"):
                 err("municipal entry needs an https official.url")
+        status = e.get("status")
+        if status is not None and status not in STATUSES:
+            err(f"status '{status}' not in {sorted(STATUSES)}")
+        if status == "anunciado":
+            if vfrom and vfrom <= today:
+                err(f"announced entry with validFrom {vfrom} not in the future: open it or fix the date")
+            continue
         in_force = not vto or vto >= today
         if in_force and (today - checked).days > args.max_age:
             warnings.append(f"{eid}: in force, checkedAt {checked} older than {args.max_age} days")
@@ -91,7 +102,9 @@ def main():
     if errors:
         return 1
     closed = sum(1 for e in entries if e.get("validTo") and date(e["validTo"]) < today)
-    print(f"Knowledge: {len(entries)} entries valid ({closed} closed, {len(entries) - closed} in force)")
+    announced = sum(1 for e in entries if e.get("status") == "anunciado")
+    in_force = len(entries) - closed - announced
+    print(f"Knowledge: {len(entries)} entries valid ({closed} closed, {announced} announced, {in_force} in force)")
     return 0
 
 

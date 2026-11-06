@@ -223,6 +223,42 @@
       "edition": "2025-2026-f2"
     },
     {
+      "id": "psc-mobilidade-familias-vulneraveis",
+      "kind": "apoio",
+      "status": "anunciado",
+      "series": "plano-social-clima",
+      "edition": "2026-2032",
+      "text": {
+        "pt": "Anunciado, ainda não aberto. Plano Social para o Clima 2026-2032, entregue à Comissão Europeia a 9-10-2026: apoio a cerca de 5 000 famílias vulneráveis na eletrificação da mobilidade, gerido pela Agência para o Clima. Depende da aprovação da Comissão; os primeiros avisos estão previstos para o 2.º semestre de 2027. Ainda não há diploma nem aviso publicado com valores, critérios de acesso ou datas de candidatura.",
+        "en": "Announced, not yet open. Social Climate Plan 2026-2032, submitted to the European Commission on 9 Oct 2026: support for about 5,000 vulnerable households to electrify their mobility, managed by the Agência para o Clima. Subject to Commission approval; first calls expected in the second half of 2027. No law or call with amounts, eligibility or application dates has been published yet."
+      },
+      "source": {
+        "url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/portugal-entrega-a-bruxelas-plano-social-para-o-clima-de-16-mil-milhoes-de-euros",
+        "name": "Governo de Portugal, comunicado de 9-10-2026, \"Portugal entrega a Bruxelas Plano Social para o Clima de 1,6 mil milhões de euros\""
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "psc-mobilidade-microempresas",
+      "kind": "apoio",
+      "status": "anunciado",
+      "series": "plano-social-clima",
+      "edition": "2026-2032",
+      "text": {
+        "pt": "Anunciado, ainda não aberto. Plano Social para o Clima 2026-2032, entregue à Comissão Europeia a 9-10-2026: apoio a cerca de 10 000 microempresas dos setores mais expostos ao aumento do custo dos combustíveis para eletrificar as frotas, gerido pela Agência para o Clima. Depende da aprovação da Comissão; os primeiros avisos estão previstos para o 2.º semestre de 2027. Ainda não há diploma nem aviso publicado com valores, setores elegíveis ou datas.",
+        "en": "Announced, not yet open. Social Climate Plan 2026-2032, submitted to the European Commission on 9 Oct 2026: support for about 10,000 micro-enterprises in the sectors most exposed to rising fuel costs to electrify their fleets, managed by the Agência para o Clima. Subject to Commission approval; first calls expected in the second half of 2027. No law or call with amounts, eligible sectors or dates has been published yet."
+      },
+      "source": {
+        "url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/portugal-entrega-a-bruxelas-plano-social-para-o-clima-de-16-mil-milhoes-de-euros",
+        "name": "Governo de Portugal, comunicado de 9-10-2026, \"Portugal entrega a Bruxelas Plano Social para o Clima de 1,6 mil milhões de euros\""
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
       "id": "iuc-isencao-eletricos",
       "kind": "fiscal",
       "text": {
@@ -264,6 +300,66 @@
         "name": "Portal das Finanças, Código do IRC, art. 88.º"
       },
       "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "limite-custo-viaturas-eletricas-62500",
+      "kind": "fiscal",
+      "text": {
+        "pt": "Limite de custo de aquisição das viaturas ligeiras de passageiros 100 % elétricas: 62 500 €, sem IVA (Portaria n.º 467/2010, alterada pelo art. 24.º da Lei n.º 82-D/2014). É o limite que conta para a dedução do IVA da compra (Código do IVA, art. 21.º, n.º 2, f), para as depreciações aceites em IRC (Código do IRC, art. 34.º, n.º 1, e) e para a tributação autónoma (art. 88.º, n.º 20). Acima dele, a AT considera que nenhuma parte do IVA da compra é dedutível. As despesas de utilização (reparação, manutenção, portagens, seguros) não beneficiam da exceção. Se a viatura for usada fora da atividade, há IVA a liquidar sobre esse uso.",
+        "en": "Acquisition-cost limit for fully electric passenger cars: €62,500 excluding VAT (Portaria 467/2010, as amended by art. 24 of Lei 82-D/2014). It is the limit for deducting the purchase VAT (VAT Code, art. 21(2)(f)), for accepted depreciation in corporate tax (IRC Code, art. 34(1)(e)) and for autonomous taxation (art. 88(20)). Above it, the Tax Authority holds that none of the purchase VAT is deductible. Running costs (repairs, maintenance, tolls, insurance) are not covered. Private use outside the business is subject to VAT."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/despesa/civa/Documents/PIV_28949.pdf",
+        "name": "Autoridade Tributária, informação vinculativa, processo 28949, despacho de 2025-10-31"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "iva-carregadores-nao-dedutivel",
+      "kind": "fiscal",
+      "text": {
+        "pt": "IVA dos postos de carregamento numa empresa: segundo a AT, o IVA da compra e da instalação dos carregadores para as viaturas da empresa não é dedutível, por ser uma despesa de utilização das viaturas. O IVA da eletricidade usada nas viaturas elétricas ou híbridas plug-in é dedutível (Código do IVA, art. 21.º, n.º 2, h), cumpridos os requisitos gerais.",
+        "en": "VAT on chargers at a company: according to the Tax Authority, VAT on buying and installing chargers for company vehicles is not deductible, as it is a vehicle running cost. VAT on electricity used in electric or plug-in hybrid vehicles is deductible (VAT Code, art. 21(2)(h)), if the general requirements are met."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/despesa/civa/Documents/PIV_24830.pdf",
+        "name": "Autoridade Tributária, informação vinculativa, processo 24830, despacho de 2023-10-27"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "iva-eletricidade-casa-colaborador",
+      "kind": "fiscal",
+      "text": {
+        "pt": "IVA da eletricidade gasta a carregar em casa do colaborador uma viatura elétrica da empresa: para o deduzir, a empresa tem de ter uma fatura emitida na forma legal, em seu nome e na sua posse, relativa a esses consumos (Código do IVA, art. 19.º, n.º 2). Um reembolso ao colaborador com base na fatura dele, em nome dele, não dá direito à dedução.",
+        "en": "VAT on electricity used to charge a company electric car at an employee's home: to deduct it, the company must hold a valid invoice in its own name for that consumption (VAT Code, art. 19(2)). Reimbursing the employee against an invoice in the employee's name does not allow the deduction."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/despesa/civa/Documents/PIV_25928.pdf",
+        "name": "Autoridade Tributária, informação vinculativa, processo 25928, despacho de 2024-04-30"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "isv-exclusao-eletricos",
+      "kind": "fiscal",
+      "text": {
+        "pt": "ISV: os veículos exclusivamente elétricos estão excluídos da incidência do imposto sobre veículos (Código do ISV, art. 2.º, n.º 2, alínea a), aprovado pela Lei n.º 22-A/2007). Conta, por exemplo, ao importar um elétrico usado. Não abrange híbridos.",
+        "en": "Vehicle tax (ISV): fully electric vehicles are outside the scope of the tax (ISV Code, art. 2(2)(a), approved by Lei 22-A/2007). Relevant, for example, when importing a used electric car. Hybrids are not covered."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/lei/22-a-2007-226204",
+        "name": "Lei n.º 22-A/2007, de 29 de junho, Código do ISV, art. 2.º"
+      },
+      "checkedAt": "2026-11-06",
       "validFrom": null,
       "validTo": null
     },

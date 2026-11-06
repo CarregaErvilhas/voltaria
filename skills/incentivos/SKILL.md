@@ -1,6 +1,6 @@
 ---
 name: incentivos
-description: "Responde a perguntas sobre apoios e benefícios fiscais para veículos elétricos e postos de carregamento em Portugal (Fundo Ambiental, IUC, IVA, tributação autónoma, estacionamento municipal), para particulares e empresas. Usa quando o utilizador pergunta se há apoio para comprar um carro, mota, bicicleta ou wallbox elétrica, que impostos poupa, ou se estaciona de graça na sua cidade."
+description: "Responde a perguntas sobre apoios e benefícios fiscais para veículos elétricos e postos de carregamento em Portugal (Fundo Ambiental, apoios anunciados do Plano Social para o Clima, IUC, ISV, IVA, tributação autónoma, estacionamento municipal), para particulares e empresas. Usa quando o utilizador pergunta se há apoio para comprar um carro, mota, bicicleta ou wallbox elétrica, se há apoio para famílias com poucos rendimentos, que impostos poupa, ou se estaciona de graça na sua cidade."
 ---
 
 # Incentivos
@@ -20,6 +20,10 @@ do Voltaria.
   Não digas que "não há apoios": diz que não conheces nenhum aberto à data dos factos.
 - **Um apoio com `validTo` no passado está fechado.** Nunca o apresentes como aberto. Diz sempre a
   edição (`edition`) e as datas.
+- **Um apoio com `status: "anunciado"` ainda não existe para candidaturas.** Diz que foi anunciado,
+  por quem e quando, e que as regras só valem quando sair o aviso ou o diploma. Não o somes às
+  contas do utilizador nem lhe digas para esperar por ele sem dizer que não há data nem valores
+  oficiais.
 
 ## Histórico
 
@@ -66,6 +70,24 @@ Pergunta só o que for preciso para o apoio em causa:
   exportar o veículo.
 - Candidatura só online, no site do Fundo Ambiental. Não aceitam documentos por email.
 
+### Anunciados, ainda não abertos
+
+- **Plano Social para o Clima 2026-2032.** O Governo entregou o plano à Comissão Europeia a
+  9-10-2026. Inclui apoio a cerca de 5 000 famílias vulneráveis para eletrificar a mobilidade e a
+  cerca de 10 000 microempresas dos setores mais expostos ao custo dos combustíveis para eletrificar
+  as frotas, geridos pela Agência para o Clima. Depende da aprovação da Comissão e os primeiros
+  avisos estão previstos para o 2.º semestre de 2027. Os factos com `series:
+  "plano-social-clima"` têm o que é oficial.
+- **O que se lê na imprensa não é regra.** No debate do Orçamento do Estado para 2027
+  (28-10-2026), a ministra do Ambiente e Energia falou de uma comparticipação de até 80 % do valor do
+  carro, de carros usados até cinco anos e de prioridade a quem tem tarifa social de eletricidade. Os
+  jornais acrescentaram pagamento por vale, obrigação de manter o carro e valores máximos que não
+  coincidem entre si [imprensa]. Nada disto está num aviso nem num diploma. Se o utilizador citar estes números, diz que
+  são declarações e estimativas, não regras, e que podem mudar até ao aviso.
+- Não digas a quem precisa de carro agora que espere por este apoio: não há data de abertura nem
+  garantia de que o caso dele cabe. Diz o que se sabe e manda acompanhar a Agência para o Clima e o
+  Fundo Ambiental.
+
 ### Impostos (Autoridade Tributária)
 
 - **IUC**: os veículos exclusivamente elétricos estão isentos.
@@ -74,7 +96,11 @@ Pergunta só o que for preciso para o apoio em causa:
   da eletricidade usada nelas também.
 - **Tributação autónoma** (IRC): os encargos com viaturas exclusivamente elétricas só pagam
   tributação autónoma se o custo de aquisição passar o limite da portaria.
-- Os valores e o limite da portaria vêm dos factos. Não os dês de memória.
+- **ISV**: os veículos exclusivamente elétricos estão fora do imposto sobre veículos. Conta ao
+  importar um elétrico usado.
+- O limite da portaria para os 100 % elétricos, as regras do IVA dos carregadores e da eletricidade
+  carregada em casa do colaborador estão nos factos. Não os dês de memória. Para empresas, frotas e
+  o carregamento em casa de quem conduz a viatura da empresa, usa a skill `empresas-e-frotas`.
 
 ### Câmaras municipais: estacionamento
 
@@ -131,6 +157,13 @@ Pergunta só o que for preciso para o apoio em causa:
 ### Outras fontes
 
 - Fundo Ambiental: https://www.fundoambiental.pt/
+- Governo de Portugal, "Portugal entrega a Bruxelas Plano Social para o Clima de 1,6 mil milhões de
+  euros" (9-10-2026), verificado a 2026-11-06:
+  https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/portugal-entrega-a-bruxelas-plano-social-para-o-clima-de-16-mil-milhoes-de-euros
+- [imprensa] Observador, "Carros usados, 15 mil euros de ajuda e três anos até vender. Como vai
+  funcionar o novo apoio à compra de elétricos?" (3-11-2026): só para saber o que foi dito, nunca
+  como fonte de um valor:
+  https://observador.pt/especiais/carros-usados-15-mil-euros-de-ajuda-e-tres-anos-ate-vender-como-vai-funcionar-o-novo-apoio-a-compra-de-eletricos/
 - Portal das Finanças, códigos tributários:
   https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/
 
