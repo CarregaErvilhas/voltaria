@@ -265,9 +265,15 @@ Mais regras que protegem o condutor:
 
 ## Quando o posto não funciona
 
-- O apoio é dado pelo OPC do posto, não pela MOBI.E [UVE, rede de carregamento]. O número costuma
-  estar no posto e na app. O OPC é obrigado a ter apoio ao condutor disponível durante todo o tempo
-  em que o posto está a funcionar (DL 93/2025, art. 13.º, n.º 1, k).
+- O apoio é dado pelo OPC do posto, não pela MOBI.E [UVE, rede de carregamento]. O OPC é obrigado a
+  ter apoio ao condutor disponível durante todo o tempo em que o posto está a funcionar (DL 93/2025,
+  art. 13.º, n.º 1, k).
+- **Dá logo o número de apoio.** Se tiveres uma ferramenta que identifica o posto (no ohmigo:
+  `lookup_charger`), o telefone de apoio do OPC vem no resultado (`support.phone`), tal como o OPC o
+  publica no Ponto de Acesso Nacional. Usa esse e diz que vem do OPC. Um telefone de outra origem,
+  por exemplo do OpenStreetMap, pode ser da loja ou do dono do local, e não do apoio ao posto.
+- Sem ferramenta, o número está na etiqueta do posto e na app do OPC. Não o dês de memória: os
+  números mudam. As listas da DGEG de OPC e de CEME não têm telefones.
 - Se o cabo estiver cortado ou o posto vandalizado, sugere avisar o OPC. Os furtos de cabos têm
   afetado sobretudo postos rápidos [UVE, furto e vandalismo].
 - **Perigo** (fumo, cheiro a queimado, cabo descarnado): não tocar no posto nem no cabo, afastar
