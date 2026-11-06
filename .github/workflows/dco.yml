@@ -6,6 +6,10 @@ permissions:
   contents: read
 jobs:
   dco:
+    # Dependabot signs off as support@github.com but authors as its noreply address, so the check
+    # would always fail. Skipped only when Dependabot opened the PR and triggered this run: a
+    # spoofed commit author is not enough. A skipped job counts as passing for the ruleset.
+    if: ${{ !(github.event.pull_request.user.login == 'dependabot[bot]' && github.actor == 'dependabot[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
