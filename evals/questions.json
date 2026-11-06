@@ -1,0 +1,1380 @@
+{
+  "version": 1,
+  "categories": {
+    "a": "lei posterior ao corte do modelo (DL 93/2025, DL 155/2026, Regulamentos ERSE 7 e 8/2026, sub-CPE, Plano Social para o Clima)",
+    "b": "factos portugueses raros na web (informações vinculativas da AT, FAQ da DGEG, RTIEBT, estacionamento municipal)",
+    "c": "processos e decisões locais (o que perguntar, de que quadro sai o cabo, ordem dos passos, qual dos caminhos)",
+    "d": "comportamento e disciplina (sem preços de memória, ferramentas, anunciado vs. aberto, imprensa)",
+    "e": "correção de erros comuns"
+  },
+  "questions": [
+    {
+      "id": "cec-01",
+      "skills": ["carregar-em-casa", "regime-2010"],
+      "category": "e",
+      "persona": "condutor",
+      "question": "Moro num prédio e quero pôr uma wallbox no meu lugar da garagem. O administrador diz que o condomínio tem 60 dias para decidir e que precisa de dois terços dos votos. É assim?",
+      "must": [
+        "Diz que os 60 dias e os dois terços são regras do regime anterior (DL 39/2010), já revogado",
+        "Diz que hoje a decisão tem de ser tomada em 30 dias após a comunicação (DL 93/2025, art. 23.º)",
+        "Diz que hoje basta maioria simples do valor total do prédio (permilagem), não dos votos dos presentes",
+        "Diz que tem de comunicar por escrito à administração com pelo menos 30 dias de antecedência"
+      ],
+      "must_not": [
+        "Confirma os 60 dias ou os dois terços como regra em vigor"
+      ],
+      "source": ["carregar-em-casa#Num prédio (condomínio)", "regime-2010#Condomínio: as regras antigas"]
+    },
+    {
+      "id": "cec-02",
+      "skills": ["carregar-em-casa"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Os vizinhos dizem que a minha wallbox na garagem do prédio é perigosa e querem votar contra. O condomínio pode recusar só por isso?",
+      "must": [
+        "Diz que o condomínio só se pode opor nos casos taxativos da lei (DL 93/2025, art. 23.º, n.º 3)",
+        "Diz que a oposição por risco exige um parecer técnico entregue à administração; um receio sem parecer não chega",
+        "Refere que a avaliação do risco deve ser feita por um engenheiro (eletrotécnico ou técnico) registado na DGEG",
+        "Diz que, sem oposição fundamentada no prazo de 30 dias, o condómino pode instalar"
+      ],
+      "must_not": [
+        "Diz que o condomínio pode recusar livremente por votação da assembleia",
+        "Apresenta o prejuízo da linha arquitetónica como fundamento atual de oposição"
+      ],
+      "source": ["carregar-em-casa#Num prédio (condomínio)"]
+    },
+    {
+      "id": "cec-03",
+      "skills": ["carregar-em-casa"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Sou inquilino. Posso instalar um posto de carregamento no lugar de garagem do apartamento que arrendo?",
+      "must": [
+        "Diz que, segundo a DGEG, o arrendatário (ou ocupante legal) tem o mesmo direito que o condómino",
+        "Diz que tem de comunicar também ao proprietário da fração",
+        "Diz que, se a instalação estiver numa parte comum ou passar por ela, tem de comunicar por escrito à administração com pelo menos 30 dias de antecedência"
+      ],
+      "must_not": [
+        "Diz que só o proprietário ou condómino pode instalar"
+      ],
+      "source": ["carregar-em-casa#Num prédio (condomínio)"]
+    },
+    {
+      "id": "cec-04",
+      "skills": ["carregar-em-casa"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Tenho uma tomada normal na garagem de casa. Posso carregar o carro lá todas as noites com o cabo que veio com o carro?",
+      "must": [
+        "Diz que a lei permite carregar numa tomada doméstica em local não acessível ao público, cumprindo as regras de segurança",
+        "Diz que numa tomada Schuko comum a corrente de carregamento não deve passar de 10 A (cerca de 2,3 kW), salvo tomada marcada de fábrica para carregar veículos",
+        "Recomenda que um eletricista verifique o circuito, idealmente dedicado e com diferencial próprio de 30 mA",
+        "Diz para não usar extensões nem fichas múltiplas",
+        "Diz que o cabo ocasional não é pensado para ser a forma habitual de carregar durante muito tempo, ou recomenda tomada reforçada/wallbox para uso diário"
+      ],
+      "must_not": [
+        "Recomenda carregar a 16 A numa tomada Schuko comum",
+        "Sugere usar uma extensão"
+      ],
+      "source": ["carregar-em-casa#Tomada doméstica"]
+    },
+    {
+      "id": "cec-05",
+      "skills": ["carregar-em-casa"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Tenho contrato monofásico de 6,9 kVA. Vale a pena comprar uma wallbox de 22 kW?",
+      "must": [
+        "Explica que a potência útil é a menor entre a da wallbox, a do carregador de bordo do carro (AC) e a que a instalação/contrato deixa livre",
+        "Diz que 22 kW exige ligação trifásica e que com contrato monofásico teria de mudar o contrato",
+        "Diz para ver o carregador de bordo da versão exata do carro antes de escolher",
+        "Diz que aumentar a potência contratada aumenta o custo fixo da eletricidade"
+      ],
+      "must_not": [
+        "Diz que a wallbox de 22 kW vai carregar a 22 kW com esse contrato",
+        {"text": "Dá preços em euros de memória", "regex": "\\d+([.,]\\d+)?\\s?(€|euros?\\b)|€\\s?\\d"}
+      ],
+      "source": ["carregar-em-casa#Wallbox"]
+    },
+    {
+      "id": "cec-06",
+      "skills": ["carregar-em-casa"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Vou instalar uma wallbox no meu lugar de estacionamento. Como sei se tenho de avisar o condomínio?",
+      "must": [
+        "Diz que numa moradia, ou numa garagem ligada diretamente à instalação da fração sem passar por partes comuns, não há nada a comunicar",
+        "Diz que se a instalação estiver numa parte comum ou passar por ela, mesmo num lugar de uso exclusivo, é obrigatório comunicar por escrito à administração com pelo menos 30 dias de antecedência",
+        "Pergunta ou explica que importa se o lugar é de uso exclusivo ou partilhado e de que quadro elétrico vai ser alimentado"
+      ],
+      "must_not": [
+        "Diz que é sempre preciso autorização da assembleia de condóminos para instalar"
+      ],
+      "source": ["carregar-em-casa#Num prédio (condomínio)"]
+    },
+    {
+      "id": "cec-07",
+      "skills": ["carregar-em-casa", "instalacao-eletrica"],
+      "category": "a",
+      "persona": "administrador",
+      "question": "Sou administrador de um prédio novo, licenciado em 2026. O promotor diz que a lei obriga a deixar a garagem preparada para carregar em todos os lugares. É verdade?",
+      "must": [
+        "Diz que a lei atual (DL 93/2025, art. 22.º, e Portaria n.º 128/2026/1) exige infraestrutura elétrica adequada com potência mínima, mas não obriga a preparar todos os lugares",
+        "Dá a regra do número mínimo de lugares num prédio de habitação: N = 0,8 + 0,2 × n, arredondado para cima",
+        "Diz que cada ponto de ligação tem de ter pelo menos 3680 VA",
+        "Diz que num prédio de habitação é obrigatório um sistema de controlo de carga",
+        "Diz que a regra de preparar cada lugar era do regime anterior (DL 39/2010)"
+      ],
+      "must_not": [
+        "Confirma que a lei atual obriga a preparar todos os lugares"
+      ],
+      "source": ["carregar-em-casa#Num prédio (condomínio)", "instalacao-eletrica#Potência no parque de um prédio"]
+    },
+    {
+      "id": "cec-08",
+      "skills": ["carregar-em-casa"],
+      "category": "d",
+      "persona": "condutor",
+      "question": "Faço uns 300 km por semana. Quanto me vai custar por mês carregar em casa com tarifa bi-horária?",
+      "must": [
+        "Não dá um valor em euros de memória; indica que usaria a ferramenta de custos (estimate_charging_cost com private) ou pede os dados do contrato",
+        "Explica que o custo depende do preço do kWh no contrato e do período horário em que carrega",
+        "Recomenda programar o carregamento para as horas de vazio",
+        "Pergunta ou refere que precisa do carro (consumo) para fazer a conta"
+      ],
+      "must_not": [
+        {"text": "Dá um custo em euros sem vir de uma ferramenta ou dos dados do utilizador", "regex": "\\d+([.,]\\d+)?\\s?(€|euros?\\b)|€\\s?\\d"}
+      ],
+      "source": ["carregar-em-casa#Quanto custa", "carregar-em-casa#Regras"]
+    },
+    {
+      "id": "cec-09",
+      "skills": ["carregar-em-casa", "regime-2010"],
+      "category": "a",
+      "persona": "condutor",
+      "question": "Tenho uma wallbox no condomínio ligada à MOBI.E e carrego com cartão de CEME. Depois de 2026 isto continua a funcionar igual?",
+      "must": [
+        "Diz que o período transitório foi prolongado até 31-12-2027 pelo DL 155/2026",
+        "Diz que até lá a plataforma continua gerida pela EGME e os CEME continuam a existir",
+        "Não promete como vai funcionar depois de 31-12-2027; diz que a regulamentação ainda não o define ou que depende dos acordos"
+      ],
+      "must_not": [
+        "Diz que o período transitório acaba a 31-12-2026",
+        "Garante que vai funcionar igual depois de 2027"
+      ],
+      "source": ["carregar-em-casa#Ligado à MOBI.E ou não", "regime-2010#O que ainda se aplica: período transitório até 31-12-2027"]
+    },
+    {
+      "id": "cec-10",
+      "skills": ["carregar-em-casa"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "O eletricista acabou de instalar a minha wallbox. Que papéis lhe devo pedir?",
+      "must": [
+        "Diz para pedir a declaração de conformidade da execução ou o termo de responsabilidade pela execução",
+        "Diz que o técnico ou a entidade instaladora têm de estar registados na DGEG, e sugere pedir o número de registo",
+        "Diz para guardar o documento (seguro, condomínio, venda da casa)"
+      ],
+      "must_not": [
+        "Diz que não é preciso nenhum documento"
+      ],
+      "source": ["carregar-em-casa#Quem instala e que papéis pedir"]
+    },
+    {
+      "id": "cec-11",
+      "skills": ["carregar-em-casa", "instalacao-eletrica"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "O meu carro tem V2L. Num apagão, posso usá-lo para alimentar a casa ligando-o ao quadro elétrico?",
+      "must": [
+        "Distingue V2L (aparelhos ligados ao carro) de V2H (alimentar a casa)",
+        "Diz que o V2H precisa de wallbox bidirecional e de instalação elétrica certificada",
+        "Diz que o carro não pode alimentar a instalação nos modos 1 e 2 (cabo/tomada), ou que ligar o carro ao quadro sem equipamento próprio é perigoso",
+        "Não dá instruções para o utilizador fazer a ligação ao quadro"
+      ],
+      "must_not": [
+        "Dá instruções para ligar o carro ao quadro elétrico com um cabo ou adaptador improvisado"
+      ],
+      "source": ["carregar-em-casa#V2L, V2H e V2G (carregamento bidirecional)", "instalacao-eletrica#Carro a alimentar a casa (V2H)"]
+    },
+    {
+      "id": "sub-01",
+      "skills": ["sub-cpe"],
+      "category": "e",
+      "persona": "condutor",
+      "question": "O meu contrato é de 6,9 kVA e quero carregar mais depressa. Vou pedir um sub-CPE para a wallbox ter mais potência. Faz sentido?",
+      "must": [
+        "Diz que o sub-CPE não dá mais potência",
+        "Diz que o escalão do sub-CPE não pode ser superior ao da instalação onde se insere (Regulamento n.º 7/2026 da ERSE)",
+        "Diz que para mais potência o caminho é aumentar a potência contratada ou reforçar a ligação"
+      ],
+      "must_not": [
+        "Diz que o sub-CPE permite ter mais potência do que a instalação principal"
+      ],
+      "source": ["sub-cpe#O que não é", "sub-cpe#Confusões a corrigir"]
+    },
+    {
+      "id": "sub-02",
+      "skills": ["sub-cpe"],
+      "category": "a",
+      "persona": "condutor",
+      "question": "O que é um sub-CPE e desde quando é que se pode pedir?",
+      "must": [
+        "Diz que é um ponto de entrega interno, com contador, código e contrato de eletricidade próprios, dentro de uma instalação já ligada à rede",
+        "Diz que não é uma segunda ligação à rede: a ligação física continua a ser a do CPE principal",
+        "Diz que o quadro regulamentar está em vigor desde 6 de julho de 2026 (Regulamentos n.º 7/2026 e 8/2026 da ERSE)",
+        "Diz que é opcional"
+      ],
+      "must_not": [
+        "Descreve o sub-CPE como um segundo ramal ou uma ligação independente à rede",
+        "Diz que o sub-CPE é obrigatório"
+      ],
+      "source": ["sub-cpe#O que é", "sub-cpe#O que não é"]
+    },
+    {
+      "id": "sub-03",
+      "skills": ["sub-cpe"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Sou condómino. Posso ir à E-REDES pedir um sub-CPE em meu nome para a wallbox do meu lugar na garagem do prédio?",
+      "must": [
+        "Diz que o pedido é feito pelo OPC ou pelo DPC do posto; se a wallbox é dele, é ele o DPC e pode pedir",
+        "Diz que precisa de autorização expressa (escrita) do titular da instalação ligada à rede, que num prédio é em regra o condomínio",
+        "Diz que o contador interno tem de ficar imediatamente a jusante do contador da instalação e não em série com outros contadores internos",
+        "Diz que isto não substitui a comunicação prévia à administração para instalar o posto (art. 23.º do DL 93/2025)"
+      ],
+      "must_not": [
+        "Diz que qualquer condómino pede o sub-CPE em nome próprio sem autorização do titular da instalação"
+      ],
+      "source": ["sub-cpe#Quem pede", "sub-cpe#No condomínio"]
+    },
+    {
+      "id": "sub-04",
+      "skills": ["sub-cpe"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Quais são os passos para pedir um sub-CPE na E-REDES e quanto tempo demora?",
+      "must": [
+        "Põe primeiro a obtenção da autorização escrita do titular da instalação, antes do pedido ao operador de rede",
+        "Refere que o pedido ao ORD inclui pelo menos o esquema unifilar e a declaração/autorização do titular (e o CPE principal)",
+        "Diz que o ORD tem no máximo dois meses para criar o sub-CPE e instalar o contador",
+        "Diz que a certificação da instalação é obrigatória e é tratada pelo requerente",
+        "Diz que no fim é preciso contratar o fornecimento com um comercializador",
+        "Diz que a certificação e a adaptação da instalação não dependem do ORD e costumam ser o que atrasa"
+      ],
+      "must_not": [
+        "Promete um prazo total fechado para todo o processo"
+      ],
+      "source": ["sub-cpe#Como se pede"]
+    },
+    {
+      "id": "sub-05",
+      "skills": ["sub-cpe"],
+      "category": "e",
+      "persona": "administrador",
+      "question": "Disseram-me que a partir de 2028 todos os condomínios vão ser obrigados a ter sub-CPE para os carregadores. É verdade?",
+      "must": [
+        "Diz que não: a ERSE enquadra o sub-CPE como uma opção",
+        "Diz que o que acaba a 31-12-2027 é o período transitório do modelo da EGME/MOBI.E",
+        "Diz que o modelo acordado (repasse do custo) continua válido"
+      ],
+      "must_not": [
+        "Diz que o sub-CPE passa a ser obrigatório"
+      ],
+      "source": ["sub-cpe#Confusões a corrigir", "sub-cpe#No condomínio"]
+    },
+    {
+      "id": "sub-06",
+      "skills": ["sub-cpe"],
+      "category": "a",
+      "persona": "administrador",
+      "question": "No nosso prédio há três condóminos com wallbox integrada na MOBI.E. Um quarto condómino quer agora um sub-CPE para a dele. Há algum problema para os outros?",
+      "must": [
+        "Diz que criar um ponto de medição interno obriga a desintegrar da plataforma da EGME todos os postos dessa instalação, não só o do requerente (Regulamento n.º 7/2026, art. 101.º)",
+        "Diz que isso afeta os outros condóminos e que convém avisá-los/decidir em conjunto",
+        "Refere que no fim do período transitório (31-12-2027) os postos passam a desintegrados de qualquer forma"
+      ],
+      "must_not": [
+        "Diz que o sub-CPE e os postos integrados na MOBI.E convivem sem problema na mesma instalação"
+      ],
+      "source": ["sub-cpe#No condomínio", "sub-cpe#Regras"]
+    },
+    {
+      "id": "sub-07",
+      "skills": ["sub-cpe"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Se eu tiver um sub-CPE para o carro, vou pagar a eletricidade do carro duas vezes, no contrato da casa e no do sub-CPE?",
+      "must": [
+        "Diz que a energia do posto deixa de ser faturada no contrato principal e passa para o do sub-CPE",
+        "Explica que o consumo da instalação principal é apurado por diferença (ponto de medição virtual)",
+        "Diz que o que aparece de novo é uma parcela fixa (termo de potência) na fatura do sub-CPE",
+        "Refere que a potência contratada da instalação principal pode descer"
+      ],
+      "must_not": [
+        "Diz que o consumo do carro é faturado nos dois contratos",
+        {"text": "Dá preços em euros de memória", "regex": "\\d+([.,]\\d+)?\\s?(€|euros?\\b)|€\\s?\\d"}
+      ],
+      "source": ["sub-cpe#Quanto custa"]
+    },
+    {
+      "id": "sub-08",
+      "skills": ["sub-cpe"],
+      "category": "d",
+      "persona": "condutor",
+      "question": "Quanto custa o contador do sub-CPE?",
+      "must": [
+        "Diz que o preço do contador é regulado pela ERSE e aprovado todos os anos",
+        "Diz que depende do nível de tensão e manda confirmar no operador de rede",
+        "Diz que o resto (adaptação da instalação, certificação, técnico) é orçamento de cada caso"
+      ],
+      "must_not": [
+        {"text": "Dá um preço em euros para o contador", "regex": "\\d+([.,]\\d+)?\\s?(€|euros?\\b)|€\\s?\\d"}
+      ],
+      "source": ["sub-cpe#Quanto custa", "sub-cpe#Regras"]
+    },
+    {
+      "id": "sub-09",
+      "skills": ["sub-cpe"],
+      "category": "a",
+      "persona": "administrador",
+      "question": "Se o dono de um sub-CPE na garagem do condomínio deixar de pagar a fatura, o que pode acontecer ao prédio?",
+      "must": [
+        "Diz que se aplicam as regras de interrupção por falta de pagamento, como em qualquer ponto de entrega",
+        "Diz que as instalações existentes têm um prazo (12 meses) para permitir ao ORD cortar o ponto interno",
+        "Diz que, nesse prazo, se o ORD não conseguir cortar o ponto interno por facto do cliente, pode cortar a instalação principal, afetando os serviços comuns",
+        "Não dá uma data-limite exata para esse prazo e manda confirmar no ORD"
+      ],
+      "must_not": [
+        "Diz que uma dívida do sub-CPE nunca pode afetar a instalação principal"
+      ],
+      "source": ["sub-cpe#Faturação, dados e autoconsumo"]
+    },
+    {
+      "id": "sub-10",
+      "skills": ["sub-cpe"],
+      "category": "c",
+      "persona": "administrador",
+      "question": "Que formas há de separar a eletricidade gasta pelos carros dos condóminos da conta dos serviços comuns do prédio?",
+      "must": [
+        "Apresenta os três modelos: posto integrado na MOBI.E, modelo acordado (repasse) e sub-CPE",
+        "Diz que o modelo integrado na MOBI.E só existe até 31-12-2027",
+        "Explica que no modelo acordado o custo é acertado entre as partes sem contrato novo nem intervenção do ORD",
+        "Explica que no sub-CPE há contador do ORD, contrato e fatura próprios"
+      ],
+      "must_not": [
+        "Diz que o sub-CPE é a única forma legal de separar os consumos"
+      ],
+      "source": ["sub-cpe#Os três modelos para separar o consumo do carro"]
+    },
+    {
+      "id": "ie-01",
+      "skills": ["instalacao-eletrica"],
+      "category": "b",
+      "persona": "eletricista",
+      "question": "Sou eletricista. Que diferencial ponho no quadro para uma wallbox com tomada Tipo 2, num circuito monofásico?",
+      "must": [
+        "Diz que é preciso um diferencial próprio por ponto de ligação, no mínimo tipo A, de 30 mA ou menos",
+        "Diz que é precisa proteção contra correntes de defeito com componente contínua: tipo B, ou tipo A/F com detetor de corrente contínua (IEC 62955), salvo se a wallbox já a tiver",
+        "Diz para confirmar na ficha técnica se a wallbox tem deteção de corrente contínua integrada",
+        "Cita o guia técnico da DGEG (ou as RTIEBT, secção 722)"
+      ],
+      "must_not": [
+        "Diz que basta um diferencial tipo AC"
+      ],
+      "source": ["instalacao-eletrica#O diferencial"]
+    },
+    {
+      "id": "ie-02",
+      "skills": ["instalacao-eletrica", "carregar-em-casa"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "O meu lugar é na garagem comum do prédio e não faz parte da descrição da fração, só está atribuído ao meu apartamento. Posso puxar o cabo da wallbox do quadro do meu apartamento?",
+      "must": [
+        "Diz que um espaço comum de uso exclusivo não pode ser alimentado a partir do quadro de entrada da habitação (guia técnico da DGEG)",
+        "Diz que fica o quadro de colunas ou o quadro dos serviços comuns",
+        "Diz que a DGEG prefere o quadro de colunas aos serviços comuns",
+        "Diz que, a partir dos serviços comuns, é preciso contagem individual de cada ponto, ou que é solução de último caso"
+      ],
+      "must_not": [
+        "Diz que pode ligar ao quadro do apartamento sem ressalvas"
+      ],
+      "source": ["instalacao-eletrica#Prédio, lugar de uso exclusivo", "carregar-em-casa#Num prédio (condomínio)"]
+    },
+    {
+      "id": "ie-03",
+      "skills": ["instalacao-eletrica"],
+      "category": "b",
+      "persona": "administrador",
+      "question": "O eletricista de um condómino quer passar o cabo da wallbox pelo poço do elevador porque é o caminho mais curto até à garagem. Pode?",
+      "must": [
+        "Diz que não: a DGEG não permite passar pelo poço do elevador nem por condutas de outras instalações",
+        "Atribui a proibição à DGEG (FAQ), que cita a secção 803.4.1 das RTIEBT",
+        "Refere que o ducto das colunas pode ser usado, com condições (RTIEBT, 803.2.3.2.3)",
+        "Diz que o cabo nunca pode atravessar o lugar de outro condómino"
+      ],
+      "must_not": [
+        "Diz que pode passar pelo poço do elevador"
+      ],
+      "source": ["instalacao-eletrica#Por onde passam os cabos"]
+    },
+    {
+      "id": "ie-04",
+      "skills": ["instalacao-eletrica"],
+      "category": "b",
+      "persona": "eletricista",
+      "question": "Que secção de cabo e que disjuntor devo usar no circuito de uma tomada de carregamento numa garagem?",
+      "must": [
+        "Diz que tem de ser um circuito dedicado por carro",
+        "Diz cabos de 2,5 mm² ou mais, dimensionados para pelo menos 16 A",
+        "Diz queda de tensão até 5 %",
+        "Diz disjuntor próprio de curva C ou D, sem rearme automático",
+        "Refere fator de simultaneidade 1 (salvo controlo de carga)"
+      ],
+      "must_not": [
+        "Sugere partilhar o circuito com outras tomadas da garagem"
+      ],
+      "source": ["instalacao-eletrica#O circuito"]
+    },
+    {
+      "id": "ie-05",
+      "skills": ["instalacao-eletrica"],
+      "category": "b",
+      "persona": "eletricista",
+      "question": "A que altura do chão tem de ficar a tomada de carregamento, e há mais alguma regra para a tomada?",
+      "must": [
+        "Diz que o bordo de baixo fica entre 0,5 m e 1,5 m do chão",
+        "Diz que a tomada fica fixa, nunca solta, e cada tomada alimenta só um carro",
+        "Diz que junto da tomada tem de haver um interruptor/dispositivo de corte à plena carga; a ficha não serve para cortar",
+        "Refere identificação do ponto e do circuito com o lugar (ex.: marcação VE)"
+      ],
+      "must_not": [],
+      "source": ["instalacao-eletrica#Tomadas e fichas"]
+    },
+    {
+      "id": "ie-06",
+      "skills": ["instalacao-eletrica"],
+      "category": "b",
+      "persona": "eletricista",
+      "question": "As regras de instalação para carregar carros elétricos aplicam-se também a uma tomada para carregar uma mota elétrica?",
+      "must": [
+        "Diz que sim: para as RTIEBT, veículo elétrico inclui motociclos, ciclomotores, triciclos e quadriciclos (secção 722.3.1)",
+        "Diz que as regras do circuito (dedicado, diferencial) valem para a tomada da mota"
+      ],
+      "must_not": [
+        "Diz que as regras de carregamento não se aplicam a motas"
+      ],
+      "source": ["instalacao-eletrica#O que dizem as RTIEBT"]
+    },
+    {
+      "id": "ie-07",
+      "skills": ["instalacao-eletrica"],
+      "category": "e",
+      "persona": "opc",
+      "question": "Li no guia técnico da DGEG que os postos dos OPC são inspecionados de quatro em quatro anos. Ainda é assim?",
+      "must": [
+        "Diz que não: hoje são inspecionados de cinco em cinco anos",
+        "Diz que a inspeção é feita por uma EIIEL (entidade inspetora) ao abrigo do DL 93/2025, art. 16.º",
+        "Explica que o guia é de 2023 e cita o regime anterior (DL 90/2014 / DL 39/2010)"
+      ],
+      "must_not": [
+        "Confirma os quatro em quatro anos como regra atual"
+      ],
+      "source": ["instalacao-eletrica#O que está desatualizado no guia"]
+    },
+    {
+      "id": "ie-08",
+      "skills": ["instalacao-eletrica"],
+      "category": "b",
+      "persona": "eletricista",
+      "question": "Que grau de proteção IP e IK tem de ter uma wallbox instalada no exterior?",
+      "must": [
+        "Diz IPX4 ou mais (conforme a exposição) e IP4X",
+        "Diz IK08 com proteção contra o impacto do carro ou IK10 sem ela",
+        "Refere a gama de temperatura -25 °C a +40 °C"
+      ],
+      "must_not": [],
+      "source": ["instalacao-eletrica#Dentro e fora"]
+    },
+    {
+      "id": "ie-09",
+      "skills": ["instalacao-eletrica"],
+      "category": "b",
+      "persona": "projetista",
+      "question": "Estou a projetar a instalação de carregamento de um parque de um prédio de habitação com 30 lugares. Para quantos lugares tenho de dimensionar a potência?",
+      "must": [
+        "Usa N = 0,8 + 0,2 × n, arredondado para cima, e chega a 7 lugares",
+        "Diz que cada ponto de ligação conta com pelo menos 3680 VA",
+        "Diz que a instalação tem de ficar preparada para ligar cada lugar de forma fácil (caminhos de cabos, sem roços)",
+        "Refere o sistema de controlo de carga quando se passa do dimensionado"
+      ],
+      "must_not": [
+        "Diz que tem de dimensionar para os 30 lugares em simultâneo"
+      ],
+      "source": ["instalacao-eletrica#Potência no parque de um prédio"]
+    },
+    {
+      "id": "ie-10",
+      "skills": ["instalacao-eletrica"],
+      "category": "b",
+      "persona": "eletricista",
+      "question": "Vou ligar a wallbox de um cliente a um lugar marcado no chão numa garagem comum, a partir do quadro da fração. O que tenho de prever além do circuito?",
+      "must": [
+        "Diz que o circuito sai de um quadro próprio do lugar, que só abre com chave ou ferramenta",
+        "Diz que há um corte geral junto ao acesso ao lugar",
+        "Diz que no piso tem de haver um corte de emergência (segurança positiva) que corte de uma vez as alimentações dos lugares alimentados das habitações",
+        "Diz que os cabos ficam marcados com a habitação e o lugar"
+      ],
+      "must_not": [],
+      "source": ["instalacao-eletrica#Por onde passam os cabos", "instalacao-eletrica#Corte de emergência"]
+    },
+    {
+      "id": "cp-01",
+      "skills": ["carregamento-publico", "regime-2010"],
+      "category": "a",
+      "persona": "condutor",
+      "question": "Preciso de ter um cartão de CEME para carregar num posto rápido em Portugal?",
+      "must": [
+        "Diz que não é obrigatório: o DL 93/2025 obriga os postos novos ou renovados a aceitar carregamento ad hoc, sem contrato",
+        "Refere o pagamento ad hoc com cartão bancário nos postos de 50 kW ou mais (QR code nos de menor potência)",
+        "Diz que nos postos de 50 kW ou mais já em funcionamento a 19-08-2025 a obrigação dos meios de pagamento só se aplica a partir de 01-01-2027",
+        "Diz que os cartões de CEME continuam a funcionar até 31-12-2027 (período transitório)",
+        "Refere a alternativa de contrato com um OPC ou um eMSP"
+      ],
+      "must_not": [
+        "Diz que é obrigatório ter cartão de CEME para carregar na rede pública"
+      ],
+      "source": ["carregamento-publico#Como pagar", "carregamento-publico#Ad hoc, sem contrato"]
+    },
+    {
+      "id": "cp-02",
+      "skills": ["carregamento-publico"],
+      "category": "d",
+      "persona": "condutor",
+      "question": "Estou num posto rápido na área de serviço de Pombal, na A1, e ele não arranca. Para que número ligo?",
+      "must": [
+        "Diz que o apoio é dado pelo OPC do posto, não pela MOBI.E",
+        "Indica que usaria lookup_charger e o telefone de apoio do OPC que vem no resultado (support.phone)",
+        "Sem ferramenta, manda ver o número na etiqueta do posto ou na app do OPC",
+        "Não dá um número de telefone de memória"
+      ],
+      "must_not": [
+        {"text": "Dá um número de telefone de apoio de memória", "regex": "(?<!\\d)(?!800\\s?914\\s?146)(?!91\\s?20\\s?20\\s?020)(\\+351\\s?)?(2\\d|7\\d|8\\d|9[1236])\\d\\s?\\d{3}\\s?\\d{3}(?!\\d)"},
+        "Manda ligar para a MOBI.E como apoio ao posto"
+      ],
+      "source": ["carregamento-publico#Quando o posto não funciona"]
+    },
+    {
+      "id": "cp-03",
+      "skills": ["carregamento-publico"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Carreguei num posto e cobraram-me bastante mais do que o preço afixado. A quem reclamo?",
+      "must": [
+        "Diz para reclamar primeiro junto do OPC",
+        "Diz que se usa o livro de reclamações do OPC (no local ou o eletrónico) e que as reclamações são tratadas pela ERSE",
+        "Diz que o OPC tem de responder em 15 dias úteis",
+        "Sugere juntar data, hora, identificador do posto e fotografias"
+      ],
+      "must_not": [
+        "Manda reclamar na MOBI.E como via principal"
+      ],
+      "source": ["carregamento-publico#A quem recorrer", "carregamento-publico#Quando o posto não funciona"]
+    },
+    {
+      "id": "cp-04",
+      "skills": ["carregamento-publico"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Num parque público há um posto de carregamento com o cabo descarnado e um cheiro a queimado. O que faço e a quem denuncio?",
+      "must": [
+        "Diz para não tocar no posto nem no cabo, afastar as pessoas e ligar o 112 se houver risco",
+        "Diz para avisar o OPC, que tem de comunicar o acidente/incidente à DGEG e à ENSE",
+        "Diz que um posto perigoso se denuncia à ENSE (formulário, email ou linha verde)",
+        "Diz que a ENSE pode mandar fechar o posto"
+      ],
+      "must_not": [
+        "Diz que a denúncia de um posto perigoso é para a MOBI.E"
+      ],
+      "source": ["carregamento-publico#A quem recorrer", "carregamento-publico#Quando o posto não funciona"]
+    },
+    {
+      "id": "cp-05",
+      "skills": ["carregamento-publico"],
+      "category": "d",
+      "persona": "condutor",
+      "question": "Qual é o posto mais barato para carregar no Porto neste momento?",
+      "must": [
+        "Indica que usaria find_cheapest_charging (ou uma ferramenta de preços) em vez de responder de memória",
+        "Não dá preços de memória",
+        "Pergunta o carro, ou se tem pressa, ou o cartão/app que usa"
+      ],
+      "must_not": [
+        {"text": "Dá preços em euros de memória", "regex": "\\d+([.,]\\d+)?\\s?(€|euros?\\b|cêntimos)|€\\s?\\d"},
+        "Afirma que um posto concreto é o mais barato sem dados de uma ferramenta"
+      ],
+      "source": ["carregamento-publico#Regras"]
+    },
+    {
+      "id": "cp-06",
+      "skills": ["carregamento-publico"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Paguei com cartão bancário num posto rápido e ficaram-me 100 € cativos, mas o carregamento custou muito menos. Isto é normal?",
+      "must": [
+        "Diz que é normal o posto cativar um valor bem maior do que o carregamento, às vezes mais do dobro",
+        "Diz que o dinheiro pode ficar indisponível vários dias",
+        "Aconselha cuidado a quem tem pouco saldo disponível"
+      ],
+      "must_not": [
+        "Diz que é sinal de fraude ou cobrança indevida sem mais"
+      ],
+      "source": ["carregamento-publico#Ad hoc, sem contrato"]
+    },
+    {
+      "id": "cp-07",
+      "skills": ["carregamento-publico"],
+      "category": "a",
+      "persona": "condutor",
+      "question": "Deixei o carro a carregar no centro comercial e fui ao cinema. Podem cobrar-me alguma coisa além da energia?",
+      "must": [
+        "Refere a taxa de ocupação, por minuto, para quem deixa o carro ligado depois de carregado",
+        "Diz que o OPC é obrigado a afixar essa taxa no posto (DL 93/2025, art. 14.º)",
+        "Recomenda ver a taxa antes de deixar o carro"
+      ],
+      "must_not": [],
+      "source": ["carregamento-publico#Boas práticas", "carregamento-publico#O que o posto tem de mostrar"]
+    },
+    {
+      "id": "cp-08",
+      "skills": ["carregamento-publico"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Vou de Lisboa ao Algarve. Nos postos rápidos devo carregar até 100 %?",
+      "must": [
+        "Diz que em regra é melhor carregar até cerca de 80 % e seguir",
+        "Explica que a potência cai muito perto do cheio",
+        "Sugere planear as paragens (app de rotas) e olhar para os minutos de 10 a 80 % da versão do carro"
+      ],
+      "must_not": [
+        "Recomenda carregar sempre até 100 % nos postos rápidos"
+      ],
+      "source": ["carregamento-publico#Que posto usar", "carregamento-publico#Quanto tempo demora"]
+    },
+    {
+      "id": "cp-09",
+      "skills": ["carregamento-publico"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Moro num bairro sem garagem e estaciono na rua. Há alguma forma de pôr postos de carregamento na minha rua?",
+      "must": [
+        "Refere o projeto Ruas Elétricas da MOBI.E",
+        "Diz que são as câmaras que aderem e propõem ruas residenciais, não os moradores",
+        "Diz que os postos são de baixa potência (menos de 7,4 kW), instalados e explorados por OPC contratados",
+        "Sugere perguntar à câmara se aderiu"
+      ],
+      "must_not": [
+        "Diz que o morador pode pedir diretamente à MOBI.E um posto à porta"
+      ],
+      "source": ["carregamento-publico#Encontrar postos"]
+    },
+    {
+      "id": "cp-10",
+      "skills": ["carregamento-publico"],
+      "category": "a",
+      "persona": "condutor",
+      "question": "O OPC pode cobrar mais a quem paga ad hoc com cartão bancário do que a quem usa a app de um eMSP?",
+      "must": [
+        "Diz que o OPC não pode cobrar preços diferentes a quem paga ad hoc e a quem vem por um eMSP, nem entre eMSP (DL 93/2025, art. 14.º, n.º 4)",
+        "Diz que pode dar descontos com critérios objetivos, por exemplo a quem tem subscrição",
+        "Refere que a fatura tem de mostrar o preço total e as parcelas"
+      ],
+      "must_not": [
+        "Diz que o OPC pode fixar livremente um preço ad hoc mais alto"
+      ],
+      "source": ["carregamento-publico#Modelo novo (DL 93/2025)"]
+    },
+    {
+      "id": "cp-11",
+      "skills": ["carregamento-publico"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Está um carro a gasóleo estacionado no lugar de carregamento do supermercado. Isso dá multa?",
+      "must": [
+        "Diz que um carro não elétrico num lugar reservado a veículos elétricos em carga é punido pelo Código da Estrada (DL 93/2025, art. 20.º)",
+        "Refere que estacionar num lugar de carregamento sem carregar pode dar multa e reboque"
+      ],
+      "must_not": [],
+      "source": ["carregamento-publico#Boas práticas"]
+    },
+    {
+      "id": "reg-01",
+      "skills": ["incentivos", "regime-2010"],
+      "category": "e",
+      "persona": "condutor",
+      "question": "Comprei um carro elétrico. Tenho de ir ao IMT pedir o dístico para pôr no para-brisas?",
+      "must": [
+        "Diz que o dístico deixou de ser obrigatório (Lei n.º 19/2024, desde 06-02-2024)",
+        "Diz que o IMT deixou de o emitir; não manda pedi-lo ao IMT",
+        "Diz que os dísticos já emitidos continuam válidos e que alguns municípios pedem um dístico (do IMT ou municipal) para o estacionamento"
+      ],
+      "must_not": [
+        "Diz que o dístico é obrigatório",
+        "Manda pedir o dístico ao IMT"
+      ],
+      "source": ["incentivos#Dístico de veículo elétrico do IMT", "regime-2010#Como funcionava"]
+    },
+    {
+      "id": "reg-02",
+      "skills": ["regime-2010"],
+      "category": "a",
+      "persona": "condutor",
+      "question": "Quando acaba o regime transitório da MOBI.E e dos CEME?",
+      "must": [
+        "Diz 31-12-2027",
+        "Diz que foi o DL 155/2026 que alargou o prazo (antes era 31-12-2026)",
+        "Diz que os CEME têm até essa data para passar a OPC e/ou eMSP",
+        "Refere que os OPC podem pedir a desintegração da plataforma até essa data"
+      ],
+      "must_not": [
+        "Diz que acaba a 31-12-2026"
+      ],
+      "source": ["regime-2010#O que ainda se aplica: período transitório até 31-12-2027"]
+    },
+    {
+      "id": "reg-03",
+      "skills": ["regime-2010", "tecnologia-de-carregamento"],
+      "category": "a",
+      "persona": "opc",
+      "question": "Ouvi falar do Mobi.Hub. O que é e sou obrigado a aderir?",
+      "must": [
+        "Diz que é uma plataforma de roaming apresentada pela MOBI.E em outubro de 2026, que liga OPC e eMSP",
+        "Diz que está aberta a todos, ligados ou não à plataforma atual, com acordos comerciais diretos entre as partes",
+        "Diz que o comunicado não diz se a adesão é obrigatória nem dá datas"
+      ],
+      "must_not": [
+        "Afirma que a adesão ao Mobi.Hub é obrigatória"
+      ],
+      "source": ["regime-2010#Depois de 2027: a MOBI.E como hub"]
+    },
+    {
+      "id": "reg-04",
+      "skills": ["regime-2010", "carregar-em-casa"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Comprei casa num prédio licenciado em 2012. A garagem não devia ter vindo preparada para carregar em cada lugar?",
+      "must": [
+        "Diz que no DL 39/2010 (com o DL 90/2014) os edifícios de habitação licenciados desde 1-7-2010 tinham de ficar preparados para um posto ou tomada em cada lugar",
+        "Diz que a infraestrutura não incluía os postos nem as tomadas",
+        "Diz que hoje o DL 93/2025, art. 22.º, já não tem essa regra",
+        "Sugere confirmar com o administrador ou o projeto"
+      ],
+      "must_not": [],
+      "source": ["regime-2010#Edifícios novos: preparação para carregar"]
+    },
+    {
+      "id": "reg-05",
+      "skills": ["regime-2010", "carregamento-publico"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Porque é que a fatura do meu cartão de carregamento MOBI.E tem tantas parcelas?",
+      "must": [
+        "Explica que no modelo antigo o CEME pagava ao OPC e à EGME",
+        "Lista as parcelas: energia do CEME, tarifa de acesso às redes (TAR), tarifa do OPC, tarifa da EGME e impostos (IEC e IVA)",
+        "Diz que no modelo novo o OPC fixa um preço total e a fatura é simplificada"
+      ],
+      "must_not": [],
+      "source": ["regime-2010#Como funcionava", "carregamento-publico#Modelo antigo (MOBI.E, até 31-12-2027)"]
+    },
+    {
+      "id": "reg-06",
+      "skills": ["regime-2010"],
+      "category": "e",
+      "persona": "condutor",
+      "question": "O Decreto-Lei 39/2010 da mobilidade elétrica ainda está em vigor?",
+      "must": [
+        "Diz que foi revogado pelo DL 93/2025, com efeitos a partir de 19-08-2025",
+        "Diz que há regras transitórias até 31-12-2027"
+      ],
+      "must_not": [
+        "Diz que o DL 39/2010 continua em vigor"
+      ],
+      "source": ["regime-2010#Regras"]
+    },
+    {
+      "id": "inc-01",
+      "skills": ["incentivos"],
+      "category": "d",
+      "persona": "condutor",
+      "question": "Há apoio do Fundo Ambiental para comprar um carro elétrico neste momento?",
+      "must": [
+        "Diz que não conhece nenhum apoio aberto à data: a última fase (2.ª fase do AAC n.º 06/2025) fechou a 27-7-2026",
+        "Não diz que 'não há apoios'; manda acompanhar a página do Fundo Ambiental",
+        "Diz a fonte e a data de verificação dos factos",
+        "Descreve as condições da última edição (abate, limite de preço) como referência, marcando-a como fechada"
+      ],
+      "must_not": [
+        "Apresenta um apoio do Fundo Ambiental como aberto neste momento"
+      ],
+      "source": ["incentivos#Regras", "incentivos#Fundo Ambiental: compra de veículos e postos"]
+    },
+    {
+      "id": "inc-02",
+      "skills": ["incentivos"],
+      "category": "d",
+      "persona": "condutor",
+      "question": "Ouvi a ministra dizer que vai haver um apoio de 80 % do valor do carro para famílias com poucos rendimentos. Devo esperar por isso para comprar o carro?",
+      "must": [
+        "Diz que o apoio está anunciado, não aberto: Plano Social para o Clima 2026-2032, entregue à Comissão Europeia a 9-10-2026",
+        "Diz que os primeiros avisos estão previstos para o 2.º semestre de 2027 e dependem da aprovação da Comissão",
+        "Diz que os 80 % são declarações/imprensa, não regras de um aviso ou diploma",
+        "Não diz ao utilizador para esperar; diz que não há data nem garantia de que o caso dele cabe",
+        "Manda acompanhar a Agência para o Clima e/ou o Fundo Ambiental"
+      ],
+      "must_not": [
+        "Apresenta os 80 % como valor garantido ou regra",
+        "Aconselha esperar pelo apoio sem dizer que não há data nem valores oficiais"
+      ],
+      "source": ["incentivos#Anunciados, ainda não abertos"]
+    },
+    {
+      "id": "inc-03",
+      "skills": ["incentivos"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Com um carro elétrico estaciono de graça em Lisboa?",
+      "must": [
+        "Diz que em Lisboa o estacionamento na via pública é gratuito para elétricos com o Dístico Verde da EMEL, que tem um custo anual",
+        "Diz que qualquer pessoa o pode pedir, mesmo sem morar em Lisboa",
+        "Diz que a informação vem da lista da UVE, com a data de verificação, e manda confirmar na EMEL/câmara"
+      ],
+      "must_not": [
+        "Diz que basta ter um carro elétrico, sem dístico"
+      ],
+      "source": ["incentivos#Câmaras municipais: estacionamento"]
+    },
+    {
+      "id": "inc-04",
+      "skills": ["incentivos"],
+      "category": "d",
+      "persona": "condutor",
+      "question": "E em Coimbra, os carros elétricos estacionam de graça?",
+      "must": [
+        "Diz que Coimbra não está na lista que conhece (lista da UVE) e que a lista não é exaustiva",
+        "Não afirma que não há benefício; manda ver o site da câmara ou da empresa municipal de estacionamento"
+      ],
+      "must_not": [
+        "Afirma que em Coimbra não há qualquer benefício",
+        "Afirma que em Coimbra o estacionamento é gratuito para elétricos"
+      ],
+      "source": ["incentivos#Câmaras municipais: estacionamento"]
+    },
+    {
+      "id": "inc-05",
+      "skills": ["incentivos"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "Pago IUC por um carro 100 % elétrico? E se o importar usado da Alemanha, pago ISV?",
+      "must": [
+        "Diz que os veículos exclusivamente elétricos estão isentos de IUC",
+        "Diz que os exclusivamente elétricos estão fora do ISV, também ao importar um usado",
+        "Diz que isto não abrange os híbridos"
+      ],
+      "must_not": [
+        "Diz que o elétrico importado paga ISV"
+      ],
+      "source": ["incentivos#Impostos (Autoridade Tributária)"]
+    },
+    {
+      "id": "inc-06",
+      "skills": ["incentivos", "carregar-em-casa"],
+      "category": "b",
+      "persona": "administrador",
+      "question": "Há apoio para instalar postos de carregamento na garagem do condomínio? E numa moradia?",
+      "must": [
+        "Descreve o apoio da última edição: 80 % do posto até 800 € mais 80 % da instalação até 1 000 €, por lugar",
+        "Diz que exigia ligação à MOBI.E",
+        "Diz que só abrangia condomínios, não moradias",
+        "Diz que essa fase fechou a 27-7-2026 e que não conhece nenhuma aberta agora",
+        "Cita a fonte (Fundo Ambiental) e a data de verificação"
+      ],
+      "must_not": [
+        "Apresenta o apoio aos postos em condomínio como aberto neste momento",
+        "Diz que as moradias estão abrangidas"
+      ],
+      "source": ["incentivos#Fundo Ambiental: compra de veículos e postos", "carregar-em-casa#Ligado à MOBI.E ou não"]
+    },
+    {
+      "id": "inc-07",
+      "skills": ["incentivos"],
+      "category": "d",
+      "persona": "condutor",
+      "question": "Quanto era o apoio do Fundo Ambiental para um carro elétrico em 2022, e o que mudou desde então?",
+      "must": [
+        "Diz que em 2022 eram 4 000 € para pessoas singulares por um carro 100 % elétrico novo, sem abate, até 62 500 € com IVA",
+        "Diz que a partir de 2024 passou a ser exigido o abate e o preço máximo desceu para 38 500 €",
+        "Compara a mesma tipologia (pessoa singular, carro M1) e diz que hoje não há edição aberta",
+        "Cita a fonte (despacho/aviso ou Fundo Ambiental) e a data de verificação"
+      ],
+      "must_not": [
+        "Dá para 2022 um valor diferente de 4 000 € para pessoas singulares"
+      ],
+      "source": ["incentivos#Histórico"]
+    },
+    {
+      "id": "inc-08",
+      "skills": ["incentivos"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Comprei uma mota elétrica em segunda mão. Posso pedir o apoio do Fundo Ambiental?",
+      "must": [
+        "Diz que os apoios do Fundo Ambiental à compra exigem veículo novo",
+        "Diz que de qualquer forma não conhece nenhuma fase aberta à data"
+      ],
+      "must_not": [
+        "Diz que motas usadas são elegíveis"
+      ],
+      "source": ["incentivos#O que perguntar primeiro"]
+    },
+    {
+      "id": "ef-01",
+      "skills": ["empresas-e-frotas"],
+      "category": "b",
+      "persona": "gestor-frota",
+      "question": "A minha empresa comprou e instalou wallboxes no parque para as viaturas elétricas da frota. Podemos deduzir o IVA das wallboxes?",
+      "must": [
+        "Diz que, segundo a AT, o IVA da compra e da instalação dos carregadores não é dedutível, por ser despesa de utilização das viaturas",
+        "Diz que o IVA da eletricidade usada nas viaturas é dedutível, com fatura em nome da empresa",
+        "Diz que é uma posição da AT (informação vinculativa) e manda confirmar com o contabilista certificado"
+      ],
+      "must_not": [
+        "Diz que o IVA das wallboxes é dedutível"
+      ],
+      "source": ["empresas-e-frotas#O que não é dedutível"]
+    },
+    {
+      "id": "ef-02",
+      "skills": ["empresas-e-frotas"],
+      "category": "c",
+      "persona": "gestor-frota",
+      "question": "Um colaborador carrega o carro elétrico da empresa em casa todas as noites. Como fazemos para a empresa deduzir o IVA dessa eletricidade?",
+      "must": [
+        "Diz que o IVA só é dedutível com fatura em nome da empresa; o reembolso com base na fatura do colaborador não dá dedução",
+        "Apresenta o reembolso ao colaborador (modelo acordado) como o mais simples mas sem dedução do IVA",
+        "Apresenta a empresa como DPC da wallbox, com sub-CPE em nome da empresa e autorização do titular do contrato da casa",
+        "Diz que a solução do sub-CPE é uma leitura das regras, a confirmar com o operador de rede e o contabilista",
+        "Refere a terceira via: posto integrado na MOBI.E com cartão de CEME da empresa, só até 31-12-2027",
+        "Refere custos ou limites do sub-CPE (contador regulado, termo fixo, não dá mais potência, até dois meses)"
+      ],
+      "must_not": [
+        "Diz que o reembolso ao colaborador permite deduzir o IVA"
+      ],
+      "source": ["empresas-e-frotas#Em casa de quem conduz"]
+    },
+    {
+      "id": "ef-03",
+      "skills": ["empresas-e-frotas"],
+      "category": "b",
+      "persona": "gestor-frota",
+      "question": "Comprámos um carro 100 % elétrico por 70 000 € sem IVA. Podemos deduzir o IVA pelo menos até ao limite?",
+      "must": [
+        "Diz que o limite de custo de aquisição é de 62 500 € sem IVA (Portaria n.º 467/2010)",
+        "Diz que, acima do limite, a AT considera que nenhuma parte do IVA da compra é dedutível, não só o excesso",
+        "Refere que acima do limite os encargos pagam tributação autónoma (10 %) e as depreciações só são aceites até ao limite",
+        "Manda confirmar com o contabilista"
+      ],
+      "must_not": [
+        "Diz que se deduz o IVA proporcionalmente até ao limite"
+      ],
+      "source": ["empresas-e-frotas#As vantagens fiscais"]
+    },
+    {
+      "id": "ef-04",
+      "skills": ["empresas-e-frotas"],
+      "category": "c",
+      "persona": "gestor-frota",
+      "question": "Somos uma clínica (IPSS de saúde) e vamos comprar carros elétricos. Podemos deduzir o IVA dos carros e da eletricidade?",
+      "must": [
+        "Diz ou pergunta se a entidade tem direito à dedução do IVA; uma atividade isenta (como boa parte da saúde) não deduz e as regras do IVA não se aplicam",
+        "Diz que a isenção de IUC e a exclusão de ISV continuam a aplicar-se",
+        "Manda confirmar com o contabilista"
+      ],
+      "must_not": [
+        "Diz que a clínica deduz o IVA dos carros elétricos sem ressalvas"
+      ],
+      "source": ["empresas-e-frotas#Regras", "empresas-e-frotas#O que perguntar primeiro"]
+    },
+    {
+      "id": "ef-05",
+      "skills": ["empresas-e-frotas"],
+      "category": "c",
+      "persona": "gestor-frota",
+      "question": "Temos postos no parque da empresa para a frota. Se abrirmos ao público para ganhar algum dinheiro, muda alguma coisa?",
+      "must": [
+        "Diz que só para colaboradores ou clientes o posto continua privado e a empresa é DPC",
+        "Diz que aberto ao público em geral passa a posto público e a empresa precisa de licença de OPC",
+        "Refere obrigações dos postos públicos (ad hoc, informação de preços, inspeções por EIIEL, seguro, dados à EADME)"
+      ],
+      "must_not": [
+        "Diz que pode abrir ao público sem licença"
+      ],
+      "source": ["empresas-e-frotas#Nas instalações da empresa"]
+    },
+    {
+      "id": "ef-06",
+      "skills": ["empresas-e-frotas"],
+      "category": "d",
+      "persona": "gestor-frota",
+      "question": "Que taxa de tributação autónoma paga um carro 100 % elétrico da empresa?",
+      "must": [
+        "Diz que só paga se o custo de aquisição exceder o limite da portaria (62 500 € sem IVA); abaixo não paga",
+        "Diz que, acima do limite, a taxa é de 10 %",
+        "Cita a fonte (Código do IRC, art. 88.º, n.º 20, ou o facto) e manda confirmar com o contabilista"
+      ],
+      "must_not": [
+        "Diz que os carros elétricos pagam sempre tributação autónoma"
+      ],
+      "source": ["empresas-e-frotas#As vantagens fiscais"]
+    },
+    {
+      "id": "ef-07",
+      "skills": ["empresas-e-frotas"],
+      "category": "a",
+      "persona": "gestor-frota",
+      "question": "Somos uma microempresa de transportes. Há algum apoio para eletrificar a frota?",
+      "must": [
+        "Refere o apoio a microempresas no Plano Social para o Clima, gerido pela Agência para o Clima",
+        "Diz que está anunciado, não aberto, sem valores nem datas de candidatura oficiais (avisos previstos para o 2.º semestre de 2027)",
+        "Diz que nem todas as edições do Fundo Ambiental abrangem empresas (a última não abrangia)"
+      ],
+      "must_not": [
+        "Apresenta o apoio às microempresas como aberto ou com valores definidos"
+      ],
+      "source": ["empresas-e-frotas#Apoios à compra", "incentivos#Anunciados, ainda não abertos"]
+    },
+    {
+      "id": "afir-01",
+      "skills": ["afir"],
+      "category": "a",
+      "persona": "opc",
+      "question": "Quais são as portarias que regulamentam o DL 93/2025 da mobilidade elétrica?",
+      "must": [
+        "Refere a Portaria n.º 16/2026/1 (licença de OPC e comunicação prévia)",
+        "Refere a Portaria n.º 31/2026/1 (dados dos OPC à EADME e ao Ponto de Acesso Nacional)",
+        "Refere a Portaria n.º 128/2026/1 (potências mínimas e regras técnicas)",
+        "Refere pelo menos uma de: Portaria n.º 118/2026/1 (seguro), 130/2026/1 (domínio público) ou 133/2026/1 (taxas)"
+      ],
+      "must_not": [
+        "Apresenta como atuais portarias do regime anterior (241/2015, 240/2015, 231/2016, 220/2016 ou 221/2016)"
+      ],
+      "source": ["afir#Portarias do DL 93/2025"]
+    },
+    {
+      "id": "afir-02",
+      "skills": ["afir"],
+      "category": "e",
+      "persona": "opc",
+      "question": "O AFIR é uma diretiva que Portugal ainda tem de transpor?",
+      "must": [
+        "Diz que o AFIR é um regulamento (Regulamento (UE) 2023/1804), de aplicação direta, não uma diretiva",
+        "Diz que substituiu a Diretiva 2014/94/UE",
+        "Distingue o AFIR da legislação nacional (DL 93/2025)"
+      ],
+      "must_not": [
+        "Diz que o AFIR é uma diretiva que precisa de transposição"
+      ],
+      "source": ["afir#O que é o AFIR", "afir#Transposição em Portugal"]
+    },
+    {
+      "id": "afir-03",
+      "skills": ["afir"],
+      "category": "a",
+      "persona": "opc",
+      "question": "O DL 93/2025 já foi alterado? O que mudou?",
+      "must": [
+        "Diz que foi alterado pelo DL 155/2026 (de 31-07-2026)",
+        "Diz que a alteração prolongou o período transitório até 31-12-2027"
+      ],
+      "must_not": [
+        "Diz que o DL 93/2025 nunca foi alterado"
+      ],
+      "source": ["afir#Transposição em Portugal"]
+    },
+    {
+      "id": "afir-04",
+      "skills": ["afir"],
+      "category": "d",
+      "persona": "opc",
+      "question": "Qual é a distância máxima entre postos rápidos na rede TEN-T que o AFIR exige?",
+      "must": [
+        "Remete para o texto oficial do Regulamento (UE) 2023/1804 para confirmar os valores, ou indica a fonte e a versão",
+        "Distingue a rede central da rede global TEN-T",
+        "Refere que há também potência mínima por nó/agrupamento"
+      ],
+      "must_not": [],
+      "source": ["afir#Pontos-chave (verificar sempre no texto oficial)", "afir#Regras"]
+    },
+    {
+      "id": "nap-01",
+      "skills": ["afir-nap"],
+      "category": "a",
+      "persona": "opc",
+      "question": "Sou OPC. Como envio os dados dos meus postos para o Ponto de Acesso Nacional e com que frequência?",
+      "must": [
+        "Diz que os dados vão para a EADME (a MOBI.E), que os envia ao NAP do IMT",
+        "Refere a Regra Técnica n.º 1/EADME/2026",
+        "Diz que os dados estáticos têm de ser enviados até 24 horas depois de uma alteração e os dinâmicos até um minuto",
+        "Diz que o envio é por DATEX II (endereços XML) ou por OCPI 2.2/2.2.1",
+        "Diz que os OPC já na plataforma da MOBI.E não precisam de fazer nada no período transitório"
+      ],
+      "must_not": [
+        "Diz que o OPC publica diretamente no NAP sem passar pela EADME"
+      ],
+      "source": ["afir-nap#Como os OPC enviam os dados à EADME", "afir-nap#Como funciona em Portugal"]
+    },
+    {
+      "id": "nap-02",
+      "skills": ["afir-nap"],
+      "category": "b",
+      "persona": "integrador",
+      "question": "Sou programador. Onde descarrego os dados de todos os postos de carregamento de Portugal, com preços e estado?",
+      "must": [
+        "Indica o NAP português do IMT (nap-portugal.imt-ip.pt)",
+        "Refere os dois endpoints da MOBI.E: inventário estático (evChargingInfra) e estado dinâmico com preços (evActualStatus)",
+        "Diz que o formato é XML DATEX II (3.3)"
+      ],
+      "must_not": [],
+      "source": ["afir-nap#Como funciona em Portugal", "afir-nap#Estrutura de dados nos NAPs"]
+    },
+    {
+      "id": "nap-03",
+      "skills": ["afir-nap"],
+      "category": "a",
+      "persona": "opc",
+      "question": "Quem fiscaliza a MOBI.E enquanto entidade agregadora de dados (EADME)?",
+      "must": [
+        "Diz que é a AMT (Autoridade da Mobilidade e dos Transportes)"
+      ],
+      "must_not": [
+        "Diz que é a ERSE quem supervisiona a atividade de EADME"
+      ],
+      "source": ["afir-nap#Como funciona em Portugal"]
+    },
+    {
+      "id": "nap-04",
+      "skills": ["afir-nap", "carregamento-publico"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "A app de mapas mostra um posto de carregamento que não existe. A quem digo para corrigir?",
+      "must": [
+        "Diz que os dados vêm do OPC, através da EADME e do Ponto de Acesso Nacional",
+        "Diz para contactar o OPC",
+        "Refere que a AMT fiscaliza a partilha de dados"
+      ],
+      "must_not": [],
+      "source": ["carregamento-publico#A quem recorrer", "afir-nap#O que os OPC publicam no NAP (AFIR, art. 20.º)"]
+    },
+    {
+      "id": "nap-05",
+      "skills": ["afir-nap"],
+      "category": "b",
+      "persona": "integrador",
+      "question": "O que é o CEAP do AFIR? Tem os dados de todos os postos europeus?",
+      "must": [
+        "Diz que é o Ponto de Acesso Comum Europeu, no Observatório Europeu dos Combustíveis Alternativos (EAFO)",
+        "Diz que não armazena dados: é uma porta de entrada para os NAP nacionais",
+        "Diz que a criação está prevista até 31-12-2026"
+      ],
+      "must_not": [
+        "Diz que o CEAP é uma base de dados central com todos os postos"
+      ],
+      "source": ["afir-nap#CEAP — o ponto de acesso europeu"]
+    },
+    {
+      "id": "tec-01",
+      "skills": ["tecnologia-de-carregamento"],
+      "category": "b",
+      "persona": "integrador",
+      "question": "Qual é a diferença entre OCPP e OCPI?",
+      "must": [
+        "Diz que o OCPP liga o posto ao backoffice do OPC (CSMS) e é mantido pela Open Charge Alliance",
+        "Diz que o OCPI liga backoffices entre si (OPC e eMSP, diretamente ou por um hub), mantido pela EVRoaming Foundation",
+        "Diz que são complementares",
+        "Refere versões (ex.: OCPP 1.6/2.0.1, OCPI 2.2.1)"
+      ],
+      "must_not": [],
+      "source": ["tecnologia-de-carregamento#OCPP e OCPI"]
+    },
+    {
+      "id": "tec-02",
+      "skills": ["tecnologia-de-carregamento"],
+      "category": "b",
+      "persona": "condutor",
+      "question": "O Plug & Charge e o AutoCharge são a mesma coisa?",
+      "must": [
+        "Diz que o Plug & Charge usa a ISO 15118 com certificados digitais (PKI)",
+        "Diz que o AutoCharge identifica o carro pelo EVCCID (muitas vezes o endereço MAC), sem certificados, e é menos seguro",
+        "Diz que para o condutor parecem iguais"
+      ],
+      "must_not": [],
+      "source": ["tecnologia-de-carregamento#AutoCharge", "tecnologia-de-carregamento#O que é"]
+    },
+    {
+      "id": "tec-03",
+      "skills": ["tecnologia-de-carregamento"],
+      "category": "d",
+      "persona": "integrador",
+      "question": "Quantos postos e parceiros tem a Hubject na Europa?",
+      "must": [
+        "Não dá contagens de memória como facto",
+        "Manda à fonte (a própria Hubject) e diz que os números mudam e dependem da data"
+      ],
+      "must_not": [
+        {"text": "Dá um número de postos ou parceiros como facto", "regex": "\\b\\d{1,3}([  .]\\d{3})+\\b|\\b\\d+([.,]\\d+)?\\s?(mil|milhares|milhões)\\b"}
+      ],
+      "source": ["tecnologia-de-carregamento#Regras"]
+    },
+    {
+      "id": "tec-04",
+      "skills": ["tecnologia-de-carregamento"],
+      "category": "c",
+      "persona": "opc",
+      "question": "Quero montar um hub de carregamento rápido mas a ligação à rede tem pouca potência. Uma bateria estacionária (BESS) resolve?",
+      "must": [
+        "Diz que um BESS deixa o posto entregar mais potência do que a ligação permite, sem reforçar o ramal",
+        "Refere o corte de picos (peak shaving) e ganhar tempo face a um reforço da rede",
+        "Diz que um BESS subdimensionado se esgota nos picos e que o dimensionamento é estudo de cada caso",
+        "Não dá percentagens de poupança nem prazos de retorno"
+      ],
+      "must_not": [
+        "Dá percentagens de poupança ou prazos de retorno como facto"
+      ],
+      "source": ["tecnologia-de-carregamento#BESS (baterias estacionárias)"]
+    },
+    {
+      "id": "aut-01",
+      "skills": ["autonomia"],
+      "category": "d",
+      "persona": "condutor",
+      "question": "Quantos km faz um Renault 5 elétrico com uma carga?",
+      "must": [
+        "Pergunta ou refere que depende da versão (bateria) e do ano",
+        "Dá um intervalo e diz de que depende (velocidade, temperatura, percurso), em vez de um único número",
+        "Explica que o valor anunciado é WLTP, de laboratório, e o real costuma ser menor"
+      ],
+      "must_not": [
+        "Dá um único número de autonomia como certo"
+      ],
+      "source": ["autonomia#Regras", "autonomia#O que perguntar primeiro"]
+    },
+    {
+      "id": "aut-02",
+      "skills": ["autonomia"],
+      "category": "e",
+      "persona": "condutor",
+      "question": "O meu carro anuncia 400 km mas na autoestrada só faço uns 280. Está avariado?",
+      "must": [
+        "Diz que é normal: o valor anunciado vem do WLTP, um ensaio de laboratório",
+        "Diz que acima de cerca de 100 km/h o consumo sobe muito",
+        "Explica sem dizer que o fabricante engana: o ensaio serve para comparar carros"
+      ],
+      "must_not": [
+        "Diz que o carro ou a bateria estão provavelmente avariados"
+      ],
+      "source": ["autonomia#Autonomia anunciada e real", "autonomia#O que reduz a autonomia"]
+    },
+    {
+      "id": "aut-03",
+      "skills": ["autonomia"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Um carro chinês anuncia 600 km de autonomia CLTC. Quanto será isso em WLTP?",
+      "must": [
+        "Diz que o CLTC é o ciclo mais otimista",
+        "Dá uma conversão aproximada e diz que é regra de bolso que varia por modelo",
+        "Recomenda procurar o valor WLTP ou medido em estrada da versão"
+      ],
+      "must_not": [
+        "Diz que CLTC e WLTP são equivalentes"
+      ],
+      "source": ["autonomia#Ciclos de homologação: WLTP, EPA e CLTC"]
+    },
+    {
+      "id": "aut-04",
+      "skills": ["autonomia"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "No inverno a autonomia do meu carro cai bastante. Como poupo energia?",
+      "must": [
+        "Recomenda climatizar o carro enquanto está ligado ao posto, antes de sair",
+        "Refere bancos e volante aquecidos como mais eficientes do que aquecer o habitáculo todo",
+        "Refere aproveitar a travagem regenerativa (antecipar travagens, modo B/um pedal)"
+      ],
+      "must_not": [],
+      "source": ["autonomia#Como poupar energia"]
+    },
+    {
+      "id": "bat-01",
+      "skills": ["baterias"],
+      "category": "e",
+      "persona": "condutor",
+      "question": "Devo carregar o carro sempre só até 80 % para não estragar a bateria?",
+      "must": [
+        "Diz que depende da química da bateria (LFP ou NMC) e que se deve ver a da versão exata",
+        "Diz que uma LFP pode, e em regra deve, carregar até 100 % com regularidade (calibração)",
+        "Diz que numa NMC é melhor uma faixa intermédia (cerca de 80 %) no dia a dia e 100 % antes de viagens",
+        "Diz que as instruções do fabricante mandam"
+      ],
+      "must_not": [
+        "Diz que nunca se deve carregar a 100 %, independentemente da química"
+      ],
+      "source": ["baterias#No dia a dia"]
+    },
+    {
+      "id": "bat-02",
+      "skills": ["baterias"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Vou deixar o carro parado dois meses. Como deixo a bateria?",
+      "must": [
+        "Diz para a deixar perto de 50 %",
+        "Diz para não o deixar ligado ao carregador a 100 % durante dias (salvo limite de carga)",
+        "Diz para verificar o nível ao fim de algum tempo, porque a bateria perde carga parada"
+      ],
+      "must_not": [
+        "Recomenda deixá-lo a 100 % para durar mais"
+      ],
+      "source": ["baterias#Carro parado muito tempo"]
+    },
+    {
+      "id": "bat-03",
+      "skills": ["baterias"],
+      "category": "c",
+      "persona": "condutor",
+      "question": "Vou comprar um elétrico usado. O que devo verificar na bateria?",
+      "must": [
+        "Diz que o indicador principal é o estado de saúde (SoH)",
+        "Sugere um teste independente com relatório certificado antes de comprar",
+        "Diz para ver quanto falta da garantia da bateria, incluindo o limite de km e o SoH mínimo garantido"
+      ],
+      "must_not": [],
+      "source": ["baterias#Carro usado", "baterias#Garantia"]
+    },
+    {
+      "id": "bat-04",
+      "skills": ["baterias"],
+      "category": "e",
+      "persona": "condutor",
+      "question": "Os carregamentos rápidos estragam a bateria? Tenho medo de usar.",
+      "must": [
+        "Diz que rápidos diários e seguidos podem degradar a bateria mais depressa",
+        "Diz que esse desgaste se viu sobretudo em casos extremos (táxis, TVDE), para não assustar",
+        "Recomenda AC no dia a dia e rápidos em viagem"
+      ],
+      "must_not": [
+        "Diz que qualquer carregamento rápido estraga a bateria"
+      ],
+      "source": ["baterias#Carregamentos rápidos"]
+    }
+  ]
+}
