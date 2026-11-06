@@ -43,6 +43,9 @@ que confundem papéis diferentes.
 | híbrido plug-in | híbrido recarregável | Carro com motor a combustão e motor elétrico, com bateria que se carrega na rede (PHEV). Não é 100 % elétrico. |
 | elétrico com extensor de autonomia | híbrido em série | Carro movido só a motor elétrico, com um pequeno motor a combustão que só serve de gerador para a bateria (EREV, REx). |
 | TAR | tarifa de rede | Tarifas de acesso às redes: o custo de usar a rede elétrica até ao ponto de consumo. Fixadas todos os anos pela ERSE. Na MOBI.E há uma TAR própria da mobilidade elétrica. |
+| ORD | distribuidora; EDP Distribuição | Operador da rede de distribuição: liga as instalações à rede, instala os contadores e fatura as TAR ao comercializador. No continente é sobretudo a E-REDES (nome antigo da distribuidora da EDP), com algumas cooperativas em BT; nos Açores a EDA e na Madeira a EEM. |
+| potência tomada | pico de potência | Maior potência ativa média registada em qualquer quarto de hora do período faturado. Em BTE e MT, a potência contratada é a máxima potência tomada dos últimos 12 meses (Regulamento Tarifário, art. 44.º). |
+| TAR ME | TAR da MOBI.E | Tarifa de acesso às redes da mobilidade elétrica: só preços por kWh, aplicada aos carregamentos em postos integrados na MOBI.E até 31-12-2027. |
 | SoH | state of health | Estado de saúde da bateria: a capacidade que mantém face à original, em percentagem. É o indicador principal ao comprar um carro usado. |
 | posto ultrarrápido | posto super-rápido; hiper-rápido | Posto rápido acima de 150 kW. A UVE chama-lhe PCUR. |
 | autonomia | alcance | Os quilómetros que o carro faz com a bateria carregada. Depende do consumo, que muda com a velocidade, o percurso, a temperatura e o peso. |
@@ -51,6 +54,9 @@ que confundem papéis diferentes.
 | travagem regenerativa | travagem por recuperação; frenagem regenerativa | O motor elétrico trava o carro e devolve energia à bateria quando se tira o pé do acelerador ou se trava. |
 | ECVE | estação de serviço elétrica | Estação de carregamento de veículos elétricos: um ou mais pontos de carregamento num local (AFIR, art. 2.º, 52). A DGEG usa o termo nas regras técnicas dos postos públicos. |
 | EIIEL | inspetor da DGEG | Entidade inspetora de instalações elétricas, reconhecida pela DGEG. Inspeciona os postos públicos antes de abrirem e de 5 em 5 anos (DL 93/2025, art. 16.º). |
-| ENSE | ENMC | Entidade Nacional para o Setor Energético: fiscaliza os postos públicos e recebe os certificados de inspeção; pode mandar fechar um posto sem certificado (DL 93/2025, art. 16.º). |
+| ENSE | ENMC | Entidade Nacional para o Setor Energético: fiscaliza, com a AMT, o cumprimento do DL 93/2025, recebe os certificados de inspeção e as denúncias, averigua os acidentes e pode mandar fechar um posto (DL 93/2025, arts. 16.º, 32.º e 33.º). As reclamações do livro de reclamações são da ERSE. |
+| garantia de origem (GO) | certificado verde; certificado de energia verde | Documento eletrónico que prova ao cliente final que 1 MWh foi produzido a partir de fontes renováveis. Vale 12 meses após a produção e é cancelado quando é usado (DL 84/2022, arts. 28.º e 29.º). Não prova o fluxo físico nem a hora do consumo. |
+| EEGO | emissor de certificados | Entidade emissora de garantias de origem: regista produtores e emite, transfere e cancela as GO. No continente é a REN, a título transitório (DL 15/2022, arts. 176.º e 294.º). |
+| rotulagem | etiquetagem da energia | Informação que o comercializador dá na fatura sobre o mix de fontes e as emissões de CO2 da energia fornecida, segundo as regras da ERSE (Diretiva n.º 16/2018). |
 | EADME | agregador da MOBI.E | Entidade agregadora de dados para a mobilidade elétrica: recebe os dados dos postos de todos os OPC e envia-os ao Ponto de Acesso Nacional do IMT (DL 93/2025, art. 2.º, f, e art. 19.º). |
 | entidade instaladora (EI) | instalador credenciado | Empresa registada na DGEG para executar instalações elétricas. Acima de 41,4 kVA a instalação tem de ser feita por uma EI; abaixo, basta um técnico responsável registado (Lei n.º 14/2015, art. 4.º). |

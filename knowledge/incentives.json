@@ -223,6 +223,42 @@
       "edition": "2025-2026-f2"
     },
     {
+      "id": "psc-mobilidade-familias-vulneraveis",
+      "kind": "apoio",
+      "status": "anunciado",
+      "series": "plano-social-clima",
+      "edition": "2026-2032",
+      "text": {
+        "pt": "Anunciado, ainda não aberto. Plano Social para o Clima 2026-2032, entregue à Comissão Europeia a 9-10-2026: apoio a cerca de 5 000 famílias vulneráveis na eletrificação da mobilidade, gerido pela Agência para o Clima. Depende da aprovação da Comissão; os primeiros avisos estão previstos para o 2.º semestre de 2027. Ainda não há diploma nem aviso publicado com valores, critérios de acesso ou datas de candidatura.",
+        "en": "Announced, not yet open. Social Climate Plan 2026-2032, submitted to the European Commission on 9 Oct 2026: support for about 5,000 vulnerable households to electrify their mobility, managed by the Agência para o Clima. Subject to Commission approval; first calls expected in the second half of 2027. No law or call with amounts, eligibility or application dates has been published yet."
+      },
+      "source": {
+        "url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/portugal-entrega-a-bruxelas-plano-social-para-o-clima-de-16-mil-milhoes-de-euros",
+        "name": "Governo de Portugal, comunicado de 9-10-2026, \"Portugal entrega a Bruxelas Plano Social para o Clima de 1,6 mil milhões de euros\""
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "psc-mobilidade-microempresas",
+      "kind": "apoio",
+      "status": "anunciado",
+      "series": "plano-social-clima",
+      "edition": "2026-2032",
+      "text": {
+        "pt": "Anunciado, ainda não aberto. Plano Social para o Clima 2026-2032, entregue à Comissão Europeia a 9-10-2026: apoio a cerca de 10 000 microempresas dos setores mais expostos ao aumento do custo dos combustíveis para eletrificar as frotas, gerido pela Agência para o Clima. Depende da aprovação da Comissão; os primeiros avisos estão previstos para o 2.º semestre de 2027. Ainda não há diploma nem aviso publicado com valores, setores elegíveis ou datas.",
+        "en": "Announced, not yet open. Social Climate Plan 2026-2032, submitted to the European Commission on 9 Oct 2026: support for about 10,000 micro-enterprises in the sectors most exposed to rising fuel costs to electrify their fleets, managed by the Agência para o Clima. Subject to Commission approval; first calls expected in the second half of 2027. No law or call with amounts, eligible sectors or dates has been published yet."
+      },
+      "source": {
+        "url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/portugal-entrega-a-bruxelas-plano-social-para-o-clima-de-16-mil-milhoes-de-euros",
+        "name": "Governo de Portugal, comunicado de 9-10-2026, \"Portugal entrega a Bruxelas Plano Social para o Clima de 1,6 mil milhões de euros\""
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
       "id": "iuc-isencao-eletricos",
       "kind": "fiscal",
       "text": {
@@ -264,6 +300,66 @@
         "name": "Portal das Finanças, Código do IRC, art. 88.º"
       },
       "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "limite-custo-viaturas-eletricas-62500",
+      "kind": "fiscal",
+      "text": {
+        "pt": "Limite de custo de aquisição das viaturas ligeiras de passageiros 100 % elétricas: 62 500 €, sem IVA (Portaria n.º 467/2010, alterada pelo art. 24.º da Lei n.º 82-D/2014). É o limite que conta para a dedução do IVA da compra (Código do IVA, art. 21.º, n.º 2, f), para as depreciações aceites em IRC (Código do IRC, art. 34.º, n.º 1, e) e para a tributação autónoma (art. 88.º, n.º 20). Acima dele, a AT considera que nenhuma parte do IVA da compra é dedutível. As despesas de utilização (reparação, manutenção, portagens, seguros) não beneficiam da exceção. Se a viatura for usada fora da atividade, há IVA a liquidar sobre esse uso.",
+        "en": "Acquisition-cost limit for fully electric passenger cars: €62,500 excluding VAT (Portaria 467/2010, as amended by art. 24 of Lei 82-D/2014). It is the limit for deducting the purchase VAT (VAT Code, art. 21(2)(f)), for accepted depreciation in corporate tax (IRC Code, art. 34(1)(e)) and for autonomous taxation (art. 88(20)). Above it, the Tax Authority holds that none of the purchase VAT is deductible. Running costs (repairs, maintenance, tolls, insurance) are not covered. Private use outside the business is subject to VAT."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/despesa/civa/Documents/PIV_28949.pdf",
+        "name": "Autoridade Tributária, informação vinculativa, processo 28949, despacho de 2025-10-31"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "iva-carregadores-nao-dedutivel",
+      "kind": "fiscal",
+      "text": {
+        "pt": "IVA dos postos de carregamento numa empresa: segundo a AT, o IVA da compra e da instalação dos carregadores para as viaturas da empresa não é dedutível, por ser uma despesa de utilização das viaturas. O IVA da eletricidade usada nas viaturas elétricas ou híbridas plug-in é dedutível (Código do IVA, art. 21.º, n.º 2, h), cumpridos os requisitos gerais.",
+        "en": "VAT on chargers at a company: according to the Tax Authority, VAT on buying and installing chargers for company vehicles is not deductible, as it is a vehicle running cost. VAT on electricity used in electric or plug-in hybrid vehicles is deductible (VAT Code, art. 21(2)(h)), if the general requirements are met."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/despesa/civa/Documents/PIV_24830.pdf",
+        "name": "Autoridade Tributária, informação vinculativa, processo 24830, despacho de 2023-10-27"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "iva-eletricidade-casa-colaborador",
+      "kind": "fiscal",
+      "text": {
+        "pt": "IVA da eletricidade gasta a carregar em casa do colaborador uma viatura elétrica da empresa: para o deduzir, a empresa tem de ter uma fatura emitida na forma legal, em seu nome e na sua posse, relativa a esses consumos (Código do IVA, art. 19.º, n.º 2). Um reembolso ao colaborador com base na fatura dele, em nome dele, não dá direito à dedução.",
+        "en": "VAT on electricity used to charge a company electric car at an employee's home: to deduct it, the company must hold a valid invoice in its own name for that consumption (VAT Code, art. 19(2)). Reimbursing the employee against an invoice in the employee's name does not allow the deduction."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/despesa/civa/Documents/PIV_25928.pdf",
+        "name": "Autoridade Tributária, informação vinculativa, processo 25928, despacho de 2024-04-30"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "isv-exclusao-eletricos",
+      "kind": "fiscal",
+      "text": {
+        "pt": "ISV: os veículos exclusivamente elétricos estão excluídos da incidência do imposto sobre veículos (Código do ISV, art. 2.º, n.º 2, alínea a), aprovado pela Lei n.º 22-A/2007). Conta, por exemplo, ao importar um elétrico usado. Não abrange híbridos.",
+        "en": "Vehicle tax (ISV): fully electric vehicles are outside the scope of the tax (ISV Code, art. 2(2)(a), approved by Lei 22-A/2007). Relevant, for example, when importing a used electric car. Hybrids are not covered."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/lei/22-a-2007-226204",
+        "name": "Lei n.º 22-A/2007, de 29 de junho, Código do ISV, art. 2.º"
+      },
+      "checkedAt": "2026-11-06",
       "validFrom": null,
       "validTo": null
     },
@@ -518,6 +614,119 @@
       "checkedAt": "2026-11-04",
       "validFrom": null,
       "validTo": null
+    },
+    {
+      "id": "go-leilao-37-resultado",
+      "kind": "mercado",
+      "series": "leiloes-go-pt",
+      "edition": "37",
+      "text": {
+        "pt": "37.º leilão GO-PT (9-9-2026): vendidas 2 158 221 GO (MWh) de produção renovável apoiada, todo o volume leiloado, com preços marginais entre 1,57 e 1,68 €/MWh conforme o lote (solar, eólica, hídrica, térmica). 27 participantes, 16 compradores. Preço de reserva: 0,10 €/MWh.",
+        "en": "37th GO-PT auction (9 Sep 2026): 2,158,221 GOs (MWh) from supported renewable production sold, the whole volume offered, at marginal prices between €1.57 and €1.68/MWh depending on the lot (solar, wind, hydro, thermal). 27 participants, 16 buyers. Reserve price: €0.10/MWh."
+      },
+      "source": {
+        "url": "https://www.omip.pt/pt/leiloes-go",
+        "name": "OMIP, Leilões de Garantias de Origem (histórico dos resultados dos leilões GO-PT, setembro de 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-09-09",
+      "validTo": null
+    },
+    {
+      "id": "go-leiloes-historico-anual",
+      "kind": "mercado",
+      "series": "leiloes-go-pt",
+      "text": {
+        "pt": "Leilões GO-PT por ano (conta do Voltaria sobre o histórico do OMIP: volume vendido × preço marginal de cada lote): 2021, 5 leilões, 18,2 TWh, média 0,50 €/MWh, ≈9,2 M€; 2022, 8 leilões, 25,1 TWh, 2,45 €/MWh, ≈61,7 M€; 2023, 6 leilões, 19,9 TWh, 5,29 €/MWh, ≈105,2 M€; 2024, 6 leilões, 21,1 TWh, 1,04 €/MWh, ≈22,0 M€; 2025, 7 leilões, 19,1 TWh, 0,44 €/MWh, ≈8,4 M€; 2026 até setembro, 5 leilões, 14,1 TWh, 1,18 €/MWh, ≈16,7 M€. Máximo num leilão: 7,39 €/MWh de média (7-12-2022); mínimo: 0,17 €/MWh (12-2-2025). O acumulado até junho de 2023 (≈135,6 M€) coincide com o valor líquido publicado pela REN.",
+        "en": "GO-PT auctions per year (Voltaria's calculation from the OMIP history: volume sold × marginal price of each lot): 2021, 5 auctions, 18.2 TWh, average €0.50/MWh, ≈€9.2M; 2022, 8 auctions, 25.1 TWh, €2.45/MWh, ≈€61.7M; 2023, 6 auctions, 19.9 TWh, €5.29/MWh, ≈€105.2M; 2024, 6 auctions, 21.1 TWh, €1.04/MWh, ≈€22.0M; 2025, 7 auctions, 19.1 TWh, €0.44/MWh, ≈€8.4M; 2026 to September, 5 auctions, 14.1 TWh, €1.18/MWh, ≈€16.7M. Highest single-auction average: €7.39/MWh (7 Dec 2022); lowest: €0.17/MWh (12 Feb 2025). The total up to June 2023 (≈€135.6M) matches the net figure published by REN."
+      },
+      "source": {
+        "url": "https://www.omip.pt/pt/leiloes-go",
+        "name": "OMIP, Leilões de Garantias de Origem (histórico dos resultados dos leilões GO-PT, setembro de 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "go-leiloes-calendario",
+      "kind": "mercado",
+      "series": "leiloes-go-pt",
+      "text": {
+        "pt": "Próximos leilões GO-PT (DGEG): 38.º a 11-11-2026, com 1 938 201 GO (solar, eólica, hídrica, térmica e várias tecnologias, produção de novembro de 2025 a setembro de 2026) e preço de reserva de 0,10 €/MWh; em 2027, a 10-2, 14-4, 9-6, 8-9 e 10-11. O calendário pode mudar; a convocatória sai 20 dias antes.",
+        "en": "Upcoming GO-PT auctions (DGEG): 38th on 11 Nov 2026, with 1,938,201 GOs (solar, wind, hydro, thermal and mixed technologies, produced November 2025 to September 2026) and a reserve price of €0.10/MWh; in 2027, on 10 Feb, 14 Apr, 9 Jun, 8 Sep and 10 Nov. The calendar may change; each call is published 20 days before."
+      },
+      "source": {
+        "url": "https://www.omip.pt/sites/default/files/2026-10/calendario-2027_leiloes-go-pt.pdf",
+        "name": "DGEG, Comunicado do calendário 2027 dos leilões de GO (20-10-2026) e convocatória do 38.º leilão GO-PT"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": "2027-11-10"
+    },
+    {
+      "id": "go-leiloes-retribuicao",
+      "kind": "mercado",
+      "series": "leiloes-go-pt",
+      "text": {
+        "pt": "Custo de operação dos leilões GO-PT: 0,02 €/MWh adjudicado, metade paga pelo CUR e metade pelos adjudicatários, com um teto de 20 % da receita de cada leilão; o que passar do teto conta como receita (Despacho n.º 6560-B/2021, n.os 11 e 12).",
+        "en": "Operating cost of the GO-PT auctions: €0.02 per MWh awarded, half paid by the last-resort supplier (CUR) and half by the winning bidders, capped at 20% of each auction's revenue; anything above the cap counts as revenue (Despacho 6560-B/2021, points 11 and 12)."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/despacho/6560-b-2021-166488536",
+        "name": "Despacho n.º 6560-B/2021, de 5 de julho (DGEG)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2021-07-05",
+      "validTo": null
+    },
+    {
+      "id": "tar-2026-bte-mt",
+      "kind": "mercado",
+      "series": "tar",
+      "text": {
+        "pt": "TAR 2026 (sem IVA). BTE: potência contratada 0,0563 €/kW/dia; potência em horas de ponta 0,5521 €/kW/dia; energia ativa 0,0397 (ponta), 0,0353 (cheias), 0,0285 (vazio normal), 0,0237 (super vazio) €/kWh. MT: potência contratada 0,0458 €/kW/dia; potência em horas de ponta 0,2435 €/kW/dia; energia ativa 0,0203, 0,0182, 0,0146, 0,0129 €/kWh.",
+        "en": "2026 network access tariffs (excl. VAT). BTE (special low voltage): contracted power €0.0563/kW/day; peak-hour power €0.5521/kW/day; active energy €0.0397 (peak), 0.0353 (full), 0.0285 (off-peak), 0.0237 (super off-peak)/kWh. MV: contracted power €0.0458/kW/day; peak-hour power €0.2435/kW/day; energy €0.0203, 0.0182, 0.0146, 0.0129/kWh."
+      },
+      "source": {
+        "url": "https://www.erse.pt/media/lamnmp31/diretiva-erse-10-2025-tep-se-2026.pdf",
+        "name": "ERSE, Diretiva n.º 10/2025 (tarifas e preços da energia elétrica para 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-01-01",
+      "validTo": "2026-12-31"
+    },
+    {
+      "id": "tar-me-2026",
+      "kind": "mercado",
+      "series": "tar",
+      "text": {
+        "pt": "TAR da mobilidade elétrica 2026 (só energia, sem IVA). Ligação em BT: tri-horária 0,2807 (ponta), 0,0769 (cheias), 0,0266 (vazio) €/kWh; bi-horária 0,1192 (fora de vazio), 0,0266 (vazio). Ligação em MT: tri-horária 0,2410, 0,0379, 0,0157; bi-horária 0,0812, 0,0157 €/kWh. Só para postos integrados na MOBI.E.",
+        "en": "2026 e-mobility network access tariff (energy only, excl. VAT). BT connection: three-period €0.2807 (peak), 0.0769 (full), 0.0266 (off-peak)/kWh; two-period €0.1192 (outside off-peak), 0.0266 (off-peak). MV connection: three-period 0.2410, 0.0379, 0.0157; two-period 0.0812, 0.0157 €/kWh. Only for charge points integrated in MOBI.E."
+      },
+      "source": {
+        "url": "https://www.erse.pt/media/lamnmp31/diretiva-erse-10-2025-tep-se-2026.pdf",
+        "name": "ERSE, Diretiva n.º 10/2025 (tarifas e preços da energia elétrica para 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-01-01",
+      "validTo": "2026-12-31"
+    },
+    {
+      "id": "tar-exemplo-posto-150kw-bte",
+      "kind": "mercado",
+      "series": "tar",
+      "text": {
+        "pt": "Exemplo do Voltaria (preços TAR 2026, mês de 30 dias): posto de 150 kW em BTE, 20 % dos kWh em horas de ponta, 110 h de ponta no mês. TAR normal ≈ 253 € fixos + 0,064 €/kWh; TAR ME BT tri-horária ≈ 0,103 €/kWh. Equilíbrio perto de 6 500 kWh/mês (cerca de 6 % de utilização). Com 1 000 kWh/mês: ≈0,32 €/kWh de rede contra ≈0,10; com 15 000 kWh/mês: ≈0,08 contra ≈0,10. Estimativa, não fatura.",
+        "en": "Voltaria example (2026 TAR prices, 30-day month): 150 kW charger on BTE, 20% of kWh in peak hours, 110 peak hours a month. Standard TAR ≈ €253 fixed + €0.064/kWh; e-mobility TAR (BT, three-period) ≈ €0.103/kWh. Break-even near 6,500 kWh/month (about 6% utilisation). At 1,000 kWh/month: ≈€0.32/kWh of network cost vs ≈0.10; at 15,000 kWh/month: ≈0.08 vs ≈0.10. Estimate, not a bill."
+      },
+      "source": {
+        "url": "https://www.erse.pt/media/lamnmp31/diretiva-erse-10-2025-tep-se-2026.pdf",
+        "name": "ERSE, Diretiva n.º 10/2025 (tarifas e preços da energia elétrica para 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-01-01",
+      "validTo": "2026-12-31"
     }
   ]
 }

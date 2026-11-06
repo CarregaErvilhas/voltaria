@@ -83,9 +83,9 @@ Estados-membros (é um regulamento, não uma diretiva).
 - Diretiva 2014/94/UE (revogada pelo AFIR, útil para o histórico):
   https://eur-lex.europa.eu/eli/dir/2014/94/oj
 - Decreto-Lei n.º 93/2025, de 14 de agosto (RJME):
-  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (prorroga o período transitório até 31-12-2027):
-  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/155/2026/07/31/p/dre/pt/html
 - Portaria n.º 16/2026/1, de 12 de janeiro (licença de operação):
   https://diariodarepublica.pt/dr/detalhe/portaria/16-2026-1003479553
 - Portaria n.º 31/2026/1, de 23 de janeiro (dados dos OPC e NAP):
@@ -99,24 +99,24 @@ Estados-membros (é um regulamento, não uma diretiva).
 - Portaria n.º 133/2026/1, de 30 de março (taxas):
   https://files.diariodarepublica.pt/1s/2026/03/06200/0001100012.pdf
 - Decreto-Lei n.º 96/2017, de 10 de agosto (instalações elétricas de serviço particular):
-  https://data.dre.pt/eli/decreto-lei/96/2017/08/10/p/dre/pt/html
-- Lei n.º 61/2018, de 9 de agosto (altera o DL 96/2017):
-  https://data.dre.pt/eli/lei/61/2018/08/09/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/96/2017/08/10/p/dre/pt/html
+- Lei n.º 61/2018, de 21 de agosto (altera o DL 96/2017):
+  https://data.dre.pt/eli/lei/61/2018/08/21/p/dre/pt/html
 - Portaria n.º 949-A/2006, de 11 de setembro (RTIEBT — regras técnicas das instalações
-  elétricas de baixa tensão): https://data.dre.pt/eli/portaria/949-a/2006/09/11/p/dre/pt/html
+  elétricas de baixa tensão): https://data.dre.pt/eli/port/949-a/2006/09/11/p/dre/pt/html
 
 Legislação revogada (só para contexto histórico):
 
 - Decreto-Lei n.º 39/2010, de 26 de abril:
-  https://data.dre.pt/eli/decreto-lei/39/2010/04/26/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/39/2010/04/26/p/dre/pt/html
 - Decreto-Lei n.º 90/2014, de 11 de junho (terceira alteração ao DL 39/2010):
-  https://data.dre.pt/eli/decreto-lei/90/2014/06/11/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/90/2014/06/11/p/dre/pt/html
 - Portaria n.º 241/2015, de 12 de agosto (requisitos da licença de operação):
-  https://data.dre.pt/eli/portaria/241/2015/08/12/p/dre/pt/html
+  https://data.dre.pt/eli/port/241/2015/08/12/p/dre/pt/html
 - Portaria n.º 240/2015, de 12 de agosto (taxas):
-  https://data.dre.pt/eli/portaria/240/2015/08/12/p/dre/pt/html
+  https://data.dre.pt/eli/port/240/2015/08/12/p/dre/pt/html
 - Portaria n.º 231/2016, de 29 de agosto (seguro de RC):
-  https://data.dre.pt/eli/portaria/231/2016/08/29/p/dre/pt/html
+  https://data.dre.pt/eli/port/231/2016/08/29/p/dre/pt/html
 
 ### Normas e standards
 

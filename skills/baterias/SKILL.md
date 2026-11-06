@@ -114,7 +114,7 @@ de 8 anos e 160 000 km [UVE, manual], mas confirma sempre a da versão e do ano 
   segurança, recolha e reciclagem): https://eur-lex.europa.eu/eli/reg/2023/1542/oj
 - Decreto-Lei n.º 84/2021, de 18 de outubro (direitos do consumidor na compra e na garantia de bens
   móveis, incluindo a bateria como componente do veículo):
-  https://data.dre.pt/eli/decreto-lei/84/2021/10/18/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/84/2021/10/18/p/dre/pt/html
 
 ### Normas e standards
 

@@ -215,6 +215,12 @@ precisa para pagar hoje.
   em Portugal e Chargemap e Electromaps na Europa [UVE, manual].
 - Antes de ir, confirma a ficha, a potência, o horário (há parques que fecham) e o número de apoio do
   OPC.
+- **Sem garagem.** Para quem mora num sítio sem lugar próprio, a MOBI.E lançou em 2024 o projeto
+  **Ruas Elétricas**: as câmaras propõem ruas residenciais sem estacionamento privado, e a MOBI.E
+  contrata OPC para instalar e explorar postos de baixa potência (menos de 7,4 kW) nessas ruas. A
+  adesão é da câmara, não do morador [MOBI.E, ruas elétricas]. Se o utilizador quiser postos na sua
+  rua, sugere perguntar à câmara se aderiu ou vai aderir. Não digas que ruas têm postos: procura-os
+  com a ferramenta ou no mapa.
 
 ## Boas práticas
 
@@ -265,9 +271,15 @@ Mais regras que protegem o condutor:
 
 ## Quando o posto não funciona
 
-- O apoio é dado pelo OPC do posto, não pela MOBI.E [UVE, rede de carregamento]. O número costuma
-  estar no posto e na app. O OPC é obrigado a ter apoio ao condutor disponível durante todo o tempo
-  em que o posto está a funcionar (DL 93/2025, art. 13.º, n.º 1, k).
+- O apoio é dado pelo OPC do posto, não pela MOBI.E [UVE, rede de carregamento]. O OPC é obrigado a
+  ter apoio ao condutor disponível durante todo o tempo em que o posto está a funcionar (DL 93/2025,
+  art. 13.º, n.º 1, k).
+- **Dá logo o número de apoio.** Se tiveres uma ferramenta que identifica o posto (no ohmigo:
+  `lookup_charger`), o telefone de apoio do OPC vem no resultado (`support.phone`), tal como o OPC o
+  publica no Ponto de Acesso Nacional. Usa esse e diz que vem do OPC. Um telefone de outra origem,
+  por exemplo do OpenStreetMap, pode ser da loja ou do dono do local, e não do apoio ao posto.
+- Sem ferramenta, o número está na etiqueta do posto e na app do OPC. Não o dês de memória: os
+  números mudam. As listas da DGEG de OPC e de CEME não têm telefones.
 - Se o cabo estiver cortado ou o posto vandalizado, sugere avisar o OPC. Os furtos de cabos têm
   afetado sobretudo postos rápidos [UVE, furto e vandalismo].
 - **Perigo** (fumo, cheiro a queimado, cabo descarnado): não tocar no posto nem no cabo, afastar
@@ -279,6 +291,38 @@ Mais regras que protegem o condutor:
   ter o livro eletrónico no site e um aviso no posto a dizer como reclamar. As reclamações são
   tratadas pela ERSE (DL 93/2025, art. 14.º, n.ºs 6 e 7). Sugere juntar a data, a hora, o
   identificador do posto e fotografias.
+
+## A quem recorrer
+
+Primeiro o OPC, sempre. Se não resolver, depende do problema:
+
+| Problema | A quem | Como |
+|---|---|---|
+| Fatura, preço cobrado, serviço mal prestado, OPC que não responde | ERSE, pela reclamação | Livro de reclamações do OPC, no local ou o eletrónico (livroreclamacoes.pt). O OPC tem de responder em 15 dias úteis [ENSE, reclamações] |
+| Posto perigoso, sem inspeção, a funcionar sem licença, preço ou informação obrigatória não afixada, recusa de carregar sem razão técnica | ENSE, por denúncia | Formulário de denúncias no site da ENSE, denuncias@ense-epe.pt, ou a linha verde 800 914 146 [ENSE, denúncias] |
+| Acidente ou incidente elétrico num posto | 112 se houver risco; depois o OPC, que tem de o comunicar à DGEG e à ENSE | A ENSE tem uma linha para acidentes e incidentes no setor da energia, 91 20 20 020, e o email acidentes@ense-epe.pt [ENSE, acidentes] |
+| Dados errados nas apps e mapas (posto que não existe, disponibilidade ou preço errados) | O OPC; a AMT fiscaliza a partilha de dados | Os dados vêm do OPC, através da EADME e do Ponto de Acesso Nacional (ver `afir-nap`) |
+
+Porque é assim (DL 93/2025):
+
+- **A ENSE fiscaliza** o cumprimento do decreto-lei, com a AMT, sem prejuízo da ERSE e das forças de
+  segurança (art. 32.º). Decide as contraordenações que não são da ERSE nem da AMT (art. 37.º, n.º
+  3), como faltar à informação no posto, ao apoio ao condutor ou ao acesso universal (arts. 13.º, 14.º
+  e 34.º).
+- **A ENSE pode fechar um posto.** Fecha logo um posto sem licença, sem seguro obrigatório ou sem as
+  inspeções periódicas (art. 33.º, n.º 1). Pode fechá-lo, temporária ou definitivamente, por falta de
+  segurança, e pedir à E-REDES ou ao ORD da zona que o desligue da rede (art. 33.º, n.os 2 e 3). Recebe os
+  certificados de inspeção, válidos por cinco anos (art. 16.º).
+- **A ENSE averigua os acidentes** que o OPC lhe comunica e manda as conclusões à DGEG (art. 14.º,
+  n.os 8 e 9).
+- **A ERSE trata as reclamações** do livro de reclamações dos OPC (art. 14.º, n.º 6) e as infrações
+  aos regulamentos dela e às práticas comerciais desleais (art. 37.º, n.º 1).
+- **A AMT** decide as infrações sobre os dados dos postos (art. 19.º e art. 37.º, n.º 2).
+
+Para escrever a denúncia ou a reclamação, ajuda o utilizador a juntar: o identificador do posto, a
+morada, o OPC (está na etiqueta), a data e a hora, o que aconteceu, e fotografias do posto e do que
+estava afixado. A página da ENSE sobre mobilidade elétrica ainda descreve o regime de 2010: não a uses
+para as regras atuais.
 
 ## No estrangeiro
 
@@ -301,12 +345,12 @@ comparativo.
 ### Legislação
 
 - Decreto-Lei n.º 93/2025, de 14 de agosto (regime jurídico da mobilidade elétrica):
-  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (prorroga o período transitório até 31-12-2027):
-  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/155/2026/07/31/p/dre/pt/html
 - Regulamento (UE) 2023/1804 (AFIR): https://eur-lex.europa.eu/eli/reg/2023/1804/oj
 - Regulamento n.º 7/2026, de 6 de janeiro (ERSE — Regulamento da Mobilidade Elétrica):
-  https://data.dre.pt/eli/regulamento/7/2026/01/06/p/dre/pt/html
+  https://diariodarepublica.pt/dr/detalhe/regulamento/7-2026-994000576
 
 ### Normas e standards
 
@@ -335,6 +379,18 @@ Da DGEG – Direção-Geral de Energia e Geologia, verificado a 2026-11-04:
 - Lista de CEME (regime transitório): https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/operacao-e-comercializacao/regime-transitorio/ceme-registados/
 
 Os pontos da DGEG estão escritos por palavras nossas (ver `docs/fontes/dgeg.md` no Voltaria).
+
+Da ENSE – Entidade Nacional para o Setor Energético, verificado a 2026-11-06:
+
+- [ENSE, reclamações] https://www.ense-epe.pt/reclamacoes/
+- [ENSE, denúncias] https://www.ense-epe.pt/denuncias/
+- [ENSE, acidentes] https://www.ense-epe.pt/comunicacao-acidentes/
+- Livro de Reclamações Eletrónico: https://www.livroreclamacoes.pt/
+
+Da MOBI.E:
+
+- [MOBI.E, ruas elétricas] "MOBI.E desafia municípios a terem ruas elétricas nos seus territórios"
+  (5-4-2024): https://www.mobie.pt/w/mobi.e-desafia-munic%C3%ADpios-a-terem%C2%A0-ruas-el%C3%A9tricas-nos-seus-territ%C3%B3rios
 
 Da UVE – Associação de Utilizadores de Veículos Elétricos, verificado a 2026-11-04:
 

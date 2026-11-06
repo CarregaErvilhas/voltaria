@@ -88,7 +88,9 @@ Pergunta só o que não souberes, uma coisa de cada vez:
   DL 93/2025, art. 25.º, n.º 2. O técnico deve seguir o Guia Técnico das Instalações Elétricas para
   a Alimentação de Veículos Elétricos da DGEG, 3.ª edição, de 2023 (ligação nas fontes). A
   Portaria n.º 128/2026/1 (art. 3.º, n.º 4) prevê um guia novo da DGEG; a 2026-11-04 a DGEG ainda
-  remete para a 3.ª edição. Se houver uma edição mais recente na página da DGEG, usa essa.
+  remete para a 3.ª edição. Se houver uma edição mais recente na página da DGEG, usa essa. As regras
+  técnicas do guia em detalhe (modos de carga, circuito, diferencial, tomadas, de que quadro se
+  alimenta cada lugar, potência nos prédios, IP e IK) estão na skill `instalacao-eletrica`.
 - **Quem pode fazer a instalação**: uma entidade instaladora (EI) ou um técnico responsável pela
   execução, registados na DGEG. Um técnico sozinho pode assumir instalações até 41,4 kVA; acima
   disso é preciso uma EI (Lei n.º 14/2015, art. 4.º, n.º 3; Portaria n.º 128/2026/1, art. 4.º,
@@ -267,10 +269,15 @@ privado; DGEG, FAQ 2.1.5, 2.1.6, 2.1.12 a 2.1.16]:
   ou serviços no mesmo prédio [DGEG, FAQ 2.1.16].
 - Os cabos só podem passar pelas zonas comuns e pelos espaços da própria fração, nunca por dentro
   do lugar de outro condómino [DGEG, guia técnico, 3.1.5]. **Não podem passar pelo poço do
-  elevador** nem por condutas ou tubos de outras instalações (RTIEBT, secção 803.4.1) [DGEG, FAQ
-  2.1.17]. Se o percurso proposto passar por aí, diz que não é permitido.
+  elevador** nem por condutas ou tubos de outras instalações [DGEG, FAQ 2.1.17]. É a posição da
+  DGEG, que cita a secção 803.4.1 das RTIEBT; o texto dessa secção só fala de onde ficam as colunas.
+  Se o percurso proposto passar por aí, diz que a DGEG não o permite. No ducto das colunas podem
+  passar, com condições (RTIEBT, secção 803.2.3.2.3; ver `instalacao-eletrica`).
 - Num lugar marcado no chão, o circuito sai de um quadro próprio do lugar, que só abre com
   ferramenta, com um corte geral junto ao acesso [DGEG, guia técnico, 3.1.5].
+- Os esquemas-tipo do guia para cada caso (fração, quadro de colunas, serviços comuns, zona
+  partilhada), e porque a DGEG prefere o quadro de colunas aos serviços comuns, estão na skill
+  `instalacao-eletrica`.
 
 **Comunicação prévia.** Se a instalação estiver numa parte comum do prédio, ou passar por ela, mesmo
 que seja de uso exclusivo do condómino, é obrigatório comunicar por escrito à administração do
@@ -367,16 +374,16 @@ Para apoios à compra de um posto (por exemplo em condomínio) ou do carro, usa 
 ### Legislação
 
 - Decreto-Lei n.º 93/2025, de 14 de agosto (regime jurídico da mobilidade elétrica):
-  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (prorroga o período transitório até 31-12-2027):
-  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/155/2026/07/31/p/dre/pt/html
 - Regulamento (UE) 2023/1804 (AFIR): https://eur-lex.europa.eu/eli/reg/2023/1804/oj
 - Decreto-Lei n.º 96/2017, de 10 de agosto (instalações elétricas de serviço particular
-  alimentadas pela RESP): https://data.dre.pt/eli/decreto-lei/96/2017/08/10/p/dre/pt/html
+  alimentadas pela RESP): https://data.dre.pt/eli/dec-lei/96/2017/08/10/p/dre/pt/html
 - Decreto-Lei n.º 163/2006, de 8 de agosto (acessibilidade a edifícios — lugares de garagem e
-  tomadas para carregamento): https://data.dre.pt/eli/decreto-lei/163/2006/08/08/p/dre/pt/html
+  tomadas para carregamento): https://data.dre.pt/eli/dec-lei/163/2006/08/08/p/dre/pt/html
 - Portaria n.º 949-A/2006, de 11 de setembro (RTIEBT — regras técnicas das instalações elétricas
-  de baixa tensão): https://data.dre.pt/eli/portaria/949-a/2006/09/11/p/dre/pt/html
+  de baixa tensão): https://data.dre.pt/eli/port/949-a/2006/09/11/p/dre/pt/html
 - Portaria n.º 128/2026/1, de 26 de março (potências mínimas e regras técnicas dos postos):
   https://files.diariodarepublica.pt/1s/2026/03/06000/0000300006.pdf
 - Regulamento (UE) 2016/631 (RfG — requisitos de ligação de geradores à rede) e Regulamento

@@ -86,8 +86,36 @@ estrutura da MOBI.E.
 - **DL 93/2025**: novo modelo de mercado (contrato direto com o OPC ou com um eMSP). **DL 155/2026**:
   prorroga o período transitório até 31-12-2027, mantendo a coexistência com o modelo antigo
   (CEME + MOBI.E).
-- A MOBI.E continua a gerir a plataforma da rede até 31-12-2027 e a cobrar a TAR (tarifa de acesso
-  às redes da mobilidade elétrica), fixada pela ERSE.
+- A MOBI.E continua a gerir a plataforma da rede até 31-12-2027, como EGME, e a cobrar a tarifa da
+  EGME, fixada pela ERSE. Não confundas com a TAR, a tarifa de acesso às redes elétricas.
+- A atividade da MOBI.E como EADME é supervisionada pela AMT (Autoridade da Mobilidade e dos
+  Transportes) [MOBI.E, EADME 2026].
+- Desde setembro de 2026, a área MOBI.DATA da MOBI.E mostra a disponibilidade em tempo real de
+  postos de toda a rede pública, incluindo OPC que não estavam ligados à MOBI.E, à medida que estes
+  concluem a integração com a EADME [MOBI.E, EADME 2026].
+
+### Como os OPC enviam os dados à EADME
+
+A Portaria n.º 31/2026/1 manda a EADME fixar as regras técnicas. A **Regra Técnica n.º 1/EADME/2026**
+foi aprovada e publicada a 18-05-2026, depois de consulta pública, e aplica-se 30 dias úteis depois
+da publicação [EADME, regra técnica 1/2026, ponto 11]:
+
+- **Que dados**: os estáticos e os dinâmicos do art. 20.º do AFIR, com o estado da EVSE (que junta
+  estado operacional e disponibilidade num só campo) e o preço ad hoc com todas as componentes
+  [ponto 6].
+- **Com que frequência**: dados estáticos até 24 horas depois de uma alteração; dados dinâmicos até
+  um minuto depois [ponto 7].
+- **Como**: por DATEX II, com dois endereços sem autenticação em XML, um para os dados estáticos e
+  outro para os dinâmicos; ou por OCPI 2.2 ou 2.2.1, com os módulos Versions, Credentials, Locations
+  e Tariffs, no papel de OPC. Os dados estáticos que o OCPI não tem podem ser preenchidos na
+  plataforma da EADME ou enviados em campos não normalizados definidos pela EADME [ponto 8 e anexo I].
+- **Se falhar**: dados incompletos, errados ou fora da frequência são uma infração leve (DL 93/2025,
+  art. 13.º, n.º 1, c), e art. 34.º, n.º 1, a)) [ponto 9].
+- **Transição**: os OPC com postos na plataforma da MOBI.E não precisam de fazer nada durante o
+  período transitório: a EADME converte para DATEX II o que já recebe por OCPP e OCPI. No fim, têm de
+  escolher uma das formas acima [ponto 10]. A regra fala do fim do período em 31-12-2026, porque foi
+  escrita antes do DL 155/2026, que o prolongou até 31-12-2027. Se a pergunta depender da data,
+  manda confirmar com a EADME.
 
 ## Acesso e licença
 
@@ -142,9 +170,9 @@ normal", acima disso "alta potência".
 - Regulamento Delegado (UE) 2022/670 (informação de tráfego em tempo real, RTTI):
   https://eur-lex.europa.eu/eli/reg_del/2022/670/oj
 - Decreto-Lei n.º 93/2025, de 14 de agosto (RJME):
-  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (período transitório até 31-12-2027):
-  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/155/2026/07/31/p/dre/pt/html
 - Portaria n.º 31/2026/1, de 23 de janeiro (dados dos OPC à EADME e transmissão ao NAP):
   https://diariodarepublica.pt/dr/detalhe/portaria/31-1022092628
 
@@ -161,6 +189,12 @@ normal", acima disso "alta potência".
 
 ### Outras fontes
 
+- [EADME, regra técnica 1/2026] Regra Técnica n.º 1/EADME/2026, requisitos para a comunicação de
+  dados dos OPC à EADME (aprovada a 18-05-2026; o ficheiro mantém o nome da proposta), verificada a
+  2026-11-06:
+  https://www.mobie.pt/documents/699315/699782/Proposta+Regra+T%C3%A9cnica+1_EADME_Consulta_Publica.pdf/28f8cc57-7748-ef63-099b-840de7103d5f?t=1769427353886
+- [MOBI.E, EADME 2026] MOBI.E, notícia de 10-09-2026 sobre a integração de novos OPC na EADME e o
+  MOBI.DATA: https://www.mobie.pt/w/mais-de-250-mil-utilizadores-carregam-na-rede-conectada-%C3%A0-mobi.e-mais-89-do-que-h%C3%A1-um-ano-duplicado-0
 - NAP português: https://nap-portugal.imt-ip.pt
 - MOBI.E endpoints (XML DATEX II 3.3): https://pgm.mobie.pt/integration/nap/evChargingInfra e
   `https://pgm.mobie.pt/integration/nap/evActualStatus`

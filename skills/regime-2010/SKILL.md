@@ -113,6 +113,23 @@ na nova redação). Até lá:
 - Nos postos públicos de 50 kW ou mais já em operação, as obrigações de meios de pagamento (incluindo
   o ad hoc) aplicam-se a partir de 01-01-2027 (n.º 6).
 
+### Depois de 2027: a MOBI.E como hub
+
+- Em outubro de 2026, a MOBI.E apresentou o **Mobi.Hub**, uma plataforma de roaming que liga OPC e
+  eMSP num só ecossistema, onde cada um faz os seus acordos comerciais diretamente com os outros.
+  Está aberta a todos, ligados ou não à plataforma atual da MOBI.E, e a MOBI.E diz que vai manter-se
+  neutra e tratar todos por igual [MOBI.E, Mobi.Hub].
+- É o papel que hubs como a Gireve ou a Hubject têm noutros países (ver `tecnologia-de-carregamento`).
+  A diferença para o modelo antigo: deixa de haver uma rede única com cartão de CEME; o condutor
+  passa a ter contrato com um OPC ou um eMSP, e o hub é a forma de esse contrato servir em postos de
+  outros operadores.
+- A MOBI.E diz que a passagem para o novo modelo é gradual, sem impacto nos parceiros nem nos
+  utilizadores. O comunicado não diz se a adesão ao hub é obrigatória nem dá datas [MOBI.E,
+  Mobi.Hub]. Não prometas ao utilizador que o cartão dele vai continuar a funcionar em todos os
+  postos depois de 2027: depende dos acordos do eMSP dele.
+- Lançou também o **Mobi.Charge**, para OPC que não têm plataforma própria gerirem os seus postos.
+- A MOBI.E continua a ser a EADME, que recebe os dados de todos os OPC (ver `afir-nap`).
+
 ## Comparação rápida
 
 | Tema | DL 39/2010 | DL 93/2025 |
@@ -128,30 +145,30 @@ na nova redação). Até lá:
 ### Legislação
 
 - Decreto-Lei n.º 39/2010, de 26 de abril (regime jurídico da mobilidade elétrica, revogado):
-  https://data.dre.pt/eli/decreto-lei/39/2010/04/26/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/39/2010/04/26/p/dre/pt/html
 - Decreto-Lei n.º 90/2014, de 11 de junho (terceira alteração ao DL 39/2010, que o republica):
-  https://data.dre.pt/eli/decreto-lei/90/2014/06/11/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/90/2014/06/11/p/dre/pt/html
 - Decreto-Lei n.º 93/2025, de 14 de agosto (art. 45.º revoga o DL 39/2010):
-  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (período transitório até 31-12-2027):
-  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/155/2026/07/31/p/dre/pt/html
 - Decreto-Lei n.º 96/2017, de 10 de agosto (instalações elétricas de serviço particular):
-  https://data.dre.pt/eli/decreto-lei/96/2017/08/10/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/96/2017/08/10/p/dre/pt/html
 - Decreto-Lei n.º 163/2006, de 8 de agosto (acessibilidades em edifícios — estacionamento e
-  tomadas de carregamento): https://data.dre.pt/eli/decreto-lei/163/2006/08/08/p/dre/pt/html
+  tomadas de carregamento): https://data.dre.pt/eli/dec-lei/163/2006/08/08/p/dre/pt/html
 - Portaria n.º 231/2013, de 22 de julho (regras do setor elétrico aplicáveis à mobilidade
-  elétrica): https://data.dre.pt/eli/portaria/231/2013/07/22/p/dre/pt/html
+  elétrica): https://data.dre.pt/eli/port/231/2013/07/22/p/dre/pt/html
 - Portaria n.º 949-A/2006, de 11 de setembro (RTIEBT):
-  https://data.dre.pt/eli/portaria/949-a/2006/09/11/p/dre/pt/html
+  https://data.dre.pt/eli/port/949-a/2006/09/11/p/dre/pt/html
 
 Diplomas do regime de 2010 já revogados:
 
 - Portaria n.º 241/2015, de 12 de agosto (requisitos técnicos da licença de operação):
-  https://data.dre.pt/eli/portaria/241/2015/08/12/p/dre/pt/html
+  https://data.dre.pt/eli/port/241/2015/08/12/p/dre/pt/html
 - Portaria n.º 240/2015, de 12 de agosto (taxas):
-  https://data.dre.pt/eli/portaria/240/2015/08/12/p/dre/pt/html
+  https://data.dre.pt/eli/port/240/2015/08/12/p/dre/pt/html
 - Portaria n.º 231/2016, de 29 de agosto (seguro obrigatório de RC):
-  https://data.dre.pt/eli/portaria/231/2016/08/29/p/dre/pt/html
+  https://data.dre.pt/eli/port/231/2016/08/29/p/dre/pt/html
 
 ### Normas e standards
 
@@ -166,6 +183,11 @@ Diplomas do regime de 2010 já revogados:
 
 - Histórico de alterações do DL 39/2010 (Diário da República):
   https://diariodarepublica.pt/dr/analise-juridica/modificacoes/decreto-lei/39-2010-614137
+
+### MOBI.E
+
+- [MOBI.E, Mobi.Hub] "MOBI.E reforça aposta na mobilidade elétrica com novo hub" (22-10-2026),
+  verificado a 2026-11-06: https://www.mobie.pt/w/mobi.e-reforca-aposta-na-mobilidade-eletrica-com-novo-hub
 
 ### DGEG
 

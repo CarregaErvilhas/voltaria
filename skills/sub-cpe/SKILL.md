@@ -62,7 +62,9 @@ meses depois da publicação, em 6 de janeiro de 2026).
 ## Quem pede
 
 - O pedido é do **OPC ou do DPC** do posto, não do condómino em nome próprio (GMLDD, art. 11.º-A,
-  n.º 1). Um condómino que tem uma wallbox sua é o DPC dessa wallbox e pode ser ele a pedir.
+  n.º 1). Um condómino que tem uma wallbox sua é o DPC dessa wallbox e pode ser ele a pedir. Uma
+  empresa que instala uma wallbox sua em casa de um colaborador é a DPC desse posto e pode pedir o
+  sub-CPE em nome dela, para ter a fatura da eletricidade em seu nome (ver `empresas-e-frotas`).
 - Tem de ir com **autorização expressa do titular da instalação ligada à rede pública** (n.º 2).
   Numa moradia é o dono do contrato; num prédio é, em regra, o condomínio, pelo contrato dos serviços
   comuns; numa empresa é quem tem o contrato de eletricidade.
@@ -209,28 +211,28 @@ consumo que fica lá passar a um escalão inferior.
 ### Legislação
 
 - Decreto-Lei n.º 93/2025, de 14 de agosto (regime jurídico da mobilidade elétrica), art. 24.º, n.º 3:
-  https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
 - Decreto-Lei n.º 155/2026, de 31 de julho (prorroga o período transitório até 31-12-2027):
-  https://data.dre.pt/eli/decreto-lei/155/2026/07/31/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/155/2026/07/31/p/dre/pt/html
 - Regulamento n.º 8/2026, de 6 de janeiro (ERSE; na numeração interna da ERSE, Regulamento n.º 4/2025,
   aprovado em 22-12-2025): altera o Regulamento do Autoconsumo, o Guia de Medição, Leitura e
   Disponibilização de Dados, o Regulamento de Qualidade de Serviço e o Regulamento de Relações
   Comerciais. Cria o art. 11.º-A do Guia (pontos de entrega internos) e o art. 7.º do Regulamento do
   Autoconsumo:
-  https://data.dre.pt/eli/regulamento/8/2026/01/06/p/dre/pt/html
+  https://diariodarepublica.pt/dr/detalhe/regulamento/8-2026-994000577
   https://www.erse.pt/media/wgrn0h3x/reg_8_2026.pdf
 - Regulamento n.º 7/2026, de 6 de janeiro (Regulamento da Mobilidade Elétrica), arts. 4.º, 97.º a
   101.º e 103.º, retificado pela Declaração de Retificação n.º 164/2026/2, de 27 de fevereiro:
-  https://data.dre.pt/eli/regulamento/7/2026/01/06/p/dre/pt/html
+  https://diariodarepublica.pt/dr/detalhe/regulamento/7-2026-994000576
 - Decreto-Lei n.º 96/2017, de 10 de agosto (instalações elétricas de serviço particular alimentadas
   pela RESP — enquadra o contador interno e o ramal):
-  https://data.dre.pt/eli/decreto-lei/96/2017/08/10/p/dre/pt/html
+  https://data.dre.pt/eli/dec-lei/96/2017/08/10/p/dre/pt/html
 - Portaria n.º 231/2013, de 22 de julho (requisitos técnicos dos contadores inteligentes; o contador
   interno tem de ter requisitos equivalentes aos do contador de ligação à rede, GMLDD, art. 11.º-A,
   n.º 5):
-  https://data.dre.pt/eli/portaria/231/2013/07/22/p/dre/pt/html
+  https://data.dre.pt/eli/port/231/2013/07/22/p/dre/pt/html
 - Portaria n.º 949-A/2006, de 11 de setembro (RTIEBT — regras técnicas das instalações elétricas de
-  baixa tensão): https://data.dre.pt/eli/portaria/949-a/2006/09/11/p/dre/pt/html
+  baixa tensão): https://data.dre.pt/eli/port/949-a/2006/09/11/p/dre/pt/html
 
 ### Normas e standards
 
