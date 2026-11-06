@@ -92,6 +92,8 @@ Os valores estão nos factos; aqui fica o que cada um quer dizer para a empresa.
   31-12-2027, também um cartão de CEME na MOBI.E.
 - Pergunta ao contabilista se a fatura de carregamento do OPC ou do eMSP conta como "eletricidade
   utilizada" para o IVA. A AT fala da eletricidade; a fatura do carregamento pode juntar serviços.
+- Se a empresa reporta as emissões da frota, a eletricidade "100 % renovável" só conta se houver
+  garantias de origem canceladas para esse consumo (ver `garantias-de-origem`).
 
 ### Em casa de quem conduz
 

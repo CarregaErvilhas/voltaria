@@ -18,7 +18,7 @@ import datetime as dt
 import json
 import sys
 
-KINDS = {"apoio", "fiscal", "municipal"}
+KINDS = {"apoio", "fiscal", "municipal", "mercado"}
 BENEFITS = {"isenção", "desconto"}
 STATUSES = {"anunciado"}
 
