@@ -46,7 +46,8 @@ como apresentar e em que idioma.
 - Skills já criadas: `afir` (AFIR e legislação portuguesa), `afir-nap` (Ponto de Acesso Nacional),
   `autonomia`, `baterias`, `carregamento-publico` (o condutor na rede pública), `carregar-em-casa`,
   `empresas-e-frotas` (vantagens fiscais, carregar a frota, sub-CPE em casa do colaborador;
-  acrescentada a 2026-11-06),
+  acrescentada a 2026-11-06), `garantias-de-origem` (GO, leilões GO-PT, rotulagem e o carro
+  elétrico; acrescentada a 2026-11-06),
   `incentivos`, `instalacao-eletrica` (o Guia Técnico da DGEG e as RTIEBT, acrescentada a
   2026-11-06), `regime-2010`, `sub-cpe` e `tecnologia-de-carregamento` (roaming e hubs, OCPP/OCPI,
   Plug & Charge e PKI, BESS; separada do `carregamento-publico` a 2026-11-06).
