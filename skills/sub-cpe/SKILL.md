@@ -135,6 +135,8 @@ são dele, e costumam ser a parte que atrasa o processo.
   isto é prática de cada operador.
 - **A energia**: ao preço do contrato do sub-CPE, mais as tarifas de acesso às redes. Como no resto do
   setor elétrico, não é só o kWh: conta também o termo de potência.
+  O ponto interno paga todos os termos da TAR, menos a energia reativa (Regulamento n.º 7/2026,
+  art. 99.º); o pormenor está em `tarifas-de-acesso`.
 
 Sobre a duplicação de custos, sê exato: **a energia do posto deixa de ser faturada no contrato
 principal** e passa para o do sub-CPE. O ORD apura o consumo da instalação principal por diferença, no

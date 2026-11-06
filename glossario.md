@@ -43,7 +43,7 @@ que confundem papéis diferentes.
 | híbrido plug-in | híbrido recarregável | Carro com motor a combustão e motor elétrico, com bateria que se carrega na rede (PHEV). Não é 100 % elétrico. |
 | elétrico com extensor de autonomia | híbrido em série | Carro movido só a motor elétrico, com um pequeno motor a combustão que só serve de gerador para a bateria (EREV, REx). |
 | TAR | tarifa de rede | Tarifas de acesso às redes: o custo de usar a rede elétrica até ao ponto de consumo. Fixadas todos os anos pela ERSE. Na MOBI.E há uma TAR própria da mobilidade elétrica. |
-| ORD | distribuidora; EDP Distribuição | Operador da rede de distribuição: liga as instalações à rede, instala os contadores e fatura as TAR ao comercializador. No continente é sobretudo a E-REDES (nome antigo da distribuidora da EDP), com algumas cooperativas em BT; nos Açores a EDA e na Madeira a EEM. |
+| ORD | distribuidora; EDP Distribuição | Operador da rede de distribuição: liga as instalações à rede, instala os contadores e fatura as TAR ao comercializador. No continente é sobretudo a E-REDES (antes EDP Distribuição), com algumas cooperativas em BT; nos Açores a EDA e na Madeira a EEM. |
 | potência tomada | pico de potência | Maior potência ativa média registada em qualquer quarto de hora do período faturado. Em BTE e MT, a potência contratada é a máxima potência tomada dos últimos 12 meses (Regulamento Tarifário, art. 44.º). |
 | TAR ME | TAR da MOBI.E | Tarifa de acesso às redes da mobilidade elétrica: só preços por kWh, aplicada aos carregamentos em postos integrados na MOBI.E até 31-12-2027. |
 | SoH | state of health | Estado de saúde da bateria: a capacidade que mantém face à original, em percentagem. É o indicador principal ao comprar um carro usado. |
