@@ -88,7 +88,9 @@ Pergunta só o que não souberes, uma coisa de cada vez:
   DL 93/2025, art. 25.º, n.º 2. O técnico deve seguir o Guia Técnico das Instalações Elétricas para
   a Alimentação de Veículos Elétricos da DGEG, 3.ª edição, de 2023 (ligação nas fontes). A
   Portaria n.º 128/2026/1 (art. 3.º, n.º 4) prevê um guia novo da DGEG; a 2026-11-04 a DGEG ainda
-  remete para a 3.ª edição. Se houver uma edição mais recente na página da DGEG, usa essa.
+  remete para a 3.ª edição. Se houver uma edição mais recente na página da DGEG, usa essa. As regras
+  técnicas do guia em detalhe (modos de carga, circuito, diferencial, tomadas, de que quadro se
+  alimenta cada lugar, potência nos prédios, IP e IK) estão na skill `instalacao-eletrica`.
 - **Quem pode fazer a instalação**: uma entidade instaladora (EI) ou um técnico responsável pela
   execução, registados na DGEG. Um técnico sozinho pode assumir instalações até 41,4 kVA; acima
   disso é preciso uma EI (Lei n.º 14/2015, art. 4.º, n.º 3; Portaria n.º 128/2026/1, art. 4.º,
@@ -271,6 +273,9 @@ privado; DGEG, FAQ 2.1.5, 2.1.6, 2.1.12 a 2.1.16]:
   2.1.17]. Se o percurso proposto passar por aí, diz que não é permitido.
 - Num lugar marcado no chão, o circuito sai de um quadro próprio do lugar, que só abre com
   ferramenta, com um corte geral junto ao acesso [DGEG, guia técnico, 3.1.5].
+- Os esquemas-tipo do guia para cada caso (fração, quadro de colunas, serviços comuns, zona
+  partilhada), e porque a DGEG prefere o quadro de colunas aos serviços comuns, estão na skill
+  `instalacao-eletrica`.
 
 **Comunicação prévia.** Se a instalação estiver numa parte comum do prédio, ou passar por ela, mesmo
 que seja de uso exclusivo do condómino, é obrigatório comunicar por escrito à administração do

@@ -45,7 +45,8 @@ como apresentar e em que idioma.
   oficial). Mais temas a seguir, por exemplo `carregamento-publico`.
 - Skills já criadas: `afir` (AFIR e legislação portuguesa), `afir-nap` (Ponto de Acesso Nacional),
   `autonomia`, `baterias`, `carregamento-publico` (o condutor na rede pública), `carregar-em-casa`,
-  `incentivos`, `regime-2010`, `sub-cpe` e `tecnologia-de-carregamento` (roaming e hubs, OCPP/OCPI,
+  `incentivos`, `instalacao-eletrica` (o Guia Técnico da DGEG e as RTIEBT, acrescentada a
+  2026-11-06), `regime-2010`, `sub-cpe` e `tecnologia-de-carregamento` (roaming e hubs, OCPP/OCPI,
   Plug & Charge e PKI, BESS; separada do `carregamento-publico` a 2026-11-06).
 - **`regime-2010`**: o regime revogado (DL 39/2010, na redação do DL 90/2014), como funcionava o
   modelo CEME/OPC/EGME, o período transitório até 31-12-2027 e o que mudou com o DL 93/2025. Serve
@@ -135,7 +136,7 @@ dá mais peso aos primeiros 512.
    e a secção `## Fontes`).
 3. `skills/carregar-em-casa/`, `skills/incentivos/` e as restantes skills (`afir`, `afir-nap`,
    `autonomia`, `baterias`, `carregamento-publico`, `regime-2010`, `sub-cpe`,
-   `tecnologia-de-carregamento`), com rascunho do
+   `tecnologia-de-carregamento`, `instalacao-eletrica`), com rascunho do
    Claude e revisão por PR. A maioria já foi redigida e fundida em `main`.
 4. `knowledge/incentives.json` + teste: todas as entradas têm `source.url`, `checkedAt` e texto
    pt+en; lógica de stale e de expiração. Feito: `scripts/check-knowledge.py` (falha em erros de
