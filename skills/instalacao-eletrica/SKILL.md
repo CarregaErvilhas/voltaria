@@ -14,6 +14,9 @@ do Voltaria.
   Técnicas das Instalações Elétricas de Baixa Tensão, Portaria n.º 949-A/2006, com a secção 722
   aditada pela Portaria n.º 252/2015). O que obriga são as RTIEBT e a lei; o guia diz como as
   aplicar. Cita a secção do guia [DGEG, guia técnico, …] e, quando o guia a indica, a das RTIEBT.
+  O texto das RTIEBT está no Diário da República, com uma versão consolidada que já inclui a secção
+  722 (ligação nas fontes). Usa essa e não cópias em sites de terceiros. A versão consolidada não tem
+  valor legal; o que vale são as portarias publicadas.
 - **Quem projeta e executa é o técnico.** Explica o que a instalação tem de cumprir, para o
   utilizador saber o que pedir e o que verificar. Não dês instruções para o utilizador fazer
   ligações elétricas, nem confirmes que uma instalação concreta está conforme: isso é do técnico
@@ -197,6 +200,15 @@ O guia tem esquemas-tipo para cada caso, nas figuras 6 a 19 [DGEG, guia técnico
   técnico, 3.1.5].
 - Os cabos ficam marcados ou etiquetados com a habitação e o lugar que ligam, para se saber de quem
   são numa reparação [DGEG, guia técnico, 3.1.5].
+- **No ducto das colunas** (onde sobem os cabos dos contadores) podem passar os circuitos dos
+  anexos das habitações, com condições: o ducto tem de ter espaço a mais para isso, os cabos ficam
+  identificados e separados dos da coluna, não podem atrapalhar a manutenção, ficam a pelo menos 10
+  cm do quadro de colunas e das caixas de coluna e a 5 cm dos contadores, e no ducto não se põe
+  aparelhagem nenhuma (RTIEBT, secção 803.2.3.2.3).
+- **Não pelo poço do elevador** nem por condutas ou tubos de outras instalações. É a posição da
+  DGEG [DGEG, FAQ 2.1.17], que cita a secção 803.4.1 das RTIEBT. O texto dessa secção só diz que as
+  colunas ficam nas zonas comuns, em local de fácil acesso: apresenta a proibição como leitura da
+  DGEG.
 
 ### Corte de emergência
 
@@ -260,6 +272,40 @@ Para OPC e projetistas; o condutor raramente precisa disto.
 - Num posto público, a tomada só fica em tensão depois de o utilizador se autenticar (modos 1 e 2)
   ou de o posto detetar o carro (modos 3 e 4) [DGEG, guia técnico, 3.1.6].
 
+## O que dizem as RTIEBT
+
+A secção 722 das RTIEBT (Portaria n.º 252/2015) é a regra; o guia aplica-a e, nalguns pontos, é mais
+exigente. O que a secção 722 diz e o guia não repete, ou diz de outra forma:
+
+- **Também para motas.** Para as RTIEBT, veículo elétrico inclui motociclos, ciclomotores,
+  triciclos, quadriciclos e híbridos que carregam na rede (722.3.1). As regras do circuito valem
+  para uma tomada de carregar uma mota.
+- **Bloqueio da ficha.** Nos modos 3 e 4, um sistema elétrico ou mecânico impede ligar ou tirar a
+  ficha enquanto a tomada ou o conector tiver tensão (722.55.101.4).
+- **Diferencial.** A secção 722 pede no mínimo o tipo A e, numa alimentação trifásica cuja carga não
+  se conhece, proteção contra correntes com componente contínua, por exemplo um tipo B
+  (722.531.2.101). O guia vai mais longe e pede essa proteção em qualquer posto com Tipo 2, salvo se
+  o posto a tiver (ver "O diferencial").
+- **Choques mecânicos.** Em zonas públicas e parques de estacionamento, o equipamento fica protegido
+  contra impactos médios (AG2): pela localização, por uma proteção mecânica, ou por um código IK07 ou
+  mais (722.512.2.103). O guia pede IK08 ou IK10 nas garagens interiores dos prédios e no exterior.
+- **Exterior.** IPX4 e IP4X no mínimo (722.512.2.101 e 722.512.2.102).
+- **Corte de emergência**, quando é exigido: corta à plena carga e corta todos os condutores ativos,
+  incluindo o neutro (722.536.4.101).
+- **Tomadas.** EN 60309 ou EN 62196, e também tomadas domésticas NP 1260 até 16 A (722.55.101.1).
+  O guia limita a Schuko a 10 A de corrente de carga, salvo se marcada para carregar.
+
+Das regras gerais dos edifícios, as que mais contam para carregar num prédio:
+
+- **Anexos das habitações** (garagem, boxe, lugar) com acesso só pelas zonas comuns são alimentados
+  do quadro de entrada da habitação, por circuitos próprios que só passam pelas zonas comuns e pelos
+  espaços dessa habitação, com um corte de todos os condutores junto ao acesso do anexo (803.6.4).
+  É a regra de onde vem o "a partir do quadro de entrada da fração" da DGEG.
+- **Os circuitos dos serviços comuns** passam só pelas zonas comuns (803.6.3).
+- **Potência mínima de uma habitação** para dimensionar a instalação: 3,45 kVA (um compartimento),
+  6,90 kVA (dois a seis) ou 10,35 kVA (mais de seis), em monofásico (801.5.2.2). Com um carro a
+  carregar da fração, pode ser preciso mais do que estes mínimos [DGEG, guia técnico, 3.1.2].
+
 ## O que pedir ao eletricista
 
 Uma lista para o utilizador levar, sem substituir o projeto:
@@ -294,11 +340,14 @@ corrige com a regra atual:
 ### Legislação
 
 - Portaria n.º 949-A/2006, de 11 de setembro (RTIEBT — regras técnicas das instalações elétricas
-  de baixa tensão): https://data.dre.pt/eli/portaria/949-a/2006/09/11/p/dre/pt/html
+  de baixa tensão): https://data.dre.pt/eli/port/949-a/2006/09/11/p/dre/pt/html
 - Portaria n.º 252/2015, de 19 de agosto (adita às RTIEBT a secção 722, alimentação de veículos
-  elétricos): https://data.dre.pt/eli/portaria/252/2015/08/19/p/dre/pt/html
+  elétricos): https://data.dre.pt/eli/port/252/2015/08/19/p/dre/pt/html
+- RTIEBT, versão consolidada no Diário da República (inclui a secção 722; sem valor legal),
+  consultada a 2026-11-06:
+  https://diariodarepublica.pt/dr/legislacao-consolidada/portaria/2006-70055500
 - Decreto-Lei n.º 93/2025, de 14 de agosto (regime jurídico da mobilidade elétrica), arts. 16.º,
-  21.º, 23.º e 25.º: https://data.dre.pt/eli/decreto-lei/93/2025/08/14/p/dre/pt/html
+  21.º, 23.º e 25.º: https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
 
 ### Normas e standards
 
@@ -315,6 +364,9 @@ corrige com a regra atual:
 ### Outras fontes
 
 Da DGEG – Direção-Geral de Energia e Geologia, verificado a 2026-11-06:
+
+- [DGEG, FAQ …] Perguntas frequentes, com o número da pergunta:
+  https://www.dgeg.gov.pt/pt/areas-setoriais/energia/energia-eletrica/mobilidade-eletrica/perguntas-frequentes-faq-s/
 
 - [DGEG, guia técnico] Guia Técnico das Instalações Elétricas para a Alimentação de Veículos
   Elétricos, 3.ª edição (2023-09-14), da CTE 64, aprovado pela DGEG a 2023-09-18:
