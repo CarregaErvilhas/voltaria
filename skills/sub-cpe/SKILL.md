@@ -62,7 +62,9 @@ meses depois da publicação, em 6 de janeiro de 2026).
 ## Quem pede
 
 - O pedido é do **OPC ou do DPC** do posto, não do condómino em nome próprio (GMLDD, art. 11.º-A,
-  n.º 1). Um condómino que tem uma wallbox sua é o DPC dessa wallbox e pode ser ele a pedir.
+  n.º 1). Um condómino que tem uma wallbox sua é o DPC dessa wallbox e pode ser ele a pedir. Uma
+  empresa que instala uma wallbox sua em casa de um colaborador é a DPC desse posto e pode pedir o
+  sub-CPE em nome dela, para ter a fatura da eletricidade em seu nome (ver `empresas-e-frotas`).
 - Tem de ir com **autorização expressa do titular da instalação ligada à rede pública** (n.º 2).
   Numa moradia é o dono do contrato; num prédio é, em regra, o condomínio, pelo contrato dos serviços
   comuns; numa empresa é quem tem o contrato de eletricidade.

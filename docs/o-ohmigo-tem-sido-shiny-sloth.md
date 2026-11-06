@@ -45,6 +45,8 @@ como apresentar e em que idioma.
   oficial). Mais temas a seguir, por exemplo `carregamento-publico`.
 - Skills já criadas: `afir` (AFIR e legislação portuguesa), `afir-nap` (Ponto de Acesso Nacional),
   `autonomia`, `baterias`, `carregamento-publico` (o condutor na rede pública), `carregar-em-casa`,
+  `empresas-e-frotas` (vantagens fiscais, carregar a frota, sub-CPE em casa do colaborador;
+  acrescentada a 2026-11-06),
   `incentivos`, `instalacao-eletrica` (o Guia Técnico da DGEG e as RTIEBT, acrescentada a
   2026-11-06), `regime-2010`, `sub-cpe` e `tecnologia-de-carregamento` (roaming e hubs, OCPP/OCPI,
   Plug & Charge e PKI, BESS; separada do `carregamento-publico` a 2026-11-06).
@@ -68,6 +70,11 @@ como apresentar e em que idioma.
   O histórico do Fundo Ambiental cobre 2019 a 2025/2026, sempre a partir do aviso ou despacho
   oficial.
 - Fontes dos incentivos: só oficiais (Fundo Ambiental, AT, Diário da República).
+- **Apoios anunciados (decidido a 2026-11-06):** um apoio anunciado pelo Governo e ainda sem aviso
+  entra com `status: "anunciado"`, só com o que está no anúncio oficial, sem `validFrom` no passado.
+  Não conta como em vigor. Quando sair o aviso, a entrada é substituída por uma normal. Valores
+  ditos em declarações e publicados na imprensa ficam fora dos factos; a skill pode dizer que
+  existem, marcados [imprensa], mas nunca como regra.
 - **Benefícios municipais (decidido a 2026-11-04):** entradas `kind: "municipal"` em
   `incentives.json`, com `municipality`, `benefit` (`isenção` ou `desconto`) e `official{url,name}`,
   a ligação da câmara. A fonte (`source`) é a lista de estacionamento da UVE, a única exceção à regra
@@ -136,7 +143,7 @@ dá mais peso aos primeiros 512.
    e a secção `## Fontes`).
 3. `skills/carregar-em-casa/`, `skills/incentivos/` e as restantes skills (`afir`, `afir-nap`,
    `autonomia`, `baterias`, `carregamento-publico`, `regime-2010`, `sub-cpe`,
-   `tecnologia-de-carregamento`, `instalacao-eletrica`), com rascunho do
+   `tecnologia-de-carregamento`, `instalacao-eletrica`, `empresas-e-frotas`), com rascunho do
    Claude e revisão por PR. A maioria já foi redigida e fundida em `main`.
 4. `knowledge/incentives.json` + teste: todas as entradas têm `source.url`, `checkedAt` e texto
    pt+en; lógica de stale e de expiração. Feito: `scripts/check-knowledge.py` (falha em erros de
