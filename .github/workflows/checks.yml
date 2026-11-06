@@ -1,0 +1,16 @@
+# Content checks: the same scripts run locally (see CONTRIBUTING.md).
+name: Checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: scripts/check-skills.py
+      - run: scripts/check-knowledge.py
+      - run: scripts/check-sources.sh

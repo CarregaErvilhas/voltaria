@@ -8,6 +8,15 @@ description: "Informação sobre o AFIR (Regulamento UE 2023/1804) e a legislaç
 Escrito para ti, o assistente. Responde na língua do utilizador. Os termos seguem o `glossario.md`
 do Voltaria.
 
+## Regras
+
+- Não cites números (distâncias, potências, prazos) de memória. Consulta o texto oficial do
+  Regulamento (UE) 2023/1804 e os decretos-lei/portarias portugueses para valores exatos.
+- Distingue sempre o que é obrigação europeia (AFIR) do que é legislação nacional portuguesa.
+- Quando o utilizador pedir valores concretos, indica a fonte oficial e a data da versão consultada.
+- Para a lista completa e atualizada, consulta a página da DGEG "Legislação Aplicável e
+  Despachos DGEG" (mobilidade elétrica).
+
 ## O que é o AFIR
 
 O **Regulamento (UE) 2023/1804** (AFIR — Alternative Fuels Infrastructure Regulation) substitui a
@@ -64,15 +73,6 @@ Estados-membros (é um regulamento, não uma diretiva).
 - **Portaria 241/2015** (12/08/2015): requisitos técnicos da licença de operação.
 - **Portaria 240/2015** (12/08/2015): taxas.
 - **Portaria 231/2016** (29/08/2016): seguro obrigatório de RC.
-
-## Como responder
-
-- Não cites números (distâncias, potências, prazos) de memória. Consulta o texto oficial do
-  Regulamento (UE) 2023/1804 e os decretos-lei/portarias portugueses para valores exatos.
-- Distingue sempre o que é obrigação europeia (AFIR) do que é legislação nacional portuguesa.
-- Quando o utilizador pedir valores concretos, indica a fonte oficial e a data da versão consultada.
-- Para a lista completa e atualizada, consulta a página da DGEG "Legislação Aplicável e
-  Despachos DGEG" (mobilidade elétrica).
 
 ## Fontes
 

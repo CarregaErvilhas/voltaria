@@ -44,8 +44,9 @@ como apresentar e em que idioma.
   perguntar ao utilizador) e **`incentivos`** (cita sempre fonte + data e encaminha para a página
   oficial). Mais temas a seguir, por exemplo `carregamento-publico`.
 - Skills já criadas: `afir` (AFIR e legislação portuguesa), `afir-nap` (Ponto de Acesso Nacional),
-  `autonomia`, `baterias`, `carregamento-publico` (postos, roaming, hubs, BESS, Plug & Charge,
-  OCPP/OCPI), `carregar-em-casa`, `incentivos`, `regime-2010`, `sub-cpe`.
+  `autonomia`, `baterias`, `carregamento-publico` (o condutor na rede pública), `carregar-em-casa`,
+  `incentivos`, `regime-2010`, `sub-cpe` e `tecnologia-de-carregamento` (roaming e hubs, OCPP/OCPI,
+  Plug & Charge e PKI, BESS; separada do `carregamento-publico` a 2026-11-06).
 - **`regime-2010`**: o regime revogado (DL 39/2010, na redação do DL 90/2014), como funcionava o
   modelo CEME/OPC/EGME, o período transitório até 31-12-2027 e o que mudou com o DL 93/2025. Serve
   para referências ao modelo anterior e a factos anteriores a 19-08-2025.
@@ -130,16 +131,20 @@ dá mais peso aos primeiros 512.
 1. Criar o repo. Feito localmente em `voltaria/` (LICENSE, LICENSE-CODE, DCO, CONTRIBUTING.md,
    README, CODEOWNERS, `scripts/check-dco.sh` e a Action `dco.yml`). Falta criar
    `CarregaErvilhas/voltaria` no GitHub e fazer push.
-2. `glossario.md` e o teste dos sinónimos.
+2. `glossario.md` e o teste dos sinónimos. Feito: `scripts/check-skills.py` (ignora URLs, `código`
+   e a secção `## Fontes`).
 3. `skills/carregar-em-casa/`, `skills/incentivos/` e as restantes skills (`afir`, `afir-nap`,
-   `autonomia`, `baterias`, `carregamento-publico`, `regime-2010`, `sub-cpe`), com rascunho do
+   `autonomia`, `baterias`, `carregamento-publico`, `regime-2010`, `sub-cpe`,
+   `tecnologia-de-carregamento`), com rascunho do
    Claude e revisão por PR. A maioria já foi redigida e fundida em `main`.
 4. `knowledge/incentives.json` + teste: todas as entradas têm `source.url`, `checkedAt` e texto
-   pt+en; lógica de stale e de expiração.
+   pt+en; lógica de stale e de expiração. Feito: `scripts/check-knowledge.py` (falha em erros de
+   estrutura e datas; avisa das entradas em vigor com `checkedAt` mais antigo que 180 dias).
 5. Teste das skills: frontmatter válido (descriptions entre aspas), nome igual ao da pasta, nenhum
    valor em €/kWh. O frontmatter de 9 skills foi corrigido (2026-11-05) para evitar erro de parse
-   YAML.
-6. Action de release: tag semver + zip por skill.
+   YAML. Feito: `scripts/check-skills.py`, que corre com os outros na Action `checks.yml`.
+6. Action de release: tag semver + zip por skill. Feito: `release.yml` (tag `vX.Y.Z`; cada zip leva
+   `<skill>/SKILL.md` e a `LICENSE`). Ainda não testada no GitHub.
 
 ### C. ohmigo: integração (depois da Q7)
 

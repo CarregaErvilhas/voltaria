@@ -38,6 +38,18 @@ indicando que foi alterado. Os pontos que vêm da UVE levam a marca `[UVE, …]`
 Fontes dos incentivos: só oficiais (Fundo Ambiental, AT, Diário da República). Exceção: os benefícios
 municipais de estacionamento vêm da lista da UVE, com a ligação da câmara em `official`.
 
+## Verificações
+
+Antes de abrir um PR, corre na raiz do repo (só precisam de `sh` e `python3`):
+
+```sh
+scripts/check-skills.py      # frontmatter, nome da pasta, sem preços, termos do glossário
+scripts/check-knowledge.py   # estrutura e datas de knowledge/incentives.json
+scripts/check-sources.sh     # cada skill tem fontes, legislação e normas
+```
+
+A Action `checks.yml` corre as mesmas em cada PR.
+
 ## Revisão
 
 Tudo entra por PR, revisto pelos CODEOWNERS.

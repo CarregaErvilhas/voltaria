@@ -192,7 +192,7 @@ máxima: um cabo de 16 A limita a 3,7 kW mesmo numa tomada de 32 A.
   bidirecional são as do Regulamento AFIR.
 - **Regulamento da Mobilidade Elétrica da ERSE (RME)**: regula a atividade dos OPC e eMSP,
   incluindo medição, leitura e disponibilização de dados de eletricidade. O regime transitório
-  vigora até 31-12-2026.
+  vigora até 31-12-2027 (DL 155/2026).
 - A utilização de carregamento inteligente ou bidirecional para prestação de serviços à rede não
   carece de regulamentação específica para além da já existente.
 - O carregamento bidirecional está previsto no DL 93/2025, mas a sua implementação depende de

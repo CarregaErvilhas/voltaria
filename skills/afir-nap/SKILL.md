@@ -8,12 +8,24 @@ description: "Explica o conceito de Ponto de Acesso Nacional (NAP) no âmbito do
 Escrito para ti, o assistente. Responde na língua do utilizador. Os termos seguem o `glossario.md`
 do Voltaria.
 
-## O que é o AFIR
+## Regras
 
-O **Regulamento (UE) 2023/1804** (AFIR — Alternative Fuels Infrastructure Regulation) substitui a
-Diretiva 2014/94/UE e define requisitos mínimos de infraestrutura para combustíveis alternativos na
-UE, incluindo a rede de carregamento de veículos elétricos. Aplica-se diretamente em todos os
-Estados-membros. Texto oficial: https://eur-lex.europa.eu/eli/reg/2023/1804/oj
+- Distingue sempre o que é obrigação europeia (AFIR) do que é legislação nacional portuguesa (DL
+  93/2025, DL 155/2026) e do que é a operação concreta do NAP (MOBI.E, IMT-IP).
+- Não cites números (prazos, distâncias, potências mínimas) de memória. Consulta o texto do AFIR e
+  os decretos-lei para valores exatos. O AFIR fixa potências mínimas por nó da rede TEN-T e prazos
+  de implantação; confirma sempre na versão oficial.
+- Quando o utilizador pedir a lista de NAPs europeus, de OPCs ou de eMSPs, remete para os ficheiros
+  de referência do Voltaria (`docs/nap-europeus.md`, `docs/opcs-europeus.md`, `docs/emps-europeus.md`)
+  e para os registos IDRO nacionais, que são a fonte autoritativa.
+- Para preços e estados em tempo real de postos portugueses, usa as ferramentas do ohmigo
+  (`find_chargers`, `lookup_charger`), que leem o NAP da MOBI.E.
+
+## O AFIR em duas linhas
+
+O **Regulamento (UE) 2023/1804** (AFIR) aplica-se diretamente em todos os Estados-membros e, no
+art. 20.º, obriga a publicar os dados dos postos num Ponto de Acesso Nacional. Para o resto do AFIR
+e a sua transposição em Portugal, usa a skill `afir`.
 
 ## O que é um NAP
 
@@ -54,17 +66,6 @@ A publicação pode ser feita pelo próprio OPC ou por um intermediário (por ex
 gestão de postos), mas a responsabilidade é do OPC. Em Portugal, a MOBI.E publica o inventário
 estático e o estado dinâmico com preços no seu NAP.
 
-## Formato: DATEX II
-
-O AFIR exige interoperabilidade europeia. O formato de referência é o **DATEX II** (norma CEN), em
-particular o perfil de infraestrutura de energia alternativa. Em Portugal, o NAP da MOBI.E usa
-**DATEX II 3.3**, com os namespaces `energyInfrastructure`, `facilities`, `locationReferencing`,
-`locationExtension`, `commonExtension` e `common`. Cada país pode ainda expor os dados noutros
-formatos (OCPI, GeoJSON, CSV), mas o DATEX II é o denominador comum para a interoperabilidade.
-
-As classes de potência do AFIR (Anexo III) são as usadas para reporte, acima dos 22 kW legais
-("potência normal" ≤ 22 kW; "potência elevada" > 22 kW).
-
 ## IDRO e IDACS — identificação dos operadores
 
 O AFIR exige que cada Estado-membro nomeie uma **Organização de Registo de Identificação (IDRO)**,
@@ -80,8 +81,8 @@ estrutura da MOBI.E.
   - Inventário estático: `https://pgm.mobie.pt/integration/nap/evChargingInfra` (~190 MB, XML
     DATEX II 3.3).
   - Estado dinâmico + preços: `https://pgm.mobie.pt/integration/nap/evActualStatus` (~40 MB).
-- **EADME**: a MOBI.E passou a exercer as funções de Entidade de Acesso aos Dados da Mobilidade
-  Elétrica (EADME) ao abrigo do DL 93/2025, com regime transitório até 31 de dezembro de 2027.
+- **EADME**: a MOBI.E passou a exercer as funções de Entidade Agregadora de Dados para a
+  Mobilidade Elétrica (EADME) ao abrigo do DL 93/2025, com regime transitório até 31 de dezembro de 2027.
 - **DL 93/2025**: novo modelo de mercado (contrato direto com o OPC ou com um eMSP). **DL 155/2026**:
   prorroga o período transitório até 31-12-2027, mantendo a coexistência com o modelo antigo
   (CEME + MOBI.E).
@@ -114,38 +115,22 @@ Um NAP AFIR publica, para cada posto, dois conjuntos de dados:
 Em Portugal (MOBI.E), os dois endpoints são XML DATEX II 3.3 com os namespaces:
 `energyInfrastructure`, `facilities`, `locationReferencing`, `locationExtension`,
 `commonExtension` e `common`. Cada registo usa identificadores estáveis (site, EVSE, conector) e
-potência contínua (`max_power_w`, `voltage`/`max_current`), não classes de potência — as classes
-do dashboard seguem o Anexo III §2 do AFIR.
+potência contínua (`max_power_w`, `voltage`/`max_current`), não classes de potência. Cada país pode
+expor também outros formatos (OCPI, GeoJSON, CSV), mas o DATEX II é o denominador comum.
+
+As classes de potência do AFIR (Anexo III) são as usadas para reporte: até 22 kW é "potência
+normal", acima disso "alta potência".
 
 ### Como se lê um NAP
 
 - Os dados são XML (DATEX II) ou, conforme o país, OCPI, GeoJSON, CSV, JSON.
 - O acesso pode ser aberto, com chave, ou com contrato formal (ver `docs/nap-europeus.md`).
 - A granularidade típica: **site** (local) → **EVSE** (ponto de carregamento) → **conector**.
-- Os campos AFIR obrigatórios (art. 20.º) incluem localização, número de conectores, lugares para
-  mobilidade reduzida, contactos, horário, código do operador, tipos de conector, AC/DC, potência
-  máxima do posto e do EVSE, tipos de veículo compatíveis, estado, disponibilidade, preço ad hoc
-  e se a eletricidade é 100 % renovável.
 
 ### Onde encontrar o DATEX II
 
-- Schemas (v3) versionados no nap-dashboard: `assets/schemas/` (descarregados de
-  http://datex2.eu/schema/3/...).
-- Documentação oficial: http://datex2.eu
+- Documentação e schemas (v3): https://datex2.eu
 - Portal DATEX@NAPs: https://datex2.naps.inqms.tamtamresearch.com/naps-browser/nap/index.html
-
-## Como responder
-
-- Distingue sempre o que é obrigação europeia (AFIR) do que é legislação nacional portuguesa (DL
-  93/2025, DL 155/2026) e do que é a operação concreta do NAP (MOBI.E, IMT-IP).
-- Não cites números (prazos, distâncias, potências mínimas) de memória. Consulta o texto do AFIR e
-  os decretos-lei para valores exatos. O AFIR fixa potências mínimas por nó da rede TEN-T e prazos
-  de implantação; confirma sempre na versão oficial.
-- Quando o utilizador pedir a lista de NAPs europeus, de OPCs ou de eMSPs, remete para os ficheiros
-  de referência do Voltaria (`docs/nap-europeus.md`, `docs/opcs-europeus.md`, `docs/emps-europeus.md`)
-  e para os registos IDRO nacionais, que são a fonte autoritativa.
-- Para preços e estados em tempo real de postos portugueses, usa as ferramentas do ohmigo
-  (`find_chargers`, `lookup_charger`), que leem o NAP da MOBI.E.
 
 ## Fontes
 
@@ -186,7 +171,6 @@ do dashboard seguem o Anexo III §2 do AFIR.
 - GreenFlux — guia de reporte ao NAP para OPC: https://www.greenflux.com/expertise/blogs/afir-national-access-point-nap-reporting-complete-guide-charge-point-operators/
 - Spirii — AFIR art. 20.º para OPC: https://spiriipartnerhelp.zendesk.com/hc/en-gb/articles/41027320032913-AFIR-Article-20-What-CPOs-need-to-know-about-it
 - Monta — conformidade de reporte AFIR por país: https://monta.com/help/monta-hub-reporting-compliance-afir-compliance/charge-point-data-reporting-afir
-- nap-dashboard (Voltaria adjacente) — referências de fontes: `references/data-sources.md`
 
 ---
 

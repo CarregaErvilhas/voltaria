@@ -65,4 +65,3 @@ A Croácia publica a lista dos códigos IDRO dos CPO e MSP registados em formato
   https://spiriipartnerhelp.zendesk.com/hc/en-gb/articles/41027320032913-AFIR-Article-20-What-CPOs-need-to-know-about-it
 - Monta — conformidade de reporte AFIR por país:
   https://monta.com/help/monta-hub-reporting-compliance-afir-compliance/charge-point-data-reporting-afir
-- nap-dashboard (Voltaria adjacente) — referência de fontes: `references/data-sources.md`
