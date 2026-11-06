@@ -36,7 +36,9 @@ do Voltaria.
   - Plataformas de roaming gerido que assentam sobre os hubs e tratam de contratos, integração e
     liquidação por conta de OPC e eMSP.
   - **MOBI.E**: no regime antigo, a plataforma portuguesa liga CEME e OPC e funciona como hub
-    nacional (ver a skill `regime-2010`).
+    nacional (ver a skill `regime-2010`). Para o novo regime lançou em outubro de 2026 o
+    **Mobi.Hub**, um hub de roaming aberto a OPC e eMSP, ligados ou não à plataforma antiga
+    [MOBI.E, Mobi.Hub].
 - O pagamento ad hoc não depende do roaming: o AFIR obriga os postos públicos novos ou renovados a
   aceitá-lo.
 
@@ -176,3 +178,5 @@ do Voltaria.
 ### Outras fontes
 
 - CharIN: https://www.charin.global/
+- [MOBI.E, Mobi.Hub] "MOBI.E reforça aposta na mobilidade elétrica com novo hub" (22-10-2026):
+  https://www.mobie.pt/w/mobi.e-reforca-aposta-na-mobilidade-eletrica-com-novo-hub

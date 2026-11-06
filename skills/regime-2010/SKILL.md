@@ -113,6 +113,23 @@ na nova redação). Até lá:
 - Nos postos públicos de 50 kW ou mais já em operação, as obrigações de meios de pagamento (incluindo
   o ad hoc) aplicam-se a partir de 01-01-2027 (n.º 6).
 
+### Depois de 2027: a MOBI.E como hub
+
+- Em outubro de 2026, a MOBI.E apresentou o **Mobi.Hub**, uma plataforma de roaming que liga OPC e
+  eMSP num só ecossistema, onde cada um faz os seus acordos comerciais diretamente com os outros.
+  Está aberta a todos, ligados ou não à plataforma atual da MOBI.E, e a MOBI.E diz que vai manter-se
+  neutra e tratar todos por igual [MOBI.E, Mobi.Hub].
+- É o papel que hubs como a Gireve ou a Hubject têm noutros países (ver `tecnologia-de-carregamento`).
+  A diferença para o modelo antigo: deixa de haver uma rede única com cartão de CEME; o condutor
+  passa a ter contrato com um OPC ou um eMSP, e o hub é a forma de esse contrato servir em postos de
+  outros operadores.
+- A MOBI.E diz que a passagem para o novo modelo é gradual, sem impacto nos parceiros nem nos
+  utilizadores. O comunicado não diz se a adesão ao hub é obrigatória nem dá datas [MOBI.E,
+  Mobi.Hub]. Não prometas ao utilizador que o cartão dele vai continuar a funcionar em todos os
+  postos depois de 2027: depende dos acordos do eMSP dele.
+- Lançou também o **Mobi.Charge**, para OPC que não têm plataforma própria gerirem os seus postos.
+- A MOBI.E continua a ser a EADME, que recebe os dados de todos os OPC (ver `afir-nap`).
+
 ## Comparação rápida
 
 | Tema | DL 39/2010 | DL 93/2025 |
@@ -166,6 +183,11 @@ Diplomas do regime de 2010 já revogados:
 
 - Histórico de alterações do DL 39/2010 (Diário da República):
   https://diariodarepublica.pt/dr/analise-juridica/modificacoes/decreto-lei/39-2010-614137
+
+### MOBI.E
+
+- [MOBI.E, Mobi.Hub] "MOBI.E reforça aposta na mobilidade elétrica com novo hub" (22-10-2026),
+  verificado a 2026-11-06: https://www.mobie.pt/w/mobi.e-reforca-aposta-na-mobilidade-eletrica-com-novo-hub
 
 ### DGEG
 
