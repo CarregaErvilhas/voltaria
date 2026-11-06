@@ -36,8 +36,7 @@ do Voltaria.
   uma margem de segurança. Mas descer a níveis muito baixos encurta a vida da bateria
   [VOLT, carro parado].
 - Não há um número exato para o mínimo. O manual da UVE fala em voltar a carregar por volta dos 20
-  a 25 % [UVE, manual]; o artigo sobre a vida das baterias, em não descer abaixo de 10 %
-  [UVE, vida das baterias]. São referências, não limites.
+  a 25 % [UVE, manual]. Se a carga estiver abaixo de 10%, deve carregar de imediato. Deixar o carro parado com carga muito baixa pode levar ao desequilíbrio das células (cell leveling), resultando num desvio entre o que o BMS indica e a carga real. Além disso, em caso de *voltage sag* (queda de tensão), o sistema pode não ter carga suficiente para o arranque, o que pode drenar a bateria de 12V e impedir o funcionamento do sistema de alta tensão.
 - Muitos carros deixam limitar a carga máxima. Sugere usar essa opção a quem tem bateria NMC.
 
 ## Carregamentos rápidos
@@ -86,8 +85,7 @@ Não há uma química melhor, há compromissos [UVE, química das baterias]:
 
 ## Garantia
 
-Ajuda a ler a garantia da bateria, não só os anos [UVE, química das baterias]. É comum uma garantia
-de 8 anos e 160 000 km [UVE, manual], mas confirma sempre a da versão e do ano exatos. Olha para:
+Ajuda a ler a garantia da bateria, não só os anos [UVE, química das baterias]. Embora o padrão de mercado seja de 8 anos ou 160.000 km, confirma sempre a da versão e do ano exatos. Nota: para uso profissional (ex: TVDE), a garantia pode ter condições mais restritas ou prazos reduzidos. Olha para:
 
 - a capacidade mínima garantida no fim do período (o SoH mínimo);
 - o limite de quilómetros;
