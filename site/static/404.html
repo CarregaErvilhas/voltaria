@@ -1,0 +1,61 @@
+<!doctype html>
+<!-- GitHub Pages serves this for any address that doesn't exist, at that address, so every link
+     here starts with "/". Both languages on one page; search engines are told not to index it. -->
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Página não encontrada · Voltaria</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#fbfaf5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1322" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem('voltaria.theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
+<style>
+  @font-face { font-family: "Nunito"; font-style: normal; font-weight: 400 900; font-display: swap; src: url("/fonts/nunito-latin.woff2") format("woff2"); }
+  :root { --bg: #fbfaf5; --fg: #14203a; --muted: #56627a; --ink: #2f5bd0; --ink-strong: #1f3f9a; --on-ink: #ffffff; --card: #ffffff; --line: #e2e6ee; color-scheme: light; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #0d1322; --fg: #e8edf8; --muted: #a2adc4; --ink: #8eaaff; --ink-strong: #c3d3ff; --on-ink: #0b1430; --card: #172138; --line: #25304a; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #0d1322; --fg: #e8edf8; --muted: #a2adc4; --ink: #8eaaff; --ink-strong: #c3d3ff; --on-ink: #0b1430; --card: #172138; --line: #25304a; color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--fg); font: 19px/1.6 "Nunito", ui-rounded, "Segoe UI", system-ui, sans-serif;
+    padding: 40px max(16px, env(safe-area-inset-right, 0px)) 40px max(16px, env(safe-area-inset-left, 0px)); }
+  main { max-width: 640px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 28px; }
+  img { width: 96px; height: 96px; }
+  .langs { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; width: 100%; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px; display: flex; flex-direction: column; gap: 12px; align-items: center; }
+  h1 { margin: 0; font-size: 24px; font-weight: 900; line-height: 1.2; }
+  p { margin: 0; color: var(--muted); font-size: 17px; }
+  a.btn { display: inline-flex; align-items: center; min-height: 48px; padding: 10px 22px; border-radius: 999px; background: var(--ink); color: var(--on-ink); font-weight: 800; text-decoration: none; box-shadow: 0 5px 0 var(--ink-strong); }
+  a:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+  @media (max-width: 520px) { .langs { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <img src="/icon.svg" alt="">
+  <div class="langs">
+    <section lang="pt-PT">
+      <h1>Esta página não existe.</h1>
+      <p>O endereço pode estar mal escrito, ou a página mudou de sítio.</p>
+      <a class="btn" href="/">Ir para o Voltaria</a>
+    </section>
+    <section lang="en">
+      <h1>This page doesn’t exist.</h1>
+      <p>The address may be mistyped, or the page has moved.</p>
+      <a class="btn" href="/en/">Go to Voltaria</a>
+    </section>
+  </div>
+</main>
+</body>
+</html>

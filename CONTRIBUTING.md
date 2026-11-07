@@ -46,6 +46,7 @@ Antes de abrir um PR, corre na raiz do repo (só precisam de `sh` e `python3`):
 scripts/check-skills.py      # frontmatter, nome da pasta, sem preços, termos do glossário
 scripts/check-knowledge.py   # estrutura e datas de knowledge/incentives.json
 scripts/check-sources.sh     # cada skill tem fontes, legislação e normas
+scripts/build-site.py --check   # o site: textos PT e EN com as mesmas chaves, termos do glossário
 ```
 
 A Action `checks.yml` corre as mesmas em cada PR.
