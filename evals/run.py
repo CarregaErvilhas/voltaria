@@ -137,7 +137,7 @@ def facts_block(skills, cfg):
             row["official"] = e["official"]
         keep.append(row)
     body = "\n".join(json.dumps(r, ensure_ascii=False) for r in keep)
-    return ("\n\n<factos origem=\"knowledge/incentives.json\" nota=\"o que get_facts devolveria\">\n"
+    return ("\n\n<factos origem=\"knowledge/incentives.json\" nota=\"o que ev_rules_portugal com topic incentives devolveria\">\n"
             + body + "\n</factos>")
 
 
@@ -146,7 +146,7 @@ def base_system(cfg):
         "És um assistente que responde a perguntas sobre mobilidade elétrica em Portugal, em português "
         f"de Portugal. A data de hoje é {cfg['today']}.\n"
         "Na aplicação real terias as ferramentas do ohmigo (find_chargers, lookup_charger, "
-        "estimate_charging_cost, find_cheapest_charging, list_ceme_tariffs, get_facts). Nesta conversa não as "
+        "estimate_charging_cost, find_cheapest_charging, list_ceme_tariffs, ev_rules_portugal). Nesta conversa não as "
         "podes chamar: quando precisarias de uma, diz qual chamarias e com que argumentos, e responde com o "
         "que sabes."
     )

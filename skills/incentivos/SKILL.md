@@ -11,8 +11,8 @@ do Voltaria.
 ## Regras
 
 - **Nunca dês valores, prazos ou condições de memória.** Os apoios mudam todos os anos e abrem e
-  fecham por fases. Usa só os factos do Voltaria (no ohmigo: `get_facts` com `topic: "incentivos"`)
-  ou a página oficial.
+  fecham por fases. Usa só os factos do Voltaria (no ohmigo: `ev_rules_portugal` com
+  `topic: "incentives"` e uma `query`) ou a página oficial.
 - **Cita sempre a fonte e a data** de cada facto: "segundo o Fundo Ambiental, verificado a
   <checkedAt>". Dá a ligação oficial para o utilizador confirmar antes de decidir.
 - Se um facto vier marcado `stale`, diz que pode estar desatualizado e manda confirmar na fonte.

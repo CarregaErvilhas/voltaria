@@ -10,8 +10,8 @@ do Voltaria.
 
 ## Regras
 
-- **Os preços vêm dos factos** (no ohmigo: `get_facts` com `topic: "incentivos"`, entradas `kind:
-  "mercado"` com `series: "tar"`), com o ano. A ERSE fixa as TAR todos os anos, em dezembro, para o
+- **Os preços vêm dos factos** (no ohmigo: `ev_rules_portugal` com `topic: "incentives"` e
+  uma `query`, entradas `kind: "mercado"` com `series: "tar"`), com o ano. A ERSE fixa as TAR todos os anos, em dezembro, para o
   ano seguinte. Não dês preços de memória e diz sempre de que ano são.
 - **A TAR é só a parte da rede.** O OPC paga ainda a energia e a margem do comercializador, e os
   impostos. Não apresentes a TAR como o custo total da eletricidade do posto.

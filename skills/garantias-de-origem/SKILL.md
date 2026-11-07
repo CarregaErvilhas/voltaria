@@ -10,8 +10,8 @@ do Voltaria.
 
 ## Regras
 
-- **Os preços e os resultados dos leilões vêm dos factos** (no ohmigo: `get_facts` com `topic:
-  "incentivos"`, entradas `kind: "mercado"`), com a data e a fonte. Não dês preços de GO de memória:
+- **Os preços e os resultados dos leilões vêm dos factos** (no ohmigo: `ev_rules_portugal`
+  com `topic: "incentives"` e uma `query`, entradas `kind: "mercado"`), com a data e a fonte. Não dês preços de GO de memória:
   variaram mais de quarenta vezes entre 2022 e 2025.
 - **A ENSE tem uma página de 2019 sobre garantias de origem que está desatualizada**: cita o DL
   141/2010 e o DL 23/2010 como base. Desde 2022 a base é o DL 84/2022 (arts. 28.º a 33.º) e o DL
