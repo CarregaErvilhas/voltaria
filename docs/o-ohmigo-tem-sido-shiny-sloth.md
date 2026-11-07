@@ -1,5 +1,9 @@
 # Voltaria: skills de mobilidade elétrica para o ohmigo e o ocarroeletrico.com
 
+> **2026-11-07:** o plano previa duas ferramentas no ohmigo, `get_guide` e `get_facts`. Ficou uma
+> só, hoje chamada `ev_rules_portugal` (`topic` devolve a skill; `topic` + `query` os factos). Os
+> nomes antigos abaixo ficam como registo do plano.
+
 ## Contexto
 
 O Voltaria é um conjunto de **Agent Skills** com conhecimento **atual e fiável** sobre mobilidade

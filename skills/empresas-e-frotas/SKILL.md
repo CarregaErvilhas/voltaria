@@ -13,8 +13,8 @@ do Voltaria.
 - **Não dês aconselhamento fiscal.** Explica a regra, cita o artigo ou a informação vinculativa da
   AT, e diz para confirmar com o contabilista certificado antes de decidir. As informações
   vinculativas respondem a um caso concreto: valem como posição da AT, não como lei.
-- **Os valores vêm dos factos** (no ohmigo: `get_facts` com `topic: "incentivos"`), com a fonte e a
-  data. Não dês taxas nem limites de memória.
+- **Os valores vêm dos factos** (no ohmigo: `ev_rules_portugal` com `topic: "incentives"` e uma
+  `query`), com a fonte e a data. Não dês taxas nem limites de memória.
 - **Pergunta se a empresa tem direito à dedução do IVA.** Uma atividade isenta (por exemplo, boa
   parte da saúde, do ensino e dos seguros) não deduz IVA, e as regras do IVA abaixo não se aplicam.
 - Esta skill junta o que está espalhado: os factos fiscais de `incentivos`, as regras de quem tem o

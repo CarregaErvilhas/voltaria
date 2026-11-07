@@ -8,7 +8,7 @@ Voltaria is a set of Agent Skills in pt-PT about electric mobility in Portugal, 
 never as pages for humans**. It is the single content source for two consumers, and it doesn't know
 about either of them:
 
-- the **ohmigo MCP** (`CarregaErvilhas/ohmigo-mcp`), which serves the skills through `get_guide` and the facts in `knowledge/` through `get_facts`;
+- the **ohmigo MCP** (`CarregaErvilhas/ohmigo-mcp`), which serves both through one tool, `ev_rules_portugal`: `topic` alone returns a skill, `topic` + `query` the matching facts in `knowledge/` (the facts topic is the file name, e.g. `incentives`);
 - an **agent that rebuilds ocarroeletrico.com** from each Voltaria release. Its system prompt lives in the site's repo, not here.
 
 Each consumer decides how to present the content and in which language. Decisions and their dates
@@ -16,7 +16,7 @@ are recorded in the plan, `docs/o-ohmigo-tem-sido-shiny-sloth.md`. Read it befor
 structure, licensing or how sources are handled.
 
 **Semver:** updating facts is a patch, a new skill is a minor, and renaming a skill or changing the
-fact format is a major, because skill names are the `get_guide` enum in ohmigo. A `vX.Y.Z` tag
+fact format is a major, because skill names are the `topic` values of `ev_rules_portugal` in ohmigo. A `vX.Y.Z` tag
 triggers `release.yml`, which publishes one zip per skill with the LICENSE.
 
 ## Commands

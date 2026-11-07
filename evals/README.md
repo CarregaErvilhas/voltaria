@@ -33,7 +33,7 @@ alternativa é `--backend api`, com `pip install anthropic` e `ANTHROPIC_API_KEY
 1. **Duas respostas por pergunta.** Sem skill: só um prompt base (pt-PT, a data de hoje, a lista
    das ferramentas do ohmigo, que nesta avaliação não se podem chamar). Com skill: o mesmo prompt,
    mais os `SKILL.md` das skills da pergunta, o `glossario.md` e, para `incentivos` e
-   `empresas-e-frotas`, os factos de `knowledge/incentives.json` (o que `get_facts` devolveria).
+   `empresas-e-frotas`, os factos de `knowledge/incentives.json` (o que `ev_rules_portugal` com `topic: "incentives"` devolveria).
 2. **Juiz.** Um segundo modelo, que não sabe de que braço vem a resposta, marca cada item `must`
    (cumpre ou não) e `must_not` (viola ou não). Os `must_not` com `regex` também são verificados
    por regex: um acerto conta como violação, diga o juiz o que disser. Nota = itens certos ÷ itens.
