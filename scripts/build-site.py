@@ -21,6 +21,7 @@ import importlib.util
 import json
 import re
 import shutil
+import subprocess
 import sys
 import tempfile
 from pathlib import Path
@@ -39,6 +40,7 @@ ELEMENT_RE = re.compile(r'<(\w+)([^>]*?)\sdata-i="([^"]+)"([^>]*)>\s*</\1>')
 BRACES_RE = re.compile(r"\{\{([\w.-]+)\}\}")
 TOPICS_MARK = "<!--topics-->"
 TAGS_RE = re.compile(r"<code>.*?</code>|<[^>]+>", re.S)
+LOCAL_RE = re.compile(r'(?:href|src)="(\.\.?/[^"#?]*)"')
 
 
 def load_check_skills():
@@ -61,10 +63,32 @@ def skills(check):
     return out
 
 
-def page_values(lang):
+def json_ld(lang, strings):
+    """schema.org data for search engines: what the site is, in which language, and its translation."""
+    conf = LANGS[lang]
+    data = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": f"{SITE_URL}/{conf['path']}#website",
+        "name": "Voltaria",
+        "url": f"{SITE_URL}/{conf['path']}",
+        "inLanguage": conf["lang"],
+        "description": strings[lang]["meta.desc"],
+        "image": f"{SITE_URL}/og-{lang}.png",
+        "isAccessibleForFree": True,
+        "sameAs": [REPO_URL],
+    }
+    other = next(l for l in LANGS if l != lang)
+    data["workTranslation" if lang == "pt" else "translationOfWork"] = {"@id": f"{SITE_URL}/{LANGS[other]['path']}#website"}
+    # The payload sits inside <script>: escape "<" so no string can close it.
+    return json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
+
+
+def page_values(lang, strings):
     """The page.* keys, which differ per language and are written as is (no escaping)."""
     conf = LANGS[lang]
     return {
+        "page.jsonld": json_ld(lang, strings),
         "page.lang": conf["lang"],
         "page.root": conf["root"],
         "page.url": f"{SITE_URL}/{conf['path']}",
@@ -79,7 +103,7 @@ def page_values(lang):
 
 def render(template, strings, lang, topics_html):
     T = strings[lang]
-    P = page_values(lang)
+    P = page_values(lang, strings)
     used, missing = set(), set()
 
     def element(m):
@@ -135,11 +159,21 @@ def llms_txt(skill_list, facts):
     return "\n".join(lines) + "\n"
 
 
+def last_change():
+    """The date of the last commit, for the sitemap's lastmod (pages.yml deploys only on changes)."""
+    try:
+        return subprocess.run(["git", "log", "-1", "--format=%cs"], capture_output=True, text=True, check=True).stdout.strip()
+    except (OSError, subprocess.CalledProcessError):
+        return ""
+
+
 def sitemap():
+    lastmod = last_change()
+    lastmod = f"\n    <lastmod>{lastmod}</lastmod>" if lastmod else ""
     alternates = "".join(
         f'\n    <xhtml:link rel="alternate" hreflang="{LANGS[l]["lang"]}" href="{SITE_URL}/{LANGS[l]["path"]}"/>'
-        for l in LANGS)
-    urls = "".join(f"\n  <url>\n    <loc>{SITE_URL}/{LANGS[l]['path']}</loc>{alternates}\n  </url>" for l in LANGS)
+        for l in LANGS) + f'\n    <xhtml:link rel="alternate" hreflang="x-default" href="{SITE_URL}/"/>'
+    urls = "".join(f"\n  <url>\n    <loc>{SITE_URL}/{LANGS[l]['path']}</loc>{lastmod}{alternates}\n  </url>" for l in LANGS)
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">'
             f"{urls}\n</urlset>\n")
@@ -194,6 +228,18 @@ def build(out):
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n", encoding="utf-8")
     (out / "sitemap.xml").write_text(sitemap(), encoding="utf-8")
     (out / "llms.txt").write_text(llms_txt(skill_list, facts), encoding="utf-8")
+
+    # Every local link and file the pages and the manifest point to must be in the build.
+    for conf in LANGS.values():
+        page_dir = out / conf["path"]
+        for ref in LOCAL_RE.findall((page_dir / "index.html").read_text(encoding="utf-8")):
+            target = (page_dir / ref).resolve()
+            if not (target / "index.html" if ref.endswith("/") else target).is_file():
+                problems.append(f"/{conf['path']}index.html points to {ref}, which isn't in the build")
+    manifest = json.loads((out / "site.webmanifest").read_text(encoding="utf-8"))
+    for i in manifest.get("icons", []):
+        if not (out / i["src"].lstrip("/")).is_file():
+            problems.append(f"site.webmanifest points to {i['src']}, which isn't in the build")
     return problems, len(skill_list)
 
 

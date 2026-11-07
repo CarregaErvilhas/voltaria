@@ -98,7 +98,7 @@
     "nerd.review.t": "Revisão",
     "nerd.review": "Tudo entra por pull request e é revisto por pessoas antes do merge. Cada commit leva <code>Signed-off-by</code> (DCO).",
     "nerd.lic.t": "Licença",
-    "nerd.lic": "Conteúdo CC-BY-4.0, código MIT. Contributos com DCO (<code>git commit -s</code>), sem CLA.",
+    "nerd.lic": "Conteúdo CC-BY-4.0, código MIT. O nome e a mascote do Voltaria não estão incluídos. Contributos com DCO (<code>git commit -s</code>), sem CLA.",
     "nerd.topics": "Os temas de hoje, que são os valores de <code>topic</code>:",
     "nerd.repo": "Ver o código no GitHub",
 
@@ -204,7 +204,7 @@
     "nerd.review.t": "Review",
     "nerd.review": "Everything goes in by pull request and is reviewed by people before it’s merged. Every commit carries a <code>Signed-off-by</code> (DCO).",
     "nerd.lic.t": "Licence",
-    "nerd.lic": "Content CC-BY-4.0, code MIT. Contributions under the DCO (<code>git commit -s</code>), no CLA.",
+    "nerd.lic": "Content CC-BY-4.0, code MIT. The Voltaria name and mascot aren’t included. Contributions under the DCO (<code>git commit -s</code>), no CLA.",
     "nerd.topics": "Today’s topics, which are the <code>topic</code> values:",
     "nerd.repo": "View the code on GitHub",
 

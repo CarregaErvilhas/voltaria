@@ -114,8 +114,10 @@ unquoted `: ` breaks YAML). The existing skills share this shape:
 ## Workflow
 
 - Licence: content (skills, `knowledge/`, `glossario.md`, other text) is CC-BY-4.0; code (`scripts/`,
-  `evals/`, `.github/`, the site's HTML, CSS and JS) is MIT. ohmigo's mascot on the site is ohmigo's,
-  and the Nunito font keeps its own licence (SIL OFL 1.1, next to the font file).
+  `evals/`, `.github/`, the site's HTML, CSS and JS) is MIT. The brand is outside both: the Voltaria
+  name, its mascot, icon and the images made from them aren't licensed (README, "O nome e a imagem
+  ficam de fora"), and ohmigo's mascot on the site is ohmigo's. The Nunito font keeps its own licence
+  (SIL OFL 1.1, next to the font file).
 - Every commit needs `git commit -s`. `dco.yml` rejects PRs with commits that aren't signed off.
 - Everything goes in by PR, reviewed by CODEOWNERS. Only squash and rebase merges are allowed.
 - Several sessions often work on this repo in parallel. Rebase on `main` before pushing, and expect

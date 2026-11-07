@@ -39,6 +39,9 @@ como apresentar e em que idioma.
   não se quer.
 - Atribuição sugerida: "Conteúdo do Voltaria (https://github.com/CarregaErvilhas/voltaria),
   CC-BY-4.0". O ohmigo e o site têm de a mostrar junto do conteúdo servido.
+- **Nome e imagem (decidido a 2026-11-07):** ficam fora das licenças, como no ohmigo. O nome
+  Voltaria, a mascote, o ícone e as imagens feitas com eles não estão licenciados; um fork precisa de
+  nome e imagem próprios. Usar o nome no crédito é o que a atribuição pede.
 
 ### Conteúdo
 
