@@ -15,14 +15,18 @@ Each consumer decides how to present the content and in which language. Decision
 are recorded in the plan, `docs/o-ohmigo-tem-sido-shiny-sloth.md`. Read it before changing
 structure, licensing or how sources are handled.
 
+The one page for people is the website in `site/` (https://voltaria.ocarroeletrico.com), which
+explains what Voltaria is and sends people to ohmigo. It never repeats what the skills say;
+`site/README.md` has how it's built.
+
 **Semver:** updating facts is a patch, a new skill is a minor, and renaming a skill or changing the
 fact format is a major, because skill names are the `topic` values of `ev_rules_portugal` in ohmigo. A `vX.Y.Z` tag
 triggers `release.yml`, which publishes one zip per skill with the LICENSE.
 
 ## Commands
 
-Run from the repo root. The checks need only `sh` and `python3` (stdlib). CI runs the first three in
-`checks.yml` on every PR and on `main`:
+Run from the repo root. The checks need only `sh` and `python3` (stdlib). CI runs the three `check-*` and
+`build-site.py --check` in `checks.yml` on every PR and on `main`:
 
 ```sh
 scripts/check-skills.py                  # frontmatter, name = folder, no prices, glossary "Evitar" terms
@@ -30,6 +34,8 @@ scripts/check-knowledge.py               # knowledge/incentives.json structure a
 scripts/check-sources.sh                 # every skill's "## Fontes" has legislation + a standard
 scripts/check-sources.sh --check-links   # also requests every URL (slow, network)
 scripts/check-dco.sh origin/main..HEAD   # every commit signed off by its author (DCO, as in dco.yml)
+scripts/build-site.py --check            # the website: same keys in pt and en, none unused, glossary
+scripts/build-site.py                    # build it into _site/ (pages.yml publishes it from main)
 ```
 
 `check-knowledge.py --today YYYY-MM-DD --max-age DAYS` changes the reference date and the staleness
@@ -55,6 +61,9 @@ Each command refuses to start above `budget_usd` in `evals/config.json` unless y
 - **`glossario.md` is enforced.** `check-skills.py` parses its table, and any term in the "Evitar"
   column (split by `;`) fails every skill that uses it. URLs, `code` spans and the `## Fontes`
   section are exempt. Adding an "Evitar" term can break skills that already exist: run the check.
+- **The website reads `skills/` and the glossary.** Its topic list and `llms.txt` come from the skill
+  folders and their `description`, so a new or renamed skill shows up on the next deploy. Its
+  Portuguese text (`site/strings.json`) must pass the same "Evitar" terms as the skills.
 - **Section titles are an API.** Each eval question's `source` is `skill#Exact section title`, and
   ablation uses it. Renaming a `##`/`###` heading breaks `evals/run.py check` until
   `evals/questions.json` is updated.
@@ -105,7 +114,8 @@ unquoted `: ` breaks YAML). The existing skills share this shape:
 ## Workflow
 
 - Licence: content (skills, `knowledge/`, `glossario.md`, other text) is CC-BY-4.0; code (`scripts/`,
-  `evals/`, `.github/`) is MIT.
+  `evals/`, `.github/`, the site's HTML, CSS and JS) is MIT. ohmigo's mascot on the site is ohmigo's,
+  and the Nunito font keeps its own licence (SIL OFL 1.1, next to the font file).
 - Every commit needs `git commit -s`. `dco.yml` rejects PRs with commits that aren't signed off.
 - Everything goes in by PR, reviewed by CODEOWNERS. Only squash and rebase merges are allowed.
 - Several sessions often work on this repo in parallel. Rebase on `main` before pushing, and expect

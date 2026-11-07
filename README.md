@@ -6,11 +6,15 @@ agentes (assistentes de IA), em pt-PT.
 - `skills/<nome>/SKILL.md`: uma skill por tema.
 - `knowledge/`: factos com fonte e data de verificação.
 - `glossario.md`: os termos a usar.
+- `site/`: o site para pessoas, [voltaria.ocarroeletrico.com](https://voltaria.ocarroeletrico.com), que explica o que é o
+  Voltaria e como o usar através do [ohmigo](https://ohmigo.ocarroeletrico.com).
 
 ## Licença
 
 - **Conteúdo** (`skills/`, `knowledge/`, `glossario.md` e o resto do texto): [CC-BY-4.0](LICENSE).
-- **Código** (`scripts/`, testes, `.github/`): [MIT](LICENSE-CODE).
+- **Código** (`scripts/`, testes, `.github/`, o HTML, CSS e JavaScript do `site/`): [MIT](LICENSE-CODE).
+- Ficam de fora a mascote do ohmigo, que aparece no site e é do ohmigo, e a fonte Nunito, com a sua
+  licença própria ([SIL OFL 1.1](site/static/fonts/OFL-Nunito.txt)).
 
 Podes usar, adaptar e redistribuir, incluindo para fins comerciais, desde que credites:
 

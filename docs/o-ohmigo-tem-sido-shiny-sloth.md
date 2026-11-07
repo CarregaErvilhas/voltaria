@@ -115,6 +115,18 @@ como apresentar e em que idioma.
 - O agente publica por **PR**, com o site gerado guardado no repo.
 - O site é multilingue (PT/EN).
 
+### Site do Voltaria (voltaria.ocarroeletrico.com, decidido a 2026-11-07)
+
+- Uma página para pessoas, em PT (`/`) e EN (`/en/`), que explica em termos simples o que é o
+  Voltaria e manda instalar o ohmigo para o usar. O público é quem percebe pouco de tecnologia; os
+  detalhes de Agent Skills e MCP ficam numa secção que se abre. Não repete o conteúdo das skills, que
+  continuam escritas só para agentes. Não confundir com o ocarroeletrico.com, acima.
+- Alojada no **GitHub Pages** deste repo, sem custos: `scripts/build-site.py` gera as páginas a partir
+  de `site/`, e `pages.yml` publica a cada push para `main`.
+- Design da família do ohmigo (escolhido entre três mockups): letra arredondada, uma mascote (um livro
+  com um raio), claro e escuro. Sem analytics e sem pedidos a terceiros: a fonte é servida pelo site.
+- O texto não fala em IA na escrita do conteúdo; diz que é revisto por pessoas.
+
 ### ohmigo (ohmigo.ocarroeletrico.com)
 
 - As regras de apresentação (ordenar opções, promoções, preços de ponta, créditos, estado em tempo

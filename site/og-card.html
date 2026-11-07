@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- The link-preview card (og-pt.png, og-en.png in site/static/). Not published. To redo the images, open
+     this file from the site/ folder in a browser at 1200x630 and take a screenshot, once as is and once
+     with ?lang=en (scripts/render-site-images.mjs does it with Playwright). -->
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<title>Voltaria link card</title>
+<style>
+  @font-face { font-family: "Nunito"; font-weight: 400 900; src: url("static/fonts/nunito-latin.woff2") format("woff2"); }
+  html, body { margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; background: #fbfaf5; color: #14203a; font-family: "Nunito", system-ui, sans-serif;
+    display: grid; grid-template-columns: 470px 1fr; align-items: center; }
+  .art { position: relative; height: 630px; display: grid; place-items: center; }
+  .art::before { content: ""; position: absolute; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle at 38% 34%, #fdf3c4, #dfe7fb 70%); }
+  .art svg { position: relative; width: 330px; filter: drop-shadow(0 18px 18px rgba(15, 23, 42, .16)); }
+  .txt { padding-right: 70px; display: flex; flex-direction: column; gap: 22px; }
+  .brand { display: flex; align-items: center; gap: 14px; font-weight: 900; font-size: 44px; letter-spacing: -.01em; }
+  .brand svg { width: 40px; height: 48px; }
+  h1 { margin: 0; font-size: 60px; line-height: 1.08; font-weight: 900; letter-spacing: -.015em; }
+  mark { background: linear-gradient(transparent 58%, #fde047 58%); color: inherit; }
+  .url { font-size: 26px; font-weight: 800; color: #2f5bd0; }
+  .url span { color: #56627a; font-weight: 700; }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="shineB" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".3"/><stop offset=".55" stop-color="#fff" stop-opacity="0"/></linearGradient>
+    <symbol id="livro" viewBox="0 0 260 300">
+      <path d="M150 226 V288 L162 276 L174 288 V226 Z" fill="#facc15" stroke="#ca8a04" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M52 170 Q20 180 28 214" stroke="#2448a8" stroke-width="16" fill="none" stroke-linecap="round"/>
+      <circle cx="28" cy="218" r="13" fill="#3b67dd"/>
+      <g class="wave-book"><path d="M204 150 Q240 124 232 86" stroke="#2448a8" stroke-width="16" fill="none" stroke-linecap="round"/><circle cx="232" cy="80" r="14" fill="#3b67dd"/></g>
+      <rect x="66" y="40" width="150" height="206" rx="18" fill="#fbf7ea" stroke="#d8cfb4" stroke-width="3"/>
+      <path d="M205 62 V228 M211 66 V224" stroke="#e2dac2" stroke-width="2.5" stroke-linecap="round"/>
+      <rect x="44" y="28" width="160" height="208" rx="22" fill="#2f5bd0"/>
+      <rect x="44" y="28" width="30" height="208" rx="14" fill="#2448a8"/>
+      <path d="M50 64 H68 M50 200 H68" stroke="#facc15" stroke-width="5" stroke-linecap="round"/>
+      <rect x="44" y="28" width="160" height="208" rx="22" fill="url(#shineB)"/>
+      <g class="blink"><ellipse cx="112" cy="112" rx="12" ry="15" fill="#0f172a"/><ellipse cx="164" cy="112" rx="12" ry="15" fill="#0f172a"/>
+        <circle cx="116" cy="106" r="4.5" fill="#fff"/><circle cx="168" cy="106" r="4.5" fill="#fff"/></g>
+      <ellipse cx="101" cy="146" rx="12" ry="8" fill="#fb7185" opacity=".6"/><ellipse cx="175" cy="146" rx="12" ry="8" fill="#fb7185" opacity=".6"/>
+      <path d="M118 150 Q138 170 158 150" stroke="#0f172a" stroke-width="7" fill="#7f1d1d" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M146 174 L124 204 H138 L130 226 L156 194 H142 Z" fill="#facc15" stroke="#ca8a04" stroke-width="3" stroke-linejoin="round"/>
+    </symbol>
+  <symbol id="livro-logo" viewBox="40 24 180 226">
+    <rect x="66" y="40" width="150" height="206" rx="18" fill="#fbf7ea" stroke="#d8cfb4" stroke-width="6"/>
+    <rect x="44" y="28" width="160" height="208" rx="22" fill="#2f5bd0"/>
+    <rect x="44" y="28" width="30" height="208" rx="14" fill="#2448a8"/>
+    <path d="M150 70 L112 128 H138 L124 182 L170 116 H144 Z" fill="#facc15" stroke="#ca8a04" stroke-width="5" stroke-linejoin="round"/>
+  </symbol>
+</defs></svg>
+<div class="art"><svg viewBox="0 0 260 300" aria-hidden="true"><use href="#livro"/></svg></div>
+<div class="txt">
+  <div class="brand"><svg aria-hidden="true"><use href="#livro-logo"/></svg>Voltaria</div>
+  <h1 id="title">O teu assistente passa a saber <mark>as regras do carro elétrico.</mark></h1>
+  <div class="url">voltaria.ocarroeletrico.com <span id="with">· com o ohmigo</span></div>
+</div>
+<script>
+  if (/[?&]lang=en\b/.test(location.search)) {
+    document.documentElement.lang = 'en';
+    document.getElementById('title').innerHTML = 'Your assistant gets to know <mark>Portugal’s electric car rules.</mark>';
+    document.getElementById('with').textContent = '· with ohmigo';
+  }
+</script>
+</body>
+</html>
