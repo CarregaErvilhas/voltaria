@@ -1,0 +1,39 @@
+<script>
+  // The appearance menu (theme and vision) and the language memory. The text itself is already in the page.
+  (function () {
+    var root = document.documentElement;
+    function put(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+    function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+    var box = document.getElementById('pref'), btn = document.getElementById('prefBtn'), panel = document.getElementById('prefPanel');
+    function group(id, attr) { return { el: document.getElementById(id), attr: attr, buttons: document.getElementById(id).querySelectorAll('button') }; }
+    var themes = group('prefTheme', 'data-theme'), visions = group('prefVision', 'data-vision');
+    function show(g, mode) {
+      for (var i = 0; i < g.buttons.length; i++) g.buttons[i].setAttribute('aria-pressed', String(g.buttons[i].getAttribute(g.attr) === mode));
+    }
+    function apply(name, mode, neutral) {
+      if (mode === neutral) root.removeAttribute(name); else root.setAttribute(name, mode);
+    }
+    show(themes, get('voltaria.theme') === 'light' || get('voltaria.theme') === 'dark' ? get('voltaria.theme') : 'auto');
+    show(visions, root.getAttribute('data-vision') || 'normal');
+    box.hidden = false;
+    function wire(g, neutral, key) {
+      for (var i = 0; i < g.buttons.length; i++) g.buttons[i].addEventListener('click', function () {
+        var mode = this.getAttribute(g.attr);
+        apply(g.attr, mode, neutral);
+        put(key, mode);
+        show(g, mode);
+      });
+    }
+    wire(themes, 'auto', 'voltaria.theme');
+    wire(visions, 'normal', 'voltaria.vision');
+    function toggle(open) {
+      panel.hidden = !open;
+      btn.setAttribute('aria-expanded', String(open));
+    }
+    btn.addEventListener('click', function () { toggle(panel.hidden); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !panel.hidden) { toggle(false); btn.focus(); } });
+    document.addEventListener('click', function (e) { if (!panel.hidden && !box.contains(e.target)) toggle(false); });
+    var langs = document.querySelectorAll('[data-lang]');
+    for (var j = 0; j < langs.length; j++) langs[j].addEventListener('click', function () { put('voltaria.lang', this.getAttribute('data-lang')); });
+  })();
+</script>
