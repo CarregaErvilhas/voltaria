@@ -1,11 +1,12 @@
 # O site do Voltaria
 
 O site para pessoas, em https://voltaria.ocarroeletrico.com: explica o que é o Voltaria e manda
-instalar o ohmigo para o usar. É uma página só, em português (`/`) e em inglês (`/en/`).
+instalar o ohmigo para o usar. São duas páginas, cada uma em português e em inglês: a principal (`/`, `/en/`) e a de privacidade (`/privacidade/`, `/en/privacy/`).
 
 ## Como está feito
 
-- `index.html` é o modelo. Um elemento com `data-i="chave"` recebe o texto dessa chave; uma chave entre
+- `index.html` e `privacy.html` são os modelos; o cabeçalho, o rodapé, o CSS e os scripts, partilhados, estão em `partials/` (`<!--include:nome-->`).
+- `index.html` é o modelo da página principal. Um elemento com `data-i="chave"` recebe o texto dessa chave; uma chave entre
   chavetas duplas recebe-o escapado (para atributos e para o `<head>`). As chaves `page.*` vêm do script.
 - `strings.json` tem o texto, com as mesmas chaves em `pt` e `en`. O português segue o
   `glossario.md`, como as skills.
@@ -49,3 +50,20 @@ scripts/build-site.py           # gera _site/; abre _site/index.html no browser 
 
 Sem JavaScript, a página lê-se na mesma e o tema segue o do sistema. O script só serve para os botões
 do tema e para lembrar a língua escolhida.
+
+## Aparência e acessibilidade
+
+O botão do olho no cabeçalho abre o menu com o tema (claro, automático, escuro) e a visão (normal,
+daltonismo, alto contraste). A visão põe `data-vision` no `<html>`; o CSS troca só variáveis
+(`:root[data-vision="cb"]` troca o par verde/vermelho por laranja/violeta, e o significado vai também em
+texto e riscado). Quem tem `prefers-contrast: more` no sistema recebe o alto contraste sem escolher.
+O que se guarda no browser (`voltaria.theme`, `voltaria.vision`, `voltaria.lang`) só é lido de volta se for
+um dos valores fixos, e está descrito na página de privacidade: se mudares as chaves, muda-a também.
+
+## Cabeçalhos de segurança
+
+O GitHub Pages não deixa mudar cabeçalhos HTTP. O build põe em cada página uma
+`<meta http-equiv="Content-Security-Policy">` (só a própria origem; scripts e estilos inline por hash,
+calculado no build, por isso não há `style=""` nem `on*=` no HTML) e `referrer`. Uma `<meta>` não pode
+levar `frame-ancestors`, `X-Content-Type-Options`, `Permissions-Policy` nem HSTS: para esses é preciso um proxy
+à frente do domínio (ex.: Cloudflare, com regras de cabeçalhos de resposta).

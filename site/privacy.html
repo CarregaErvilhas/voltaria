@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- The privacy page. Same build as index.html: data-i gets the string, double braces the escaped one. -->
+<html lang="{{page.lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{priv.meta.title}}</title>
+<meta name="description" content="{{priv.meta.desc}}">
+<link rel="canonical" href="{{page.url}}">
+<link rel="alternate" hreflang="pt-PT" href="{{page.url.pt}}">
+<link rel="alternate" hreflang="en" href="{{page.url.en}}">
+<link rel="alternate" hreflang="x-default" href="{{page.url.pt}}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voltaria">
+<meta property="og:title" content="{{priv.meta.title}}">
+<meta property="og:description" content="{{priv.meta.desc}}">
+<meta property="og:url" content="{{page.url}}">
+<meta property="og:locale" content="{{page.og.locale}}">
+<meta property="og:image" content="{{page.og.image}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{meta.ogalt}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#fbfaf5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1322" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{page.root}}favicon.ico" sizes="48x48">
+<link rel="icon" href="{{page.root}}icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{page.root}}apple-touch-icon.png">
+<link rel="manifest" href="{{page.root}}site.webmanifest">
+<link rel="preload" href="{{page.root}}fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+<!--include:init-->
+<!--include:style-->
+</head>
+<body>
+<!--include:defs-->
+<!--include:header-->
+<main id="top">
+  <div class="wrap">
+    <article class="prose">
+      <h1 id="conteudo" tabindex="-1" data-i="priv.title"></h1>
+      <p class="lead" data-i="priv.lead"></p>
+      <h2 data-i="priv.h.stored"></h2>
+      <p data-i="priv.stored"></p>
+      <table>
+        <thead><tr><th scope="col" data-i="priv.col.key"></th><th scope="col" data-i="priv.col.what"></th></tr></thead>
+        <tbody>
+          <tr><td><code>voltaria.theme</code></td><td data-i="priv.k.theme"></td></tr>
+          <tr><td><code>voltaria.vision</code></td><td data-i="priv.k.vision"></td></tr>
+          <tr><td><code>voltaria.lang</code></td><td data-i="priv.k.lang"></td></tr>
+        </tbody>
+      </table>
+      <p data-i="priv.stored.end"></p>
+      <h2 data-i="priv.h.none"></h2>
+      <p data-i="priv.none"></p>
+      <h2 data-i="priv.h.host"></h2>
+      <p data-i="priv.host"></p>
+      <h2 data-i="priv.h.ohmigo"></h2>
+      <p data-i="priv.ohmigo"></p>
+      <h2 data-i="priv.h.contact"></h2>
+      <p data-i="priv.contact"></p>
+    </article>
+  </div>
+</main>
+<!--include:footer-->
+<!--include:script-->
+</body>
+</html>

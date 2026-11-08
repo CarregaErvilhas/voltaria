@@ -1,0 +1,14 @@
+<script>
+  // Before the first paint: the look someone picked (theme and vision), and on the Portuguese page, the
+  // English one for someone who picked English before. Only fixed values are read back from storage, and
+  // crawlers have no stored choice, so they stay put. Someone whose system asks for more contrast gets it.
+  (function () {
+    try {
+      var r = document.documentElement, t = localStorage.getItem('voltaria.theme'), v = localStorage.getItem('voltaria.vision');
+      if (t === 'light' || t === 'dark') r.setAttribute('data-theme', t);
+      if (v === 'normal' || v === 'cb' || v === 'hc') { if (v !== 'normal') r.setAttribute('data-vision', v); }
+      else if (matchMedia('(prefers-contrast: more)').matches) r.setAttribute('data-vision', 'hc');
+      if (r.lang === 'pt-PT' && localStorage.getItem('voltaria.lang') === 'en') location.replace('{{page.href.en}}' + location.hash);
+    } catch (e) {}
+  })();
+</script>

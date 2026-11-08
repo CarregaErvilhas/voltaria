@@ -1,0 +1,37 @@
+<a class="skip" href="#conteudo" data-i="skip"></a>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="{{page.home}}#top"><svg aria-hidden="true"><use href="#livro-logo"/></svg><span>Voltaria</span></a>
+    <nav class="links" aria-label="{{a11y.nav}}">
+      <a href="{{page.home}}#o-que-e" data-i="nav.what"></a>
+      <a href="{{page.home}}#como-funciona" data-i="nav.how"></a>
+      <a href="{{page.home}}#usar" data-i="nav.use"></a>
+    </nav>
+    <div class="controls">
+      <nav class="seg" aria-label="{{a11y.lang}}">
+        <a href="{{page.href.pt}}" hreflang="pt-PT" lang="pt-PT" title="Português" data-lang="pt" {{page.current.pt}}>PT</a>
+        <a href="{{page.href.en}}" hreflang="en" lang="en" title="English" data-lang="en" {{page.current.en}}>EN</a>
+      </nav>
+      <!-- Shown by the script: without it the theme follows the system, and these buttons would do nothing. -->
+      <div class="pref" id="pref" hidden>
+        <button type="button" class="pref-btn" id="prefBtn" aria-expanded="false" aria-controls="prefPanel" aria-label="{{pref.open}}" title="{{pref.open}}"><svg aria-hidden="true"><use href="#i-eye"/></svg></button>
+        <div class="pref-panel" id="prefPanel" role="group" aria-label="{{pref.open}}" hidden>
+          <div class="pref-grp" id="prefTheme" role="group" aria-labelledby="prefThemeH">
+            <p class="pref-h" id="prefThemeH" data-i="pref.theme"></p>
+            <button type="button" data-theme="light" aria-pressed="false"><svg aria-hidden="true"><use href="#i-sun"/></svg><span data-i="theme.light"></span></button>
+            <button type="button" data-theme="auto" aria-pressed="true"><svg aria-hidden="true"><use href="#i-auto"/></svg><span data-i="theme.auto"></span></button>
+            <button type="button" data-theme="dark" aria-pressed="false"><svg aria-hidden="true"><use href="#i-moon"/></svg><span data-i="theme.dark"></span></button>
+          </div>
+          <div class="pref-grp" id="prefVision" role="group" aria-labelledby="prefVisionH">
+            <p class="pref-h" id="prefVisionH" data-i="pref.vision"></p>
+            <button type="button" data-vision="normal" aria-pressed="true"><span data-i="vision.normal"></span></button>
+            <button type="button" data-vision="cb" aria-pressed="false" aria-describedby="prefCbD"><span data-i="vision.cb"></span></button>
+            <button type="button" data-vision="hc" aria-pressed="false" aria-describedby="prefHcD"><span data-i="vision.hc"></span></button>
+            <p class="pref-d" id="prefCbD" data-i="vision.cb.d"></p>
+            <p class="pref-d" id="prefHcD" data-i="vision.hc.d"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
