@@ -15,3 +15,4 @@ jobs:
       - run: scripts/check-knowledge.py
       - run: scripts/check-sources.sh
       - run: scripts/build-site.py --check
+      - run: scripts/build-plugin.py 0.0.0 "$RUNNER_TEMP/plugin"

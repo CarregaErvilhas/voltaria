@@ -21,7 +21,8 @@ explains what Voltaria is and sends people to ohmigo. It never repeats what the 
 
 **Semver:** updating facts is a patch, a new skill is a minor, and renaming a skill or changing the
 fact format is a major, because skill names are the `topic` values of `ev_rules_portugal` in ohmigo. A `vX.Y.Z` tag
-triggers `release.yml`, which publishes one zip per skill with the LICENSE.
+triggers `release.yml`, which publishes one zip per skill with the LICENSE and updates the `plugin`
+branch (Claude's plugin directory follows it; `scripts/build-plugin.py` builds it, from `plugin/`).
 
 ## Commands
 
@@ -36,6 +37,7 @@ scripts/check-sources.sh --check-links   # also requests every URL (slow, networ
 scripts/check-dco.sh origin/main..HEAD   # every commit signed off by its author (DCO, as in dco.yml)
 scripts/build-site.py --check            # the website: same keys in pt and en, none unused, glossary
 scripts/build-site.py                    # build it into _site/ (pages.yml publishes it from main)
+scripts/build-plugin.py 1.2.3 /tmp/p     # the Claude plugin folder, as the plugin branch gets it
 ```
 
 `check-knowledge.py --today YYYY-MM-DD --max-age DAYS` changes the reference date and the staleness

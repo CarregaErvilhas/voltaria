@@ -9,7 +9,14 @@
   "homepage": "https://voltaria.ocarroeletrico.com",
   "repository": "https://github.com/CarregaErvilhas/voltaria",
   "license": "CC-BY-4.0",
-  "keywords": ["portugal", "veiculos-eletricos", "carregamento", "mobi-e", "pt-pt"],
+  "privacyPolicyUrl": "https://voltaria.ocarroeletrico.com/privacidade/",
+  "keywords": [
+    "portugal",
+    "veiculos-eletricos",
+    "carregamento",
+    "mobi-e",
+    "pt-pt"
+  ],
   "mcpServers": {
     "ohmigo": {
       "type": "http",
