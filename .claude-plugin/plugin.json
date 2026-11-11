@@ -1,0 +1,27 @@
+{
+  "name": "voltaria",
+  "version": "1.0.0",
+  "description": "Mobilidade elétrica em Portugal, em pt-PT: carregar em casa e no condomínio, instalação elétrica, fichas e tomadas, apoios e impostos, carregamento público e MOBI.E, baterias, frotas. Com o ohmigo para os preços de cada carregamento.",
+  "author": {
+    "name": "cocofree",
+    "email": "info@ocarroeletrico.com",
+    "url": "https://ocarroeletrico.com"
+  },
+  "homepage": "https://voltaria.ocarroeletrico.com",
+  "repository": "https://github.com/CarregaErvilhas/voltaria",
+  "license": "CC-BY-4.0",
+  "privacyPolicyUrl": "https://voltaria.ocarroeletrico.com/privacidade/",
+  "keywords": [
+    "portugal",
+    "veiculos-eletricos",
+    "carregamento",
+    "mobi-e",
+    "pt-pt"
+  ],
+  "mcpServers": {
+    "ohmigo": {
+      "type": "http",
+      "url": "https://ohmigo.ocarroeletrico.com/mcp"
+    }
+  }
+}

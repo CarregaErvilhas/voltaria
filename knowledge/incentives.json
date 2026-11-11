@@ -1,0 +1,732 @@
+{
+  "schema": 2,
+  "entries": [
+    {
+      "id": "fa-ven-2019",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2019",
+      "text": {
+        "pt": "Fundo Ambiental 2019 (Despacho n.º 2210/2019, veículos de baixas emissões): 3 000 € para pessoas singulares e 2 250 € para pessoas coletivas por um carro ligeiro (M1 ou N1) 100 % elétrico novo, com custo final até 62 500 €; sem abate. Motociclos e ciclomotores elétricos: 20 % do preço, até 400 €. Bicicletas elétricas: 250 €. Até 1 000 apoios para carros, 1 000 para bicicletas e 250 para motos; dotação de 3 000 000 €. Um carro por pessoa singular, até quatro por pessoa coletiva. Pedidos até 30-11-2019.",
+        "en": "Fundo Ambiental 2019 (Despacho 2210/2019, low-emission vehicles): €3,000 for individuals and €2,250 for legal entities for a new fully electric light vehicle (M1 or N1) costing up to €62,500; no scrapping. Electric motorcycles and mopeds: 20% of the price, up to €400. E-bikes: €250. Up to 1,000 grants for cars, 1,000 for bikes and 250 for motorcycles; budget €3,000,000. One car per individual, up to four per legal entity. Applications until 30 Nov 2019."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/despacho-n-2210-2019-regulamento-de-atribuicao-do-incentivo-pela-introducao-no-consumo-de-veiculos-de-baixas-emissoes-2019-pdf.aspx",
+        "name": "Despacho n.º 2210/2019, Diário da República, 2.ª série, n.º 45, 5-3-2019"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2019-03-05",
+      "validTo": "2019-11-30"
+    },
+    {
+      "id": "fa-ven-2020",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2020",
+      "text": {
+        "pt": "Fundo Ambiental 2020 (Despacho n.º 3169/2020, veículos de baixas emissões): 3 000 € para pessoas singulares e 2 000 € para pessoas coletivas por um carro ligeiro de passageiros (M1) 100 % elétrico novo, com custo final até 62 500 €; 3 000 € por um ligeiro de mercadorias (N1) elétrico; sem abate. Bicicletas elétricas, motociclos, ciclomotores e bicicletas de carga: 50 % do preço, até 350 €. Bicicletas convencionais: 10 %, até 100 €. Até 700 apoios M1 para pessoas singulares e 300 para coletivas; dotação de 4 000 000 €. Pedidos até 30-11-2020.",
+        "en": "Fundo Ambiental 2020 (Despacho 3169/2020, low-emission vehicles): €3,000 for individuals and €2,000 for legal entities for a new fully electric passenger car (M1) costing up to €62,500; €3,000 for an electric light goods vehicle (N1); no scrapping. E-bikes, motorcycles, mopeds and cargo bikes: 50% of the price, up to €350. Conventional bikes: 10%, up to €100. Up to 700 M1 grants for individuals and 300 for legal entities; budget €4,000,000. Applications until 30 Nov 2020."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/despacho/3169-2020-130070443",
+        "name": "Despacho n.º 3169/2020, de 10 de março, Diário da República"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2020-03-10",
+      "validTo": "2020-11-30"
+    },
+    {
+      "id": "fa-ven-2021",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2021",
+      "text": {
+        "pt": "Fundo Ambiental 2021 (Despacho n.º 2535/2021, alterado pelo Despacho n.º 8363/2021, veículos de baixas emissões): 3 000 € por um carro ligeiro de passageiros (M1) 100 % elétrico novo, só para pessoas singulares, com custo final até 62 500 € com IVA; sem abate. Ligeiros de mercadorias (N1) elétricos: 6 000 €. Bicicletas de carga: 50 %, até 1 000 € (elétricas) ou 500 €. Bicicletas elétricas, motociclos e ciclomotores: 50 %, até 350 €. Bicicletas convencionais: 20 %, até 100 €. Até 700 apoios M1; dotação de 4 000 000 €. Pedidos até 30-11-2021.",
+        "en": "Fundo Ambiental 2021 (Despacho 2535/2021, amended by Despacho 8363/2021, low-emission vehicles): €3,000 for a new fully electric passenger car (M1), individuals only, costing up to €62,500 incl. VAT; no scrapping. Electric light goods vehicles (N1): €6,000. Cargo bikes: 50%, up to €1,000 (electric) or €500. E-bikes, motorcycles and mopeds: 50%, up to €350. Conventional bikes: 20%, up to €100. Up to 700 M1 grants; budget €4,000,000. Applications until 30 Nov 2021."
+      },
+      "source": {
+        "url": "https://files.diariodarepublica.pt/2s/2021/03/045000000/0019300197.pdf",
+        "name": "Despacho n.º 2535/2021, Diário da República, 2.ª série, n.º 45, 5-3-2021"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2021-03-05",
+      "validTo": "2021-11-30"
+    },
+    {
+      "id": "fa-ven-2022",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2022",
+      "text": {
+        "pt": "Fundo Ambiental 2022 (Despacho n.º 3419-B/2022, primeira edição de 'emissões nulas'): 4 000 € por um carro ligeiro de passageiros (M1) 100 % elétrico novo, só para pessoas singulares, com custo final até 62 500 € com IVA; sem abate. Ligeiros de mercadorias (N1): 6 000 €. Bicicletas de carga: 50 %, até 1 500 € (elétricas) ou 1 000 €. Bicicletas elétricas: 50 %, até 500 €. Motociclos, ciclomotores, triciclos, quadriciclos e trotinetes elétricos: 50 %, até 500 €. Bicicletas convencionais: 20 %, até 100 €. Novidade: postos em condomínio ligados à MOBI.E, 80 % do posto até 800 € mais 80 % da instalação até 1 000 €, e a tarifa da EGME paga por 24 meses. Até 1 300 apoios M1; dotação de 10 000 000 €. Pedidos até 30-11-2022.",
+        "en": "Fundo Ambiental 2022 (Despacho 3419-B/2022, first 'zero-emission' edition): €4,000 for a new fully electric passenger car (M1), individuals only, costing up to €62,500 incl. VAT; no scrapping. Light goods vehicles (N1): €6,000. Cargo bikes: 50%, up to €1,500 (electric) or €1,000. E-bikes: 50%, up to €500. Electric motorcycles, mopeds, tricycles, quadricycles and scooters: 50%, up to €500. Conventional bikes: 20%, up to €100. New: chargers in condominiums connected to MOBI.E, 80% of the charger up to €800 plus 80% of the installation up to €1,000, and the EGME tariff paid for 24 months. Up to 1,300 M1 grants; budget €10,000,000. Applications until 30 Nov 2022."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/despacho/3419-b-2022-180923391",
+        "name": "Despacho n.º 3419-B/2022, de 22 de março, Diário da República"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2022-03-22",
+      "validTo": "2022-11-30"
+    },
+    {
+      "id": "fa-ven-2023",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2023",
+      "text": {
+        "pt": "Fundo Ambiental 2023 (Despacho n.º 5126/2023): as mesmas regras e valores de 2022. 4 000 € por um carro ligeiro de passageiros (M1) 100 % elétrico novo, só para pessoas singulares, com custo final até 62 500 € com IVA; sem abate. Ligeiros de mercadorias (N1): 6 000 €. Bicicletas de carga: até 1 500 € (elétricas) ou 1 000 €. Bicicletas elétricas e motos, ciclomotores e trotinetes elétricos: 50 %, até 500 €. Postos em condomínio ligados à MOBI.E: 80 % até 800 € mais 80 % da instalação até 1 000 €. Até 1 300 apoios M1; dotação de 10 000 000 €. Pedidos até 30-11-2023.",
+        "en": "Fundo Ambiental 2023 (Despacho 5126/2023): same rules and amounts as 2022. €4,000 for a new fully electric passenger car (M1), individuals only, costing up to €62,500 incl. VAT; no scrapping. Light goods vehicles (N1): €6,000. Cargo bikes: up to €1,500 (electric) or €1,000. E-bikes and electric motorcycles, mopeds and scooters: 50%, up to €500. Chargers in condominiums connected to MOBI.E: 80% up to €800 plus 80% of the installation up to €1,000. Up to 1,300 M1 grants; budget €10,000,000. Applications until 30 Nov 2023."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/2023/desp-5126_2023-3mai-regulamento-atribuicao-incentivo-ven-2023-pdf",
+        "name": "Despacho n.º 5126/2023, Diário da República, 2.ª série, n.º 85, 3-5-2023"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2023-05-04",
+      "validTo": "2023-11-30"
+    },
+    {
+      "id": "fa-ven-2024",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2024",
+      "text": {
+        "pt": "Fundo Ambiental 2024 (Aviso n.º 22989/2024/2, Mobilidade Verde Passageiros): passa a exigir abate. 4 000 € para pessoas singulares e 5 000 € para IPSS e outras instituições de cariz social, por um carro ligeiro de passageiros (M1) 100 % elétrico novo e o abate de um carro a combustíveis fósseis com mais de 10 anos (abate após 1-1-2022). O custo final máximo desce para 38 500 € com IVA. Bicicletas de carga: até 1 500 € (elétricas) ou 1 000 €. Bicicletas elétricas e motos, ciclomotores e trotinetes elétricos: 50 %, até 500 €. Bicicletas convencionais: 50 %, até 150 €. Postos em condomínio: 80 % até 800 € mais a instalação. Até 1 050 apoios M1 para pessoas singulares e 400 para instituições. Pedidos até 31-12-2024.",
+        "en": "Fundo Ambiental 2024 (Aviso 22989/2024/2, Mobilidade Verde Passageiros): scrapping becomes mandatory. €4,000 for individuals and €5,000 for IPSS and other social institutions, for a new fully electric passenger car (M1) plus scrapping a fossil-fuel car over 10 years old (scrapped after 1 Jan 2022). The maximum final cost drops to €38,500 incl. VAT. Cargo bikes: up to €1,500 (electric) or €1,000. E-bikes and electric motorcycles, mopeds and scooters: 50%, up to €500. Conventional bikes: 50%, up to €150. Chargers in condominiums: 80% up to €800 plus the installation. Up to 1,050 M1 grants for individuals and 400 for institutions. Applications until 31 Dec 2024."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/aviso/22989-2024-891174432",
+        "name": "Aviso n.º 22989/2024/2, de 17 de outubro, Diário da República"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2024-10-17",
+      "validTo": "2024-12-31"
+    },
+    {
+      "id": "fa-ven-2025",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025",
+      "text": {
+        "pt": "Fundo Ambiental 2025 (ACC n.º 02/2025, Mobilidade Verde Passageiros): 4 000 € para pessoas singulares e 5 000 € para IPSS, autoridades de transportes e autarquias, por um carro ligeiro de passageiros (M1) 100 % elétrico novo e o abate de um carro a combustíveis fósseis com mais de 10 anos (abate após 1-1-2023). Custo final até 38 500 € (55 000 € acima de 5 lugares). Bicicletas de carga: até 1 500 € (elétricas) ou 1 000 €. Bicicletas elétricas: 50 %, até 750 €. Motociclos, ciclomotores, triciclos e quadriciclos: 50 %, até 1 500 €. Trotinetes e outros dispositivos: 50 %, até 500 €. Bicicletas convencionais: 50 %, até 500 €. Postos em condomínio: 80 % até 800 € mais 80 % da instalação até 1 000 €. Até 1 425 apoios M1 para pessoas singulares e 600 para instituições; dotação de 13,5 milhões €. Candidaturas a partir de 31-3-2025, durante 45 dias corridos ou até esgotar.",
+        "en": "Fundo Ambiental 2025 (ACC 02/2025, Mobilidade Verde Passageiros): €4,000 for individuals and €5,000 for IPSS charities, transport authorities and municipalities, for a new fully electric passenger car (M1) plus scrapping a fossil-fuel car over 10 years old (scrapped after 1 Jan 2023). Final cost up to €38,500 (€55,000 above 5 seats). Cargo bikes: up to €1,500 (electric) or €1,000. E-bikes: 50%, up to €750. Motorcycles, mopeds, tricycles and quadricycles: 50%, up to €1,500. Scooters and other devices: 50%, up to €500. Conventional bikes: 50%, up to €500. Chargers in condominiums: 80% up to €800 plus 80% of the installation up to €1,000. Up to 1,425 M1 grants for individuals and 600 for institutions; budget €13.5 million. Applications from 31 Mar 2025, for 45 calendar days or until funds ran out."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/avisos-anteriores/apoios-20242/apoios/2025/mitigacao-as-alteracoes-climaticas/introducao-no-consumo-de-veiculos-de-emissoes-nulas-em-2025--mobilidade-verde-passageiros.aspx",
+        "name": "Fundo Ambiental, ACC n.º 02/2025, Mobilidade Verde Passageiros"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2025-03-31",
+      "validTo": "2025-05-15"
+    },
+    {
+      "id": "fa-ven-2025-2026-f1",
+      "kind": "apoio",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f1",
+      "text": {
+        "pt": "Fundo Ambiental, 1.ª fase do AAC n.º 06/2025 (Mobilidade Verde Passageiros 2025/2026): os mesmos valores e regras da 2.ª fase (4 000 € para pessoas singulares e 5 000 € para IPSS, autoridades de transportes e autarquias, com abate, custo final até 38 500 € ou 55 000 € acima de 5 lugares). Até 2 200 apoios M1 para pessoas singulares e 500 para instituições; dotação de 17 625 000 €. Candidaturas de 22-12-2025 a 11-2-2026 às 17h59; pedido de pagamento até 90 dias após a aprovação, no máximo até 13-5-2026.",
+        "en": "Fundo Ambiental, phase 1 of AAC 06/2025 (Mobilidade Verde Passageiros 2025/2026): same amounts and rules as phase 2 (€4,000 for individuals and €5,000 for IPSS, transport authorities and municipalities, with scrapping, final cost up to €38,500 or €55,000 above 5 seats). Up to 2,200 M1 grants for individuals and 500 for institutions; budget €17,625,000. Applications 22 Dec 2025 to 11 Feb 2026 at 17:59; payment request within 90 days of approval, by 13 May 2026 at the latest."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/2025/aviso_veiculos_emissoes_nulas_passageiros_signed1.aspx",
+        "name": "Fundo Ambiental, AAC n.º 06/2025, 1.ª fase, pontos 1.5, 4.1, 4.3 e 6.1"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2025-12-22",
+      "validTo": "2026-02-11"
+    },
+    {
+      "id": "fa-ven-2025-2026-f2-ligeiros",
+      "kind": "apoio",
+      "text": {
+        "pt": "Fundo Ambiental, 2.ª fase do apoio à compra de veículos de emissões nulas (AAC n.º 06/2025): 4 000 € para pessoas singulares e 5 000 € para IPSS, autoridades de transportes e autarquias, por um carro ligeiro de passageiros (M1) 100 % elétrico, novo, com primeira matrícula em nome do beneficiário após 1-1-2025, e abate de um carro a combustíveis fósseis com mais de 10 anos (abate após 1-1-2023, mesma categoria). Custo final máximo de 38 500 € com IVA e despesas (55 000 € acima de 5 lugares). Compra ou locação financeira de pelo menos 24 meses. Um apoio por pessoa singular, até quatro por pessoa coletiva. Empresas não são elegíveis. Candidaturas de 11-6-2026 a 27-7-2026 às 17h59, ou até esgotar a dotação.",
+        "en": "Fundo Ambiental, phase 2 of the zero-emission vehicle grant (AAC 06/2025): €4,000 for individuals and €5,000 for IPSS charities, transport authorities and municipalities, for a new 100% electric passenger car (M1) first registered to the beneficiary after 1 Jan 2025, scrapping a fossil-fuel car over 10 years old (scrapped after 1 Jan 2023, same category). Final cost up to €38,500 incl. VAT and fees (€55,000 above 5 seats). Purchase or financial lease of at least 24 months. One per individual, up to four per legal entity. Companies are not eligible. Applications 11 Jun 2026 to 27 Jul 2026 at 17:59, or until funds run out."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/20261/aac-n-06-2025-incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-no-ano-de-2025-e-2026-mobilidade-verde--passageiros-pdf.aspx",
+        "name": "Fundo Ambiental, AAC n.º 06/2025, 2.ª fase, pontos 1.5, 2.1, 2.5, 4.1 e 5.3.2"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2026-06-11",
+      "validTo": "2026-07-27",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f2"
+    },
+    {
+      "id": "fa-ven-2025-2026-f2-motos",
+      "kind": "apoio",
+      "text": {
+        "pt": "Fundo Ambiental, 2.ª fase (AAC n.º 06/2025): 50 % do preço com IVA, até 1 500 €, por um motociclo ou ciclomotor exclusivamente elétrico com matrícula, ou um triciclo ou quadriciclo elétrico (L5e, L6e, L7e), novo, comprado após 1-1-2025. Excluídos enduro, trial e sidecar. Sem abate. Um por pessoa singular, até quatro por pessoa coletiva. Candidaturas de 11-6-2026 a 27-7-2026, ou até esgotar a dotação.",
+        "en": "Fundo Ambiental, phase 2 (AAC 06/2025): 50% of the price incl. VAT, up to €1,500, for a new fully electric registered motorcycle or moped, or an electric tricycle or quadricycle (L5e, L6e, L7e), bought after 1 Jan 2025. Enduro, trial and sidecar excluded. No scrapping. One per individual, up to four per legal entity. Applications 11 Jun 2026 to 27 Jul 2026, or until funds run out."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/20261/aac-n-06-2025-incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-no-ano-de-2025-e-2026-mobilidade-verde--passageiros-pdf.aspx",
+        "name": "Fundo Ambiental, AAC n.º 06/2025, 2.ª fase, pontos 1.8, 2.5 e 4.1"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2026-06-11",
+      "validTo": "2026-07-27",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f2"
+    },
+    {
+      "id": "fa-ven-2025-2026-f2-bicicletas",
+      "kind": "apoio",
+      "text": {
+        "pt": "Fundo Ambiental, 2.ª fase (AAC n.º 06/2025): 50 % do preço com IVA, até 750 € por uma bicicleta elétrica citadina, até 1 500 € por uma bicicleta de carga elétrica (1 000 € sem assistência), e até 500 € por outro dispositivo de mobilidade pessoal elétrico (trotinete, monorroda). Novos, comprados após 1-1-2025. Um por pessoa singular, até quatro por pessoa coletiva; lojas destes veículos não são elegíveis. Candidaturas de 11-6-2026 a 27-7-2026, ou até esgotar a dotação.",
+        "en": "Fundo Ambiental, phase 2 (AAC 06/2025): 50% of the price incl. VAT, up to €750 for an electric city bike, up to €1,500 for an electric cargo bike (€1,000 without assist), and up to €500 for another electric personal mobility device (scooter, monowheel). New, bought after 1 Jan 2025. One per individual, up to four per legal entity; shops selling them are not eligible. Applications 11 Jun 2026 to 27 Jul 2026, or until funds run out."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/20261/aac-n-06-2025-incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-no-ano-de-2025-e-2026-mobilidade-verde--passageiros-pdf.aspx",
+        "name": "Fundo Ambiental, AAC n.º 06/2025, 2.ª fase, pontos 1.6, 1.7, 1.9, 2.4, 2.5 e 4.1"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2026-06-11",
+      "validTo": "2026-07-27",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f2"
+    },
+    {
+      "id": "fa-ven-2025-2026-f2-postos-condominio",
+      "kind": "apoio",
+      "text": {
+        "pt": "Fundo Ambiental, 2.ª fase (AAC n.º 06/2025): 80 % do preço do posto de carregamento com IVA, até 800 €, mais 80 % da instalação elétrica com IVA, até 1 000 €, por lugar de estacionamento, em prédios de habitação em propriedade horizontal com ligação à MOBI.E. Só condomínios: moradias não estão abrangidas. Candidatam-se moradores (residentes ou proprietários, sozinhos ou em grupo) ou a administração do condomínio. Um posto por condómino, até 10 por condomínio/CPE. O Fundo paga também a tarifa da EGME ao DPC durante 24 meses. Fatura da instalação emitida por técnico certificado, com o CPE. Candidaturas de 11-6-2026 a 27-7-2026, ou até esgotar a dotação.",
+        "en": "Fundo Ambiental, phase 2 (AAC 06/2025): 80% of the charger's price incl. VAT, up to €800, plus 80% of the electrical installation incl. VAT, up to €1,000, per parking space, in residential condominium buildings connected to MOBI.E. Condominiums only: detached houses are not covered. Residents or owners (alone or as a group) or the condominium administration apply. One charger per owner, up to 10 per building/delivery point (CPE). The Fund also pays the EGME tariff to the charger holder for 24 months. Installation invoice from a certified technician, with the CPE. Applications 11 Jun 2026 to 27 Jul 2026, or until funds run out."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/20261/aac-n-06-2025-incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-no-ano-de-2025-e-2026-mobilidade-verde--passageiros-pdf.aspx",
+        "name": "Fundo Ambiental, AAC n.º 06/2025, 2.ª fase, pontos 1.11, 2.3, 2.5.2, 5.4 e 6.1"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2026-06-11",
+      "validTo": "2026-07-27",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f2"
+    },
+    {
+      "id": "fa-ven-2025-2026-f2-regras-gerais",
+      "kind": "apoio",
+      "text": {
+        "pt": "Fundo Ambiental, 2.ª fase (AAC n.º 06/2025): candidatura só online, ordenada por data e hora de submissão. Depois da aprovação, o beneficiário tem 3 meses para aceitar os termos e pedir o pagamento, com faturas e comprovativos de pagamento posteriores a 1-1-2025 em seu nome. Tem de manter o veículo ou o posto pelo menos 24 meses e não pode exportar o veículo. Dúvidas: incentivovbe@fundoambiental.pt.",
+        "en": "Fundo Ambiental, phase 2 (AAC 06/2025): online application only, ranked by submission date and time. After approval, the beneficiary has 3 months to accept the terms and request payment, with invoices and proof of payment dated after 1 Jan 2025 in their name. They must keep the vehicle or charger for at least 24 months and may not export the vehicle. Questions: incentivovbe@fundoambiental.pt."
+      },
+      "source": {
+        "url": "https://www.fundoambiental.pt/ficheiros/20261/aac-n-06-2025-incentivo-pela-introducao-no-consumo-de-veiculos-de-emissoes-nulas-no-ano-de-2025-e-2026-mobilidade-verde--passageiros-pdf.aspx",
+        "name": "Fundo Ambiental, AAC n.º 06/2025, 2.ª fase, pontos 1.3, 4.3, 8 e 9"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": "2026-06-11",
+      "validTo": "2026-07-27",
+      "series": "fundo-ambiental-ven",
+      "edition": "2025-2026-f2"
+    },
+    {
+      "id": "psc-mobilidade-familias-vulneraveis",
+      "kind": "apoio",
+      "status": "anunciado",
+      "series": "plano-social-clima",
+      "edition": "2026-2032",
+      "text": {
+        "pt": "Anunciado, ainda não aberto. Plano Social para o Clima 2026-2032, entregue à Comissão Europeia a 9-10-2026: apoio a cerca de 5 000 famílias vulneráveis na eletrificação da mobilidade, gerido pela Agência para o Clima. Depende da aprovação da Comissão; os primeiros avisos estão previstos para o 2.º semestre de 2027. Ainda não há diploma nem aviso publicado com valores, critérios de acesso ou datas de candidatura.",
+        "en": "Announced, not yet open. Social Climate Plan 2026-2032, submitted to the European Commission on 9 Oct 2026: support for about 5,000 vulnerable households to electrify their mobility, managed by the Agência para o Clima. Subject to Commission approval; first calls expected in the second half of 2027. No law or call with amounts, eligibility or application dates has been published yet."
+      },
+      "source": {
+        "url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/portugal-entrega-a-bruxelas-plano-social-para-o-clima-de-16-mil-milhoes-de-euros",
+        "name": "Governo de Portugal, comunicado de 9-10-2026, \"Portugal entrega a Bruxelas Plano Social para o Clima de 1,6 mil milhões de euros\""
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "psc-mobilidade-microempresas",
+      "kind": "apoio",
+      "status": "anunciado",
+      "series": "plano-social-clima",
+      "edition": "2026-2032",
+      "text": {
+        "pt": "Anunciado, ainda não aberto. Plano Social para o Clima 2026-2032, entregue à Comissão Europeia a 9-10-2026: apoio a cerca de 10 000 microempresas dos setores mais expostos ao aumento do custo dos combustíveis para eletrificar as frotas, gerido pela Agência para o Clima. Depende da aprovação da Comissão; os primeiros avisos estão previstos para o 2.º semestre de 2027. Ainda não há diploma nem aviso publicado com valores, setores elegíveis ou datas.",
+        "en": "Announced, not yet open. Social Climate Plan 2026-2032, submitted to the European Commission on 9 Oct 2026: support for about 10,000 micro-enterprises in the sectors most exposed to rising fuel costs to electrify their fleets, managed by the Agência para o Clima. Subject to Commission approval; first calls expected in the second half of 2027. No law or call with amounts, eligible sectors or dates has been published yet."
+      },
+      "source": {
+        "url": "https://portugal.gov.pt/pt/gc25/comunicacao/comunicados/portugal-entrega-a-bruxelas-plano-social-para-o-clima-de-16-mil-milhoes-de-euros",
+        "name": "Governo de Portugal, comunicado de 9-10-2026, \"Portugal entrega a Bruxelas Plano Social para o Clima de 1,6 mil milhões de euros\""
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "iuc-isencao-eletricos",
+      "kind": "fiscal",
+      "text": {
+        "pt": "IUC: os veículos exclusivamente elétricos estão isentos do imposto único de circulação (Código do IUC, art. 5.º, n.º 1, alínea e). Não abrange híbridos.",
+        "en": "IUC (annual circulation tax): fully electric vehicles are exempt (IUC Code, art. 5(1)(e)). It does not cover hybrids."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/iuc/Pages/iuc5.aspx",
+        "name": "Portal das Finanças, Código do IUC, art. 5.º"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "iva-deducao-viaturas-eletricas",
+      "kind": "fiscal",
+      "text": {
+        "pt": "IVA, para sujeitos passivos com direito à dedução (empresas, trabalhadores independentes): é dedutível o IVA da compra, fabrico, importação, locação ou transformação de viaturas elétricas ou híbridas plug-in cujo custo de aquisição não exceda o limite da portaria do art. 34.º, n.º 1, e) do Código do IRC (Código do IVA, art. 21.º, n.º 2, f). O IVA da eletricidade usada nessas viaturas também é dedutível (art. 21.º, n.º 2, h).",
+        "en": "VAT, for taxable persons entitled to deduct (companies, self-employed): VAT on buying, building, importing, leasing or converting electric or plug-in hybrid cars is deductible if the acquisition cost does not exceed the limit set by the ordinance in art. 34(1)(e) of the IRC Code (VAT Code, art. 21(2)(f)). VAT on the electricity used in them is also deductible (art. 21(2)(h))."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/civa_rep/Pages/iva21.aspx",
+        "name": "Portal das Finanças, Código do IVA, art. 21.º"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "irc-tributacao-autonoma-eletricos",
+      "kind": "fiscal",
+      "text": {
+        "pt": "Tributação autónoma (IRC): os encargos com veículos exclusivamente elétricos só pagam tributação autónoma, à taxa de 10 %, se o custo de aquisição exceder o limite da portaria do art. 34.º, n.º 1, e) do Código do IRC. Abaixo desse limite não pagam (Código do IRC, art. 88.º, n.º 20).",
+        "en": "Autonomous taxation (corporate tax, IRC): costs of fully electric vehicles are only taxed, at 10%, if the acquisition cost exceeds the limit set by the ordinance in art. 34(1)(e) of the IRC Code. Below that limit they are not taxed (IRC Code, art. 88(20))."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/codigos_tributarios/CIRC_2R/Pages/irc88.aspx",
+        "name": "Portal das Finanças, Código do IRC, art. 88.º"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "limite-custo-viaturas-eletricas-62500",
+      "kind": "fiscal",
+      "text": {
+        "pt": "Limite de custo de aquisição das viaturas ligeiras de passageiros 100 % elétricas: 62 500 €, sem IVA (Portaria n.º 467/2010, alterada pelo art. 24.º da Lei n.º 82-D/2014). É o limite que conta para a dedução do IVA da compra (Código do IVA, art. 21.º, n.º 2, f), para as depreciações aceites em IRC (Código do IRC, art. 34.º, n.º 1, e) e para a tributação autónoma (art. 88.º, n.º 20). Acima dele, a AT considera que nenhuma parte do IVA da compra é dedutível. As despesas de utilização (reparação, manutenção, portagens, seguros) não beneficiam da exceção. Se a viatura for usada fora da atividade, há IVA a liquidar sobre esse uso.",
+        "en": "Acquisition-cost limit for fully electric passenger cars: €62,500 excluding VAT (Portaria 467/2010, as amended by art. 24 of Lei 82-D/2014). It is the limit for deducting the purchase VAT (VAT Code, art. 21(2)(f)), for accepted depreciation in corporate tax (IRC Code, art. 34(1)(e)) and for autonomous taxation (art. 88(20)). Above it, the Tax Authority holds that none of the purchase VAT is deductible. Running costs (repairs, maintenance, tolls, insurance) are not covered. Private use outside the business is subject to VAT."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/despesa/civa/Documents/PIV_28949.pdf",
+        "name": "Autoridade Tributária, informação vinculativa, processo 28949, despacho de 2025-10-31"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "iva-carregadores-nao-dedutivel",
+      "kind": "fiscal",
+      "text": {
+        "pt": "IVA dos postos de carregamento numa empresa: segundo a AT, o IVA da compra e da instalação dos carregadores para as viaturas da empresa não é dedutível, por ser uma despesa de utilização das viaturas. O IVA da eletricidade usada nas viaturas elétricas ou híbridas plug-in é dedutível (Código do IVA, art. 21.º, n.º 2, h), cumpridos os requisitos gerais.",
+        "en": "VAT on chargers at a company: according to the Tax Authority, VAT on buying and installing chargers for company vehicles is not deductible, as it is a vehicle running cost. VAT on electricity used in electric or plug-in hybrid vehicles is deductible (VAT Code, art. 21(2)(h)), if the general requirements are met."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/despesa/civa/Documents/PIV_24830.pdf",
+        "name": "Autoridade Tributária, informação vinculativa, processo 24830, despacho de 2023-10-27"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "iva-eletricidade-casa-colaborador",
+      "kind": "fiscal",
+      "text": {
+        "pt": "IVA da eletricidade gasta a carregar em casa do colaborador uma viatura elétrica da empresa: para o deduzir, a empresa tem de ter uma fatura emitida na forma legal, em seu nome e na sua posse, relativa a esses consumos (Código do IVA, art. 19.º, n.º 2). Um reembolso ao colaborador com base na fatura dele, em nome dele, não dá direito à dedução.",
+        "en": "VAT on electricity used to charge a company electric car at an employee's home: to deduct it, the company must hold a valid invoice in its own name for that consumption (VAT Code, art. 19(2)). Reimbursing the employee against an invoice in the employee's name does not allow the deduction."
+      },
+      "source": {
+        "url": "https://info.portaldasfinancas.gov.pt/pt/informacao_fiscal/informacoes_vinculativas/despesa/civa/Documents/PIV_25928.pdf",
+        "name": "Autoridade Tributária, informação vinculativa, processo 25928, despacho de 2024-04-30"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "isv-exclusao-eletricos",
+      "kind": "fiscal",
+      "text": {
+        "pt": "ISV: os veículos exclusivamente elétricos estão excluídos da incidência do imposto sobre veículos (Código do ISV, art. 2.º, n.º 2, alínea a), aprovado pela Lei n.º 22-A/2007). Conta, por exemplo, ao importar um elétrico usado. Não abrange híbridos.",
+        "en": "Vehicle tax (ISV): fully electric vehicles are outside the scope of the tax (ISV Code, art. 2(2)(a), approved by Lei 22-A/2007). Relevant, for example, when importing a used electric car. Hybrids are not covered."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/lei/22-a-2007-226204",
+        "name": "Lei n.º 22-A/2007, de 29 de junho, Código do ISV, art. 2.º"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-agueda-estacionamento",
+      "kind": "municipal",
+      "municipality": "Águeda",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Águeda: estacionamento gratuito para carros elétricos. Não é preciso dístico municipal.",
+        "en": "Águeda: free parking for electric cars. No municipal permit needed."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.cm-agueda.pt/cmagueda/uploads/writer_file/document/1937/codigo_regulamentar_vf.pdf",
+        "name": "Câmara Municipal de Águeda, Código Regulamentar"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-almada-estacionamento",
+      "kind": "municipal",
+      "municipality": "Almada",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Almada: estacionamento gratuito para carros elétricos, com o Dístico Verde municipal, que é gratuito e se pede à WeMob.",
+        "en": "Almada: free parking for electric cars with the municipal Green Permit (Dístico Verde), which is free and issued by WeMob."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://wemob.pt/distico_verde/",
+        "name": "WeMob Almada, Dístico Verde"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-beja-estacionamento",
+      "kind": "municipal",
+      "municipality": "Beja",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Beja: isenção para carros 100 % elétricos só nos parques subterrâneos da Av. Miguel Fernandes e da Casa da Cultura, com pedido de assinatura (avença) e se houver lugares. Não é preciso dístico municipal.",
+        "en": "Beja: fully electric cars are exempt only in the underground car parks of Av. Miguel Fernandes and Casa da Cultura, by applying for a subscription, subject to availability. No municipal permit needed."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://cm-beja.pt/pt/menu/633/mobilidade-eletrica.aspx",
+        "name": "Câmara Municipal de Beja, Mobilidade elétrica"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-guimaraes-estacionamento",
+      "kind": "municipal",
+      "municipality": "Guimarães",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Guimarães: carros 100 % elétricos não pagam nas zonas de estacionamento de duração limitada (ZEDL), com dístico municipal emitido pela Câmara, a 20 € por ano.",
+        "en": "Guimarães: fully electric cars park free in the limited-duration parking zones (ZEDL) with a municipal permit issued by the council, €20 a year."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.guimaraesvisivel.pt/noticia-16/guimaraes-mantem-isencao-de-pagamento-nos-parquimetros-para-veiculos-100-eletricos",
+        "name": "Guimarães Visível, Guimarães mantém isenção de pagamento nos parquímetros para veículos 100 % elétricos"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-lisboa-estacionamento",
+      "kind": "municipal",
+      "municipality": "Lisboa",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Lisboa: estacionamento gratuito na via pública para carros elétricos com o Dístico Verde da EMEL, a 12 € por ano. Qualquer pessoa o pode pedir, mesmo sem morar em Lisboa.",
+        "en": "Lisbon: free on-street parking for electric cars with EMEL's Green Permit (Dístico Verde), €12 a year. Anyone can apply, even non-residents."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.emel.pt/pt/disticos/estacionamento-na-via-publica/distico-verde/",
+        "name": "EMEL, Dístico Verde"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-loures-estacionamento",
+      "kind": "municipal",
+      "municipality": "Loures",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Loures: estacionamento gratuito para carros elétricos com o Dístico Verde da Loures Parque, a 6 € por ano. Qualquer pessoa o pode pedir, mesmo sem morar em Loures.",
+        "en": "Loures: free parking for electric cars with Loures Parque's Green Permit (Dístico Verde), €6 a year. Anyone can apply, even non-residents."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.louresparque.pt/pt/comunicacao/2022/06/23/distico-verde-27-de-junho-de-2022",
+        "name": "Loures Parque, Dístico Verde"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-mirandela-estacionamento",
+      "kind": "municipal",
+      "municipality": "Mirandela",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Mirandela: estacionamento gratuito para carros elétricos com o dístico identificativo de veículo elétrico emitido pelo IMT. A Lei n.º 19/2024 tirou ao IMT a emissão do dístico, mas os já emitidos continuam válidos.",
+        "en": "Mirandela: free parking for electric cars with the electric-vehicle sticker issued by IMT. Law 19/2024 removed IMT's power to issue the sticker, but stickers already issued remain valid."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.cm-mirandela.pt/cmmirandela/uploads/document/file/4583/regulamento_de_estacionamento_de_duracao_limitada_do_municipio_de_mirandela.pdf",
+        "name": "Município de Mirandela, Regulamento de Estacionamento de Duração Limitada"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-povoa-de-varzim-estacionamento",
+      "kind": "municipal",
+      "municipality": "Póvoa de Varzim",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Póvoa de Varzim: estacionamento gratuito para carros elétricos desde julho de 2019, por 10 anos, para residentes e não residentes.",
+        "en": "Póvoa de Varzim: free parking for electric cars since July 2019, for 10 years, for residents and non-residents."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.cm-pvarzim.pt/municipe/regulamentos-e-requerimentos-municipais/regulamentos-municipais/regulamento-municipal-de-transito-e-estacionamento-2/regulamento-municipal-de-transito-e-estacionamento/",
+        "name": "Município da Póvoa de Varzim, Regulamento Municipal de Trânsito e Estacionamento"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-ribeira-brava-estacionamento",
+      "kind": "municipal",
+      "municipality": "Ribeira Brava",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Ribeira Brava: isenção só para ligeiros de passageiros 100 % elétricos. Não é preciso dístico municipal.",
+        "en": "Ribeira Brava: exemption only for fully electric passenger cars. No municipal permit needed."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.uve.pt/page/wp-content/uploads/2018/09/regulamento_municipal_de_zonas_de_estacionamento_de_dura_o_limitada-1.pdf",
+        "name": "Câmara Municipal da Ribeira Brava, Regulamento Municipal de Zonas de Estacionamento de Duração Limitada (cópia no site da UVE)"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-setubal-estacionamento",
+      "kind": "municipal",
+      "municipality": "Setúbal",
+      "benefit": "isenção",
+      "text": {
+        "pt": "Setúbal: isenção só para ligeiros de passageiros 100 % elétricos. Não é preciso dístico municipal.",
+        "en": "Setúbal: exemption only for fully electric passenger cars. No municipal permit needed."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.mun-setubal.pt/wp-content/uploads/2024/05/JornalDeliberacoes_8-2024.pdf",
+        "name": "Município de Setúbal, Jornal de Deliberações n.º 8/2024"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-funchal-estacionamento",
+      "kind": "municipal",
+      "municipality": "Funchal",
+      "benefit": "desconto",
+      "text": {
+        "pt": "Funchal: os carros 100 % elétricos deixaram de estar isentos. Paga-se o estacionamento todo e a Câmara devolve 50 % em crédito para estacionamento. Só para pessoas singulares, com o carro registado na Câmara e um título identificativo visível no para-brisas.",
+        "en": "Funchal: fully electric cars are no longer exempt. Drivers pay in full and the council refunds 50% as parking credit. Individuals only, with the car registered with the council and an identification permit shown on the windscreen."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://www.jm-madeira.pt/not%C3%ADcias/regi-o/30006155/veiculos-eletricos-deixam-de-ter-isencao-de-pagamento-no-estacionamento.html",
+        "name": "Jornal da Madeira, Veículos elétricos deixam de ter isenção de pagamento no estacionamento (30-9-2026; não é fonte oficial)"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "mun-porto-estacionamento",
+      "kind": "municipal",
+      "municipality": "Porto",
+      "benefit": "desconto",
+      "text": {
+        "pt": "Porto: 15 % de desconto na avença mensal dos parques de estacionamento municipais, para carros 100 % elétricos.",
+        "en": "Porto: 15% off the monthly subscription in municipal car parks, for fully electric cars."
+      },
+      "source": {
+        "url": "https://www.uve.pt/page/municipios-com-isencao-desconto-no-pagamento-de-estacionamento-para-veiculos-eletricos/",
+        "name": "UVE, Municípios com isenção/desconto no estacionamento para Veículos Elétricos (atualizado a 2-11-2026)"
+      },
+      "official": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/edital-extrato/826-2021-167846618",
+        "name": "Edital n.º 826/2021, Diário da República"
+      },
+      "checkedAt": "2026-11-04",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "go-leilao-37-resultado",
+      "kind": "mercado",
+      "series": "leiloes-go-pt",
+      "edition": "37",
+      "text": {
+        "pt": "37.º leilão GO-PT (9-9-2026): vendidas 2 158 221 GO (MWh) de produção renovável apoiada, todo o volume leiloado, com preços marginais entre 1,57 e 1,68 €/MWh conforme o lote (solar, eólica, hídrica, térmica). 27 participantes, 16 compradores. Preço de reserva: 0,10 €/MWh.",
+        "en": "37th GO-PT auction (9 Sep 2026): 2,158,221 GOs (MWh) from supported renewable production sold, the whole volume offered, at marginal prices between €1.57 and €1.68/MWh depending on the lot (solar, wind, hydro, thermal). 27 participants, 16 buyers. Reserve price: €0.10/MWh."
+      },
+      "source": {
+        "url": "https://www.omip.pt/pt/leiloes-go",
+        "name": "OMIP, Leilões de Garantias de Origem (histórico dos resultados dos leilões GO-PT, setembro de 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-09-09",
+      "validTo": null
+    },
+    {
+      "id": "go-leiloes-historico-anual",
+      "kind": "mercado",
+      "series": "leiloes-go-pt",
+      "text": {
+        "pt": "Leilões GO-PT por ano (conta do Voltaria sobre o histórico do OMIP: volume vendido × preço marginal de cada lote): 2021, 5 leilões, 18,2 TWh, média 0,50 €/MWh, ≈9,2 M€; 2022, 8 leilões, 25,1 TWh, 2,45 €/MWh, ≈61,7 M€; 2023, 6 leilões, 19,9 TWh, 5,29 €/MWh, ≈105,2 M€; 2024, 6 leilões, 21,1 TWh, 1,04 €/MWh, ≈22,0 M€; 2025, 7 leilões, 19,1 TWh, 0,44 €/MWh, ≈8,4 M€; 2026 até setembro, 5 leilões, 14,1 TWh, 1,18 €/MWh, ≈16,7 M€. Máximo num leilão: 7,39 €/MWh de média (7-12-2022); mínimo: 0,17 €/MWh (12-2-2025). O acumulado até junho de 2023 (≈135,6 M€) coincide com o valor líquido publicado pela REN.",
+        "en": "GO-PT auctions per year (Voltaria's calculation from the OMIP history: volume sold × marginal price of each lot): 2021, 5 auctions, 18.2 TWh, average €0.50/MWh, ≈€9.2M; 2022, 8 auctions, 25.1 TWh, €2.45/MWh, ≈€61.7M; 2023, 6 auctions, 19.9 TWh, €5.29/MWh, ≈€105.2M; 2024, 6 auctions, 21.1 TWh, €1.04/MWh, ≈€22.0M; 2025, 7 auctions, 19.1 TWh, €0.44/MWh, ≈€8.4M; 2026 to September, 5 auctions, 14.1 TWh, €1.18/MWh, ≈€16.7M. Highest single-auction average: €7.39/MWh (7 Dec 2022); lowest: €0.17/MWh (12 Feb 2025). The total up to June 2023 (≈€135.6M) matches the net figure published by REN."
+      },
+      "source": {
+        "url": "https://www.omip.pt/pt/leiloes-go",
+        "name": "OMIP, Leilões de Garantias de Origem (histórico dos resultados dos leilões GO-PT, setembro de 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": null
+    },
+    {
+      "id": "go-leiloes-calendario",
+      "kind": "mercado",
+      "series": "leiloes-go-pt",
+      "text": {
+        "pt": "Próximos leilões GO-PT (DGEG): 38.º a 11-11-2026, com 1 938 201 GO (solar, eólica, hídrica, térmica e várias tecnologias, produção de novembro de 2025 a setembro de 2026) e preço de reserva de 0,10 €/MWh; em 2027, a 10-2, 14-4, 9-6, 8-9 e 10-11. O calendário pode mudar; a convocatória sai 20 dias antes.",
+        "en": "Upcoming GO-PT auctions (DGEG): 38th on 11 Nov 2026, with 1,938,201 GOs (solar, wind, hydro, thermal and mixed technologies, produced November 2025 to September 2026) and a reserve price of €0.10/MWh; in 2027, on 10 Feb, 14 Apr, 9 Jun, 8 Sep and 10 Nov. The calendar may change; each call is published 20 days before."
+      },
+      "source": {
+        "url": "https://www.omip.pt/sites/default/files/2026-10/calendario-2027_leiloes-go-pt.pdf",
+        "name": "DGEG, Comunicado do calendário 2027 dos leilões de GO (20-10-2026) e convocatória do 38.º leilão GO-PT"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": null,
+      "validTo": "2027-11-10"
+    },
+    {
+      "id": "go-leiloes-retribuicao",
+      "kind": "mercado",
+      "series": "leiloes-go-pt",
+      "text": {
+        "pt": "Custo de operação dos leilões GO-PT: 0,02 €/MWh adjudicado, metade paga pelo CUR e metade pelos adjudicatários, com um teto de 20 % da receita de cada leilão; o que passar do teto conta como receita (Despacho n.º 6560-B/2021, n.os 11 e 12).",
+        "en": "Operating cost of the GO-PT auctions: €0.02 per MWh awarded, half paid by the last-resort supplier (CUR) and half by the winning bidders, capped at 20% of each auction's revenue; anything above the cap counts as revenue (Despacho 6560-B/2021, points 11 and 12)."
+      },
+      "source": {
+        "url": "https://diariodarepublica.pt/dr/detalhe/despacho/6560-b-2021-166488536",
+        "name": "Despacho n.º 6560-B/2021, de 5 de julho (DGEG)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2021-07-05",
+      "validTo": null
+    },
+    {
+      "id": "tar-2026-bte-mt",
+      "kind": "mercado",
+      "series": "tar",
+      "text": {
+        "pt": "TAR 2026 (sem IVA). BTE: potência contratada 0,0563 €/kW/dia; potência em horas de ponta 0,5521 €/kW/dia; energia ativa 0,0397 (ponta), 0,0353 (cheias), 0,0285 (vazio normal), 0,0237 (super vazio) €/kWh. MT: potência contratada 0,0458 €/kW/dia; potência em horas de ponta 0,2435 €/kW/dia; energia ativa 0,0203, 0,0182, 0,0146, 0,0129 €/kWh.",
+        "en": "2026 network access tariffs (excl. VAT). BTE (special low voltage): contracted power €0.0563/kW/day; peak-hour power €0.5521/kW/day; active energy €0.0397 (peak), 0.0353 (full), 0.0285 (off-peak), 0.0237 (super off-peak)/kWh. MV: contracted power €0.0458/kW/day; peak-hour power €0.2435/kW/day; energy €0.0203, 0.0182, 0.0146, 0.0129/kWh."
+      },
+      "source": {
+        "url": "https://www.erse.pt/media/lamnmp31/diretiva-erse-10-2025-tep-se-2026.pdf",
+        "name": "ERSE, Diretiva n.º 10/2025 (tarifas e preços da energia elétrica para 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-01-01",
+      "validTo": "2026-12-31"
+    },
+    {
+      "id": "tar-me-2026",
+      "kind": "mercado",
+      "series": "tar",
+      "text": {
+        "pt": "TAR da mobilidade elétrica 2026 (só energia, sem IVA). Ligação em BT: tri-horária 0,2807 (ponta), 0,0769 (cheias), 0,0266 (vazio) €/kWh; bi-horária 0,1192 (fora de vazio), 0,0266 (vazio). Ligação em MT: tri-horária 0,2410, 0,0379, 0,0157; bi-horária 0,0812, 0,0157 €/kWh. Só para postos integrados na MOBI.E.",
+        "en": "2026 e-mobility network access tariff (energy only, excl. VAT). BT connection: three-period €0.2807 (peak), 0.0769 (full), 0.0266 (off-peak)/kWh; two-period €0.1192 (outside off-peak), 0.0266 (off-peak). MV connection: three-period 0.2410, 0.0379, 0.0157; two-period 0.0812, 0.0157 €/kWh. Only for charge points integrated in MOBI.E."
+      },
+      "source": {
+        "url": "https://www.erse.pt/media/lamnmp31/diretiva-erse-10-2025-tep-se-2026.pdf",
+        "name": "ERSE, Diretiva n.º 10/2025 (tarifas e preços da energia elétrica para 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-01-01",
+      "validTo": "2026-12-31"
+    },
+    {
+      "id": "tar-exemplo-posto-150kw-bte",
+      "kind": "mercado",
+      "series": "tar",
+      "text": {
+        "pt": "Exemplo do Voltaria (preços TAR 2026, mês de 30 dias): posto de 150 kW em BTE, 20 % dos kWh em horas de ponta, 110 h de ponta no mês. TAR normal ≈ 253 € fixos + 0,064 €/kWh; TAR ME BT tri-horária ≈ 0,103 €/kWh. Equilíbrio perto de 6 500 kWh/mês (cerca de 6 % de utilização). Com 1 000 kWh/mês: ≈0,32 €/kWh de rede contra ≈0,10; com 15 000 kWh/mês: ≈0,08 contra ≈0,10. Estimativa, não fatura.",
+        "en": "Voltaria example (2026 TAR prices, 30-day month): 150 kW charger on BTE, 20% of kWh in peak hours, 110 peak hours a month. Standard TAR ≈ €253 fixed + €0.064/kWh; e-mobility TAR (BT, three-period) ≈ €0.103/kWh. Break-even near 6,500 kWh/month (about 6% utilisation). At 1,000 kWh/month: ≈€0.32/kWh of network cost vs ≈0.10; at 15,000 kWh/month: ≈0.08 vs ≈0.10. Estimate, not a bill."
+      },
+      "source": {
+        "url": "https://www.erse.pt/media/lamnmp31/diretiva-erse-10-2025-tep-se-2026.pdf",
+        "name": "ERSE, Diretiva n.º 10/2025 (tarifas e preços da energia elétrica para 2026)"
+      },
+      "checkedAt": "2026-11-06",
+      "validFrom": "2026-01-01",
+      "validTo": "2026-12-31"
+    }
+  ]
+}
