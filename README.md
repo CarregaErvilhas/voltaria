@@ -11,19 +11,11 @@ agentes (assistentes de IA), em pt-PT.
 
 ## Plugin para o Claude
 
-Este repo é também um plugin: `.claude-plugin/plugin.json` na raiz. Instalado no Claude (chat,
-Cowork ou Claude Code), dá as skills de `skills/` e liga o
+O Voltaria é também um plugin do Claude (chat, Cowork e Claude Code): as skills, os factos e o
 [ohmigo](https://ohmigo.ocarroeletrico.com), o servidor MCP com os preços de carregamento em
-Portugal. Quem só quer as regras e o saber prático usa as skills, e o Claude só chama o ohmigo
-quando a pergunta é um preço.
-
-### Dados
-
-O plugin não corre código, não guarda nada e não tem hooks. As skills são texto que o Claude lê.
-O único envio de dados é o das chamadas ao ohmigo (`https://ohmigo.ocarroeletrico.com/mcp`), com o
-que o assistente põe em cada pergunta (sítio ou rota, carro, tarifas). O ohmigo não guarda nada
-ligado a quem pergunta: ver a [política de privacidade do ohmigo](https://ohmigo.ocarroeletrico.com/privacidade)
-e a [do Voltaria](https://voltaria.ocarroeletrico.com/privacidade/).
+Portugal. O plugin vive no branch `plugin`, que o `release.yml` gera em cada tag `vX.Y.Z` com
+`scripts/build-plugin.py`, só com o que o Claude lê. O manifesto e o README do plugin estão em
+`plugin/`. Não se edita o branch à mão.
 
 ## Licença
 

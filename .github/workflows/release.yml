@@ -1,6 +1,8 @@
 # On a semver tag (vMAJOR.MINOR.PATCH), runs the checks and publishes a GitHub release with one zip
 # per skill, for manual upload to Claude.ai or ChatGPT. Each zip holds <skill>/SKILL.md plus the
 # licence, so the CC-BY-4.0 terms travel with the content.
+# It also updates the `plugin` branch, which Claude's plugin directory follows: one commit per
+# release, built by scripts/build-plugin.py with the tag as the plugin's version.
 name: Release
 on:
   push:
@@ -29,3 +31,23 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release create "$GITHUB_REF_NAME" dist/*.zip --title "$GITHUB_REF_NAME" --generate-notes
+      - name: Update the plugin branch
+        run: |
+          scripts/build-plugin.py "${GITHUB_REF_NAME#v}" "$RUNNER_TEMP/build"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          dir="$RUNNER_TEMP/plugin"
+          if git ls-remote --exit-code --heads origin plugin >/dev/null; then
+            git fetch -q origin plugin
+            git worktree add -q --detach "$dir" FETCH_HEAD
+          else
+            git worktree add -q --orphan -b plugin "$dir"
+          fi
+          # Replace everything but .git with the new build, so removed files go too.
+          find "$dir" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -R "$RUNNER_TEMP/build/." "$dir/"
+          cd "$dir"
+          git add -A
+          if git diff --cached --quiet; then echo "plugin unchanged"; exit 0; fi
+          git commit -q -s -m "Voltaria $GITHUB_REF_NAME" -m "Built by release.yml from $GITHUB_SHA."
+          git push origin HEAD:refs/heads/plugin
