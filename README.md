@@ -9,6 +9,22 @@ agentes (assistentes de IA), em pt-PT.
 - `site/`: o site para pessoas, [voltaria.ocarroeletrico.com](https://voltaria.ocarroeletrico.com), que explica o que é o
   Voltaria e como o usar através do [ohmigo](https://ohmigo.ocarroeletrico.com).
 
+## Plugin para o Claude
+
+Este repo é também um plugin: `.claude-plugin/plugin.json` na raiz. Instalado no Claude (chat,
+Cowork ou Claude Code), dá as skills de `skills/` e liga o
+[ohmigo](https://ohmigo.ocarroeletrico.com), o servidor MCP com os preços de carregamento em
+Portugal. Quem só quer as regras e o saber prático usa as skills, e o Claude só chama o ohmigo
+quando a pergunta é um preço.
+
+### Dados
+
+O plugin não corre código, não guarda nada e não tem hooks. As skills são texto que o Claude lê.
+O único envio de dados é o das chamadas ao ohmigo (`https://ohmigo.ocarroeletrico.com/mcp`), com o
+que o assistente põe em cada pergunta (sítio ou rota, carro, tarifas). O ohmigo não guarda nada
+ligado a quem pergunta: ver a [política de privacidade do ohmigo](https://ohmigo.ocarroeletrico.com/privacidade)
+e a [do Voltaria](https://voltaria.ocarroeletrico.com/privacidade/).
+
 ## Licença
 
 - **Conteúdo** (`skills/`, `knowledge/`, `glossario.md` e o resto do texto): [CC-BY-4.0](LICENSE).
