@@ -83,7 +83,7 @@ def json_ld(lang, strings):
         "url": f"{SITE_URL}/{conf['path']}",
         "inLanguage": conf["lang"],
         "description": strings[lang]["meta.desc"],
-        "image": f"{SITE_URL}/og-{lang}.png",
+        "image": og_image(lang),
         "isAccessibleForFree": True,
         "sameAs": [REPO_URL],
     }
@@ -91,6 +91,14 @@ def json_ld(lang, strings):
     data["workTranslation" if lang == "pt" else "translationOfWork"] = {"@id": f"{SITE_URL}/{LANGS[other]['path']}#website"}
     # The payload sits inside <script>: escape "<" so no string can close it.
     return json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
+
+
+def og_image(lang):
+    """The share image's URL, with a hash of the file. X (and Facebook, LinkedIn) cache what they
+    fetched per image URL for days, a failed fetch included, and X then draws a grey box: a new
+    image gets a new URL and is fetched again. GitHub Pages ignores the query."""
+    data = (Path(__file__).resolve().parent.parent / "site" / "static" / f"og-{lang}.png").read_bytes()
+    return f"{SITE_URL}/og-{lang}.png?v={hashlib.sha256(data).hexdigest()[:10]}"
 
 
 def depth_root(path):
@@ -115,7 +123,7 @@ def page_values(lang, strings, page):
         "page.href.en": root + paths["en"],
         "page.href.privacy": root + PAGES["privacy"]["path"][lang],
         "page.og.locale": conf["locale"],
-        "page.og.image": f"{SITE_URL}/og-{lang}.png",
+        "page.og.image": og_image(lang),
         "page.current.pt": 'aria-current="page"' if lang == "pt" else "",
         "page.current.en": 'aria-current="page"' if lang == "en" else "",
     }
