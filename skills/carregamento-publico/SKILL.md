@@ -131,7 +131,9 @@ Não há uma resposta igual para todos. Explica do que depende [UVE, formas de c
   conforme o modelo. Com a bateria muito baixa, o carro pode demorar a chegar à potência máxima
   [UVE, manual]. Perto do cheio abranda muito: a potência costuma cair bastante a partir de cerca de
   80 % [UVE, carregar com respeito].
-- **A potência do posto**: a útil é a menor entre a do posto e a que o carro aceita.
+- **A potência do posto**: a útil é a menor entre a do posto e a que o carro aceita. Em DC, a placa
+  é o máximo do carregador: um carro de 400 V recebe muitas vezes menos, e com outro carro ligado ao
+  mesmo carregador a potência divide-se. A skill `tecnologia-de-carregamento` explica porquê.
 - **A temperatura**: o frio e o calor extremos tornam o carregamento mais lento. A bateria carrega
   melhor entre cerca de 20 e 30 °C; abaixo de 10 °C a potência pode cair [UVE, manual].
 

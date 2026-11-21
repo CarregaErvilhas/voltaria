@@ -1,6 +1,6 @@
 ---
 name: tecnologia-de-carregamento
-description: "Explica a tecnologia por trás da rede pública de carregamento: roaming e hubs de roaming, os protocolos OCPP e OCPI, Plug & Charge (ISO 15118) e a sua PKI, AutoCharge e baterias estacionárias (BESS) nos hubs de carregamento. Usa quando o utilizador pergunta como um cartão funciona em postos de outros operadores, o que é OCPP, OCPI, OICP ou um hub de roaming, como funciona o Plug & Charge, ou para que serve uma bateria num posto rápido."
+description: "Explica a tecnologia por trás da rede pública de carregamento: roaming e hubs de roaming, os protocolos OCPP e OCPI, Plug & Charge (ISO 15118) e a sua PKI, AutoCharge, baterias estacionárias (BESS) nos hubs, e porque um posto rápido dá a um carro menos potência do que diz a placa (tensão de 400 ou 800 V, corrente do cabo, potência partilhada entre carros). Usa quando o utilizador pergunta como um cartão funciona em postos de outros operadores, o que é OCPP, OCPI, OICP ou um hub de roaming, como funciona o Plug & Charge, para que serve uma bateria num posto rápido, ou porque o carro carrega mais devagar do que a potência anunciada."
 ---
 
 # Tecnologia de carregamento
@@ -156,6 +156,57 @@ do Voltaria.
   estudo de cada caso.
 - Para saber se um posto concreto tem BESS, só o OPC confirma.
 
+## Potência em DC: a placa e o que o carro recebe
+
+### O que a placa diz
+
+- A potência na placa de um posto rápido é o máximo do carregador, não o que cada carro recebe.
+  Em DC, a potência é a tensão vezes a corrente, e a tensão é a da bateria do carro.
+- A corrente tem um teto: o do carregador e o do cabo. Um cabo de 500 A num carro de 400 V dá no
+  máximo cerca de 200 kW, por mais que a placa diga. Um carro de 800 V, com a mesma corrente, pode
+  receber o dobro. Por isso o mesmo posto dá potências diferentes a carros diferentes.
+- A tensão da bateria varia com a carga: com a bateria quase vazia é mais baixa, e a potência também.
+- Para correntes altas, os cabos são arrefecidos por líquido. É o que permite as potências mais altas
+  com cabos que ainda se conseguem manusear.
+
+### Carregadores de 500 V e carros de 800 V
+
+- Muitos postos rápidos mais antigos só chegam a 500 V. Um carro de 400 V carrega neles sem
+  problema.
+- Um carro de 800 V só carrega num posto de 500 V se tiver um conversor que eleva a tensão (às vezes
+  chamado *boost*). A maioria tem, mas carrega mais devagar do que num posto de 800 V ou mais. Se não
+  tiver, não carrega. Confirma no manual da versão exata do carro.
+
+### Potência partilhada
+
+- Muitos carregadores rápidos são um armário de potência com módulos, ligado a uma ou mais pistolas
+  ou dispensadores. A potência do armário divide-se pelos carros ligados ao mesmo tempo: com um só
+  carro, ele recebe quase tudo; com dois, cada um recebe menos [Alexandre Moleiro, lista de
+  carregadores].
+- Como se divide depende do modelo: há os que dividem a meias e os que dão módulos a quem mais
+  precisa. Num carregador com fichas CCS e CHAdeMO, só uma das fichas DC carrega de cada vez; uma
+  tomada AC ao lado costuma ser independente.
+- Num hub com vários carregadores, escolher um carregador sem ninguém ligado pode dar mais
+  potência do que a pistola livre ao lado de um carro a carregar.
+
+### O operador pode limitar
+
+- O operador pode limitar a potência de cada tomada abaixo do que o carregador consegue, por
+  exemplo por causa da ligação à rede elétrica do local. Uma bateria estacionária (BESS) pode
+  compensar parte disso (ver "BESS (baterias estacionárias)").
+- O que o posto declara no PAN é a declaração do operador. O ohmigo diz, para muitos postos, que
+  modelo de carregador é e quanto dá a um carro de 400 V ou de 800 V, sozinho ou com outro ligado.
+
+### Confusões a corrigir
+
+- "Um posto de 300 kW carrega o meu carro a 300 kW." Só se o carro aceitar essa potência e a
+  tensão da bateria e a corrente do cabo a permitirem. Um carro de 400 V recebe muitas vezes bem
+  menos.
+- "Dois carros no mesmo carregador carregam ambos à potência máxima." Na maioria dos carregadores
+  rápidos a potência divide-se.
+- "Um carro de 800 V carrega mais depressa em qualquer posto." Num posto de 500 V carrega mais
+  devagar do que um de 400 V, ou não carrega se não tiver conversor.
+
 ## Fontes
 
 ### Legislação
@@ -172,11 +223,16 @@ do Voltaria.
   https://evroaming.org/ocpi-background/
 - ISO 15118-2 (comunicação carro-posto, Plug & Charge): https://www.iso.org/standard/55366.html
 - ISO 15118-20 (comunicação carro-posto, bidirecional e V2G): https://www.iso.org/standard/77845.html
+- IEC 61851-23 (postos de carregamento em DC): https://webstore.iec.ch/en/publication/33644
+- IEC 62196-3 (fichas e tomadas para DC, incluindo CCS): https://webstore.iec.ch/en/publication/59922
 - OICP (Open InterCharge Protocol, Hubject): https://www.hubject.com/en/
 - eMIP (protocolo de roaming da Gireve): https://www.gireve.com/en/
 
 ### Outras fontes
 
 - CharIN: https://www.charin.global/
+- [Alexandre Moleiro, lista de carregadores] "Modelos de Carregadores usados em Portugal", documento
+  que o autor mantém e partilha com a comunidade (potência por carro a 400 e 800 V, sozinho e
+  partilhado).
 - [MOBI.E, Mobi.Hub] "MOBI.E reforça aposta na mobilidade elétrica com novo hub" (22-10-2026):
   https://www.mobie.pt/w/mobi.e-reforca-aposta-na-mobilidade-eletrica-com-novo-hub
