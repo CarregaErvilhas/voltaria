@@ -231,8 +231,7 @@ do Voltaria.
 ### Outras fontes
 
 - CharIN: https://www.charin.global/
-- [Alexandre Moleiro, lista de carregadores] "Modelos de Carregadores usados em Portugal", documento
-  que o autor mantém e partilha com a comunidade (potência por carro a 400 e 800 V, sozinho e
-  partilhado).
+- [Alexandre Moleiro, lista de carregadores] "Modelos de Carregadores usados em Portugal" (potência
+  por carro a 400 e 800 V, sozinho e partilhado): https://docs.google.com/document/d/1SyhISXEaZiAPYuRLQ9dA2OtFrwysFm01Yei11qTLQLw
 - [MOBI.E, Mobi.Hub] "MOBI.E reforça aposta na mobilidade elétrica com novo hub" (22-10-2026):
   https://www.mobie.pt/w/mobi.e-reforca-aposta-na-mobilidade-eletrica-com-novo-hub
