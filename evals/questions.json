@@ -1375,6 +1375,22 @@
         "Diz que qualquer carregamento rápido estraga a bateria"
       ],
       "source": ["baterias#Carregamentos rápidos"]
+    },
+    {
+      "id": "tec-06",
+      "skills": ["tecnologia-de-carregamento"],
+      "category": "e",
+      "persona": "condutor",
+      "question": "Parei num posto de 400 kW com o meu carro e só carregou a pouco mais de 200 kW. Está avariado?",
+      "must": [
+        "Diz que a placa é o máximo do carregador, não o que cada carro recebe",
+        "Explica que em DC a potência é a tensão da bateria vezes a corrente, e que o cabo limita a corrente (um carro de 400 V recebe menos do que um de 800 V)",
+        "Diz que, se outro carro estiver ligado ao mesmo carregador, a potência pode estar a ser partilhada"
+      ],
+      "must_not": [
+        "Diz que o posto está certamente avariado"
+      ],
+      "source": ["tecnologia-de-carregamento#Potência em DC: a placa e o que o carro recebe"]
     }
   ]
 }
