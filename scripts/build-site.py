@@ -209,6 +209,14 @@ def llms_txt(skill_list, facts):
     lines += ["", "## Facts", ""]
     for name in facts:
         lines.append(f"- [{name}]({REPO_URL}/blob/main/knowledge/{name}.json): `topic` \"{name}\" + `query`")
+    # The website's own pages (PAGES), in English like the rest of this file.
+    about = {"index": ("Home", "what Voltaria is and how to use it from an assistant"),
+             "privacy": ("Privacy", "what the site does not collect"),
+             "group": ("The group", "the other sites of the O Carro Elétrico group, what each one does and where its code is")}
+    lines += ["", "## Site", ""]
+    for key, page in PAGES.items():
+        label, desc = about[key]
+        lines.append(f"- [{label}]({SITE_URL}/{page['path']['en']}): {desc}")
     return "\n".join(lines) + "\n"
 
 
