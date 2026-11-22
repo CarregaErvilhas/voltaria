@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- The group page: the other sites of the ocarroeletrico.com group, each beside its mascot in a speech
+     bubble. The same page is on each of those sites, in its own style; keep the text in step with theirs.
+     Same build as index.html: data-i gets the string, double braces the escaped one. -->
+<html lang="{{page.lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{grupo.meta.title}}</title>
+<meta name="description" content="{{grupo.meta.desc}}">
+<link rel="canonical" href="{{page.url}}">
+<link rel="alternate" hreflang="pt-PT" href="{{page.url.pt}}">
+<link rel="alternate" hreflang="en" href="{{page.url.en}}">
+<link rel="alternate" hreflang="x-default" href="{{page.url.pt}}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Voltaria">
+<meta property="og:title" content="{{grupo.meta.title}}">
+<meta property="og:description" content="{{grupo.meta.desc}}">
+<meta property="og:url" content="{{page.url}}">
+<meta property="og:locale" content="{{page.og.locale}}">
+<meta property="og:image" content="{{page.og.image}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{meta.ogalt}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{grupo.meta.title}}">
+<meta name="twitter:description" content="{{grupo.meta.desc}}">
+<meta name="twitter:image" content="{{page.og.image}}">
+<meta name="twitter:image:alt" content="{{meta.ogalt}}">
+<meta name="theme-color" content="#fbfaf5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d1322" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{page.root}}favicon.ico" sizes="48x48">
+<link rel="icon" href="{{page.root}}icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{page.root}}apple-touch-icon.png">
+<link rel="manifest" href="{{page.root}}site.webmanifest">
+<link rel="preload" href="{{page.root}}fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+<!--include:init-->
+<!--include:style-->
+</head>
+<body>
+<!--include:defs-->
+<!--include:header-->
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <span class="eyebrow" data-i="grupo.eyebrow"></span>
+        <h1 id="conteudo" tabindex="-1" data-i="grupo.title"></h1>
+        <p class="lead" data-i="grupo.lead"></p>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="blob"></div>
+        <svg class="spark s1"><use href="#spark"/></svg>
+        <svg class="spark s2"><use href="#spark"/></svg>
+        <svg class="mascot" viewBox="0 0 260 300"><use href="#livro"/></svg>
+        <div class="bubble" data-i="grupo.bubble"></div>
+      </div>
+    </div>
+  </section>
+  <section class="alt">
+    <div class="wrap">
+      <!-- The order is the same on every site of the group; this one says "You are here" instead of a link. -->
+      <ol class="mates">
+        <li class="mate m-carro">
+          <div class="mate-pic"><img src="{{page.root}}grupo/carro.svg" alt="{{grupo.carro.mascot}}" width="270" height="300" loading="lazy"></div>
+          <div class="mate-bubble">
+            <p class="mate-host" data-i="grupo.carro.host"></p>
+            <h2 data-i="grupo.carro.name"></h2>
+            <p data-i="grupo.carro.desc"></p>
+            <p class="mate-links"><a class="btn btn-sm btn-main" href="https://ocarroeletrico.com/"><span data-i="grupo.open"></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-sm btn-line" href="https://github.com/CarregaErvilhas/OCarroEletrico"><svg aria-hidden="true"><use href="#i-code"/></svg><span data-i="grupo.code"></span></a></p>
+          </div>
+        </li>
+        <li class="mate m-ohmigo">
+          <div class="mate-pic"><img src="{{page.root}}grupo/ohmigo.svg" alt="{{grupo.ohmigo.mascot}}" width="260" height="300" loading="lazy"></div>
+          <div class="mate-bubble">
+            <p class="mate-host" data-i="grupo.ohmigo.host"></p>
+            <h2 data-i="grupo.ohmigo.name"></h2>
+            <p data-i="grupo.ohmigo.desc"></p>
+            <p class="mate-links"><a class="btn btn-sm btn-main" href="https://ohmigo.ocarroeletrico.com/"><span data-i="grupo.open"></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-sm btn-line" href="https://github.com/CarregaErvilhas/ohmigo-mcp"><svg aria-hidden="true"><use href="#i-code"/></svg><span data-i="grupo.code"></span></a></p>
+          </div>
+        </li>
+        <li class="mate m-voltaria">
+          <div class="mate-pic"><img src="{{page.root}}grupo/voltaria.svg" alt="{{grupo.voltaria.mascot}}" width="260" height="300" loading="lazy"></div>
+          <div class="mate-bubble">
+            <p class="mate-host" data-i="grupo.voltaria.host"></p>
+            <h2 data-i="grupo.voltaria.name"></h2>
+            <p data-i="grupo.voltaria.desc"></p>
+            <p class="mate-links"><span class="here" data-i="grupo.here"></span><a class="btn btn-sm btn-line" href="https://github.com/CarregaErvilhas/voltaria"><svg aria-hidden="true"><use href="#i-code"/></svg><span data-i="grupo.code"></span></a></p>
+          </div>
+        </li>
+        <li class="mate m-ceme">
+          <div class="mate-pic"><img src="{{page.root}}grupo/ceme.svg" alt="{{grupo.ceme.mascot}}" width="260" height="300" loading="lazy"></div>
+          <div class="mate-bubble">
+            <p class="mate-host" data-i="grupo.ceme.host"></p>
+            <h2 data-i="grupo.ceme.name"></h2>
+            <p data-i="grupo.ceme.desc"></p>
+            <p class="mate-links"><a class="btn btn-sm btn-main" href="https://ceme.ocarroeletrico.com/"><span data-i="grupo.open"></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-sm btn-line" href="https://github.com/CarregaErvilhas/CEME"><svg aria-hidden="true"><use href="#i-code"/></svg><span data-i="grupo.code"></span></a></p>
+          </div>
+        </li>
+        <li class="mate m-nap">
+          <div class="mate-pic"><img src="{{page.root}}grupo/nap.svg" alt="{{grupo.nap.mascot}}" width="212" height="252" loading="lazy"></div>
+          <div class="mate-bubble">
+            <p class="mate-host" data-i="grupo.nap.host"></p>
+            <h2 data-i="grupo.nap.name"></h2>
+            <p data-i="grupo.nap.desc"></p>
+            <p class="mate-links"><a class="btn btn-sm btn-main" href="https://nap.ocarroeletrico.com/"><span data-i="grupo.open"></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a><a class="btn btn-sm btn-line" href="https://github.com/CarregaErvilhas/nap-dashboard"><svg aria-hidden="true"><use href="#i-code"/></svg><span data-i="grupo.code"></span></a></p>
+          </div>
+        </li>
+        <li class="mate m-ampere">
+          <div class="mate-pic"><img src="{{page.root}}grupo/ampere.svg" alt="{{grupo.ampere.mascot}}" width="280" height="300" loading="lazy"></div>
+          <div class="mate-bubble">
+            <p class="mate-host" data-i="grupo.ampere.host"></p>
+            <h2 data-i="grupo.ampere.name"></h2>
+            <p data-i="grupo.ampere.desc"></p>
+            <p class="mate-note" data-i="grupo.ampere.note"></p>
+            <p class="mate-links"><a class="btn btn-sm btn-line" href="https://github.com/CarregaErvilhas/AmpereArchive"><svg aria-hidden="true"><use href="#i-lock"/></svg><span data-i="grupo.private"></span></a></p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+</main>
+<!--include:footer-->
+<!--include:script-->
+</body>
+</html>

@@ -37,10 +37,12 @@ LANGS = {
     "pt": {"path": "", "root": "./", "lang": "pt-PT", "locale": "pt_PT"},
     "en": {"path": "en/", "root": "../", "lang": "en", "locale": "en_GB"},
 }
-# The pages: template (in site/) -> where each language puts it. "privacy" is linked from every footer.
+# The pages: template (in site/) -> where each language puts it. "privacy" and "group" are linked from
+# every footer.
 PAGES = {
     "index": {"template": "index.html", "path": {"pt": "", "en": "en/"}},
     "privacy": {"template": "privacy.html", "path": {"pt": "privacidade/", "en": "en/privacy/"}},
+    "group": {"template": "grupo.html", "path": {"pt": "grupo/", "en": "en/group/"}},
 }
 INCLUDE_RE = re.compile(r"<!--include:([\w-]+)-->")
 INLINE_RE = re.compile(r"<(script|style)(?:\s[^>]*)?>(.*?)</\1>", re.S)
@@ -122,6 +124,7 @@ def page_values(lang, strings, page):
         "page.href.pt": root + paths["pt"],
         "page.href.en": root + paths["en"],
         "page.href.privacy": root + PAGES["privacy"]["path"][lang],
+        "page.href.group": root + PAGES["group"]["path"][lang],
         "page.og.locale": conf["locale"],
         "page.og.image": og_image(lang),
         "page.current.pt": 'aria-current="page"' if lang == "pt" else "",
