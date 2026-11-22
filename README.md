@@ -35,7 +35,9 @@ As licenças cobrem o conteúdo e o código, não a marca. Não estão licenciad
 
 - o nome **Voltaria**, a mascote (o livro azul com o raio), o ícone e as imagens feitas com eles, no
   `site/` (os desenhos em `index.html` e `og-card.html`, e os ícones e imagens em `site/static/`);
-- a mascote do **ohmigo**, que aparece no site e é do ohmigo.
+- a mascote do **ohmigo**, que aparece no site e é do ohmigo;
+- as mascotes da página do grupo (`site/static/grupo/`), que são de cada um dos sites do grupo do
+  O Carro Elétrico.
 
 Podes, e deves, usar o nome para dizer de onde vem o conteúdo, como pede a linha de crédito acima.
 Um fork ou uma obra derivada precisa de nome e de imagem próprios.

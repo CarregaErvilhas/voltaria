@@ -1,11 +1,11 @@
 # O site do Voltaria
 
 O site para pessoas, em https://voltaria.ocarroeletrico.com: explica o que é o Voltaria e manda
-instalar o ohmigo para o usar. São duas páginas, cada uma em português e em inglês: a principal (`/`, `/en/`) e a de privacidade (`/privacidade/`, `/en/privacy/`).
+instalar o ohmigo para o usar. São três páginas, cada uma em português e em inglês: a principal (`/`, `/en/`), a de privacidade (`/privacidade/`, `/en/privacy/`) e a do grupo (`/grupo/`, `/en/group/`), que apresenta os outros sites do grupo do O Carro Elétrico.
 
 ## Como está feito
 
-- `index.html` e `privacy.html` são os modelos; o cabeçalho, o rodapé, o CSS e os scripts, partilhados, estão em `partials/` (`<!--include:nome-->`).
+- `index.html`, `privacy.html` e `grupo.html` são os modelos; o cabeçalho, o rodapé, o CSS e os scripts, partilhados, estão em `partials/` (`<!--include:nome-->`).
 - `index.html` é o modelo da página principal. Um elemento com `data-i="chave"` recebe o texto dessa chave; uma chave entre
   chavetas duplas recebe-o escapado (para atributos e para o `<head>`). As chaves `page.*` vêm do script.
 - `strings.json` tem o texto, com as mesmas chaves em `pt` e `en`. O português segue o
@@ -15,6 +15,8 @@ instalar o ohmigo para o usar. São duas páginas, cada uma em português e em i
   - os ícones: `favicon.ico` (16, 32 e 48 px, o que os browsers pedem e o que o Google mostra nos
     resultados), `icon.svg`, `apple-touch-icon.png` e os do `site.webmanifest` (Android);
   - as imagens das pré-visualizações de links, `og-pt.png` e `og-en.png`;
+  - as mascotes dos sites do grupo, em `grupo/` (vêm do O Carro Elétrico, que tem a mesma página; mantém
+    os textos e a ordem iguais aos dele);
   - `404.html`, que o GitHub Pages mostra para qualquer endereço que não existe, nas duas línguas e
     fora dos motores de busca.
 - `og-card.html` é o desenho das imagens de pré-visualização. Não é publicado.
@@ -24,11 +26,11 @@ O nome, a mascote e os ícones não estão nas licenças do repo: vê "O nome e 
 
 `scripts/build-site.py` junta tudo em `_site/`:
 
-- as duas páginas, com o texto já lá dentro e, para os motores de busca, a descrição, o `canonical`,
+- as páginas, com o texto já lá dentro e, para os motores de busca, a descrição, o `canonical`,
   as ligações `hreflang` entre as duas línguas, as etiquetas Open Graph e Twitter das
   pré-visualizações e os dados estruturados (schema.org `WebSite`);
 - a lista de temas, tirada de `skills/`;
-- `robots.txt`, que aponta para o `sitemap.xml` (as duas páginas, com a data do último commit e as
+- `robots.txt`, que aponta para o `sitemap.xml` (as páginas, com a data do último commit e as
   versões em cada língua);
 - `llms.txt`, o resumo para agentes, também gerado a partir das skills.
 
