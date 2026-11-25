@@ -30,6 +30,7 @@ from pathlib import Path
 
 SITE_URL = "https://voltaria.ocarroeletrico.com"
 REPO_URL = "https://github.com/CarregaErvilhas/voltaria"
+RAW_URL = "https://raw.githubusercontent.com/CarregaErvilhas/voltaria/main"
 OHMIGO_MCP = "https://ohmigo.ocarroeletrico.com/mcp"
 LANGS = {
     # path: where the page lives; root: how that page reaches the site's root (relative, so the
@@ -88,6 +89,9 @@ def json_ld(lang, strings):
         "image": og_image(lang),
         "isAccessibleForFree": True,
         "sameAs": [REPO_URL],
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "publisher": {"@type": "Organization", "name": "O Carro Elétrico", "url": "https://ocarroeletrico.com"},
+        "isPartOf": {"@type": "WebSite", "name": "O Carro Elétrico", "url": "https://ocarroeletrico.com"},
     }
     other = next(l for l in LANGS if l != lang)
     data["workTranslation" if lang == "pt" else "translationOfWork"] = {"@id": f"{SITE_URL}/{LANGS[other]['path']}#website"}
@@ -205,10 +209,10 @@ def llms_txt(skill_list, facts):
         "",
     ]
     for name, desc in skill_list:
-        lines.append(f"- [{name}]({REPO_URL}/blob/main/skills/{name}/SKILL.md): {desc}")
+        lines.append(f"- [{name}]({RAW_URL}/skills/{name}/SKILL.md): {desc}")
     lines += ["", "## Facts", ""]
     for name in facts:
-        lines.append(f"- [{name}]({REPO_URL}/blob/main/knowledge/{name}.json): `topic` \"{name}\" + `query`")
+        lines.append(f"- [{name}]({RAW_URL}/knowledge/{name}.json): `topic` \"{name}\" + `query`")
     # The website's own pages (PAGES), in English like the rest of this file.
     about = {"index": ("Home", "what Voltaria is and how to use it from an assistant"),
              "privacy": ("Privacy", "what the site does not collect"),
