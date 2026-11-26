@@ -16,7 +16,7 @@ instalar o ohmigo para o usar. São três páginas, cada uma em português e em 
     resultados), `icon.svg`, `apple-touch-icon.png` e os do `site.webmanifest` (Android);
   - as imagens das pré-visualizações de links, `og-pt.png` e `og-en.png`;
   - as mascotes dos sites do grupo, em `grupo/` (vêm do O Carro Elétrico, que tem a mesma página; mantém
-    os textos e a ordem iguais aos dele);
+    os textos e a ordem iguais aos dele; o `pano.svg` é o logótipo do Panoramax, marca do projeto Panoramax);
   - `404.html`, que o GitHub Pages mostra para qualquer endereço que não existe, nas duas línguas e
     fora dos motores de busca.
 - `og-card.html` é o desenho das imagens de pré-visualização. Não é publicado.
