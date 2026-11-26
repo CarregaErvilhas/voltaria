@@ -1,11 +1,8 @@
 # Glossário
 
-O termo a usar em todas as skills, os sinónimos a evitar e uma definição curta. Usa os termos que o
-público português usa, mesmo quando são em inglês. Um teste falha quando uma skill usa um termo da
-coluna "Evitar".
+O termo a usar em todas as skills, os sinónimos a evitar e uma definição curta. Usa os termos que o público português usa, mesmo quando são em inglês. Um teste falha quando uma skill usa um termo da coluna "Evitar".
 
-Na coluna "Evitar", os termos vão separados por `;`. Evitam-se sobretudo termos do Brasil e nomes
-que confundem papéis diferentes.
+Na coluna "Evitar", os termos vão separados por `;`. Evitam-se sobretudo termos do Brasil e nomes que confundem papéis diferentes.
 
 | Termo | Evitar | Definição |
 |---|---|---|
