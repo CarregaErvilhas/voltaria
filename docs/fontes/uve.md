@@ -1,7 +1,6 @@
 # UVE como fonte
 
-A UVE – Associação de Utilizadores de Veículos Elétricos (https://www.uve.pt/) autorizou por escrito o
-uso do conteúdo do seu site no Voltaria, com indicação da fonte.
+A UVE – Associação de Utilizadores de Veículos Elétricos (https://www.uve.pt/) autorizou por escrito o uso do conteúdo do seu site no Voltaria, com indicação da fonte.
 
 ## Autorização
 
@@ -10,41 +9,23 @@ uso do conteúdo do seu site no Voltaria, com indicação da fonte.
 
 ## Como a usamos
 
-- **Escrevemos por palavras nossas, não copiamos texto.** A autorização é para usar o conteúdo com
-  crédito. Não diz que a UVE aceita que o seu texto saia sob CC-BY-4.0, e é isso que aconteceria se o
-  copiássemos para o Voltaria: qualquer pessoa o poderia redistribuir e alterar. Os factos, as regras
-  e as listas não têm esse problema quando escritos por nós.
-- As skills são para agentes e organizadas por tema. As páginas da UVE são para pessoas e
-  organizadas por artigo. Reescrever é também adaptar.
-- Cada ponto que vem da UVE leva a marca `[UVE, …]` na skill e a ligação na secção Fontes, com a
-  data de verificação. Nos factos, a UVE aparece em `source`.
-- A autorização cobre o conteúdo da UVE, não o de terceiros que a UVE republica (por exemplo, artigos
-  da VOLT/Exame Informática). Desses só usamos factos gerais, citando o autor original.
-- A regra das fontes oficiais para os incentivos mantém-se. A exceção são os benefícios municipais de
-  estacionamento: a fonte é a lista da UVE, com a ligação da câmara em `official`.
+- **Escrevemos por palavras nossas, não copiamos texto.** A autorização é para usar o conteúdo com crédito. Não diz que a UVE aceita que o seu texto saia sob CC-BY-4.0, e é isso que aconteceria se o copiássemos para o Voltaria: qualquer pessoa o poderia redistribuir e alterar. Os factos, as regras e as listas não têm esse problema quando escritos por nós.
+- As skills são para agentes e organizadas por tema. As páginas da UVE são para pessoas e organizadas por artigo. Reescrever é também adaptar.
+- Cada ponto que vem da UVE leva a marca `[UVE, …]` na skill e a ligação na secção Fontes, com a data de verificação. Nos factos, a UVE aparece em `source`.
+- A autorização cobre o conteúdo da UVE, não o de terceiros que a UVE republica (por exemplo, artigos da VOLT/Exame Informática). Desses só usamos factos gerais, citando o autor original.
+- A regra das fontes oficiais para os incentivos mantém-se. A exceção são os benefícios municipais de estacionamento: a fonte é a lista da UVE, com a ligação da câmara em `official`.
 
-**Crédito a mostrar** quando um consumidor do Voltaria usar estes pontos: "Fonte: UVE – Associação de
-Utilizadores de Veículos Elétricos (uve.pt)", junto da linha de crédito do Voltaria.
+**Crédito a mostrar** quando um consumidor do Voltaria usar estes pontos: "Fonte: UVE – Associação de Utilizadores de Veículos Elétricos (uve.pt)", junto da linha de crédito do Voltaria.
 
 ## O manual da UVE (CC BY 4.0)
 
-O manual "Parabéns! Comprou um veículo elétrico e agora?" (36 páginas, jul. 2024,
-https://www.uve.pt/page/wp-content/uploads/2025/01/2024_manual_me-UVE.pdf) tem uma licença própria,
-diferente do resto do site: **Creative Commons Attribution 4.0 International** (pág. 4: "autorizam-se
-cópias e a redistribuição deste documento, bem como adaptações desde que o devido crédito seja
-atribuído e quaisquer alterações sejam indicadas").
+O manual "Parabéns! Comprou um veículo elétrico e agora?" (36 páginas, jul. 2024, https://www.uve.pt/page/wp-content/uploads/2025/01/2024_manual_me-UVE.pdf) tem uma licença própria, diferente do resto do site: **Creative Commons Attribution 4.0 International** (pág. 4: "autorizam-se cópias e a redistribuição deste documento, bem como adaptações desde que o devido crédito seja atribuído e quaisquer alterações sejam indicadas").
 
-- É a mesma licença do conteúdo do Voltaria, por isso podemos adaptar o texto do manual sem depender
-  da autorização acima. Mesmo assim reescrevemos, porque as skills são para agentes e organizadas por
-  tema.
-- Crédito e alterações: cada ponto leva `[UVE, manual]`, e a secção Fontes da skill diz a licença e
-  que o texto foi adaptado.
-- Ligamos ao PDF no site da UVE e não o copiamos para o repo: tem 4,9 MB e logótipos (UVE, EDP)
-  que a licença não cobre.
-- O manual tem o logótipo da EDP e dá destaque à EDP Charge e ao cartão de associado UVE/EDP Charge.
-  As skills não herdam essa preferência: as apps aparecem como exemplos, ao lado de outras.
-- A skill `autonomia` pode recomendá-lo a quem acabou de comprar um carro, avisando que a parte dos
-  pagamentos está ultrapassada.
+- É a mesma licença do conteúdo do Voltaria, por isso podemos adaptar o texto do manual sem depender da autorização acima. Mesmo assim reescrevemos, porque as skills são para agentes e organizadas por tema.
+- Crédito e alterações: cada ponto leva `[UVE, manual]`, e a secção Fontes da skill diz a licença e que o texto foi adaptado.
+- Ligamos ao PDF no site da UVE e não o copiamos para o repo: tem 4,9 MB e logótipos (UVE, EDP) que a licença não cobre.
+- O manual tem o logótipo da EDP e dá destaque à EDP Charge e ao cartão de associado UVE/EDP Charge. As skills não herdam essa preferência: as apps aparecem como exemplos, ao lado de outras.
+- A skill `autonomia` pode recomendá-lo a quem acabou de comprar um carro, avisando que a parte dos pagamentos está ultrapassada.
 
 | Secção do manual | Para onde foi |
 |---|---|
@@ -59,15 +40,9 @@ atribuído e quaisquer alterações sejam indicadas").
 
 Lido e não usado:
 
-- **Desatualizado:** a parte dos pagamentos é anterior ao DL 93/2025 (diz que é preciso um contrato
-  com um CEME e descreve só o modelo antigo); o número de postos é do início de 2022; o exemplo do
-  Renault Zoe a 43 kW em AC e "CHAdeMO para marcas japonesas" já não ajudam quem compra hoje.
-- **Números sem fonte nem método:** 20 % da energia vem da travagem regenerativa, 95 % de
-  reciclagem do lítio, 2000 vs 20 peças móveis, 15 a 20 minutos de rápido para 100 km, baterias de
-  15 anos. As skills não os usam.
-- **Carregar em casa:** já coberto em `carregar-em-casa` com fontes mais recentes. A frase de que uma
-  wallbox DPC dispensa aumentar a potência contratada depende da instalação e do regime dos CEME,
-  que acaba a 31-12-2027: não entrou.
+- **Desatualizado:** a parte dos pagamentos é anterior ao DL 93/2025 (diz que é preciso um contrato com um CEME e descreve só o modelo antigo); o número de postos é do início de 2022; o exemplo do Renault Zoe a 43 kW em AC e "CHAdeMO para marcas japonesas" já não ajudam quem compra hoje.
+- **Números sem fonte nem método:** 20 % da energia vem da travagem regenerativa, 95 % de reciclagem do lítio, 2000 vs 20 peças móveis, 15 a 20 minutos de rápido para 100 km, baterias de 15 anos. As skills não os usam.
+- **Carregar em casa:** já coberto em `carregar-em-casa` com fontes mais recentes. A frase de que uma wallbox DPC dispensa aumentar a potência contratada depende da instalação e do regime dos CEME, que acaba a 31-12-2027: não entrou.
 - **Manutenção e associação:** promoção do carro elétrico e da UVE, não informação para o condutor.
 
 ## O que veio da UVE
@@ -98,31 +73,17 @@ Verificado a 2026-11-04.
 
 ## Lido e não usado
 
-- **Desatualizado:** "Como carregar" diz que os Superchargers são só para Tesla, que há 7 em Portugal
-  e que os cartões de CEME são gratuitos; "Carregamento na Europa" tem a lista de países da IONITY de
-  há vários anos; "Carregamento em Portugal" são notícias de 2020. Usámos só o que ainda é verdade.
-- **Listas de postos** (rápidos, Tesla, Porsche, concessionados): mudam todas as semanas e o NAP, via
-  ohmigo, já as cobre.
-- **Números e estatísticas** (vendas mensais, rede de carregamento mensal, custo por 100 km): as
-  skills não levam contagens nem preços. Encaminhamos para o Observatório.
-- **"Elétrico vs Combustão"**: tradução de um vídeo de terceiros, com valores de manutenção e emissões
-  sem data nem método. Não usado.
-- **Opinião e propostas** (Carta Elétrica, propostas ao RJME, constrangimentos na instalação,
-  transporte pesado, importados usados): posições da UVE, não informação para o condutor.
-- **Associação** (órgãos sociais, relatórios e contas, eventos, protocolos e descontos para
-  associados): não é para o Voltaria. Só mencionamos que a UVE dá apoio jurídico aos associados nos
-  conflitos com o condomínio.
+- **Desatualizado:** "Como carregar" diz que os Superchargers são só para Tesla, que há 7 em Portugal e que os cartões de CEME são gratuitos; "Carregamento na Europa" tem a lista de países da IONITY de há vários anos; "Carregamento em Portugal" são notícias de 2020. Usámos só o que ainda é verdade.
+- **Listas de postos** (rápidos, Tesla, Porsche, concessionados): mudam todas as semanas e o NAP, via ohmigo, já as cobre.
+- **Números e estatísticas** (vendas mensais, rede de carregamento mensal, custo por 100 km): as skills não levam contagens nem preços. Encaminhamos para o Observatório.
+- **"Elétrico vs Combustão"**: tradução de um vídeo de terceiros, com valores de manutenção e emissões sem data nem método. Não usado.
+- **Opinião e propostas** (Carta Elétrica, propostas ao RJME, constrangimentos na instalação, transporte pesado, importados usados): posições da UVE, não informação para o condutor.
+- **Associação** (órgãos sociais, relatórios e contas, eventos, protocolos e descontos para associados): não é para o Voltaria. Só mencionamos que a UVE dá apoio jurídico aos associados nos conflitos com o condomínio.
 - **Legislação**: a lista da UVE é um índice (ver o plano); cada facto aponta para o texto oficial.
-- **Incentivos 2017 e 2018**: a UVE tem cópias dos despachos, mas a regra dos incentivos pede a
-  ligação oficial. Continua no TODO do plano.
+- **Incentivos 2017 e 2018**: a UVE tem cópias dos despachos, mas a regra dos incentivos pede a ligação oficial. Continua no TODO do plano.
 
 ## Por confirmar antes de entrar
 
-- **ISV**: a UVE diz que os 100 % elétricos não pagam ISV. Falta confirmar no Código do ISV, no
-  Portal das Finanças, para entrar em `incentives.json` como `fiscal`.
+- **ISV**: a UVE diz que os 100 % elétricos não pagam ISV. Falta confirmar no Código do ISV, no Portal das Finanças, para entrar em `incentives.json` como `fiscal`.
 
-Resolvido a 2026-11-04: a frase da UVE sobre **construções novas desde julho de 2010** não entrou
-como está. O DL 39/2010 (arts. 28.º e 52.º) pedia uma infraestrutura elétrica preparada para um posto
-ou uma tomada em cada lugar, não uma ligação entre o lugar e a fração. Hoje vale o DL 93/2025, art.
-22.º, que já não tem a regra de cada lugar. `carregar-em-casa` cita o art. 22.º e remete para
-`regime-2010`.
+Resolvido a 2026-11-04: a frase da UVE sobre **construções novas desde julho de 2010** não entrou como está. O DL 39/2010 (arts. 28.º e 52.º) pedia uma infraestrutura elétrica preparada para um posto ou uma tomada em cada lugar, não uma ligação entre o lugar e a fração. Hoje vale o DL 93/2025, art. 22.º, que já não tem a regra de cada lugar. `carregar-em-casa` cita o art. 22.º e remete para `regime-2010`.

@@ -5,114 +5,78 @@ description: "Explica a tecnologia por trás da rede pública de carregamento: r
 
 # Tecnologia de carregamento
 
-Escrito para ti, o assistente. Responde na língua do utilizador. Os termos seguem o `glossario.md`
-do Voltaria.
+Escrito para ti, o assistente. Responde na língua do utilizador. Os termos seguem o `glossario.md` do Voltaria.
 
 ## Regras
 
-- Esta skill é para perguntas técnicas: quem integra, opera ou estuda a rede. Para o condutor que
-  só quer carregar e pagar, usa a skill `carregamento-publico`.
-- Não dês contagens (postos, parceiros, países), quotas de mercado nem poupanças de memória. Mudam
-  depressa e dependem de quem as publica. Se o utilizador as pedir, manda-o à fonte e diz a data.
-- Não recomendes fornecedores nem fabricantes. Se o utilizador pedir exemplos, diz que a lista muda
-  e que deve confirmar com o operador concreto.
-- Diz a versão do protocolo ou da norma de que falas (OCPP 1.6 ou 2.0.1, ISO 15118-2 ou -20). O que
-  vale para uma pode não valer para a outra.
+- Esta skill é para perguntas técnicas: quem integra, opera ou estuda a rede. Para o condutor que só quer carregar e pagar, usa a skill `carregamento-publico`.
+- Não dês contagens (postos, parceiros, países), quotas de mercado nem poupanças de memória. Mudam depressa e dependem de quem as publica. Se o utilizador as pedir, manda-o à fonte e diz a data.
+- Não recomendes fornecedores nem fabricantes. Se o utilizador pedir exemplos, diz que a lista muda e que deve confirmar com o operador concreto.
+- Diz a versão do protocolo ou da norma de que falas (OCPP 1.6 ou 2.0.1, ISO 15118-2 ou -20). O que vale para uma pode não valer para a outra.
 
 ## Roaming
 
-- O **roaming** permite a um condutor com o cartão ou a app de um eMSP carregar num posto de um OPC
-  com quem não tem contrato. O OPC e o eMSP trocam entre si a autorização, os dados da sessão e a
-  faturação.
-- O **OPC** opera os postos e o seu backoffice. O **eMSP** vende o cartão ou a app ao condutor e
-  fatura-o. A mesma empresa pode ser OPC e eMSP.
-- Cada OPC pode ligar-se a cada eMSP diretamente (peer-to-peer) ou através de um **hub de
-  roaming**, que junta muitos numa só integração técnica e contratual.
+- O **roaming** permite a um condutor com o cartão ou a app de um eMSP carregar num posto de um OPC com quem não tem contrato. O OPC e o eMSP trocam entre si a autorização, os dados da sessão e a faturação.
+- O **OPC** opera os postos e o seu backoffice. O **eMSP** vende o cartão ou a app ao condutor e fatura-o. A mesma empresa pode ser OPC e eMSP.
+- Cada OPC pode ligar-se a cada eMSP diretamente (peer-to-peer) ou através de um **hub de roaming**, que junta muitos numa só integração técnica e contratual.
 - Hubs e plataformas que o utilizador pode referir:
-  - **Hubject** (marca intercharge): hub europeu com o protocolo OICP; também suporta OCPI. Gere
-    uma das raízes de confiança do Plug & Charge.
-  - **Gireve**: hub francês, com o protocolo eMIP e OCPI.
-  - **e-clearing.net**: hub com origem nos Países Baixos e na Alemanha, com OCHP e OCPI.
-  - Plataformas de roaming gerido que assentam sobre os hubs e tratam de contratos, integração e
-    liquidação por conta de OPC e eMSP.
-  - **MOBI.E**: no regime antigo, a plataforma portuguesa liga CEME e OPC e funciona como hub
-    nacional (ver a skill `regime-2010`). Para o novo regime lançou em outubro de 2026 o
-    **Mobi.Hub**, um hub de roaming aberto a OPC e eMSP, ligados ou não à plataforma antiga
-    [MOBI.E, Mobi.Hub].
-- O pagamento ad hoc não depende do roaming: o AFIR obriga os postos públicos novos ou renovados a
-  aceitá-lo.
+- **Hubject** (marca intercharge): hub europeu com o protocolo OICP; também suporta OCPI. Gere uma das raízes de confiança do Plug & Charge.
+- **Gireve**: hub francês, com o protocolo eMIP e OCPI.
+- **e-clearing.net**: hub com origem nos Países Baixos e na Alemanha, com OCHP e OCPI.
+- Plataformas de roaming gerido que assentam sobre os hubs e tratam de contratos, integração e liquidação por conta de OPC e eMSP.
+- **MOBI.E**: no regime antigo, a plataforma portuguesa liga CEME e OPC e funciona como hub nacional (ver a skill `regime-2010`). Para o novo regime lançou em outubro de 2026 o **Mobi.Hub**, um hub de roaming aberto a OPC e eMSP, ligados ou não à plataforma antiga [MOBI.E, Mobi.Hub].
+- O pagamento ad hoc não depende do roaming: o AFIR obriga os postos públicos novos ou renovados a aceitá-lo.
 
 ## OCPP e OCPI
 
 ### OCPP (Open Charge Point Protocol)
 
-- **O que é**: o protocolo aberto entre o posto e o sistema de gestão central do OPC (CSMS, o
-  backoffice). Mantido pela Open Charge Alliance (OCA).
-- **Versões**: 1.6, a mais instalada; 2.0.1, publicada também como norma IEC 63584; 2.1, que
-  acrescenta a ISO 15118-20 e o carregamento bidirecional.
-- **O que faz**: estado do posto, autorização das sessões, valores de medição, transações,
-  atualização de firmware, diagnóstico e perfis de carga (carregamento inteligente).
-- **Porque importa**: sem um protocolo comum, cada fabricante de postos usaria o seu e o OPC ficava
-  preso a um fornecedor de backoffice.
+- **O que é**: o protocolo aberto entre o posto e o sistema de gestão central do OPC (CSMS, o backoffice). Mantido pela Open Charge Alliance (OCA).
+- **Versões**: 1.6, a mais instalada; 2.0.1, publicada também como norma IEC 63584; 2.1, que acrescenta a ISO 15118-20 e o carregamento bidirecional.
+- **O que faz**: estado do posto, autorização das sessões, valores de medição, transações, atualização de firmware, diagnóstico e perfis de carga (carregamento inteligente).
+- **Porque importa**: sem um protocolo comum, cada fabricante de postos usaria o seu e o OPC ficava preso a um fornecedor de backoffice.
 
 ### OCPI (Open Charge Point Interface)
 
-- **O que é**: o protocolo aberto entre backoffices, de OPC para eMSP, diretamente ou através de um
-  hub. Mantido pela EVRoaming Foundation, sob licença CC BY-ND 4.0.
-- **Versões**: 2.1.1, 2.2.1 e 2.3.0. A 2.3.0 acrescenta o que o AFIR pede para os dados dos postos.
-  Confirma na EVRoaming Foundation se já há uma versão mais recente.
-- **O que faz**: localizações e disponibilidade em tempo real, tokens de autorização, sessões, CDR
-  (registos de carregamento para faturar), tarifas, comandos remotos e carregamento inteligente.
+- **O que é**: o protocolo aberto entre backoffices, de OPC para eMSP, diretamente ou através de um hub. Mantido pela EVRoaming Foundation, sob licença CC BY-ND 4.0.
+- **Versões**: 2.1.1, 2.2.1 e 2.3.0. A 2.3.0 acrescenta o que o AFIR pede para os dados dos postos. Confirma na EVRoaming Foundation se já há uma versão mais recente.
+- **O que faz**: localizações e disponibilidade em tempo real, tokens de autorização, sessões, CDR (registos de carregamento para faturar), tarifas, comandos remotos e carregamento inteligente.
 
 ### Como se relacionam
 
 - O OCPP liga o backoffice aos postos; o OCPI liga backoffices entre si. São complementares.
 - Um OPC usa o OCPP para gerir os seus postos e o OCPI para se ligar a eMSP e a hubs.
-- Exemplo: um eMSP envia um limite de carga por OCPI ao backoffice do OPC, que o passa ao posto por
-  OCPP.
+- Exemplo: um eMSP envia um limite de carga por OCPI ao backoffice do OPC, que o passa ao posto por OCPP.
 
 ## Plug & Charge (ISO 15118) e PKI
 
 ### O que é
 
-- O **Plug & Charge** autentica o carro sozinho: o condutor liga o cabo e a sessão começa sem
-  cartão, app nem QR code. A autorização e a faturação correm por trás, com certificados digitais.
-- Assenta na **ISO 15118**, a comunicação entre o carro e o posto: a ISO 15118-2 é a que está
-  instalada; a ISO 15118-20 acrescenta o carregamento bidirecional (V2G) e TLS 1.3.
-- Usa uma **PKI** (infraestrutura de chave pública): cadeias de certificados X.509 que provam a
-  identidade do carro e do contrato, assinadas por autoridades de certificação.
+- O **Plug & Charge** autentica o carro sozinho: o condutor liga o cabo e a sessão começa sem cartão, app nem QR code. A autorização e a faturação correm por trás, com certificados digitais.
+- Assenta na **ISO 15118**, a comunicação entre o carro e o posto: a ISO 15118-2 é a que está instalada; a ISO 15118-20 acrescenta o carregamento bidirecional (V2G) e TLS 1.3.
+- Usa uma **PKI** (infraestrutura de chave pública): cadeias de certificados X.509 que provam a identidade do carro e do contrato, assinadas por autoridades de certificação.
 
 ### Como funciona
 
-- O carro guarda um **certificado de contrato**, emitido para o eMSP, e um certificado de
-  aprovisionamento do fabricante do carro. Ao ligar, apresenta-o ao posto, que valida a cadeia até
-  uma raiz V2G (V2G Root CA).
-- Participam quatro PKI ligadas entre si: a do OPC, a do serviço de aprovisionamento de
-  certificados (CPS), a do eMSP e a do fabricante do carro.
-- O certificado de contrato pode ser instalado no posto, na primeira vez, ou pela telemática do
-  fabricante.
+- O carro guarda um **certificado de contrato**, emitido para o eMSP, e um certificado de aprovisionamento do fabricante do carro. Ao ligar, apresenta-o ao posto, que valida a cadeia até uma raiz V2G (V2G Root CA).
+- Participam quatro PKI ligadas entre si: a do OPC, a do serviço de aprovisionamento de certificados (CPS), a do eMSP e a do fabricante do carro.
+- O certificado de contrato pode ser instalado no posto, na primeira vez, ou pela telemática do fabricante.
 
 ### O que muda para o condutor
 
-- Basta ligar o cabo. Só funciona se o carro, o posto e o eMSP suportarem Plug & Charge; senão,
-  usa-se o cartão ou a app.
+- Basta ligar o cabo. Só funciona se o carro, o posto e o eMSP suportarem Plug & Charge; senão, usa-se o cartão ou a app.
 - Alguns carros aceitam vários certificados de contrato, de vários eMSP.
 
 ### Porque a adoção é lenta
 
-- O fabricante do carro tem de pôr um módulo de segurança no carro, gerir certificados pela
-  telemática e atualizar o software à distância para novas versões da ISO 15118.
-- Fabricantes, OPC, eMSP e autoridades de certificação têm de se coordenar, e há várias raízes de
-  confiança que nem sempre se reconhecem entre si.
+- O fabricante do carro tem de pôr um módulo de segurança no carro, gerir certificados pela telemática e atualizar o software à distância para novas versões da ISO 15118.
+- Fabricantes, OPC, eMSP e autoridades de certificação têm de se coordenar, e há várias raízes de confiança que nem sempre se reconhecem entre si.
 - A maioria das sessões ainda usa cartão RFID ou app.
 
 ### AutoCharge
 
-- O **AutoCharge** identifica o carro pelo identificador que este envia ao posto (EVCCID, muitas
-  vezes o endereço MAC), sem certificados. É mais simples de pôr a funcionar, mas menos seguro:
-  qualquer carro que envie o mesmo identificador é aceite.
-- Para o condutor parece igual ao Plug & Charge. Só alguns OPC o oferecem, e é preciso ativá-lo na
-  app.
+- O **AutoCharge** identifica o carro pelo identificador que este envia ao posto (EVCCID, muitas vezes o endereço MAC), sem certificados. É mais simples de pôr a funcionar, mas menos seguro: qualquer carro que envie o mesmo identificador é aceite.
+- Para o condutor parece igual ao Plug & Charge. Só alguns OPC o oferecem, e é preciso ativá-lo na app.
 
 ### Outras formas de autenticar
 
@@ -122,10 +86,8 @@ do Voltaria.
 
 ### Normas e regras
 
-- **AFIR** (Regulamento (UE) 2023/1804): exige interoperabilidade e acesso não discriminatório, e
-  remete a comunicação entre o carro e o posto para a ISO 15118.
-- **DL 93/2025, art. 6.º**: os postos instalados ou renovados têm de permitir o carregamento ad hoc
-  e inteligente; as normas de comunicação para o bidirecional são as do AFIR.
+- **AFIR** (Regulamento (UE) 2023/1804): exige interoperabilidade e acesso não discriminatório, e remete a comunicação entre o carro e o posto para a ISO 15118.
+- **DL 93/2025, art. 6.º**: os postos instalados ou renovados têm de permitir o carregamento ad hoc e inteligente; as normas de comunicação para o bidirecional são as do AFIR.
 - **VDE-AR-E 2802-100-1** (Alemanha): regra de aplicação para gerir os certificados da ISO 15118.
 - **CharIN**: associação que promove a interoperabilidade e publica guias sobre a PKI.
 
@@ -133,94 +95,64 @@ do Voltaria.
 
 ### O que é
 
-- Um **BESS** (Battery Energy Storage System) é uma bateria fixa instalada junto do posto. Carrega
-  da rede ou de produção renovável local e descarrega para os carregadores ou para serviços de rede.
+- Um **BESS** (Battery Energy Storage System) é uma bateria fixa instalada junto do posto. Carrega da rede ou de produção renovável local e descarrega para os carregadores ou para serviços de rede.
 - Deixa o posto entregar mais potência do que a ligação à rede permite, sem reforçar o ramal.
 
 ### Para que serve
 
-- **Cortar picos (peak shaving)**: os postos rápidos têm picos de potência altos e imprevisíveis, e
-  a potência contratada paga-se por esses picos. O BESS descarrega nos picos e baixa a potência
-  pedida à rede.
-- **Ganhar tempo**: permite instalar mais carregadores, ou mais potentes, sem esperar por um
-  reforço da rede, que pode levar meses ou anos.
-- **Apoiar a rede**: amortece variações no ponto de ligação e pode vender flexibilidade (reserva de
-  frequência, deslocação de consumo) ou fazer arbitragem de preços, conforme o mercado.
+- **Cortar picos (peak shaving)**: os postos rápidos têm picos de potência altos e imprevisíveis, e a potência contratada paga-se por esses picos. O BESS descarrega nos picos e baixa a potência pedida à rede.
+- **Ganhar tempo**: permite instalar mais carregadores, ou mais potentes, sem esperar por um reforço da rede, que pode levar meses ou anos.
+- **Apoiar a rede**: amortece variações no ponto de ligação e pode vender flexibilidade (reserva de frequência, deslocação de consumo) ou fazer arbitragem de preços, conforme o mercado.
 - **Reserva**: em alguns casos alimenta o posto durante uma falha da rede.
 
 ### O que dizer
 
-- A poupança e o retorno dependem do perfil de uso do hub, das tarifas de potência e dos serviços de
-  rede disponíveis em cada país. Não dês percentagens nem prazos de retorno de memória.
-- Um BESS subdimensionado esgota-se nos picos e deixa de cortar a potência. O dimensionamento é
-  estudo de cada caso.
+- A poupança e o retorno dependem do perfil de uso do hub, das tarifas de potência e dos serviços de rede disponíveis em cada país. Não dês percentagens nem prazos de retorno de memória.
+- Um BESS subdimensionado esgota-se nos picos e deixa de cortar a potência. O dimensionamento é estudo de cada caso.
 - Para saber se um posto concreto tem BESS, só o OPC confirma.
 
 ## Potência em DC: a placa e o que o carro recebe
 
 ### O que a placa diz
 
-- A potência na placa de um posto rápido é o máximo do carregador, não o que cada carro recebe.
-  Em DC, a potência é a tensão vezes a corrente, e a tensão é a da bateria do carro.
-- A corrente tem um teto: o do carregador e o do cabo. Um cabo de 500 A num carro de 400 V dá no
-  máximo cerca de 200 kW, por mais que a placa diga. Um carro de 800 V, com a mesma corrente, pode
-  receber o dobro. Por isso o mesmo posto dá potências diferentes a carros diferentes.
+- A potência na placa de um posto rápido é o máximo do carregador, não o que cada carro recebe. Em DC, a potência é a tensão vezes a corrente, e a tensão é a da bateria do carro.
+- A corrente tem um teto: o do carregador e o do cabo. Um cabo de 500 A num carro de 400 V dá no máximo cerca de 200 kW, por mais que a placa diga. Um carro de 800 V, com a mesma corrente, pode receber o dobro. Por isso o mesmo posto dá potências diferentes a carros diferentes.
 - A tensão da bateria varia com a carga: com a bateria quase vazia é mais baixa, e a potência também.
-- Para correntes altas, os cabos são arrefecidos por líquido. É o que permite as potências mais altas
-  com cabos que ainda se conseguem manusear.
+- Para correntes altas, os cabos são arrefecidos por líquido. É o que permite as potências mais altas com cabos que ainda se conseguem manusear.
 
 ### Carregadores de 500 V e carros de 800 V
 
-- Muitos postos rápidos mais antigos só chegam a 500 V. Um carro de 400 V carrega neles sem
-  problema.
-- Um carro de 800 V só carrega num posto de 500 V se tiver um conversor que eleva a tensão (às vezes
-  chamado *boost*). A maioria tem, mas carrega mais devagar do que num posto de 800 V ou mais. Se não
-  tiver, não carrega. Confirma no manual da versão exata do carro.
+- Muitos postos rápidos mais antigos só chegam a 500 V. Um carro de 400 V carrega neles sem problema.
+- Um carro de 800 V só carrega num posto de 500 V se tiver um conversor que eleva a tensão (às vezes chamado *boost*). A maioria tem, mas carrega mais devagar do que num posto de 800 V ou mais. Se não tiver, não carrega. Confirma no manual da versão exata do carro.
 
 ### Potência partilhada
 
-- Muitos carregadores rápidos são um armário de potência com módulos, ligado a uma ou mais pistolas
-  ou dispensadores. A potência do armário divide-se pelos carros ligados ao mesmo tempo: com um só
-  carro, ele recebe quase tudo; com dois, cada um recebe menos [Alexandre Moleiro, lista de
-  carregadores].
-- Como se divide depende do modelo: há os que dividem a meias e os que dão módulos a quem mais
-  precisa. Num carregador com fichas CCS e CHAdeMO, só uma das fichas DC carrega de cada vez; uma
-  tomada AC ao lado costuma ser independente.
-- Num hub com vários carregadores, escolher um carregador sem ninguém ligado pode dar mais
-  potência do que a pistola livre ao lado de um carro a carregar.
+- Muitos carregadores rápidos são um armário de potência com módulos, ligado a uma ou mais pistolas ou dispensadores. A potência do armário divide-se pelos carros ligados ao mesmo tempo: com um só carro, ele recebe quase tudo; com dois, cada um recebe menos [Alexandre Moleiro, lista de carregadores].
+- Como se divide depende do modelo: há os que dividem a meias e os que dão módulos a quem mais precisa. Num carregador com fichas CCS e CHAdeMO, só uma das fichas DC carrega de cada vez; uma tomada AC ao lado costuma ser independente.
+- Num hub com vários carregadores, escolher um carregador sem ninguém ligado pode dar mais potência do que a pistola livre ao lado de um carro a carregar.
 
 ### O operador pode limitar
 
-- O operador pode limitar a potência de cada tomada abaixo do que o carregador consegue, por
-  exemplo por causa da ligação à rede elétrica do local. Uma bateria estacionária (BESS) pode
-  compensar parte disso (ver "BESS (baterias estacionárias)").
-- O que o posto declara no PAN é a declaração do operador. O ohmigo diz, para muitos postos, que
-  modelo de carregador é e quanto dá a um carro de 400 V ou de 800 V, sozinho ou com outro ligado.
+- O operador pode limitar a potência de cada tomada abaixo do que o carregador consegue, por exemplo por causa da ligação à rede elétrica do local. Uma bateria estacionária (BESS) pode compensar parte disso (ver "BESS (baterias estacionárias)").
+- O que o posto declara no PAN é a declaração do operador. O ohmigo diz, para muitos postos, que modelo de carregador é e quanto dá a um carro de 400 V ou de 800 V, sozinho ou com outro ligado.
 
 ### Confusões a corrigir
 
-- "Um posto de 300 kW carrega o meu carro a 300 kW." Só se o carro aceitar essa potência e a
-  tensão da bateria e a corrente do cabo a permitirem. Um carro de 400 V recebe muitas vezes bem
-  menos.
-- "Dois carros no mesmo carregador carregam ambos à potência máxima." Na maioria dos carregadores
-  rápidos a potência divide-se.
-- "Um carro de 800 V carrega mais depressa em qualquer posto." Num posto de 500 V carrega mais
-  devagar do que um de 400 V, ou não carrega se não tiver conversor.
+- "Um posto de 300 kW carrega o meu carro a 300 kW." Só se o carro aceitar essa potência e a tensão da bateria e a corrente do cabo a permitirem. Um carro de 400 V recebe muitas vezes bem menos.
+- "Dois carros no mesmo carregador carregam ambos à potência máxima." Na maioria dos carregadores rápidos a potência divide-se.
+- "Um carro de 800 V carrega mais depressa em qualquer posto." Num posto de 500 V carrega mais devagar do que um de 400 V, ou não carrega se não tiver conversor.
 
 ## Fontes
 
 ### Legislação
 
 - Regulamento (UE) 2023/1804 (AFIR): https://eur-lex.europa.eu/eli/reg/2023/1804/oj
-- Decreto-Lei n.º 93/2025, de 14 de agosto (regime jurídico da mobilidade elétrica), art. 6.º:
-  https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
+- Decreto-Lei n.º 93/2025, de 14 de agosto (regime jurídico da mobilidade elétrica), art. 6.º: https://data.dre.pt/eli/dec-lei/93/2025/08/14/p/dre/pt/html
 
 ### Normas e standards
 
-- OCPP (Open Charge Point Protocol, posto ↔ backoffice; IEC 63584), Open Charge Alliance:
-  https://openchargealliance.org/protocols/ocpp-protocols/
-- OCPI (Open Charge Point Interface, roaming entre operadores), EVRoaming Foundation:
-  https://evroaming.org/ocpi-background/
+- OCPP (Open Charge Point Protocol, posto ↔ backoffice; IEC 63584), Open Charge Alliance: https://openchargealliance.org/protocols/ocpp-protocols/
+- OCPI (Open Charge Point Interface, roaming entre operadores), EVRoaming Foundation: https://evroaming.org/ocpi-background/
 - ISO 15118-2 (comunicação carro-posto, Plug & Charge): https://www.iso.org/standard/55366.html
 - ISO 15118-20 (comunicação carro-posto, bidirecional e V2G): https://www.iso.org/standard/77845.html
 - IEC 61851-23 (postos de carregamento em DC): https://webstore.iec.ch/en/publication/33644
@@ -231,7 +163,5 @@ do Voltaria.
 ### Outras fontes
 
 - CharIN: https://www.charin.global/
-- [Alexandre Moleiro, lista de carregadores] "Modelos de Carregadores usados em Portugal" (potência
-  por carro a 400 e 800 V, sozinho e partilhado): https://docs.google.com/document/d/1SyhISXEaZiAPYuRLQ9dA2OtFrwysFm01Yei11qTLQLw
-- [MOBI.E, Mobi.Hub] "MOBI.E reforça aposta na mobilidade elétrica com novo hub" (22-10-2026):
-  https://www.mobie.pt/w/mobi.e-reforca-aposta-na-mobilidade-eletrica-com-novo-hub
+- [Alexandre Moleiro, lista de carregadores] "Modelos de Carregadores usados em Portugal" (potência por carro a 400 e 800 V, sozinho e partilhado): https://docs.google.com/document/d/1SyhISXEaZiAPYuRLQ9dA2OtFrwysFm01Yei11qTLQLw
+- [MOBI.E, Mobi.Hub] "MOBI.E reforça aposta na mobilidade elétrica com novo hub" (22-10-2026): https://www.mobie.pt/w/mobi.e-reforca-aposta-na-mobilidade-eletrica-com-novo-hub

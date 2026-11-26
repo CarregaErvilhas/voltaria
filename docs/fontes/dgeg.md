@@ -1,18 +1,12 @@
 # DGEG como fonte
 
-A DGEG – Direção-Geral de Energia e Geologia (https://www.dgeg.gov.pt/) é a entidade que licencia os
-OPC e que aprova as regras técnicas das instalações de carregamento. A sua área de mobilidade
-elétrica resume o DL 93/2025, as portarias e os despachos, e tem FAQ próprias.
+A DGEG – Direção-Geral de Energia e Geologia (https://www.dgeg.gov.pt/) é a entidade que licencia os OPC e que aprova as regras técnicas das instalações de carregamento. A sua área de mobilidade elétrica resume o DL 93/2025, as portarias e os despachos, e tem FAQ próprias.
 
 ## Como a usamos
 
-- **Escrevemos por palavras nossas.** O site da DGEG não tem uma licença aberta declarada. Usamos
-  os factos e as regras, não o texto.
-- **A lei manda.** Sempre que a DGEG resume um artigo, a skill cita o artigo. Os pontos que são só
-  leitura da DGEG (as FAQ, os quadros de "quem opera o posto") levam a marca `[DGEG, …]`, para o
-  agente os apresentar como posição da DGEG e não como texto da lei.
-- O que a DGEG resumia foi confirmado no texto consolidado do DL 93/2025 (versão de 2026-07-31) e
-  na Portaria n.º 128/2026/1, no Diário da República.
+- **Escrevemos por palavras nossas.** O site da DGEG não tem uma licença aberta declarada. Usamos os factos e as regras, não o texto.
+- **A lei manda.** Sempre que a DGEG resume um artigo, a skill cita o artigo. Os pontos que são só leitura da DGEG (as FAQ, os quadros de "quem opera o posto") levam a marca `[DGEG, …]`, para o agente os apresentar como posição da DGEG e não como texto da lei.
+- O que a DGEG resumia foi confirmado no texto consolidado do DL 93/2025 (versão de 2026-07-31) e na Portaria n.º 128/2026/1, no Diário da República.
 - As listas de OPC e de CEME mudam: as skills dão a ligação, não copiam as entradas.
 
 ## O que veio da DGEG
@@ -35,32 +29,19 @@ Verificado a 2026-11-04.
 | [Guia Técnico, 3.ª ed.](https://www.dgeg.gov.pt/media/dzejui0r/guia-ve-ed-3-2023.pdf) (CTE 64, aprovado pela DGEG a 2023-09-18) | `carregar-em-casa`: tomada doméstica a 10 A, circuito dedicado de 16 A e 2,5 mm², diferencial de 30 mA tipo A ou B, sem extensões, percurso dos cabos na garagem. `instalacao-eletrica` (2026-11-06, guia lido inteiro): modos de carga, circuito, disjuntor, diferencial, tomadas (quadro 3), esquemas-tipo (figuras 6 a 19, quadro 1), potência nos parques, corte de emergência, IP e IK (quadros 4 e 5), terra dos postos públicos |
 | [Esclarecimento de 2024](https://www.dgeg.gov.pt/pt/destaques/esclarecimento-instalacoes-eletricas-para-alimentacao-de-veiculos-eletricos/) (2-12-2024) | `instalacao-eletrica`: a alimentação a partir do quadro de colunas responde às limitações da dos serviços comuns |
 
-Do DL 93/2025, confirmado no texto e não só no resumo da DGEG: arts. 13.º (acesso universal, apoio
-ao condutor), 14.º (informação no posto, taxa de ocupação, não discriminação de preços, fatura,
-livro de reclamações, acidentes), 16.º (inspeções), 20.º, n.º 8 (lugares reservados), 21.º e 23.º.
+Do DL 93/2025, confirmado no texto e não só no resumo da DGEG: arts. 13.º (acesso universal, apoio ao condutor), 14.º (informação no posto, taxa de ocupação, não discriminação de preços, fatura, livro de reclamações, acidentes), 16.º (inspeções), 20.º, n.º 8 (lugares reservados), 21.º e 23.º.
 
 ## Lido e não usado
 
-- **Licenciamento de OPC**, seguro, taxas, prazos de 12 meses, EADME em detalhe: são para quem
-  quer ser operador. A skill `afir` já lista as portarias.
-- **Regras técnicas dos postos públicos** (QVE, ligação à RND, distâncias a postos de combustível,
-  documentos à EIIEL): são para projetistas e OPC.
-- **Casos de retroatividade** nas inspeções (projeto, diferencial por ponto, código AG2): só
-  usámos o do botão de emergência, porque explica ao condutor porque um posto antigo pode não o ter.
+- **Licenciamento de OPC**, seguro, taxas, prazos de 12 meses, EADME em detalhe: são para quem quer ser operador. A skill `afir` já lista as portarias.
+- **Regras técnicas dos postos públicos** (QVE, ligação à RND, distâncias a postos de combustível, documentos à EIIEL): são para projetistas e OPC.
+- **Casos de retroatividade** nas inspeções (projeto, diferencial por ponto, código AG2): só usámos o do botão de emergência, porque explica ao condutor porque um posto antigo pode não o ter.
 
 ## Por confirmar ou acompanhar
 
-- O esclarecimento de 2024 chama "figura 17" ao esquema do quadro de colunas e "figura 16" ao dos
-  serviços comuns. Na 3.ª edição do guia, as figuras 16 e 17 são ambas do quadro de colunas e as dos
-  serviços comuns são a 18 e a 19. A skill `instalacao-eletrica` usa a ideia (quadro de colunas em
-  vez de serviços comuns) e não os números das figuras do esclarecimento.
-- O guia cita ainda o regime de 2010 (DL 39/2010, DL 90/2014, inspeções de 4 em 4 anos, Portarias
-  n.º 220/2016 e 221/2016). A skill `instalacao-eletrica` lista o que mudou.
+- O esclarecimento de 2024 chama "figura 17" ao esquema do quadro de colunas e "figura 16" ao dos serviços comuns. Na 3.ª edição do guia, as figuras 16 e 17 são ambas do quadro de colunas e as dos serviços comuns são a 18 e a 19. A skill `instalacao-eletrica` usa a ideia (quadro de colunas em vez de serviços comuns) e não os números das figuras do esclarecimento.
+- O guia cita ainda o regime de 2010 (DL 39/2010, DL 90/2014, inspeções de 4 em 4 anos, Portarias n.º 220/2016 e 221/2016). A skill `instalacao-eletrica` lista o que mudou.
 
-- A Portaria n.º 128/2026/1 (art. 3.º, n.º 4) previa um guia técnico novo da DGEG 60 dias depois
-  de entrar em vigor (março de 2026). A 2026-11-04 a DGEG ainda liga à 3.ª edição, de 2023. Quando
-  sair a nova, rever `carregar-em-casa`.
-- A ligação do guia mudou: a DGEG usa agora `/media/dzejui0r/guia-ve-ed-3-2023.pdf`. A antiga
-  (`/media/5adbxzxo/…`) ainda funciona e está na skill `afir`.
-- A skill `afir` aponta o Despacho DGEG n.º 22/2024 para uma cópia no site da MOBI.E. A cópia da
-  DGEG é https://www.dgeg.gov.pt/media/kx5einio/despacho-22_2024_ecve.pdf.
+- A Portaria n.º 128/2026/1 (art. 3.º, n.º 4) previa um guia técnico novo da DGEG 60 dias depois de entrar em vigor (março de 2026). A 2026-11-04 a DGEG ainda liga à 3.ª edição, de 2023. Quando sair a nova, rever `carregar-em-casa`.
+- A ligação do guia mudou: a DGEG usa agora `/media/dzejui0r/guia-ve-ed-3-2023.pdf`. A antiga (`/media/5adbxzxo/…`) ainda funciona e está na skill `afir`.
+- A skill `afir` aponta o Despacho DGEG n.º 22/2024 para uma cópia no site da MOBI.E. A cópia da DGEG é https://www.dgeg.gov.pt/media/kx5einio/despacho-22_2024_ecve.pdf.

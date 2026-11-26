@@ -1,10 +1,6 @@
 # NAPs europeus (AFIR — carregamento de VE)
 
-Lista dos Pontos de Acesso Nacionais (NAP) relevantes para o carregamento de
-veículos elétricos ao abrigo do AFIR (art. 20.º, Regulamento (UE) 2023/1804).
-Fonte principal: https://evnapdata.eu/naps (mantido manualmente; pode estar
-ligeiramente desatualizado). Complementado com a lista NAPCORE/ITS (transporte em
-geral): https://napcore.eu/description-naps/national-access-point/.
+Lista dos Pontos de Acesso Nacionais (NAP) relevantes para o carregamento de veículos elétricos ao abrigo do AFIR (art. 20.º, Regulamento (UE) 2023/1804). Fonte principal: https://evnapdata.eu/naps (mantido manualmente; pode estar ligeiramente desatualizado). Complementado com a lista NAPCORE/ITS (transporte em geral): https://napcore.eu/description-naps/national-access-point/.
 
 Estado: ✅ ligado, ⚠️ parcialmente ligado, 🚫 não ligado (à data da fonte).
 
@@ -42,13 +38,7 @@ Estado: ✅ ligado, ⚠️ parcialmente ligado, 🚫 não ligado (à data da fon
 
 ## Notas
 
-- "Ligado" significa que a fonte acima consegue obter dados desse país; "parcial" significa
-  cobertura incompleta da rede nacional; "não ligado" significa que não foi possível obter dados.
-- O CEAP (Common European Access Point) europeu, hospedado no EAFO, será a porta de entrada para
-  descobrir os dados dos NAPs nacionais; previsão até 31-12-2026:
-  https://alternative-fuels-observatory.ec.europa.eu
-- Em Portugal, o NAP é gerido pelo IMT-IP e a MOBI.E publica os endpoints
-  (evChargingInfra, evActualStatus) em DATEX II 3.3, ao abrigo do DL 93/2025.
-- Para a lista completa de NAPs no âmbito da Diretiva ITS (MMTIS/RTTI/SRTI/SSTP), ver
-  https://napcore.eu/description-naps/national-access-point/ e
-  https://eunapmonitoring.napcore.imet.gr/national_access_points.html.
+- "Ligado" significa que a fonte acima consegue obter dados desse país; "parcial" significa cobertura incompleta da rede nacional; "não ligado" significa que não foi possível obter dados.
+- O CEAP (Common European Access Point) europeu, hospedado no EAFO, será a porta de entrada para descobrir os dados dos NAPs nacionais; previsão até 31-12-2026: https://alternative-fuels-observatory.ec.europa.eu
+- Em Portugal, o NAP é gerido pelo IMT-IP e a MOBI.E publica os endpoints (evChargingInfra, evActualStatus) em DATEX II 3.3, ao abrigo do DL 93/2025.
+- Para a lista completa de NAPs no âmbito da Diretiva ITS (MMTIS/RTTI/SRTI/SSTP), ver https://napcore.eu/description-naps/national-access-point/ e https://eunapmonitoring.napcore.imet.gr/national_access_points.html.
