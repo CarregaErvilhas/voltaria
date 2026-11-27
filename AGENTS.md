@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Guidance for AI coding agents working in this repository.
 
 ## What this is
 
@@ -9,7 +9,7 @@ Voltaria is a set of Agent Skills in pt-PT about electric mobility in Portugal, 
 - the **ohmigo MCP** (`CarregaErvilhas/ohmigo-mcp`), which serves both through one tool, `ev_rules_portugal`: `topic` alone returns a skill, `topic` + `query` the matching facts in `knowledge/` (the facts topic is the file name, e.g. `incentives`);
 - an **agent that rebuilds ocarroeletrico.com** from each Voltaria release. Its system prompt lives in the site's repo, not here.
 
-Each consumer decides how to present the content and in which language. Decisions and their dates are recorded in the plan, `docs/o-ohmigo-tem-sido-shiny-sloth.md`. Read it before changing structure, licensing or how sources are handled.
+Each consumer decides how to present the content and in which language. Decisions and the reasons for them are in `docs/decisoes.md`: read it before changing structure, licensing or how sources are handled. Open work is in `docs/plano.md`; remove an item once it is done.
 
 The one page for people is the website in `site/` (https://voltaria.ocarroeletrico.com), which explains what Voltaria is and sends people to ohmigo. It never repeats what the skills say; `site/README.md` has how it's built.
 
@@ -78,4 +78,4 @@ The default backend `cli` runs a nested `claude -p` (no tools, no MCP, no CLAUDE
 - Licence: content (skills, `knowledge/`, `glossario.md`, other text) is CC-BY-4.0; code (`scripts/`, `evals/`, `.github/`, the site's HTML, CSS and JS) is MIT. The brand is outside both: the Voltaria name, its mascot, icon and the images made from them aren't licensed (README, "O nome e a imagem ficam de fora"), and ohmigo's mascot on the site is ohmigo's. The Nunito font keeps its own licence (SIL OFL 1.1, next to the font file).
 - Every commit needs `git commit -s`. `dco.yml` rejects PRs with commits that aren't signed off.
 - Everything goes in by PR, reviewed by CODEOWNERS. Only squash and rebase merges are allowed.
-- Several sessions often work on this repo in parallel. Rebase on `main` before pushing, and expect conflicts in the shared files (`glossario.md`, the plan, `evals/questions.json`).
+- Several sessions often work on this repo in parallel. Rebase on `main` before pushing, and expect conflicts in the shared files (`glossario.md`, `docs/plano.md`, `evals/questions.json`).
