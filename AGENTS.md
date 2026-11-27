@@ -17,7 +17,7 @@ The one page for people is the website in `site/` (https://voltaria.ocarroeletri
 
 ## Commands
 
-Run from the repo root. The checks need only `sh` and `python3` (stdlib). CI runs the three `check-*` and `build-site.py --check` in `checks.yml` on every PR and on `main`:
+Run from the repo root, with the `brand/` submodule checked out (`git submodule update --init`). The checks need only `sh` and `python3` (stdlib). CI runs the three `check-*` and `build-site.py --check` in `checks.yml` on every PR and on `main`:
 
 ```sh
 scripts/check-skills.py                  # frontmatter, name = folder, no prices, glossary "Evitar" terms
@@ -48,6 +48,7 @@ The default backend `cli` runs a nested `claude -p` (no tools, no MCP, no CLAUDE
 ## How the pieces constrain each other
 
 - **`glossario.md` is enforced.** `check-skills.py` parses its table, and any term in the "Evitar" column (split by `;`) fails every skill that uses it. URLs, `code` spans and the `## Fontes` section are exempt. Adding an "Evitar" term can break skills that already exist: run the check.
+- **The website also reads `brand/`**, a submodule of `CarregaErvilhas/Brand` pinned to a release tag (Dependabot bumps it). The group page's list comes from its `group.json`, and the build copies its mascots, fonts and `install.js`; `site/README.md` has the detail. Never edit `brand/` here: fix it in Brand, by PR. Nothing the skills' consumers read is in it.
 - **The website reads `skills/` and the glossary.** Its topic list and `llms.txt` come from the skill folders and their `description`, so a new or renamed skill shows up on the next deploy. Its Portuguese text (`site/strings.json`) must pass the same "Evitar" terms as the skills.
 - **Section titles are an API.** Each eval question's `source` is `skill#Exact section title`, and ablation uses it. Renaming a `##`/`###` heading breaks `evals/run.py check` until `evals/questions.json` is updated.
 - **Prices live outside the skills.** `check-skills.py` rejects € amounts in skill text. Prices come from ohmigo's tools; dated amounts (incentives, tax limits) go in `knowledge/incentives.json`. The evals inject those facts into `incentivos` and `empresas-e-frotas` (`facts_for_skills` in `evals/config.json`).

@@ -28,7 +28,7 @@ Fontes dos incentivos: só oficiais (Fundo Ambiental, AT, Diário da República)
 
 ## Verificações
 
-Antes de abrir um PR, corre na raiz do repo (só precisam de `sh` e `python3`):
+Antes de abrir um PR, corre na raiz do repo (só precisam de `sh` e `python3`; o do site precisa também do submódulo `brand/`: `git submodule update --init`):
 
 ```sh
 scripts/check-skills.py      # frontmatter, nome da pasta, sem preços, termos do glossário
