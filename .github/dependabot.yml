@@ -1,5 +1,18 @@
 version: 2
 updates:
+  # brand/, the group's shared text, mascots, install.js and font. Dependabot proposes the
+  # newest release tag. No cooldown beyond its default: it's our own content.
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+    open-pull-requests-limit: 1
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "deps(brand)"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:

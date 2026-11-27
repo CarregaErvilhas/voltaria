@@ -10,7 +10,10 @@ crawlers read. pages.yml publishes the result on GitHub Pages.
 - The list of topics and llms.txt come from skills/ and knowledge/, so they can't go stale.
 - The Portuguese text follows glossario.md: a term from its "Evitar" column fails the build, as it
   does in the skills (scripts/check-skills.py).
-- site/static/ is copied as is: fonts, icons, the images for link previews.
+- site/static/ is copied as is: icons, the images for link previews, 404.html.
+- brand/ (a git submodule of CarregaErvilhas/Brand) has what the group's sites share. Its mascots,
+  fonts and install.js are copied into the build, and the group page takes its sites, their order
+  and their text from brand/group.json.
 
 Usage: scripts/build-site.py [--out DIR]   (default _site/; run from the repo root; stdlib only)
        scripts/build-site.py --check       (build into a temporary folder and report; checks.yml)
@@ -51,6 +54,9 @@ NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 ELEMENT_RE = re.compile(r'<(\w+)([^>]*?)\sdata-i="([^"]+)"([^>]*)>\s*</\1>')
 BRACES_RE = re.compile(r"\{\{([\w.-]+)\}\}")
 TOPICS_MARK = "<!--topics-->"
+MATES_MARK = "<!--mates-->"
+BRAND = Path("brand")
+HERE = "voltaria"  # this site, in brand/group.json
 TAGS_RE = re.compile(r"<code>.*?</code>|<[^>]+>", re.S)
 LOCAL_RE = re.compile(r'(?:href|src)="(\.\.?/[^"#?]*)"')
 
@@ -73,6 +79,47 @@ def skills(check):
         fields, _ = check.frontmatter(f.read_text(encoding="utf-8"))
         out.append((name, (fields or {}).get("description", "")))
     return out
+
+
+def group_strings(group, lang):
+    """brand/group.json's text in one language, under the keys the group page uses (grupo.*)."""
+    out = {f"grupo.{k}": v[lang] for k, v in group["labels"].items()}
+    for s in group["sites"]:
+        k = f"grupo.{s['id']}"
+        out[f"{k}.host"] = s["host"]
+        out[f"{k}.mascot"] = s["mascot"]["alt"][lang]
+        out.update({f"{k}.{f}": s[f][lang] for f in ("name", "desc", "note") if f in s})
+    return out
+
+
+def mates_html(group):
+    """The group page's list, one item per site in brand/group.json's order. It is still template:
+    render() fills in the strings. Each site's colour is .m-<id> in partials/style.html."""
+    items = []
+    for s in group["sites"]:
+        i, k, m = s["id"], f"grupo.{s['id']}", s["mascot"]
+        code = (f'<a class="btn btn-sm btn-line" href="{html.escape(s["repo"])}" target="_blank" rel="noopener">'
+                '<svg aria-hidden="true"><use href="#{icon}"/></svg><span data-i="{label}"></span></a>')
+        if s["private"]:
+            links = code.format(icon="i-lock", label="grupo.private")
+        else:
+            if i == HERE:
+                go = '<span class="here" data-i="grupo.here"></span>'
+            else:
+                go = (f'<a class="btn btn-sm btn-main" href="{html.escape(s["url"])}" target="_blank" rel="noopener">'
+                      '<span data-i="grupo.open"></span><svg aria-hidden="true"><use href="#i-arrow"/></svg></a>')
+            links = go + code.format(icon="i-code", label="grupo.code")
+        note = f'\n            <p class="mate-note" data-i="{k}.note"></p>' if "note" in s else ""
+        items.append(f"""        <li class="mate m-{i}">
+          <div class="mate-pic"><img src="{{{{page.root}}}}{m['file']}" alt="{{{{{k}.mascot}}}}" width="{m['width']}" height="{m['height']}" loading="lazy"></div>
+          <div class="mate-bubble">
+            <p class="mate-host" data-i="{k}.host"></p>
+            <h2 data-i="{k}.name"></h2>
+            <p data-i="{k}.desc"></p>{note}
+            <p class="mate-links">{links}</p>
+          </div>
+        </li>""")
+    return "\n".join(items)
 
 
 def json_ld(lang, strings):
@@ -157,7 +204,7 @@ def csp(page_html):
     return page_html.replace("<head>\n", "<head>\n" + tags, 1)
 
 
-def render(template, strings, lang, topics_html, page="index"):
+def render(template, strings, lang, topics_html, mates, page="index"):
     T = strings[lang]
     P = page_values(lang, strings, page)
     used, missing = set(), set()
@@ -181,6 +228,7 @@ def render(template, strings, lang, topics_html, page="index"):
         return html.escape(T[key], quote=True)
 
     out = INCLUDE_RE.sub(lambda m: Path("site/partials", m.group(1) + ".html").read_text(encoding="utf-8"), template)
+    out = out.replace(MATES_MARK, mates)
     out = ELEMENT_RE.sub(element, out)
     out = BRACES_RE.sub(braces, out)
     out = out.replace(TOPICS_MARK, topics_html)
@@ -254,6 +302,9 @@ def build(out):
 
     if set(strings) != set(LANGS):
         problems.append(f"site/strings.json must have exactly the languages {sorted(LANGS)}")
+    if not (BRAND / "group.json").is_file():
+        return ["brand/ is empty: run git submodule update --init"], 0
+    group = json.loads((BRAND / "group.json").read_text(encoding="utf-8"))
     keys = {lang: set(strings.get(lang, {})) for lang in LANGS}
     for a in LANGS:
         for b in LANGS:
@@ -271,28 +322,47 @@ def build(out):
             if rx.search(TAGS_RE.sub(" ", v)):
                 problems.append(f'string "{k}" uses "{term}" (glossario.md: avoid)')
 
+    # The group page's shared text, after the checks above: those are about strings.json alone.
+    from_brand = set()
+    for lang in LANGS:
+        shared = group_strings(group, lang)
+        from_brand |= set(shared)
+        for k in sorted(shared.keys() & strings.get(lang, {}).keys()):
+            problems.append(f'string "{k}" in "{lang}" comes from brand/group.json: remove it from site/strings.json')
+        strings.setdefault(lang, {}).update(shared)
+    for _, term, rx in check.glossary_terms():
+        for k, v in group_strings(group, "pt").items():
+            if rx.search(TAGS_RE.sub(" ", v)):
+                problems.append(f'brand/group.json: "{k}" uses "{term}" (glossario.md: avoid)')
+
     skill_list = skills(check)
     if not skill_list:
         problems.append("no skills/*/SKILL.md found (run from the repo root)")
     topics_html = "\n".join(f"            <li><code>{html.escape(n)}</code></li>" for n, _ in skill_list)
     facts = sorted(p.stem for p in Path("knowledge").glob("*.json") if NAME_RE.match(p.stem))
+    mates = mates_html(group)
 
     out.mkdir(parents=True, exist_ok=True)
     used_all = set()
     for name, page in PAGES.items():
         template = Path("site", page["template"]).read_text(encoding="utf-8")
         for lang in LANGS:
-            html_out, used, missing, leftover = render(template, strings, lang, topics_html, name)
+            html_out, used, missing, leftover = render(template, strings, lang, topics_html, mates, name)
             used_all |= used
             problems += [f'{name}: template uses "{k}", missing in "{lang}"' for k in sorted(missing)]
             problems += [f"{name}: template still has {x}: its element must be empty, and its string must exist" for x in leftover]
             dest = out / page["path"][lang] / "index.html"
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(csp(html_out), encoding="utf-8")
-    for k in sorted(keys.get("pt", set()) - used_all):
+    # keys has only what strings.json defines: brand/group.json carries more than this page shows.
+    for k in sorted(keys.get("pt", set()) - used_all - from_brand):
         problems.append(f'string "{k}" is not used by the template')
 
     shutil.copytree("site/static", out, dirs_exist_ok=True)
+    # The group's shared files, at the paths this site serves them from.
+    for part in ("grupo", "fonts"):
+        shutil.copytree(BRAND / part, out / part, dirs_exist_ok=True)
+    shutil.copy(BRAND / "install.js", out)
     not_found = out / "404.html"
     not_found.write_text(csp(not_found.read_text(encoding="utf-8")), encoding="utf-8")
     (out / "CNAME").write_text(SITE_URL.split("//", 1)[1] + "\n", encoding="utf-8")

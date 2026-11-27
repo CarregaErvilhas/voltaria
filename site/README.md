@@ -8,12 +8,18 @@ O site para pessoas, em https://voltaria.ocarroeletrico.com: explica o que é o 
 - `index.html` é o modelo da página principal. Um elemento com `data-i="chave"` recebe o texto dessa chave; uma chave entre chavetas duplas recebe-o escapado (para atributos e para o `<head>`). As chaves `page.*` vêm do script.
 - `strings.json` tem o texto, com as mesmas chaves em `pt` e `en`. O português segue o `glossario.md`, como as skills.
 - `static/` é copiado tal e qual:
-- a fonte (Nunito, com a licença ao lado);
 - os ícones: `favicon.ico` (16, 32 e 48 px, o que os browsers pedem e o que o Google mostra nos resultados), `icon.svg`, `apple-touch-icon.png` e os do `site.webmanifest` (Android);
 - as imagens das pré-visualizações de links, `og-pt.png` e `og-en.png`;
-- as mascotes dos sites do grupo, em `grupo/` (vêm do O Carro Elétrico, que tem a mesma página; mantém os textos e a ordem iguais aos dele; o `pano.svg` é o logótipo do Panoramax, marca do projeto Panoramax);
 - `404.html`, que o GitHub Pages mostra para qualquer endereço que não existe, nas duas línguas e fora dos motores de busca.
 - `og-card.html` é o desenho das imagens de pré-visualização. Não é publicado.
+
+## O que vem do Brand
+
+`brand/` é um submódulo do [Brand](https://github.com/CarregaErvilhas/Brand), o que os sites do grupo partilham, fixado numa release; o Dependabot propõe a seguinte. Depois de clonar, corre `git submodule update --init`.
+
+- O build copia para o site as mascotes (`grupo/`; o `pano.svg` é o logótipo do Panoramax, marca desse projeto), a fonte Nunito com a licença ao lado (`fonts/`) e o `install.js`, que nenhuma página deste site carrega.
+- A lista da página do grupo (os sites, a ordem e os textos) vem do `brand/group.json`. Aqui ficam o título, a introdução e o balão (`strings.json`), o HTML, o CSS e a cor de cada site (`.m-<id>` em `partials/style.html`): um site novo no Brand precisa de cor aqui.
+- Estes ficheiros mudam-se no Brand, por PR, nunca em `brand/`. O CI compara o site gerado com o submódulo (`brand/check.py`).
 
 O nome, a mascote e os ícones não estão nas licenças do repo: vê "O nome e a imagem ficam de fora" no `README.md` da raiz.
 

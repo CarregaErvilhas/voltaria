@@ -11,8 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          submodules: true
       - run: scripts/check-skills.py
       - run: scripts/check-knowledge.py
       - run: scripts/check-sources.sh
       - run: scripts/build-site.py --check
+      # The shared files in the built site are the ones in the pinned brand/ submodule.
+      - run: |
+          scripts/build-site.py --out "$RUNNER_TEMP/site"
+          python3 brand/check.py --against "$RUNNER_TEMP/site" grupo install fonts
       - run: scripts/build-plugin.py 0.0.0 "$RUNNER_TEMP/plugin"
