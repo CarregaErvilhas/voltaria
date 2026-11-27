@@ -24,7 +24,7 @@ scripts/check-skills.py                  # frontmatter, name = folder, no prices
 scripts/check-knowledge.py               # knowledge/incentives.json structure and dates
 scripts/check-sources.sh                 # every skill's "## Fontes" has legislation + a standard
 scripts/check-sources.sh --check-links   # also requests every URL (slow, network)
-scripts/check-dco.sh origin/main..HEAD   # every commit signed off by its author (DCO, as in dco.yml)
+scripts/check-dco.sh origin/main..HEAD   # every commit signed off by its author (DCO), local check before a push
 scripts/build-site.py --check            # the website: same keys in pt and en, none unused, glossary
 scripts/build-site.py                    # build it into _site/ (pages.yml publishes it from main)
 scripts/build-plugin.py 1.2.3 /tmp/p     # the Claude plugin folder, as the plugin branch gets it
@@ -76,6 +76,6 @@ The default backend `cli` runs a nested `claude -p` (no tools, no MCP, no CLAUDE
 ## Workflow
 
 - Licence: content (skills, `knowledge/`, `glossario.md`, other text) is CC-BY-4.0; code (`scripts/`, `evals/`, `.github/`, the site's HTML, CSS and JS) is MIT. The brand is outside both: the Voltaria name, its mascot, icon and the images made from them aren't licensed (README, "O nome e a imagem ficam de fora"), and ohmigo's mascot on the site is ohmigo's. The Nunito font keeps its own licence (SIL OFL 1.1, next to the font file).
-- Every commit needs `git commit -s`. `dco.yml` rejects PRs with commits that aren't signed off.
+- Every commit needs `git commit -s`. `dco.yml` rejects PRs with commits that aren't signed off. It and the `indexnow` job in `pages.yml` call shared workflows in CarregaErvilhas/OCarroEletrico, so the group keeps one copy of each.
 - Everything goes in by PR, reviewed by CODEOWNERS. Only squash and rebase merges are allowed.
 - Several sessions often work on this repo in parallel. Rebase on `main` before pushing, and expect conflicts in the shared files (`glossario.md`, `docs/plano.md`, `evals/questions.json`).
